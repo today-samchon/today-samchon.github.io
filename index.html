@@ -14,7 +14,9 @@
   <meta property="og:image" content="./assets/uncle_profile.png">
   <meta property="og:type" content="website">
 
-  <!-- Pretendard Web Font -->
+  <!-- Pretendard Official CDN (Variable & Static Fallback) -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
@@ -25,7 +27,7 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+            sans: ['"Pretendard Variable"', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', '"Noto Sans KR"', 'sans-serif'],
           },
           colors: {
             cream: {
@@ -71,9 +73,15 @@
   </script>
 
   <style>
-    /* Pretendard & Smooth Touch */
+    /* Pretendard Official Global Strong Application */
+    html, body, button, input, select, textarea, span, p, h1, h2, h3, h4, div, article, section, a {
+      font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
+      letter-spacing: -0.025em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
     * {
-      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
       -webkit-tap-highlight-color: transparent;
       box-sizing: border-box;
     }
@@ -149,7 +157,7 @@
 </head>
 
 <body
-  class="bg-stone-200 text-stone-900 min-h-screen flex justify-center selection:bg-amber-100 selection:text-amber-900 antialiased">
+  class="bg-stone-200 text-stone-900 min-h-screen flex justify-center selection:bg-amber-100 selection:text-amber-900 antialiased font-sans">
 
   <!-- Main Mobile Container -->
   <div
