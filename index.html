@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>특가캐주는삼촌 | 매일 아침 8시 알뜰 장바구니</title>
-  
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>특가 캐주는 삼촌 | 매일 아침 7시 알뜰 장바구니</title>
+
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="매일 아침 8시! 유튜브 쇼츠 영상 속 그 상품! 삼촌이 발품 팔아 건져온 토스 하루특가 & 쿠팡 베스트 알뜰 장바구니 링크 모음">
-  <meta property="og:title" content="특가캐주는삼촌 | 매일 아침 8시 알뜰 장바구니">
-  <meta property="og:description" content="유튜브 영상 속 [1번~10번] 상품 즉시 확인하기! 토스 하루특가 & 쿠팡 베스트">
+  <meta name="description" content="매일 아침 7시! 유튜브 쇼츠 영상 속 그 상품! 삼촌이 발품 팔아 건져온 토스 하루특가 & 쿠팡 베스트 알뜰 장바구니 링크 모음">
+  <meta property="og:title" content="특가 캐주는 삼촌 | 매일 아침 7시 알뜰 장바구니">
+  <meta property="og:description" content="유튜브 영상 속 [1번~10번] 상품 즉시 확인하기! 토스 특가 / 쿠팡 베스트 / 생필품 / 삼촌픽">
   <meta property="og:image" content="./assets/uncle_profile.png">
   <meta property="og:type" content="website">
-  
+
   <!-- Pretendard Web Font -->
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-  
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -41,6 +44,16 @@
               dark: '#C01A11',
               light: '#FEECEB',
               navy: '#112F5A',
+            },
+            emeraldBrand: {
+              DEFAULT: '#059669',
+              dark: '#047857',
+              light: '#ECFDF5',
+            },
+            amberBrand: {
+              DEFAULT: '#D97706',
+              dark: '#B45309',
+              light: '#FFFBEB',
             }
           },
           animation: {
@@ -64,15 +77,18 @@
       -webkit-tap-highlight-color: transparent;
       box-sizing: border-box;
     }
-    
+
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
+
     /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
     }
 
     /* Shimmer Effect */
@@ -81,21 +97,24 @@
         transform: translateX(100%);
       }
     }
+
     .skeleton-shimmer {
       position: relative;
       overflow: hidden;
       background-color: #f1ede4;
     }
+
     .skeleton-shimmer::after {
       position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       transform: translateX(-100%);
-      background-image: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0) 0,
-        rgba(255, 255, 255, 0.5) 50%,
-        rgba(255, 255, 255, 0) 100%
-      );
+      background-image: linear-gradient(90deg,
+          rgba(255, 255, 255, 0) 0,
+          rgba(255, 255, 255, 0.5) 50%,
+          rgba(255, 255, 255, 0) 100%);
       animation: shimmer 1.5s infinite;
       content: '';
     }
@@ -110,29 +129,40 @@
       0% {
         transform: translateX(0%);
       }
+
       100% {
         transform: translateX(-50%);
       }
     }
+
     .animate-marquee {
       display: inline-flex;
       white-space: nowrap;
       animation: marqueeFlow 25s linear infinite;
     }
-    .animate-marquee:hover, .animate-marquee:active {
+
+    .animate-marquee:hover,
+    .animate-marquee:active {
       animation-play-state: paused;
     }
   </style>
 </head>
-<body class="bg-stone-200 text-stone-900 min-h-screen flex justify-center selection:bg-amber-100 selection:text-amber-900 antialiased">
+
+<body
+  class="bg-stone-200 text-stone-900 min-h-screen flex justify-center selection:bg-amber-100 selection:text-amber-900 antialiased">
 
   <!-- Main Mobile Container -->
-  <div class="w-full max-w-md min-h-screen bg-[#FFFDF7] shadow-2xl relative flex flex-col pb-24 border-x border-stone-200/60">
-    
+  <div
+    class="w-full max-w-md min-h-screen bg-[#FFFDF7] shadow-2xl relative flex flex-col pb-24 border-x border-stone-200/60">
+
     <!-- TOP FLOWING LEGAL DISCLOSURE BANNER (MARQUEE TICKER) -->
-    <aside class="bg-stone-900 text-stone-300 text-[11px] py-2 px-3 flex items-center overflow-hidden relative select-none border-b border-stone-800" aria-label="공정위 수수료 제공 문구 안내">
+    <aside
+      class="bg-stone-900 text-stone-300 text-[11px] py-2 px-3 flex items-center overflow-hidden relative select-none border-b border-stone-800"
+      aria-label="공정위 수수료 제공 문구 안내">
       <!-- Subtle Left Fade Gradient -->
-      <div class="absolute left-0 top-0 bottom-0 w-3 bg-gradient-to-r from-stone-900 to-transparent z-10 pointer-events-none"></div>
+      <div
+        class="absolute left-0 top-0 bottom-0 w-3 bg-gradient-to-r from-stone-900 to-transparent z-10 pointer-events-none">
+      </div>
 
       <!-- Flowing Marquee Track -->
       <div class="flex-1 overflow-hidden relative">
@@ -152,26 +182,27 @@
 
       <!-- Right Fade & Share Button -->
       <div class="relative z-10 flex items-center pl-2.5 bg-stone-900 shrink-0">
-        <button id="btn-share-top" class="text-stone-300 hover:text-white flex items-center gap-1 text-[11px] font-semibold bg-stone-800 hover:bg-stone-700 px-2.5 py-0.5 rounded-full transition active:scale-95 shadow-sm">
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+        <button id="btn-share-top"
+          class="text-stone-300 hover:text-white flex items-center gap-1 text-[11px] font-semibold bg-stone-800 hover:bg-stone-700 px-2.5 py-0.5 rounded-full transition active:scale-95 shadow-sm">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+          </svg>
           <span>공유</span>
         </button>
       </div>
     </aside>
 
     <!-- HEADER: INSTAGRAM PROFILE SECTION -->
-    <header class="pt-6 pb-4 px-5 bg-gradient-to-b from-amber-50/60 to-[#FFFDF7]">
-      <div class="flex items-start gap-4">
+    <header class="pt-5 pb-3 px-5 bg-gradient-to-b from-amber-50/60 to-[#FFFDF7] border-b border-stone-200/50">
+      <div class="flex items-start gap-3.5">
         <!-- Story Avatar Ring -->
-        <div class="relative shrink-0">
+        <div class="relative shrink-0 cursor-pointer" onclick="openHomeHub()">
           <div class="p-[2.5px] rounded-full story-ring-gradient shadow-sm">
             <div class="p-[2px] bg-[#FFFDF7] rounded-full">
-              <img 
-                src="./assets/uncle_profile.png" 
-                alt="특가캐주는삼촌 프로필" 
-                class="w-18 h-18 w-[74px] h-[74px] rounded-full object-cover bg-amber-100"
-                onerror="this.onerror=null; this.src='https://api.dicebear.com/7.x/bottts/svg?seed=samchon&backgroundColor=ffdfbf';"
-              >
+              <img src="./assets/uncle_profile.png" alt="특가캐주는삼촌 프로필"
+                class="w-[68px] h-[68px] rounded-full object-cover bg-amber-100"
+                onerror="this.onerror=null; this.src='https://api.dicebear.com/7.x/bottts/svg?seed=samchon&backgroundColor=ffdfbf';">
             </div>
           </div>
           <!-- Live Status Dot -->
@@ -185,11 +216,13 @@
         <div class="flex-1 min-w-0">
           <!-- Channel Name & Verified Badge -->
           <div class="flex items-center gap-1.5 flex-wrap">
-            <h1 class="text-[17px] font-extrabold text-stone-900 tracking-tight flex items-center gap-1">
-              특가캐주는삼촌
+            <h1 class="text-[17px] font-extrabold text-stone-900 tracking-tight flex items-center gap-1 cursor-pointer"
+              onclick="openHomeHub()">
+              특가 캐주는 삼촌
               <!-- Verified Badge -->
               <svg class="w-[18px] h-[18px] text-[#3182F6] fill-current shrink-0" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.2 14.2l-3.5-3.5 1.4-1.4 2.1 2.1 5.9-5.9 1.4 1.4-7.3 7.3z"/>
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.2 14.2l-3.5-3.5 1.4-1.4 2.1 2.1 5.9-5.9 1.4 1.4-7.3 7.3z" />
               </svg>
             </h1>
             <span class="text-[13px] font-semibold text-stone-500">@today-samchon</span>
@@ -197,167 +230,316 @@
 
           <!-- One Line Bio -->
           <p class="text-[13px] text-stone-700 font-medium mt-1 leading-snug">
-            매일 아침 8시! 삼촌이 발품 팔아 건져온 알뜰 장바구니 🧺
+            매일 아침 7시! 삼촌이 발품 팔아 건져온 알뜰 장바구니 🧺
           </p>
-        </div>
-      </div>
 
-      <!-- Update Timestamp -->
-      <div class="mt-3.5">
-        <!-- Live Timestamp -->
-        <div class="flex items-center justify-between text-[11px] text-stone-500 px-1 font-medium">
-          <span class="flex items-center gap-1.5">
+          <!-- Live Timestamp -->
+          <div class="flex items-center gap-1.5 text-[11px] text-stone-500 mt-2 font-medium">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             <span>최근 업데이트:</span>
             <strong id="header-updated-at" class="text-stone-700 font-semibold">데이터 불러오는 중...</strong>
-          </span>
-          <span class="text-stone-400">매일 아침 8시 자동 갱신</span>
+          </div>
         </div>
       </div>
 
-      <!-- Mini Search & Filter Bar -->
+      <!-- Mini Search & Filter Bar (Always accessible) -->
       <div class="mt-3 relative">
         <div class="relative flex items-center">
-          <svg class="w-4 h-4 text-stone-400 absolute left-3 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          <svg class="w-4 h-4 text-stone-400 absolute left-3 pointer-events-none" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
-          <input 
-            type="text" 
-            id="search-input" 
-            placeholder="쇼츠 번호(예: 1번) 또는 상품명 검색..." 
-            class="w-full pl-9 pr-8 py-2 bg-stone-100/80 border border-stone-200/90 rounded-xl text-[13px] placeholder-stone-400 text-stone-800 focus:outline-none focus:ring-2 focus:ring-stone-400/40 focus:bg-white transition"
-          >
+          <input type="text" id="search-input" placeholder="쇼츠 번호(예: 1번) 또는 상품명 검색..."
+            class="w-full pl-9 pr-8 py-2 bg-stone-100/90 border border-stone-200/90 rounded-xl text-[13px] placeholder-stone-400 text-stone-800 focus:outline-none focus:ring-2 focus:ring-stone-400/40 focus:bg-white transition">
           <button id="btn-clear-search" class="hidden absolute right-2.5 text-stone-400 hover:text-stone-600 p-1">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </button>
         </div>
       </div>
     </header>
 
-    <!-- STICKY TAB NAVIGATION (INSTAGRAM FEED / REELS STYLE) -->
-    <nav class="sticky top-0 z-30 bg-[#FFFDF7]/95 backdrop-blur-md border-y border-stone-200 shadow-sm" aria-label="특가 카테고리 탭">
-      <div class="grid grid-cols-2 text-center text-[14px] font-bold">
-        
-        <!-- TAB 1: 토스 하루특가 -->
-        <button 
-          id="tab-toss" 
-          class="relative py-3.5 px-2 flex items-center justify-center gap-1.5 transition-all text-[#3182F6]"
-          onclick="switchTab('toss')"
-        >
-          <span class="text-base">🔥</span>
-          <span>오늘의 토스 하루특가</span>
-          <span id="badge-count-toss" class="text-[11px] font-extrabold bg-[#EBF4FF] text-[#3182F6] px-1.5 py-0.5 rounded-full ml-0.5">10</span>
-          <!-- Active Indicator Bar -->
-          <div id="indicator-toss" class="absolute bottom-0 left-0 right-0 h-[2.5px] bg-[#3182F6] rounded-t-full transition-all duration-200"></div>
-        </button>
+    <!-- ======================================================== -->
+    <!-- [VIEW 1: HOME 4-CARD HUB SECTION] (초기 진입 메인 화면)   -->
+    <!-- ======================================================== -->
+    <section id="home-hub-view" class="p-4 space-y-4 flex-1">
 
-        <!-- TAB 2: 쿠팡 베스트 TOP 10 -->
-        <button 
-          id="tab-coupang" 
-          class="relative py-3.5 px-2 flex items-center justify-center gap-1.5 transition-all text-stone-400 hover:text-stone-600"
-          onclick="switchTab('coupang')"
-        >
-          <span class="text-base">🚀</span>
-          <span>쿠팡 베스트 TOP 10</span>
-          <span id="badge-count-coupang" class="text-[11px] font-extrabold bg-stone-100 text-stone-500 px-1.5 py-0.5 rounded-full ml-0.5">10</span>
-          <!-- Active Indicator Bar -->
-          <div id="indicator-coupang" class="absolute bottom-0 left-0 right-0 h-[2.5px] bg-transparent rounded-t-full transition-all duration-200"></div>
-        </button>
-
+      <!-- Section Title -->
+      <div class="flex items-center justify-between pt-1 px-1">
+        <div>
+          <h2 class="text-[16px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
+            <span>🛒</span>
+            <span>삼촌의 알뜰 장바구니</span>
+          </h2>
+          <p class="text-[12px] text-stone-500 font-medium mt-0.5">원하시는 특가 테마를 골라보세요!</p>
+        </div>
+        <span
+          class="text-[11px] font-bold text-stone-600 bg-stone-100 border border-stone-200 px-2.5 py-1 rounded-full">
+          4개 카테고리
+        </span>
       </div>
-    </nav>
 
-    <!-- TAB CONTEXT BANNER -->
-    <div id="tab-context-banner" class="px-5 py-2.5 bg-blue-50/70 border-b border-blue-100/60 flex items-center justify-between text-[12px] text-[#1B64DA] transition-colors duration-300">
-      <div class="flex items-center gap-1.5 font-medium">
-        <span id="tab-context-icon">💡</span>
-        <span id="tab-context-msg">쇼츠 영상의 <strong>[1번~10번]</strong> 번호와 1:1로 매칭됩니다!</span>
-      </div>
-      <span id="tab-context-tag" class="font-bold text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-md shrink-0">오늘 자정 마감</span>
-    </div>
+      <!-- 2x2 Interactive Cards Grid -->
+      <div class="grid grid-cols-2 gap-3">
 
-    <!-- MAIN PRODUCT LIST / GRID -->
-    <main class="flex-1 p-4" id="main-content">
-      
-      <!-- SKELETON LOADING STATE -->
-      <div id="loading-state" class="space-y-3">
-        <!-- 4 Skeleton Cards -->
-        <div class="bg-white rounded-2xl p-3 border border-stone-200/70 shadow-sm flex gap-3.5">
-          <div class="w-24 h-24 rounded-xl skeleton-shimmer shrink-0"></div>
-          <div class="flex-1 flex flex-col justify-between py-1">
-            <div class="space-y-1.5">
-              <div class="w-16 h-4 rounded-md skeleton-shimmer"></div>
-              <div class="w-full h-4 rounded-md skeleton-shimmer"></div>
+        <!-- CARD 1: 토스 하루특가 -->
+        <article onclick="openCategory('toss')"
+          class="bg-gradient-to-b from-[#EBF4FF] via-white to-white border-2 border-[#3182F6]/40 hover:border-[#3182F6] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="bg-[#3182F6] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
+                쇼츠 1~10번
+              </span>
+              <span class="text-[10px] text-blue-600 font-black">자정마감</span>
             </div>
-            <div class="space-y-1">
-              <div class="w-12 h-3 rounded skeleton-shimmer"></div>
-              <div class="w-24 h-5 rounded-md skeleton-shimmer"></div>
+            <div class="mt-3">
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🔥</div>
+              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">토스 하루특가</h3>
+              <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
+                쇼츠 영상 속 바로 그 상품! 오늘만 이 가격
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-4 pt-2.5 border-t border-blue-100 flex items-center justify-between text-[12px] font-black text-[#3182F6]">
+            <span id="hub-count-toss">10개 특가</span>
+            <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
+          </div>
+        </article>
+
+        <!-- CARD 2: 쿠팡 베스트 -->
+        <article onclick="openCategory('coupang')"
+          class="bg-gradient-to-b from-[#FEECEB] via-white to-white border-2 border-[#E1251B]/40 hover:border-[#E1251B] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="bg-[#E1251B] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
+                실시간 랭킹
+              </span>
+              <span class="text-[10px] text-red-600 font-black">로켓배송</span>
+            </div>
+            <div class="mt-3">
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🚀</div>
+              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">쿠팡 베스트</h3>
+              <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
+                지금 가장 잘 나가는 랭킹 TOP 10 모음
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-4 pt-2.5 border-t border-red-100 flex items-center justify-between text-[12px] font-black text-[#E1251B]">
+            <span id="hub-count-coupang">TOP 10</span>
+            <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
+          </div>
+        </article>
+
+        <!-- CARD 3: 알뜰 생필품 -->
+        <article onclick="openCategory('essentials')"
+          class="bg-gradient-to-b from-[#ECFDF5] via-white to-white border-2 border-[#059669]/40 hover:border-[#059669] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="bg-[#059669] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
+                쟁여두기 필수
+              </span>
+              <span class="text-[10px] text-emerald-600 font-black">초특가</span>
+            </div>
+            <div class="mt-3">
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🧼</div>
+              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">알뜰 생필품</h3>
+              <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
+                화장지·세제·물티슈 쟁여둘수록 이득인 필수품
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-4 pt-2.5 border-t border-emerald-100 flex items-center justify-between text-[12px] font-black text-[#059669]">
+            <span id="hub-count-essentials">필수 10선</span>
+            <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
+          </div>
+        </article>
+
+        <!-- CARD 4: 삼촌픽 추천 -->
+        <article onclick="openCategory('uncle_picks')"
+          class="bg-gradient-to-b from-[#FFFBEB] via-white to-white border-2 border-[#D97706]/40 hover:border-[#D97706] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="bg-[#D97706] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
+                삼촌 직접검증
+              </span>
+              <span class="text-[10px] text-amber-600 font-black">강력추천</span>
+            </div>
+            <div class="mt-3">
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🧺</div>
+              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">삼촌픽 추천</h3>
+              <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
+                직접 먹어보고 발품 판 찐 인생 꿀특가템
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-4 pt-2.5 border-t border-amber-100 flex items-center justify-between text-[12px] font-black text-[#D97706]">
+            <span id="hub-count-uncle">추천 10선</span>
+            <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Informative Bottom Banner -->
+      <div
+        class="bg-stone-100/90 border border-stone-200/80 rounded-2xl p-3.5 flex items-center gap-3 text-stone-600 mt-2">
+        <span class="text-2xl shrink-0">💡</span>
+        <div class="text-[11.5px] leading-relaxed">
+          <strong class="text-stone-800 font-bold block">매일 아침 7시 자동 업데이트!</strong>
+          삼촌이 매일 가장 실속 있고 검증된 최저가 혜택을 선별해 전해드립니다.
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- [VIEW 2: CATEGORY PRODUCT LIST VIEW] (상세 상품 리스트 화면) -->
+    <!-- ======================================================== -->
+    <section id="category-list-view" class="hidden flex-1 flex flex-col">
+
+      <!-- STICKY TOP CATEGORY SWITCHER & BACK BAR -->
+      <nav class="sticky top-0 z-30 bg-[#FFFDF7]/95 backdrop-blur-md border-b border-stone-200 shadow-sm px-3 py-2"
+        aria-label="카테고리 네비게이션">
+
+        <div class="flex items-center gap-2">
+          <!-- Back to Hub Button -->
+          <button onclick="openHomeHub()"
+            class="flex items-center gap-1 py-2 px-2.5 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-[12px] font-black shrink-0 active:scale-95 transition shadow-sm">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            <span>홈</span>
+          </button>
+
+          <!-- 4 Category Switcher Chips (Horizontal Scroll) -->
+          <div class="flex-1 flex gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+
+            <!-- Chip 1: 토스 -->
+            <button id="chip-toss" onclick="switchCategory('toss')"
+              class="py-1.5 px-2.5 rounded-xl text-[12px] font-extrabold whitespace-nowrap transition-all shrink-0 flex items-center gap-1">
+              <span>🔥</span>
+              <span>토스 하루특가</span>
+            </button>
+
+            <!-- Chip 2: 쿠팡 -->
+            <button id="chip-coupang" onclick="switchCategory('coupang')"
+              class="py-1.5 px-2.5 rounded-xl text-[12px] font-extrabold whitespace-nowrap transition-all shrink-0 flex items-center gap-1">
+              <span>🚀</span>
+              <span>쿠팡 베스트</span>
+            </button>
+
+            <!-- Chip 3: 생필품 -->
+            <button id="chip-essentials" onclick="switchCategory('essentials')"
+              class="py-1.5 px-2.5 rounded-xl text-[12px] font-extrabold whitespace-nowrap transition-all shrink-0 flex items-center gap-1">
+              <span>🧼</span>
+              <span>생필품</span>
+            </button>
+
+            <!-- Chip 4: 삼촌픽 -->
+            <button id="chip-uncle_picks" onclick="switchCategory('uncle_picks')"
+              class="py-1.5 px-2.5 rounded-xl text-[12px] font-extrabold whitespace-nowrap transition-all shrink-0 flex items-center gap-1">
+              <span>🧺</span>
+              <span>삼촌픽</span>
+            </button>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- TAB CONTEXT BANNER -->
+      <div id="tab-context-banner"
+        class="px-5 py-2.5 border-b flex items-center justify-between text-[12px] transition-colors duration-300">
+        <div class="flex items-center gap-1.5 font-medium">
+          <span id="tab-context-icon">🔥</span>
+          <span id="tab-context-msg">쇼츠 영상의 <strong>[1번~10번]</strong> 번호와 1:1로 매칭됩니다!</span>
+        </div>
+        <span id="tab-context-tag" class="font-bold text-[10px] px-2 py-0.5 rounded-md shrink-0">오늘 자정 마감</span>
+      </div>
+
+      <!-- MAIN PRODUCT LIST -->
+      <div class="flex-1 p-4" id="main-content">
+
+        <!-- SKELETON LOADING STATE -->
+        <div id="loading-state" class="space-y-3">
+          <div class="bg-white rounded-2xl p-3 border border-stone-200/70 shadow-sm flex gap-3.5">
+            <div class="w-24 h-24 rounded-xl skeleton-shimmer shrink-0"></div>
+            <div class="flex-1 flex flex-col justify-between py-1">
+              <div class="space-y-1.5">
+                <div class="w-16 h-4 rounded-md skeleton-shimmer"></div>
+                <div class="w-full h-4 rounded-md skeleton-shimmer"></div>
+              </div>
+              <div class="space-y-1">
+                <div class="w-12 h-3 rounded skeleton-shimmer"></div>
+                <div class="w-24 h-5 rounded-md skeleton-shimmer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-3 border border-stone-200/70 shadow-sm flex gap-3.5">
+            <div class="w-24 h-24 rounded-xl skeleton-shimmer shrink-0"></div>
+            <div class="flex-1 flex flex-col justify-between py-1">
+              <div class="space-y-1.5">
+                <div class="w-16 h-4 rounded-md skeleton-shimmer"></div>
+                <div class="w-full h-4 rounded-md skeleton-shimmer"></div>
+              </div>
+              <div class="space-y-1">
+                <div class="w-12 h-3 rounded skeleton-shimmer"></div>
+                <div class="w-24 h-5 rounded-md skeleton-shimmer"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-2xl p-3 border border-stone-200/70 shadow-sm flex gap-3.5">
-          <div class="w-24 h-24 rounded-xl skeleton-shimmer shrink-0"></div>
-          <div class="flex-1 flex flex-col justify-between py-1">
-            <div class="space-y-1.5">
-              <div class="w-16 h-4 rounded-md skeleton-shimmer"></div>
-              <div class="w-full h-4 rounded-md skeleton-shimmer"></div>
-            </div>
-            <div class="space-y-1">
-              <div class="w-12 h-3 rounded skeleton-shimmer"></div>
-              <div class="w-24 h-5 rounded-md skeleton-shimmer"></div>
-            </div>
-          </div>
+
+        <!-- ERROR STATE -->
+        <div id="error-state" class="hidden py-16 px-4 text-center">
+          <div
+            class="w-16 h-16 mx-auto bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl mb-3">
+            ⚠️</div>
+          <h3 class="text-[16px] font-bold text-stone-800">상품 데이터를 불러올 수 없습니다</h3>
+          <p class="text-[13px] text-stone-500 mt-1">네트워크 상태를 확인하시거나 잠시 후 다시 시도해주세요.</p>
+          <button onclick="loadProductData()"
+            class="mt-4 px-4 py-2 bg-stone-800 text-white rounded-xl text-[13px] font-bold shadow active:scale-95 transition">
+            다시 불러오기 🔄
+          </button>
         </div>
-        <div class="bg-white rounded-2xl p-3 border border-stone-200/70 shadow-sm flex gap-3.5">
-          <div class="w-24 h-24 rounded-xl skeleton-shimmer shrink-0"></div>
-          <div class="flex-1 flex flex-col justify-between py-1">
-            <div class="space-y-1.5">
-              <div class="w-16 h-4 rounded-md skeleton-shimmer"></div>
-              <div class="w-full h-4 rounded-md skeleton-shimmer"></div>
-            </div>
-            <div class="space-y-1">
-              <div class="w-12 h-3 rounded skeleton-shimmer"></div>
-              <div class="w-24 h-5 rounded-md skeleton-shimmer"></div>
-            </div>
-          </div>
+
+        <!-- EMPTY SEARCH RESULTS -->
+        <div id="empty-search-state" class="hidden py-16 px-4 text-center">
+          <div
+            class="w-16 h-16 mx-auto bg-stone-100 text-stone-400 rounded-full flex items-center justify-center text-2xl mb-3">
+            🔍</div>
+          <h3 class="text-[16px] font-bold text-stone-800">일치하는 상품이 없습니다</h3>
+          <p class="text-[13px] text-stone-500 mt-1">다른 검색어나 번호(예: 1번)로 찾아보세요.</p>
+          <button onclick="clearSearch()"
+            class="mt-4 px-4 py-2 bg-stone-200 text-stone-800 rounded-xl text-[13px] font-bold active:scale-95 transition">
+            전체 상품 보기
+          </button>
         </div>
+
+        <!-- PRODUCT CARDS CONTAINER -->
+        <div id="product-list" class="space-y-3.5">
+          <!-- Dynamic Cards Injected via JavaScript -->
+        </div>
+
       </div>
 
-      <!-- ERROR STATE -->
-      <div id="error-state" class="hidden py-16 px-4 text-center">
-        <div class="w-16 h-16 mx-auto bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl mb-3">⚠️</div>
-        <h3 class="text-[16px] font-bold text-stone-800">상품 데이터를 불러올 수 없습니다</h3>
-        <p class="text-[13px] text-stone-500 mt-1">네트워크 상태를 확인하시거나 잠시 후 다시 시도해주세요.</p>
-        <button onclick="loadProductData()" class="mt-4 px-4 py-2 bg-stone-800 text-white rounded-xl text-[13px] font-bold shadow active:scale-95 transition">
-          다시 불러오기 🔄
-        </button>
-      </div>
-
-      <!-- EMPTY SEARCH RESULTS -->
-      <div id="empty-search-state" class="hidden py-16 px-4 text-center">
-        <div class="w-16 h-16 mx-auto bg-stone-100 text-stone-400 rounded-full flex items-center justify-center text-2xl mb-3">🔍</div>
-        <h3 class="text-[16px] font-bold text-stone-800">일치하는 상품이 없습니다</h3>
-        <p class="text-[13px] text-stone-500 mt-1">다른 검색어나 번호(예: 1번)로 찾아보세요.</p>
-        <button onclick="clearSearch()" class="mt-4 px-4 py-2 bg-stone-200 text-stone-800 rounded-xl text-[13px] font-bold active:scale-95 transition">
-          전체 상품 보기
-        </button>
-      </div>
-
-      <!-- PRODUCT CARDS CONTAINER -->
-      <div id="product-list" class="space-y-3.5">
-        <!-- Dynamic Cards Injected via JavaScript -->
-      </div>
-
-    </main>
+    </section>
 
     <!-- FOOTER INFO -->
     <footer class="mt-auto px-5 py-6 bg-stone-100/90 border-t border-stone-200 text-center text-stone-500 space-y-3">
-      <div class="flex items-center justify-center gap-2">
-        <img src="./assets/uncle_profile.png" alt="삼촌 아바타" class="w-6 h-6 rounded-full" onerror="this.style.display='none'">
-        <span class="text-[13px] font-extrabold text-stone-700 tracking-tight">특가캐주는삼촌</span>
+      <div class="flex items-center justify-center gap-2 cursor-pointer" onclick="openHomeHub()">
+        <img src="./assets/uncle_profile.png" alt="삼촌 아바타" class="w-6 h-6 rounded-full"
+          onerror="this.style.display='none'">
+        <span class="text-[13px] font-extrabold text-stone-700 tracking-tight">특가 캐주는 삼촌</span>
       </div>
       <p class="text-[11px] text-stone-500 leading-relaxed max-w-xs mx-auto">
-        유튜브 쇼츠 <span class="font-bold text-stone-700">@today-samchon</span> 채널에서 매일 아침 8시, 신선하고 실속 있는 특가 상품을 가장 빠르게 소개해 드립니다.
+        유튜브 쇼츠 <span class="font-bold text-stone-700">@today-samchon</span> 채널에서 매일 아침 7시, 신선하고 실속 있는 특가 상품을 가장 빠르게 소개해
+        드립니다.
       </p>
       <div class="pt-1 text-[10px] text-stone-400">
         © 2026 today-samchon. All rights reserved.
@@ -367,21 +549,33 @@
     <!-- FLOATING ACTION BUTTONS -->
     <div class="fixed bottom-5 right-5 max-w-md w-full pointer-events-none flex justify-end px-4 z-40">
       <div class="flex flex-col gap-2 pointer-events-auto">
+        <!-- Return to Home Hub Floating Button (Visible in category view) -->
+        <button id="btn-floating-home" onclick="openHomeHub()"
+          class="hidden w-11 h-11 bg-stone-900 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-stone-800 active:scale-90 transition"
+          aria-label="홈 허브로 이동" title="카테고리 전체 메뉴">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+        </button>
+
         <!-- Scroll to Top Button -->
-        <button 
-          id="btn-scroll-top" 
-          onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+        <button id="btn-scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
           class="hidden w-11 h-11 bg-white/95 border border-stone-200/80 rounded-full shadow-lg text-stone-700 flex items-center justify-center hover:bg-stone-50 active:scale-90 transition"
-          aria-label="맨 위로 이동"
-        >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+          aria-label="맨 위로 이동">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+          </svg>
         </button>
       </div>
     </div>
 
     <!-- TOAST NOTIFICATION POPUP -->
-    <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 z-50 bg-stone-900/95 backdrop-blur text-white text-[13px] font-semibold px-4 py-2.5 rounded-full shadow-2xl transition-all duration-300 opacity-0 pointer-events-none flex items-center gap-2">
-      <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <div id="toast"
+      class="fixed bottom-10 left-1/2 -translate-x-1/2 z-50 bg-stone-900/95 backdrop-blur text-white text-[13px] font-semibold px-4 py-2.5 rounded-full shadow-2xl transition-all duration-300 opacity-0 pointer-events-none flex items-center gap-2">
+      <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+      </svg>
       <span id="toast-message">링크가 복사되었습니다!</span>
     </div>
 
@@ -393,12 +587,37 @@
     let appData = {
       updated_at: '',
       toss_deals: [],
-      coupang_bests: []
+      coupang_bests: [],
+      essentials: [],
+      uncle_picks: []
     };
-    let currentTab = 'toss'; // 'toss' or 'coupang'
+    let currentView = 'hub'; // 'hub' or 'category'
+    let currentCategory = 'toss'; // 'toss', 'coupang', 'essentials', 'uncle_picks'
     let searchQuery = '';
 
-    // Elements
+    // Views
+    const homeHubView = document.getElementById('home-hub-view');
+    const categoryListView = document.getElementById('category-list-view');
+
+    // Hub count badges
+    const hubCountToss = document.getElementById('hub-count-toss');
+    const hubCountCoupang = document.getElementById('hub-count-coupang');
+    const hubCountEssentials = document.getElementById('hub-count-essentials');
+    const hubCountUncle = document.getElementById('hub-count-uncle');
+
+    // Category chips
+    const chipToss = document.getElementById('chip-toss');
+    const chipCoupang = document.getElementById('chip-coupang');
+    const chipEssentials = document.getElementById('chip-essentials');
+    const chipUncle = document.getElementById('chip-uncle_picks');
+
+    // Context banner elements
+    const tabContextBanner = document.getElementById('tab-context-banner');
+    const tabContextIcon = document.getElementById('tab-context-icon');
+    const tabContextMsg = document.getElementById('tab-context-msg');
+    const tabContextTag = document.getElementById('tab-context-tag');
+
+    // Product list & states
     const productListEl = document.getElementById('product-list');
     const loadingStateEl = document.getElementById('loading-state');
     const errorStateEl = document.getElementById('error-state');
@@ -407,22 +626,9 @@
     const searchInput = document.getElementById('search-input');
     const btnClearSearch = document.getElementById('btn-clear-search');
     const btnScrollTop = document.getElementById('btn-scroll-top');
+    const btnFloatingHome = document.getElementById('btn-floating-home');
     const toastEl = document.getElementById('toast');
     const toastMessageEl = document.getElementById('toast-message');
-
-    // Tab buttons & indicators
-    const tabToss = document.getElementById('tab-toss');
-    const tabCoupang = document.getElementById('tab-coupang');
-    const indicatorToss = document.getElementById('indicator-toss');
-    const indicatorCoupang = document.getElementById('indicator-coupang');
-    const badgeCountToss = document.getElementById('badge-count-toss');
-    const badgeCountCoupang = document.getElementById('badge-count-coupang');
-
-    // Context banner
-    const tabContextBanner = document.getElementById('tab-context-banner');
-    const tabContextIcon = document.getElementById('tab-context-icon');
-    const tabContextMsg = document.getElementById('tab-context-msg');
-    const tabContextTag = document.getElementById('tab-context-tag');
 
     // Fetch and Load Data
     async function loadProductData() {
@@ -437,22 +643,24 @@
           throw new Error('데이터 파일을 불러올 수 없습니다 (' + res.status + ')');
         }
         appData = await res.json();
-        
-        // Update header info
+
+        // Update header timestamp
         if (appData.updated_at) {
           headerUpdatedAtEl.textContent = appData.updated_at;
         } else {
           headerUpdatedAtEl.textContent = '방금 전';
         }
 
-        // Update counts
-        const tossLen = (appData.toss_deals || []).length;
-        const coupangLen = (appData.coupang_bests || []).length;
-        badgeCountToss.textContent = tossLen;
-        badgeCountCoupang.textContent = coupangLen;
+        // Update Hub counts
+        if (hubCountToss) hubCountToss.textContent = (appData.toss_deals || []).length + '개 특가';
+        if (hubCountCoupang) hubCountCoupang.textContent = 'TOP ' + (appData.coupang_bests || []).length;
+        if (hubCountEssentials) hubCountEssentials.textContent = (appData.essentials || []).length + '개 필수템';
+        if (hubCountUncle) hubCountUncle.textContent = (appData.uncle_picks || []).length + '개 추천템';
 
         loadingStateEl.classList.add('hidden');
-        renderList();
+
+        // Check hash to direct route if present
+        handleHashRouting();
       } catch (err) {
         console.error(err);
         loadingStateEl.classList.add('hidden');
@@ -460,50 +668,103 @@
       }
     }
 
-    // Switch Tab
-    function switchTab(tab) {
-      if (currentTab === tab) return;
-      currentTab = tab;
+    // Navigation: Open Category
+    function openCategory(categoryKey) {
+      currentView = 'category';
+      currentCategory = categoryKey;
+      location.hash = categoryKey;
 
-      if (tab === 'toss') {
-        // Toss Active
-        tabToss.className = "relative py-3.5 px-2 flex items-center justify-center gap-1.5 transition-all text-[#3182F6]";
-        tabCoupang.className = "relative py-3.5 px-2 flex items-center justify-center gap-1.5 transition-all text-stone-400 hover:text-stone-600";
-        indicatorToss.className = "absolute bottom-0 left-0 right-0 h-[2.5px] bg-[#3182F6] rounded-t-full transition-all duration-200";
-        indicatorCoupang.className = "absolute bottom-0 left-0 right-0 h-[2.5px] bg-transparent rounded-t-full transition-all duration-200";
-        badgeCountToss.className = "text-[11px] font-extrabold bg-[#EBF4FF] text-[#3182F6] px-1.5 py-0.5 rounded-full ml-0.5";
-        badgeCountCoupang.className = "text-[11px] font-extrabold bg-stone-100 text-stone-500 px-1.5 py-0.5 rounded-full ml-0.5";
+      homeHubView.classList.add('hidden');
+      categoryListView.classList.remove('hidden');
+      btnFloatingHome.classList.remove('hidden');
 
-        // Banner update
-        tabContextBanner.className = "px-5 py-2.5 bg-blue-50/80 border-b border-blue-100/70 flex items-center justify-between text-[12px] text-[#1B64DA] transition-colors duration-300";
+      applyCategoryStyles(categoryKey);
+      renderList();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Navigation: Switch Category from Sticky Chips
+    function switchCategory(categoryKey) {
+      if (currentCategory === categoryKey) return;
+      currentCategory = categoryKey;
+      location.hash = categoryKey;
+
+      applyCategoryStyles(categoryKey);
+      renderList();
+    }
+
+    // Navigation: Return to 4-Card Home Hub
+    function openHomeHub() {
+      currentView = 'hub';
+      location.hash = '';
+
+      homeHubView.classList.remove('hidden');
+      categoryListView.classList.add('hidden');
+      btnFloatingHome.classList.add('hidden');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Update Chip & Banner Styles for active category
+    function applyCategoryStyles(cat) {
+      // Reset all chips
+      const chips = [
+        { el: chipToss, key: 'toss', activeBg: 'bg-[#3182F6] text-white shadow-sm ring-2 ring-[#3182F6]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
+        { el: chipCoupang, key: 'coupang', activeBg: 'bg-[#E1251B] text-white shadow-sm ring-2 ring-[#E1251B]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
+        { el: chipEssentials, key: 'essentials', activeBg: 'bg-[#059669] text-white shadow-sm ring-2 ring-[#059669]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
+        { el: chipUncle, key: 'uncle_picks', activeBg: 'bg-[#D97706] text-white shadow-sm ring-2 ring-[#D97706]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' }
+      ];
+
+      chips.forEach(({ el, key, activeBg, defaultBg }) => {
+        if (!el) return;
+        if (key === cat) {
+          el.className = `py-1.5 px-3 rounded-xl text-[12px] font-black whitespace-nowrap transition-all shrink-0 flex items-center gap-1 active:scale-95 ${activeBg}`;
+        } else {
+          el.className = `py-1.5 px-3 rounded-xl text-[12px] font-bold whitespace-nowrap transition-all shrink-0 flex items-center gap-1 active:scale-95 ${defaultBg}`;
+        }
+      });
+
+      // Banner update
+      if (cat === 'toss') {
+        tabContextBanner.className = "px-5 py-2.5 bg-blue-50/80 border-b border-blue-100/80 flex items-center justify-between text-[12px] text-[#1B64DA] transition-colors duration-300";
         tabContextIcon.textContent = "🔥";
-        tabContextMsg.innerHTML = "쇼츠 영상의 <strong>[1번~10번]</strong> 번호와 1:1로 매칭됩니다!";
+        tabContextMsg.innerHTML = "쇼츠 영상 속 <strong>[1번~10번]</strong> 하루특가";
         tabContextTag.className = "font-bold text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-md shrink-0";
         tabContextTag.textContent = "오늘 자정 마감";
-      } else {
-        // Coupang Active
-        tabCoupang.className = "relative py-3.5 px-2 flex items-center justify-center gap-1.5 transition-all text-[#E1251B]";
-        tabToss.className = "relative py-3.5 px-2 flex items-center justify-center gap-1.5 transition-all text-stone-400 hover:text-stone-600";
-        indicatorCoupang.className = "absolute bottom-0 left-0 right-0 h-[2.5px] bg-[#E1251B] rounded-t-full transition-all duration-200";
-        indicatorToss.className = "absolute bottom-0 left-0 right-0 h-[2.5px] bg-transparent rounded-t-full transition-all duration-200";
-        badgeCountCoupang.className = "text-[11px] font-extrabold bg-[#FEECEB] text-[#E1251B] px-1.5 py-0.5 rounded-full ml-0.5";
-        badgeCountToss.className = "text-[11px] font-extrabold bg-stone-100 text-stone-500 px-1.5 py-0.5 rounded-full ml-0.5";
-
-        // Banner update
-        tabContextBanner.className = "px-5 py-2.5 bg-red-50/80 border-b border-red-100/70 flex items-center justify-between text-[12px] text-[#C01A11] transition-colors duration-300";
+      } else if (cat === 'coupang') {
+        tabContextBanner.className = "px-5 py-2.5 bg-red-50/80 border-b border-red-100/80 flex items-center justify-between text-[12px] text-[#C01A11] transition-colors duration-300";
         tabContextIcon.textContent = "🚀";
         tabContextMsg.innerHTML = "지금 가장 잘 나가는 <strong>쿠팡 실시간 랭킹 베스트</strong>";
         tabContextTag.className = "font-bold text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded-md shrink-0";
         tabContextTag.textContent = "로켓배송 보장";
+      } else if (cat === 'essentials') {
+        tabContextBanner.className = "px-5 py-2.5 bg-emerald-50/80 border-b border-emerald-100/80 flex items-center justify-between text-[12px] text-[#047857] transition-colors duration-300";
+        tabContextIcon.textContent = "🧼";
+        tabContextMsg.innerHTML = "주부/자취생 필수! <strong>쟁여두는 알뜰 생필품 10선</strong>";
+        tabContextTag.className = "font-bold text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-md shrink-0";
+        tabContextTag.textContent = "쟁여두기 특가";
+      } else if (cat === 'uncle_picks') {
+        tabContextBanner.className = "px-5 py-2.5 bg-amber-50/80 border-b border-amber-100/80 flex items-center justify-between text-[12px] text-[#B45309] transition-colors duration-300";
+        tabContextIcon.textContent = "🧺";
+        tabContextMsg.innerHTML = "삼촌이 직접 먹어보고 써본 <strong>인생 최애 특가템</strong>";
+        tabContextTag.className = "font-bold text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-md shrink-0";
+        tabContextTag.textContent = "삼촌 강력추천";
       }
-
-      renderList();
     }
 
-    // Render list based on currentTab & searchQuery
+    // Get current items
+    function getCurrentCategoryItems() {
+      if (currentCategory === 'toss') return appData.toss_deals || [];
+      if (currentCategory === 'coupang') return appData.coupang_bests || [];
+      if (currentCategory === 'essentials') return appData.essentials || [];
+      if (currentCategory === 'uncle_picks') return appData.uncle_picks || [];
+      return [];
+    }
+
+    // Render list based on currentCategory & searchQuery
     function renderList() {
-      const items = currentTab === 'toss' ? (appData.toss_deals || []) : (appData.coupang_bests || []);
-      
+      const items = getCurrentCategoryItems();
+
       // Filter by search
       const query = searchQuery.trim().toLowerCase();
       let filtered = items;
@@ -526,23 +787,25 @@
 
       let html = '';
       filtered.forEach((item) => {
-        if (currentTab === 'toss') {
+        if (currentCategory === 'toss') {
           html += renderTossCard(item);
-        } else {
+        } else if (currentCategory === 'coupang') {
           html += renderCoupangCard(item);
+        } else if (currentCategory === 'essentials') {
+          html += renderEssentialsCard(item);
+        } else {
+          html += renderUnclePickCard(item);
         }
       });
 
       productListEl.innerHTML = html;
     }
 
-    // Toss Deal Card HTML Template
+    // Card Renderer: Toss
     function renderTossCard(item) {
       const fallbackImg = `https://placehold.co/400x400/FFFDF7/1E3A5F?text=${encodeURIComponent(item.id + '번')}`;
       return `
         <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
-          
-          <!-- Product Thumbnail + Number Badge -->
           <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
             <img 
               src="${item.image_url}" 
@@ -551,12 +814,9 @@
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               onerror="this.onerror=null; this.src='${fallbackImg}';"
             >
-            <!-- YouTube Match Number Badge (Prominent) -->
             <div class="absolute top-1.5 left-1.5 bg-[#3182F6] text-white text-[12px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
               <span>${item.id}번</span>
             </div>
-
-            <!-- Discount/Notice Badge -->
             ${item.badge ? `
               <div class="absolute bottom-1.5 left-1.5 bg-amber-500 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-md shadow-sm">
                 ${escapeHtml(item.badge)}
@@ -564,22 +824,17 @@
             ` : ''}
           </div>
 
-          <!-- Content Details -->
           <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
             <div>
-              <!-- Category / Deal Tag -->
               <div class="flex items-center gap-1.5 mb-1">
                 <span class="text-[11px] font-bold text-[#3182F6] bg-blue-50 px-1.5 py-0.5 rounded">토스 하루특가</span>
                 <span class="text-[11px] text-stone-400">자정 마감</span>
               </div>
-
-              <!-- Product Title (Clean 2-line clamp) -->
               <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
                 ${escapeHtml(item.title)}
               </h3>
             </div>
 
-            <!-- Price & Button -->
             <div class="mt-2 pt-1 border-t border-stone-100 flex items-end justify-between gap-2">
               <div>
                 ${item.original_price ? `
@@ -592,7 +847,6 @@
                 </div>
               </div>
 
-              <!-- Action Link Button -->
               <a 
                 href="${escapeHtml(item.link_url)}" 
                 target="_blank" 
@@ -603,18 +857,15 @@
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
               </a>
             </div>
-
           </div>
         </article>
       `;
     }
 
-    // Coupang Best Card HTML Template
+    // Card Renderer: Coupang
     function renderCoupangCard(item) {
       const fallbackImg = `https://placehold.co/400x400/FFFDF7/E1251B?text=${encodeURIComponent(item.id + '위')}`;
-      
-      // Ranking Badge Styling
-      let rankColor = 'bg-stone-800 text-white';
+      let rankColor = 'bg-[#112F5A] text-white font-bold';
       let rankIcon = '🚀';
       if (item.id === 1) {
         rankColor = 'bg-gradient-to-r from-amber-400 to-amber-500 text-stone-950 font-black';
@@ -625,14 +876,10 @@
       } else if (item.id === 3) {
         rankColor = 'bg-gradient-to-r from-amber-600 to-amber-700 text-white font-black';
         rankIcon = '🥉';
-      } else {
-        rankColor = 'bg-[#112F5A] text-white font-bold';
       }
 
       return `
         <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
-          
-          <!-- Product Thumbnail + Rank Badge -->
           <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
             <img 
               src="${item.image_url}" 
@@ -641,34 +888,26 @@
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               onerror="this.onerror=null; this.src='${fallbackImg}';"
             >
-            <!-- Ranking Badge -->
             <div class="absolute top-1.5 left-1.5 ${rankColor} text-[11px] px-2 py-0.5 rounded-lg shadow-md flex items-center gap-1 tracking-tight">
               <span>${rankIcon}</span>
               <span>${escapeHtml(item.badge || item.id + '위')}</span>
             </div>
-
-            <!-- Rocket Badge -->
             <div class="absolute bottom-1.5 left-1.5 bg-[#E1251B] text-white text-[9px] font-black px-1.5 py-0.5 rounded-md shadow-sm flex items-center gap-0.5">
               <span>🚀 로켓배송</span>
             </div>
           </div>
 
-          <!-- Content Details -->
           <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
             <div>
-              <!-- Coupang Category Tag -->
               <div class="flex items-center gap-1.5 mb-1">
                 <span class="text-[11px] font-bold text-[#E1251B] bg-red-50 px-1.5 py-0.5 rounded">쿠팡 랭킹</span>
                 <span class="text-[11px] text-stone-400">무료배송 혜택</span>
               </div>
-
-              <!-- Product Title -->
               <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
                 ${escapeHtml(item.title)}
               </h3>
             </div>
 
-            <!-- Price & Button -->
             <div class="mt-2 pt-1 border-t border-stone-100 flex items-end justify-between gap-2">
               <div>
                 ${item.original_price ? `
@@ -681,7 +920,6 @@
                 </div>
               </div>
 
-              <!-- Action Link Button -->
               <a 
                 href="${escapeHtml(item.link_url)}" 
                 target="_blank" 
@@ -692,7 +930,128 @@
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
               </a>
             </div>
+          </div>
+        </article>
+      `;
+    }
 
+    // Card Renderer: Essentials
+    function renderEssentialsCard(item) {
+      const fallbackImg = `https://placehold.co/400x400/FFFDF7/059669?text=${encodeURIComponent(item.id + '번')}`;
+      return `
+        <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
+          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
+            <img 
+              src="${item.image_url}" 
+              alt="${escapeHtml(item.title)}" 
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              onerror="this.onerror=null; this.src='${fallbackImg}';"
+            >
+            <div class="absolute top-1.5 left-1.5 bg-[#059669] text-white text-[11px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
+              <span>${item.id}번</span>
+            </div>
+            ${item.badge ? `
+              <div class="absolute bottom-1.5 left-1.5 bg-emerald-600 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-md shadow-sm">
+                ${escapeHtml(item.badge)}
+              </div>
+            ` : ''}
+          </div>
+
+          <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
+            <div>
+              <div class="flex items-center gap-1.5 mb-1">
+                <span class="text-[11px] font-bold text-[#059669] bg-emerald-50 px-1.5 py-0.5 rounded">알뜰 생필품</span>
+                <span class="text-[11px] text-stone-400">쟁여두기</span>
+              </div>
+              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
+                ${escapeHtml(item.title)}
+              </h3>
+            </div>
+
+            <div class="mt-2 pt-1 border-t border-stone-100 flex items-end justify-between gap-2">
+              <div>
+                ${item.original_price ? `
+                  <span class="block text-[11px] text-stone-400 line-through leading-none">
+                    ${escapeHtml(item.original_price)}
+                  </span>
+                ` : ''}
+                <div class="text-[17px] font-black text-[#059669] tracking-tight leading-tight mt-0.5">
+                  ${escapeHtml(item.price_label || '특가 확인')}
+                </div>
+              </div>
+
+              <a 
+                href="${escapeHtml(item.link_url)}" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inline-flex items-center gap-1 px-3 py-2 bg-[#059669] hover:bg-[#047857] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
+              >
+                <span>알뜰구매</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    // Card Renderer: Uncle Picks
+    function renderUnclePickCard(item) {
+      const fallbackImg = `https://placehold.co/400x400/FFFDF7/D97706?text=${encodeURIComponent(item.id + '번')}`;
+      return `
+        <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
+          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
+            <img 
+              src="${item.image_url}" 
+              alt="${escapeHtml(item.title)}" 
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              onerror="this.onerror=null; this.src='${fallbackImg}';"
+            >
+            <div class="absolute top-1.5 left-1.5 bg-[#D97706] text-white text-[11px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
+              <span>${item.id}번</span>
+            </div>
+            ${item.badge ? `
+              <div class="absolute bottom-1.5 left-1.5 bg-amber-600 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-md shadow-sm">
+                ${escapeHtml(item.badge)}
+              </div>
+            ` : ''}
+          </div>
+
+          <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
+            <div>
+              <div class="flex items-center gap-1.5 mb-1">
+                <span class="text-[11px] font-bold text-[#D97706] bg-amber-50 px-1.5 py-0.5 rounded">삼촌 강력추천</span>
+                <span class="text-[11px] text-stone-400">후기검증</span>
+              </div>
+              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
+                ${escapeHtml(item.title)}
+              </h3>
+            </div>
+
+            <div class="mt-2 pt-1 border-t border-stone-100 flex items-end justify-between gap-2">
+              <div>
+                ${item.original_price ? `
+                  <span class="block text-[11px] text-stone-400 line-through leading-none">
+                    ${escapeHtml(item.original_price)}
+                  </span>
+                ` : ''}
+                <div class="text-[17px] font-black text-[#D97706] tracking-tight leading-tight mt-0.5">
+                  ${escapeHtml(item.price_label || '특가 확인')}
+                </div>
+              </div>
+
+              <a 
+                href="${escapeHtml(item.link_url)}" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inline-flex items-center gap-1 px-3 py-2 bg-[#D97706] hover:bg-[#B45309] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
+              >
+                <span>삼촌특가</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
           </div>
         </article>
       `;
@@ -709,15 +1068,35 @@
         .replace(/'/g, '&#039;');
     }
 
+    // Hash routing for mobile back button & direct links
+    function handleHashRouting() {
+      const hash = location.hash.replace('#', '');
+      if (['toss', 'coupang', 'essentials', 'uncle_picks'].includes(hash)) {
+        openCategory(hash);
+      } else {
+        openHomeHub();
+      }
+    }
+
+    window.addEventListener('hashchange', () => {
+      handleHashRouting();
+    });
+
     // Search input handler
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value;
       if (searchQuery.trim()) {
         btnClearSearch.classList.remove('hidden');
+        // If currently in hub, open currentCategory or toss
+        if (currentView === 'hub') {
+          openCategory(currentCategory || 'toss');
+        }
       } else {
         btnClearSearch.classList.add('hidden');
       }
-      renderList();
+      if (currentView === 'category') {
+        renderList();
+      }
     });
 
     btnClearSearch.addEventListener('click', () => {
@@ -728,7 +1107,9 @@
       searchInput.value = '';
       searchQuery = '';
       btnClearSearch.classList.add('hidden');
-      renderList();
+      if (currentView === 'category') {
+        renderList();
+      }
       searchInput.focus();
     }
 
@@ -746,8 +1127,8 @@
     // Share action
     document.getElementById('btn-share-top').addEventListener('click', async () => {
       const shareData = {
-        title: '특가캐주는삼촌 | 매일 아침 8시 알뜰 장바구니',
-        text: '유튜브 쇼츠 속 화제의 알뜰 특가 모음! [1번~10번] 상품 즉시 확인하기',
+        title: '특가 캐주는 삼촌 | 매일 아침 7시 알뜰 장바구니',
+        text: '유튜브 쇼츠 속 화제의 알뜰 특가 모음! 토스 하루특가 / 쿠팡 베스트 / 생필품 / 삼촌픽',
         url: window.location.href
       };
 
@@ -794,7 +1175,7 @@
 
     // Scroll listener for Back-to-top button
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 250) {
         btnScrollTop.classList.remove('hidden');
       } else {
         btnScrollTop.classList.add('hidden');
@@ -807,4 +1188,5 @@
     });
   </script>
 </body>
+
 </html>
