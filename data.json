@@ -3,93 +3,103 @@
   "toss_deals": [
     {
       "id": 1,
-      "badge": "오늘마감",
-      "title": "구첩반찬 무말랭이무침 1kg",
-      "price_label": "4천원대",
-      "original_price": "9,900원",
-      "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "53% 할인",
+      "title": "국내산 햇 고바멸치",
+      "price_label": "12,890원",
+      "original_price": "27,900원",
+      "discount_rate": 53,
+      "image_url": "https://shopping.toss.im/live/taca/ai/NDFmZTA3/QXNzMTRxcm43Wm5FTm1BeXZVVkNqNU9Rd213cGU1OTNrTzh3TDIrVWpIND0.png",
+      "link_url": "https://toss.im/_m/flkLWO6b"
     },
     {
       "id": 2,
-      "badge": "한정수량",
-      "title": "김삼두 장인 두부야채 어묵바 5봉",
-      "price_label": "6천원대",
-      "original_price": "14,900원",
-      "image_url": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&auto=format&fit=crop&q=80",
+      "badge": "43% 할인",
+      "title": "구첩반찬 무말랭이무침",
+      "price_label": "4,990원",
+      "original_price": "8,900원",
+      "discount_rate": 43,
+      "image_url": "https://shopping.toss.im/live/taca/ai/ZGIyYWI3/Y2RPWnhzODJ6WmptWVptYnlzbVpNMHpTZVpMNTRqTSt3Y0phT1IrT01yVT0.png",
       "link_url": "https://toss.im/_m/DFnW2YCe"
     },
     {
       "id": 3,
-      "badge": "하루특가",
-      "title": "리빙아트 실리콘 조리도구 6종세트",
-      "price_label": "8천원대",
-      "original_price": "19,800원",
-      "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "80% 할인",
+      "title": "리빙아트 실리콘 조리도구",
+      "price_label": "9,900원",
+      "original_price": "50,000원",
+      "discount_rate": 80,
+      "image_url": "https://shopping.toss.im/live/taca/ai/v2/YzQ5MTRk/QUxLR3pyU3pNL0xHMlR6YkxOYzhlYVJiUzdMVFQzbXRiZGFTVWx2a3RDNWI.png",
+      "link_url": "https://toss.im/_m/TJkxhJXb"
     },
     {
       "id": 4,
-      "badge": "인기폭발",
-      "title": "랑카스 100% 무첨가 땅콩버터 2개",
-      "price_label": "9천원대",
-      "original_price": "18,000원",
-      "image_url": "https://images.unsplash.com/photo-1568471173242-461f0a730452?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "41% 할인",
+      "title": "김삼두 장인 두부야채 어묵바",
+      "price_label": "9,900원",
+      "original_price": "16,900원",
+      "discount_rate": 41,
+      "image_url": "https://shopping.toss.im/live/temp/2026-06-05/04ca20ba-b4fb-4b0a-b6bb-1306650cd638.jpeg",
+      "link_url": "https://toss.im/_m/1DrhfRve"
     },
     {
       "id": 5,
-      "badge": "오늘마감",
-      "title": "리스앤리드 비건 엑소좀 앰플 30ml",
-      "price_label": "1만 1천원대",
-      "original_price": "29,000원",
-      "image_url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "70% 할인",
+      "title": "랑카스 땅콩버터",
+      "price_label": "5,900원",
+      "original_price": "19,800원",
+      "discount_rate": 70,
+      "image_url": "https://shopping.toss.im/live/temp/2026-09-01/a67b8e35-a819-4240-8b46-584c438a7137.jpeg",
+      "link_url": "https://toss.im/_m/1cTxniLf"
     },
     {
       "id": 6,
-      "badge": "단독특가",
-      "title": "제주 유기농 양배추즙 100ml 30포",
-      "price_label": "1만 2천원대",
-      "original_price": "25,000원",
-      "image_url": "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "83% 할인",
+      "title": "리스앤리드 비건 엑소좀 앰플",
+      "price_label": "6,900원",
+      "original_price": "42,000원",
+      "discount_rate": 83,
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-04/6010e66e-eb67-40b4-ab83-beda6a45a762.jpeg",
+      "link_url": "https://toss.im/_m/vD2jbagi"
     },
     {
       "id": 7,
-      "badge": "한정수량",
-      "title": "국내산 햇 서리태 콩물두유 190ml 24팩",
-      "price_label": "1만 4천원대",
-      "original_price": "28,900원",
-      "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "36% 할인",
+      "title": "마포나루터 돼지목살왕구이",
+      "price_label": "13,900원",
+      "original_price": "21,900원",
+      "discount_rate": 36,
+      "image_url": "https://shopping.toss.im/live/taca/ai/ZDJkNTQz/WHIrYmkydUdhOFRjaEc0bGRBTm9FdExleGhkZFB4eG9OZGprMkdocVp6VT0.png",
+      "link_url": "https://toss.im/_m/XABiY1Lk"
     },
     {
       "id": 8,
-      "badge": "하루특가",
-      "title": "도드람 한돈 칼집 삼겹살 500g 2팩",
-      "price_label": "1만 6천원대",
-      "original_price": "31,000원",
-      "image_url": "https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "54% 할인",
+      "title": "불도깨비 칠리 치즈스틱",
+      "price_label": "9,900원",
+      "original_price": "21,900원",
+      "discount_rate": 54,
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-24/eb34e696-dad0-4ba7-af96-0fc35170de17.png",
+      "link_url": "https://toss.im/_m/nCpG6t0m"
     },
     {
       "id": 9,
-      "badge": "추천상품",
-      "title": "호주산 와규 윗등심 구이용 300g",
-      "price_label": "1만 5천원대",
-      "original_price": "27,500원",
-      "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "34% 할인",
+      "title": "냉동 흰다리새우살",
+      "price_label": "12,800원",
+      "original_price": "19,500원",
+      "discount_rate": 34,
+      "image_url": "https://shopping.toss.im/live/taca/ai/MTllZDNm/QTR6RmhFcGNPQW1hRkUzbk5sUGJpQ1NhMzIydHROall4V0dDSndWTHIvND0.png",
+      "link_url": "https://toss.im/_m/168nPcgn"
     },
     {
       "id": 10,
-      "badge": "오늘마감",
-      "title": "저당 고단백 수제 그릭요거트 500g",
-      "price_label": "7천원대",
-      "original_price": "13,500원",
-      "image_url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
+      "badge": "44% 할인",
+      "title": "호정가 옛날도나스",
+      "price_label": "8,900원",
+      "original_price": "16,000원",
+      "discount_rate": 44,
+      "image_url": "https://shopping.toss.im/live/taca/ai/NWU3MDU2/UHBTbmFldHRybnkwbkcyd1dUejE1R081RXNXdXRGckhZa0hWWHI2QlZWST0.png",
+      "link_url": "https://toss.im/_m/da9Y2CQo"
     }
   ],
   "coupang_bests": [
