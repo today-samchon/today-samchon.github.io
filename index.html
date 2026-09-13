@@ -104,6 +104,24 @@
     .story-ring-gradient {
       background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     }
+
+    /* Marquee Flowing Text Animation */
+    @keyframes marqueeFlow {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .animate-marquee {
+      display: inline-flex;
+      white-space: nowrap;
+      animation: marqueeFlow 25s linear infinite;
+    }
+    .animate-marquee:hover, .animate-marquee:active {
+      animation-play-state: paused;
+    }
   </style>
 </head>
 <body class="bg-stone-200 text-stone-900 min-h-screen flex justify-center selection:bg-amber-100 selection:text-amber-900 antialiased">
@@ -111,17 +129,34 @@
   <!-- Main Mobile Container -->
   <div class="w-full max-w-md min-h-screen bg-[#FFFDF7] shadow-2xl relative flex flex-col pb-24 border-x border-stone-200/60">
     
-    <!-- TOP NOTIFICATION BANNER (INSTAGRAM HIGHLIGHT FEEL) -->
-    <aside class="bg-stone-900 text-white text-[12px] py-1.5 px-4 flex items-center justify-between font-medium tracking-tight" aria-label="상단 쇼츠 알림">
-      <div class="flex items-center gap-1.5 truncate">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        <span class="text-stone-300">유튜브 쇼츠 연동</span>
-        <span class="text-amber-300 font-bold truncate">영상 속 [번호]로 바로 찾기!</span>
+    <!-- TOP FLOWING LEGAL DISCLOSURE BANNER (MARQUEE TICKER) -->
+    <aside class="bg-stone-900 text-stone-300 text-[11px] py-2 px-3 flex items-center overflow-hidden relative select-none border-b border-stone-800" aria-label="공정위 수수료 제공 문구 안내">
+      <!-- Subtle Left Fade Gradient -->
+      <div class="absolute left-0 top-0 bottom-0 w-3 bg-gradient-to-r from-stone-900 to-transparent z-10 pointer-events-none"></div>
+
+      <!-- Flowing Marquee Track -->
+      <div class="flex-1 overflow-hidden relative">
+        <div class="animate-marquee flex items-center gap-8 whitespace-nowrap font-medium tracking-tight">
+          <span class="flex items-center gap-1.5 text-stone-300">
+            <span class="text-amber-400 font-bold">※</span>
+            <span>본 페이지는 토스 쉐어링크 및 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.</span>
+          </span>
+          <span class="text-stone-600 font-bold text-xs">•</span>
+          <span class="flex items-center gap-1.5 text-stone-300">
+            <span class="text-amber-400 font-bold">※</span>
+            <span>본 페이지는 토스 쉐어링크 및 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.</span>
+          </span>
+          <span class="text-stone-600 font-bold text-xs">•</span>
+        </div>
       </div>
-      <button id="btn-share-top" class="text-stone-300 hover:text-white flex items-center gap-1 shrink-0 text-[11px] bg-stone-800 px-2 py-0.5 rounded-full transition active:scale-95">
-        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
-        공유
-      </button>
+
+      <!-- Right Fade & Share Button -->
+      <div class="relative z-10 flex items-center pl-2.5 bg-stone-900 shrink-0">
+        <button id="btn-share-top" class="text-stone-300 hover:text-white flex items-center gap-1 text-[11px] font-semibold bg-stone-800 hover:bg-stone-700 px-2.5 py-0.5 rounded-full transition active:scale-95 shadow-sm">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          <span>공유</span>
+        </button>
+      </div>
     </aside>
 
     <!-- HEADER: INSTAGRAM PROFILE SECTION -->
