@@ -1,18 +1,4 @@
 {
-<<<<<<< HEAD
-  "updated_at": "2026-09-15 22:48",
-  "toss_deals": [
-    {
-      "id": 1,
-      "taca_item_id": 2625603915,
-      "badge": "33% 할인",
-      "title": "제주 삼다수",
-      "price_label": "9,900원",
-      "original_price": "14,900원",
-      "discount_rate": 33,
-      "image_url": "https://shopping.toss.im/live/temp/2026-09-01/c380e43c-eb46-4f90-b03b-a0cdf03aedb4.jpeg",
-      "link_url": "https://toss.im/_m/Xkt5qr4l"
-=======
   "updated_at": "2026-09-16 19:03",
   "toss_deals": [
     {
@@ -36,7 +22,6 @@
       "discount_rate": 57,
       "image_url": "https://shopping.toss.im/live/temp/2026-09-11/9bb755c2-0773-40a6-890a-1b36ad35810c.jpeg",
       "link_url": "https://toss.im/_m/bY5sYg92"
->>>>>>> e46c18aff46af8bbfc870bcdbe8d43001b7129b0
     },
     {
       "id": 2,
@@ -51,67 +36,6 @@
     },
     {
       "id": 3,
-<<<<<<< HEAD
-      "taca_item_id": 160417831,
-      "badge": "71% 할인",
-      "title": "쟈니베어 일회용 수세미",
-      "price_label": "4,490원",
-      "original_price": "15,800원",
-      "discount_rate": 71,
-      "image_url": "https://shopping.toss.im/live/temp/2026-06-15/f3aaa8a2-871e-4215-b4af-c56cb3440548.png",
-      "link_url": "https://toss.im/_m/HV8RCsns"
-    },
-    {
-      "id": 4,
-      "taca_item_id": 36469633,
-      "badge": "38% 할인",
-      "title": "스파클 생수 무라벨",
-      "price_label": "10,990원",
-      "original_price": "18,000원",
-      "discount_rate": 38,
-      "image_url": "https://shopping.toss.im/live/taca/ai/ODgyYWFi/UEhQZ2NRT1BNWS9zZk1aeEg0ZGpqdkE4K0hFZm9UdU84Tnk4Y1I3UjU2RT0.png",
-      "link_url": "https://toss.im/_m/bBumGzfw"
-    },
-    {
-      "id": 5,
-      "taca_item_id": 1535578563,
-      "badge": "16% 할인",
-      "title": "농심",
-      "price_label": "14,058원",
-      "original_price": "16,830원",
-      "discount_rate": 16,
-      "image_url": "https://shopping.toss.im/live/taca/ai/MDk3YzY0/QU16UDhGeGVxMWU3L2VaZSt6dXdWNnV6RkdqUk94QzFKT2hVa0FHbFJHLys.png",
-      "link_url": "https://toss.im/_m/9H3rXAjr"
-    },
-    {
-      "id": 6,
-      "taca_item_id": 363403601,
-      "badge": "50% 할인",
-      "title": "해성 완도 염장미역줄기",
-      "price_label": "7,890원",
-      "original_price": "12,800원",
-      "discount_rate": 50,
-      "image_url": "https://shopping.toss.im/live/taca/ai/MDBlY2Zm/QU1FYzljZFdjS2dVaXgxeUxBTHlMOEJ3V3VxdnZoNFM4bWs4Zy82dFFYUXY.png",
-      "link_url": "https://toss.im/_m/TaXRm1fB"
-    },
-    {
-      "id": 7,
-      "taca_item_id": 160739935,
-      "badge": "55% 할인",
-      "title": "동아오츠카 나랑드사이다 제로",
-      "price_label": "11,498원",
-      "original_price": "26,000원",
-      "discount_rate": 55,
-      "image_url": "https://shopping.toss.im/live/temp/2025-08-16/583742ce-0d94-4d21-b53f-341a22dc0bc6.jpeg",
-      "link_url": "https://toss.im/_m/1dxEl5WA"
-    },
-    {
-      "id": 8,
-      "taca_item_id": 2634603667,
-      "badge": "40% 할인",
-      "title": "제스프리 썬 골드키위",
-      "price_label": "8,900원",
-=======
       "taca_item_id": 2311809677,
       "badge": "57% 할인",
       "title": "초고농축 피죤 체리블라썸 섬유유연제",
@@ -445,7 +369,6 @@
       "badge": "삼촌간식",
       "title": "김삼두 장인 두부야채 어묵바 5봉",
       "price_label": "6천원대",
->>>>>>> e46c18aff46af8bbfc870bcdbe8d43001b7129b0
       "original_price": "14,900원",
       "discount_rate": 40,
       "image_url": "https://shopping.toss.im/live/temp/2026-04-24/e98af57f-712c-4b77-8353-ed42ee1545fb.jpeg",
