@@ -358,7 +358,7 @@
         </article>
 
         <!-- CARD 3: 토스 베스트 상품 -->
-        <article onclick="openCategory('toss_best')"
+        <article onclick="openCategory('toss_bests')"
           class="bg-gradient-to-b from-[#EEF4FF] via-white to-white border-2 border-[#0055D6]/40 hover:border-[#0055D6] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
           <div>
             <div class="flex items-center justify-between gap-1">
@@ -458,7 +458,7 @@
             </button>
 
             <!-- Chip 3: 토스 베스트 -->
-            <button id="chip-toss_best" onclick="switchCategory('toss_best')"
+            <button id="chip-toss_bests" onclick="switchCategory('toss_bests')"
               class="py-1.5 px-2.5 rounded-xl text-[12px] font-extrabold whitespace-nowrap transition-all shrink-0 flex items-center gap-1">
               <span>🏆</span>
               <span>토스 베스트</span>
@@ -616,7 +616,7 @@
       uncle_picks: []
     };
     let currentView = 'hub'; // 'hub' or 'category'
-    let currentCategory = 'toss'; // 'toss', 'coupang', 'toss_best', 'uncle_picks'
+    let currentCategory = 'toss'; // 'toss', 'coupang', 'toss_bests', 'uncle_picks'
     let searchQuery = '';
 
     // Views
@@ -626,13 +626,13 @@
     // Hub count badges
     const hubCountToss = document.getElementById('hub-count-toss');
     const hubCountCoupang = document.getElementById('hub-count-coupang');
-    const hubCountTossBest = document.getElementById('hub-count-toss-best') || document.getElementById('hub-count-essentials');
+    const hubCountTossBest = document.getElementById('hub-count-toss-best');
     const hubCountUncle = document.getElementById('hub-count-uncle');
 
     // Category chips
     const chipToss = document.getElementById('chip-toss');
     const chipCoupang = document.getElementById('chip-coupang');
-    const chipTossBest = document.getElementById('chip-toss_best') || document.getElementById('chip-essentials');
+    const chipTossBest = document.getElementById('chip-toss_bests');
     const chipUncle = document.getElementById('chip-uncle_picks');
 
     // Context banner elements
@@ -678,7 +678,7 @@
         // Update Hub counts
         if (hubCountToss) hubCountToss.textContent = (appData.toss_deals || []).length + '개 특가';
         if (hubCountCoupang) hubCountCoupang.textContent = 'TOP ' + (appData.coupang_bests || []).length;
-        const tossBestItems = appData.toss_bests || appData.toss_best || appData.essentials || [];
+        const tossBestItems = appData.toss_bests || [];
         if (hubCountTossBest) hubCountTossBest.textContent = tossBestItems.length > 0 ? 'TOP ' + tossBestItems.length : '베스트 10선';
         if (hubCountUncle) hubCountUncle.textContent = (appData.uncle_picks || []).length + '개 추천템';
 
@@ -736,13 +736,13 @@
       const chips = [
         { el: chipToss, key: 'toss', activeBg: 'bg-[#3182F6] text-white shadow-sm ring-2 ring-[#3182F6]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
         { el: chipCoupang, key: 'coupang', activeBg: 'bg-[#E1251B] text-white shadow-sm ring-2 ring-[#E1251B]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
-        { el: chipTossBest, key: 'toss_best', activeBg: 'bg-[#0055D6] text-white shadow-sm ring-2 ring-[#0055D6]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
+        { el: chipTossBest, key: 'toss_bests', activeBg: 'bg-[#0055D6] text-white shadow-sm ring-2 ring-[#0055D6]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
         { el: chipUncle, key: 'uncle_picks', activeBg: 'bg-[#D97706] text-white shadow-sm ring-2 ring-[#D97706]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' }
       ];
 
       chips.forEach(({ el, key, activeBg, defaultBg }) => {
         if (!el) return;
-        const isSelected = (key === cat) || (key === 'toss_best' && cat === 'essentials');
+        const isSelected = (key === cat);
         if (isSelected) {
           el.className = `py-1.5 px-3 rounded-xl text-[12px] font-black whitespace-nowrap transition-all shrink-0 flex items-center gap-1 active:scale-95 ${activeBg}`;
         } else {
@@ -763,7 +763,7 @@
         tabContextMsg.innerHTML = "지금 가장 잘 나가는 <strong>쿠팡 실시간 랭킹 베스트</strong>";
         tabContextTag.className = "font-bold text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded-md shrink-0";
         tabContextTag.textContent = "로켓배송 보장";
-      } else if (cat === 'toss_best' || cat === 'essentials') {
+      } else if (cat === 'toss_bests') {
         tabContextBanner.className = "px-5 py-2.5 bg-blue-50/90 border-b border-blue-200/80 flex items-center justify-between text-[12px] text-[#0055D6] transition-colors duration-300";
         tabContextIcon.textContent = "🏆";
         tabContextMsg.innerHTML = "토스 쇼핑 실시간 인기! <strong>토스 베스트 랭킹 TOP 10</strong>";
@@ -782,7 +782,7 @@
     function getCurrentCategoryItems() {
       if (currentCategory === 'toss') return appData.toss_deals || [];
       if (currentCategory === 'coupang') return appData.coupang_bests || [];
-      if (currentCategory === 'toss_best' || currentCategory === 'essentials') return appData.toss_bests || appData.toss_best || appData.essentials || [];
+      if (currentCategory === 'toss_bests') return appData.toss_bests || [];
       if (currentCategory === 'uncle_picks') return appData.uncle_picks || [];
       return [];
     }
@@ -817,7 +817,7 @@
           html += renderTossCard(item);
         } else if (currentCategory === 'coupang') {
           html += renderCoupangCard(item);
-        } else if (currentCategory === 'toss_best' || currentCategory === 'essentials') {
+        } else if (currentCategory === 'toss_bests') {
           html += renderTossBestCard(item);
         } else {
           html += renderUnclePickCard(item);
@@ -1114,8 +1114,8 @@
     // Hash routing for mobile back button & direct links
     function handleHashRouting() {
       const hash = location.hash.replace('#', '');
-      if (['toss', 'coupang', 'toss_best', 'essentials', 'uncle_picks'].includes(hash)) {
-        openCategory(hash === 'essentials' ? 'toss_best' : hash);
+      if (['toss', 'coupang', 'toss_bests', 'uncle_picks'].includes(hash)) {
+        openCategory(hash);
       } else {
         openHomeHub();
       }

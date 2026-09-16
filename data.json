@@ -124,7 +124,7 @@
     }
   ],
   "coupang_bests": [],
-  "toss_best": [
+  "toss_bests": [
     {
       "id": 1,
       "taca_item_id": 271983315,
@@ -236,75 +236,5 @@
       "link_url": "https://toss.im/_m/5UjBI9Hu"
     }
   ],
-  "essentials": [],
-  "uncle_picks": [
-    {
-      "id": 1,
-      "badge": "삼촌원픽",
-      "title": "사리원 전통 소불고기 4팩",
-      "price_label": "1만 3천원대",
-      "original_price": "24,000원",
-      "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample1"
-    },
-    {
-      "id": 2,
-      "badge": "밥도둑인정",
-      "title": "구첩반찬 무말랭이무침 1kg",
-      "price_label": "4천원대",
-      "original_price": "9,900원",
-      "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
-    },
-    {
-      "id": 3,
-      "badge": "피부특효",
-      "title": "리스앤리드 비건 엑소좀 앰플 30ml",
-      "price_label": "1만 1천원대",
-      "original_price": "29,000원",
-      "image_url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
-    },
-    {
-      "id": 4,
-      "badge": "고소함끝판",
-      "title": "랑카스 100% 무첨가 땅콩버터 2개",
-      "price_label": "9천원대",
-      "original_price": "18,000원",
-      "image_url": "https://images.unsplash.com/photo-1568471173242-461f0a730452?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/DFnW2YCe"
-    },
-    {
-      "id": 5,
-      "badge": "삼촌간식",
-      "title": "김삼두 장인 두부야채 어묵바 5봉",
-      "price_label": "6천원대",
-      "original_price": "14,900원",
-      "discount_rate": 40,
-      "image_url": "https://shopping.toss.im/live/temp/2026-04-24/e98af57f-712c-4b77-8353-ed42ee1545fb.jpeg",
-      "link_url": "https://toss.im/_m/HkS6Cz11"
-    },
-    {
-      "id": 9,
-      "taca_item_id": 120064193,
-      "badge": "45% 할인",
-      "title": "자동회전냄비",
-      "price_label": "65,900원",
-      "original_price": "119,900원",
-      "discount_rate": 45,
-      "image_url": "https://shopping.toss.im/live/taca/ai/ZDI0NzBl/WGJiTXdlWTdtNHl4em01bHp6SHN4dUdtbHh2OG1UTWhUODRiR1Rtc3pPWT0.png",
-      "link_url": "https://toss.im/_m/9lK9ryU1"
-    },
-    {
-      "id": 10,
-      "taca_item_id": 87578957,
-      "badge": "50% 할인",
-      "title": "머그바 마늘 근위볶음",
-      "price_label": "9,900원",
-      "original_price": "19,900원",
-      "discount_rate": 50,
-      "image_url": "https://shopping.toss.im/live/taca/ai/MDVjODhk/ZVFMQ05FaHRMc01UL2pOSmJwRnRPMnZRZXBidWdPT1ppd1BqRUtWSGhHTT0.png",
-      "link_url": "https://toss.im/_m/HcZMqHE3"
-    }
-  ]
+  "uncle_picks": []
 }
