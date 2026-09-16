@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16 00:08",
+  "updated_at": "2026-09-16 19:03",
   "toss_deals": [
     {
       "id": 1,
@@ -115,93 +115,113 @@
   "coupang_bests": [
     {
       "id": 1,
-      "badge": "판매 1위",
-      "title": "사리원 소불고기 4팩",
-      "price_label": "1만 3천원대",
-      "original_price": "24,000원",
-      "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample1"
+      "taca_item_id": 271983315,
+      "badge": "1위",
+      "title": "산과들에 원데이 발란스 그린라벨",
+      "price_label": "7,630원",
+      "original_price": "16,000원",
+      "discount_rate": 52,
+      "image_url": "https://shopping.toss.im/live/taca/ai/MmNlNjFi/QUszS3g4YldOeXgvK2x4K0ZsOFlzbm1CSEsxclpHUlhvVld4TXBXNkJQVk8.png",
+      "link_url": "https://toss.im/_m/RSXI0Ddi"
     },
     {
       "id": 2,
-      "badge": "베스트 2위",
-      "title": "곰곰 국내산 1등급 우유 1L 2개",
-      "price_label": "3천원대",
-      "original_price": "5,200원",
-      "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample2"
+      "taca_item_id": 446375191,
+      "badge": "2위",
+      "title": "맛꾼 구운란",
+      "price_label": "7,400원",
+      "original_price": "19,900원",
+      "discount_rate": 62,
+      "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
+      "link_url": "https://toss.im/_m/Ndic61Ub"
     },
     {
       "id": 3,
-      "badge": "베스트 3위",
-      "title": "동원 샘물 2L 12병 (무료배송)",
-      "price_label": "7천원대",
-      "original_price": "11,800원",
-      "image_url": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample3"
+      "taca_item_id": 146304027,
+      "badge": "3위",
+      "title": "수뜰리에 클린 퍼퓸 포밍 핸드 워시",
+      "price_label": "2,490원",
+      "original_price": "39,600원",
+      "discount_rate": 93,
+      "image_url": "https://shopping.toss.im/live/temp/2025-07-23/d282d6f9-2583-4c2a-84c2-6927db02a36a.jpeg",
+      "link_url": "https://toss.im/_m/3l4KJKd8"
     },
     {
       "id": 4,
-      "badge": "인기 4위",
-      "title": "햇반 백미밥 210g 24개 번들",
-      "price_label": "1만 8천원대",
-      "original_price": "26,000원",
-      "image_url": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample4"
+      "taca_item_id": 2278446229,
+      "badge": "4위",
+      "title": "을지로 연탄불고기식 돼지불고기",
+      "price_label": "7,990원",
+      "original_price": "16,000원",
+      "discount_rate": 50,
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-27/6fb1bb32-205c-4951-a2d8-18f8c132d76f.jpeg",
+      "link_url": "https://toss.im/_m/R3T5n4tj"
     },
     {
       "id": 5,
-      "badge": "인기 5위",
-      "title": "스팸 클래식 200g 10캔 세트",
-      "price_label": "1만 9천원대",
-      "original_price": "32,000원",
-      "image_url": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample5"
+      "taca_item_id": 161372869,
+      "badge": "5위",
+      "title": "알참참 구운계란 대란",
+      "price_label": "6,990원",
+      "original_price": "18,600원",
+      "discount_rate": 62,
+      "image_url": "https://shopping.toss.im/live/taca/ai/NGMwNTI2/QU9FcExVR2Y2OHZyYlZYV3BYeXhyUlE5Si90a2tWU20wNFZVcjFxVlVWYXQ.png",
+      "link_url": "https://toss.im/_m/Z52hhvIk"
     },
     {
       "id": 6,
-      "badge": "인기 6위",
-      "title": "비비고 왕교자 만두 1.05kg 2봉",
-      "price_label": "1만 4천원대",
-      "original_price": "21,000원",
-      "image_url": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample6"
+      "taca_item_id": 135260245,
+      "badge": "6위",
+      "title": "롯데칠성음료 펩시 제로슈거 라임",
+      "price_label": "9,990원",
+      "original_price": "17,900원",
+      "discount_rate": 44,
+      "image_url": "https://shopping.toss.im/live/taca/ai/YTI5M2Zm/QU9LVVlwd3p2NzlCdld1TVk5enZudUZXcTFFcnN4Q3JuS3ZVUUw2dlZKOWg.png",
+      "link_url": "https://toss.im/_m/LxoV4eIp"
     },
     {
       "id": 7,
-      "badge": "인기 7위",
-      "title": "코디 3겹 데코 순수 천연펄프 30롤",
-      "price_label": "1만 1천원대",
-      "original_price": "18,900원",
-      "image_url": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample7"
+      "taca_item_id": 162207275,
+      "badge": "7위",
+      "title": "광양 돼지 왕구이",
+      "price_label": "8,000원",
+      "original_price": "22,900원",
+      "discount_rate": 65,
+      "image_url": "https://shopping.toss.im/live/taca/ai/MzBlYzQ0/WC9VT3ZSem9RVFNjRy9pcHg1bzhlWkdOV0dLTFZJUHRobkowUlgwNDF0WT0.png",
+      "link_url": "https://toss.im/_m/HUxpSEXq"
     },
     {
       "id": 8,
-      "badge": "인기 8위",
-      "title": "다우니 섬유유연제 베리베리 1L 3개",
-      "price_label": "1만 3천원대",
-      "original_price": "22,000원",
-      "image_url": "https://images.unsplash.com/photo-1585670210693-e7fdd16b142e?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample8"
+      "taca_item_id": 119672207,
+      "badge": "8위",
+      "title": "더건강플러스 엑스트라버진 올리브오일",
+      "price_label": "8,900원",
+      "original_price": "39,800원",
+      "discount_rate": 77,
+      "image_url": "https://shopping.toss.im/live/temp/2026-06-05/28f63f1a-246e-4e36-82ad-12f0fbb50755.jpeg",
+      "link_url": "https://toss.im/_m/NLDhH5ds"
     },
     {
       "id": 9,
-      "badge": "인기 9위",
-      "title": "네스카페 수프리모 커피믹스 180T",
-      "price_label": "1만 7천원대",
-      "original_price": "25,800원",
-      "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample9"
+      "taca_item_id": 423535267,
+      "badge": "9위",
+      "title": "꿀이구마 호박 찹쌀 약과",
+      "price_label": "4,990원",
+      "original_price": "13,900원",
+      "discount_rate": 64,
+      "image_url": "https://shopping.toss.im/live/taca/ai/MWUxYTU0/QUxTbXp3NTArZHpoNGVPZlBUU3o1NW5TN1RqMnM5elljZU9ZNmNGbzREY08.png",
+      "link_url": "https://toss.im/_m/Zb9506an"
     },
     {
       "id": 10,
-      "badge": "인기 10위",
-      "title": "크리넥스 안심 키친타월 120매 8롤",
-      "price_label": "6천원대",
-      "original_price": "10,500원",
-      "image_url": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://link.coupang.com/a/sample10"
+      "taca_item_id": 2650897313,
+      "badge": "10위",
+      "title": "수뜰리에 쉰내제거 딥클린 세탁세제",
+      "price_label": "4,620원",
+      "original_price": "39,600원",
+      "discount_rate": 88,
+      "image_url": "https://shopping.toss.im/live/temp/2026-09-09/fa233394-2b3e-411b-950f-ee1236fecce2.png",
+      "link_url": "https://toss.im/_m/5UjBI9Hu"
     }
   ],
   "essentials": [
