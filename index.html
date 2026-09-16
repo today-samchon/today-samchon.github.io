@@ -10,7 +10,7 @@
   <!-- SEO & Social Meta Tags -->
   <meta name="description" content="매일 00시 10분 갱신! 유튜브 쇼츠 영상 속 그 상품! 삼촌이 발품 팔아 건져온 토스 하루특가 & 쿠팡 베스트 알뜰 장바구니 링크 모음">
   <meta property="og:title" content="특가 캐주는 삼촌 | 매일 00시 갱신 오늘의 알뜰 장바구니">
-  <meta property="og:description" content="유튜브 영상 속 [1번~10번] 상품 즉시 확인하기! 토스 특가 / 쿠팡 베스트 / 생필품 / 삼촌픽">
+  <meta property="og:description" content="유튜브 영상 속 [1번~10번] 상품 즉시 확인하기! 토스 하루특가 / 쿠팡 베스트 / 토스 베스트 / 삼촌픽">
   <meta property="og:image" content="./assets/uncle_profile.png">
   <meta property="og:type" content="website">
 
@@ -357,27 +357,27 @@
           </div>
         </article>
 
-        <!-- CARD 3: 알뜰 생필품 -->
-        <article onclick="openCategory('essentials')"
-          class="bg-gradient-to-b from-[#ECFDF5] via-white to-white border-2 border-[#059669]/40 hover:border-[#059669] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+        <!-- CARD 3: 토스 베스트 상품 -->
+        <article onclick="openCategory('toss_best')"
+          class="bg-gradient-to-b from-[#EEF4FF] via-white to-white border-2 border-[#0055D6]/40 hover:border-[#0055D6] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
           <div>
             <div class="flex items-center justify-between gap-1">
-              <span class="bg-[#059669] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
-                쟁여두기 필수
+              <span class="bg-[#0055D6] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
+                실시간 랭킹
               </span>
-              <span class="text-[10px] text-emerald-600 font-black">초특가</span>
+              <span class="text-[10px] text-blue-700 font-black">인기 베스트</span>
             </div>
             <div class="mt-3">
-              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🧼</div>
-              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">알뜰 생필품</h3>
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🏆</div>
+              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">토스 베스트</h3>
               <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
-                화장지·세제·물티슈 쟁여둘수록 이득인 필수품
+                토스 쇼핑에서 지금 가장 잘 나가는 랭킹 TOP 10
               </p>
             </div>
           </div>
           <div
-            class="mt-4 pt-2.5 border-t border-emerald-100 flex items-center justify-between text-[12px] font-black text-[#059669]">
-            <span id="hub-count-essentials">필수 10선</span>
+            class="mt-4 pt-2.5 border-t border-blue-100 flex items-center justify-between text-[12px] font-black text-[#0055D6]">
+            <span id="hub-count-toss-best">TOP 10</span>
             <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
           </div>
         </article>
@@ -457,11 +457,11 @@
               <span>쿠팡 베스트</span>
             </button>
 
-            <!-- Chip 3: 생필품 -->
-            <button id="chip-essentials" onclick="switchCategory('essentials')"
+            <!-- Chip 3: 토스 베스트 -->
+            <button id="chip-toss_best" onclick="switchCategory('toss_best')"
               class="py-1.5 px-2.5 rounded-xl text-[12px] font-extrabold whitespace-nowrap transition-all shrink-0 flex items-center gap-1">
-              <span>🧼</span>
-              <span>생필품</span>
+              <span>🏆</span>
+              <span>토스 베스트</span>
             </button>
 
             <!-- Chip 4: 삼촌픽 -->
@@ -611,11 +611,12 @@
       updated_at: '',
       toss_deals: [],
       coupang_bests: [],
+      toss_bests: [],
       essentials: [],
       uncle_picks: []
     };
     let currentView = 'hub'; // 'hub' or 'category'
-    let currentCategory = 'toss'; // 'toss', 'coupang', 'essentials', 'uncle_picks'
+    let currentCategory = 'toss'; // 'toss', 'coupang', 'toss_best', 'uncle_picks'
     let searchQuery = '';
 
     // Views
@@ -625,13 +626,13 @@
     // Hub count badges
     const hubCountToss = document.getElementById('hub-count-toss');
     const hubCountCoupang = document.getElementById('hub-count-coupang');
-    const hubCountEssentials = document.getElementById('hub-count-essentials');
+    const hubCountTossBest = document.getElementById('hub-count-toss-best') || document.getElementById('hub-count-essentials');
     const hubCountUncle = document.getElementById('hub-count-uncle');
 
     // Category chips
     const chipToss = document.getElementById('chip-toss');
     const chipCoupang = document.getElementById('chip-coupang');
-    const chipEssentials = document.getElementById('chip-essentials');
+    const chipTossBest = document.getElementById('chip-toss_best') || document.getElementById('chip-essentials');
     const chipUncle = document.getElementById('chip-uncle_picks');
 
     // Context banner elements
@@ -677,7 +678,8 @@
         // Update Hub counts
         if (hubCountToss) hubCountToss.textContent = (appData.toss_deals || []).length + '개 특가';
         if (hubCountCoupang) hubCountCoupang.textContent = 'TOP ' + (appData.coupang_bests || []).length;
-        if (hubCountEssentials) hubCountEssentials.textContent = (appData.essentials || []).length + '개 필수템';
+        const tossBestItems = appData.toss_bests || appData.toss_best || appData.essentials || [];
+        if (hubCountTossBest) hubCountTossBest.textContent = tossBestItems.length > 0 ? 'TOP ' + tossBestItems.length : '베스트 10선';
         if (hubCountUncle) hubCountUncle.textContent = (appData.uncle_picks || []).length + '개 추천템';
 
         loadingStateEl.classList.add('hidden');
@@ -734,13 +736,14 @@
       const chips = [
         { el: chipToss, key: 'toss', activeBg: 'bg-[#3182F6] text-white shadow-sm ring-2 ring-[#3182F6]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
         { el: chipCoupang, key: 'coupang', activeBg: 'bg-[#E1251B] text-white shadow-sm ring-2 ring-[#E1251B]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
-        { el: chipEssentials, key: 'essentials', activeBg: 'bg-[#059669] text-white shadow-sm ring-2 ring-[#059669]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
+        { el: chipTossBest, key: 'toss_best', activeBg: 'bg-[#0055D6] text-white shadow-sm ring-2 ring-[#0055D6]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' },
         { el: chipUncle, key: 'uncle_picks', activeBg: 'bg-[#D97706] text-white shadow-sm ring-2 ring-[#D97706]/50', defaultBg: 'bg-stone-100 text-stone-600 hover:bg-stone-200' }
       ];
 
       chips.forEach(({ el, key, activeBg, defaultBg }) => {
         if (!el) return;
-        if (key === cat) {
+        const isSelected = (key === cat) || (key === 'toss_best' && cat === 'essentials');
+        if (isSelected) {
           el.className = `py-1.5 px-3 rounded-xl text-[12px] font-black whitespace-nowrap transition-all shrink-0 flex items-center gap-1 active:scale-95 ${activeBg}`;
         } else {
           el.className = `py-1.5 px-3 rounded-xl text-[12px] font-bold whitespace-nowrap transition-all shrink-0 flex items-center gap-1 active:scale-95 ${defaultBg}`;
@@ -760,12 +763,12 @@
         tabContextMsg.innerHTML = "지금 가장 잘 나가는 <strong>쿠팡 실시간 랭킹 베스트</strong>";
         tabContextTag.className = "font-bold text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded-md shrink-0";
         tabContextTag.textContent = "로켓배송 보장";
-      } else if (cat === 'essentials') {
-        tabContextBanner.className = "px-5 py-2.5 bg-emerald-50/80 border-b border-emerald-100/80 flex items-center justify-between text-[12px] text-[#047857] transition-colors duration-300";
-        tabContextIcon.textContent = "🧼";
-        tabContextMsg.innerHTML = "주부/자취생 필수! <strong>쟁여두는 알뜰 생필품 10선</strong>";
-        tabContextTag.className = "font-bold text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-md shrink-0";
-        tabContextTag.textContent = "쟁여두기 특가";
+      } else if (cat === 'toss_best' || cat === 'essentials') {
+        tabContextBanner.className = "px-5 py-2.5 bg-blue-50/90 border-b border-blue-200/80 flex items-center justify-between text-[12px] text-[#0055D6] transition-colors duration-300";
+        tabContextIcon.textContent = "🏆";
+        tabContextMsg.innerHTML = "토스 쇼핑 실시간 인기! <strong>토스 베스트 랭킹 TOP 10</strong>";
+        tabContextTag.className = "font-bold text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-md shrink-0";
+        tabContextTag.textContent = "실시간 베스트";
       } else if (cat === 'uncle_picks') {
         tabContextBanner.className = "px-5 py-2.5 bg-amber-50/80 border-b border-amber-100/80 flex items-center justify-between text-[12px] text-[#B45309] transition-colors duration-300";
         tabContextIcon.textContent = "🧺";
@@ -779,7 +782,7 @@
     function getCurrentCategoryItems() {
       if (currentCategory === 'toss') return appData.toss_deals || [];
       if (currentCategory === 'coupang') return appData.coupang_bests || [];
-      if (currentCategory === 'essentials') return appData.essentials || [];
+      if (currentCategory === 'toss_best' || currentCategory === 'essentials') return appData.toss_bests || appData.toss_best || appData.essentials || [];
       if (currentCategory === 'uncle_picks') return appData.uncle_picks || [];
       return [];
     }
@@ -814,8 +817,8 @@
           html += renderTossCard(item);
         } else if (currentCategory === 'coupang') {
           html += renderCoupangCard(item);
-        } else if (currentCategory === 'essentials') {
-          html += renderEssentialsCard(item);
+        } else if (currentCategory === 'toss_best' || currentCategory === 'essentials') {
+          html += renderTossBestCard(item);
         } else {
           html += renderUnclePickCard(item);
         }
@@ -958,9 +961,22 @@
       `;
     }
 
-    // Card Renderer: Essentials
-    function renderEssentialsCard(item) {
-      const fallbackImg = `https://placehold.co/400x400/FFFDF7/059669?text=${encodeURIComponent(item.id + '번')}`;
+    // Card Renderer: Toss Best
+    function renderTossBestCard(item) {
+      const fallbackImg = `https://placehold.co/400x400/EEF4FF/0055D6?text=${encodeURIComponent(item.id + '위')}`;
+      let rankBadge = 'bg-[#0055D6] text-white font-bold';
+      let rankIcon = '🏆';
+      if (item.id === 1) {
+        rankBadge = 'bg-gradient-to-r from-amber-400 to-amber-500 text-stone-950 font-black shadow-sm';
+        rankIcon = '🥇';
+      } else if (item.id === 2) {
+        rankBadge = 'bg-gradient-to-r from-slate-200 to-slate-300 text-stone-900 font-black shadow-sm';
+        rankIcon = '🥈';
+      } else if (item.id === 3) {
+        rankBadge = 'bg-gradient-to-r from-amber-600 to-amber-700 text-white font-black shadow-sm';
+        rankIcon = '🥉';
+      }
+
       return `
         <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
           <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
@@ -971,11 +987,12 @@
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               onerror="this.onerror=null; this.src='${fallbackImg}';"
             >
-            <div class="absolute top-1.5 left-1.5 bg-[#059669] text-white text-[11px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
-              <span>${item.id}번</span>
+            <div class="absolute top-1.5 left-1.5 ${rankBadge} text-[11px] px-2 py-0.5 rounded-lg shadow-md flex items-center gap-1 tracking-tight">
+              <span>${rankIcon}</span>
+              <span>${item.id}위</span>
             </div>
             ${item.badge ? `
-              <div class="absolute bottom-1.5 left-1.5 bg-emerald-600 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-md shadow-sm">
+              <div class="absolute bottom-1.5 left-1.5 bg-[#0055D6] text-white text-[9px] font-black px-1.5 py-0.5 rounded-md shadow-sm">
                 ${escapeHtml(item.badge)}
               </div>
             ` : ''}
@@ -984,8 +1001,8 @@
           <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
             <div>
               <div class="flex items-center gap-1.5 mb-1">
-                <span class="text-[11px] font-bold text-[#059669] bg-emerald-50 px-1.5 py-0.5 rounded">알뜰 생필품</span>
-                <span class="text-[11px] text-stone-400">쟁여두기</span>
+                <span class="text-[11px] font-bold text-[#0055D6] bg-blue-50 px-1.5 py-0.5 rounded">토스 베스트</span>
+                <span class="text-[11px] text-stone-400">인기 랭킹</span>
               </div>
               <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
                 ${escapeHtml(item.title)}
@@ -999,7 +1016,7 @@
                     ${escapeHtml(item.original_price)}
                   </span>
                 ` : ''}
-                <div class="text-[17px] font-black text-[#059669] tracking-tight leading-tight mt-0.5">
+                <div class="text-[17px] font-black text-[#0055D6] tracking-tight leading-tight mt-0.5">
                   ${escapeHtml(item.price_label || '특가 확인')}
                 </div>
               </div>
@@ -1008,9 +1025,9 @@
                 href="${escapeHtml(item.link_url)}" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="inline-flex items-center gap-1 px-3 py-2 bg-[#059669] hover:bg-[#047857] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
+                class="inline-flex items-center gap-1 px-3 py-2 bg-[#0055D6] hover:bg-[#003FB3] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
               >
-                <span>알뜰구매</span>
+                <span>베스트 확인</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
               </a>
             </div>
@@ -1018,6 +1035,9 @@
         </article>
       `;
     }
+
+    // 하위 호환 매핑
+    const renderEssentialsCard = renderTossBestCard;
 
     // Card Renderer: Uncle Picks
     function renderUnclePickCard(item) {
@@ -1094,8 +1114,8 @@
     // Hash routing for mobile back button & direct links
     function handleHashRouting() {
       const hash = location.hash.replace('#', '');
-      if (['toss', 'coupang', 'essentials', 'uncle_picks'].includes(hash)) {
-        openCategory(hash);
+      if (['toss', 'coupang', 'toss_best', 'essentials', 'uncle_picks'].includes(hash)) {
+        openCategory(hash === 'essentials' ? 'toss_best' : hash);
       } else {
         openHomeHub();
       }
@@ -1151,7 +1171,7 @@
     document.getElementById('btn-share-top').addEventListener('click', async () => {
       const shareData = {
         title: '특가 캐주는 삼촌 | 매일 00시 갱신 오늘의 알뜰 장바구니',
-        text: '유튜브 쇼츠 속 화제의 알뜰 특가 모음! 토스 하루특가 / 쿠팡 베스트 / 생필품 / 삼촌픽',
+        text: '유튜브 쇼츠 속 화제의 알뜰 특가 모음! 토스 하루특가 / 쿠팡 베스트 / 토스 베스트 / 삼촌픽',
         url: window.location.href
       };
 

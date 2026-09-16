@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "updated_at": "2026-09-15 22:48",
   "toss_deals": [
     {
@@ -11,6 +12,31 @@
       "discount_rate": 33,
       "image_url": "https://shopping.toss.im/live/temp/2026-09-01/c380e43c-eb46-4f90-b03b-a0cdf03aedb4.jpeg",
       "link_url": "https://toss.im/_m/Xkt5qr4l"
+=======
+  "updated_at": "2026-09-16 19:03",
+  "toss_deals": [
+    {
+      "id": 1,
+      "taca_item_id": 99224191,
+      "badge": "43% 할인",
+      "title": "호정가 찹쌀약과 세트",
+      "price_label": "8,990원",
+      "original_price": "16,000원",
+      "discount_rate": 43,
+      "image_url": "https://shopping.toss.im/live/taca/ai/v2/YzQ2YjA3/QUpwUDIzeGgzT3g4dGJ6QmJhVzBiZUgydFoySGJiQjZ4NlZEZ3A1NlVWVnk.png",
+      "link_url": "https://toss.im/_m/BmGIiBfw"
+    },
+    {
+      "id": 2,
+      "taca_item_id": 2643465475,
+      "badge": "57% 할인",
+      "title": "탐나유 햇밤 알밤",
+      "price_label": "12,800원",
+      "original_price": "29,900원",
+      "discount_rate": 57,
+      "image_url": "https://shopping.toss.im/live/temp/2026-09-11/9bb755c2-0773-40a6-890a-1b36ad35810c.jpeg",
+      "link_url": "https://toss.im/_m/bY5sYg92"
+>>>>>>> e46c18aff46af8bbfc870bcdbe8d43001b7129b0
     },
     {
       "id": 2,
@@ -25,6 +51,7 @@
     },
     {
       "id": 3,
+<<<<<<< HEAD
       "taca_item_id": 160417831,
       "badge": "71% 할인",
       "title": "쟈니베어 일회용 수세미",
@@ -84,6 +111,341 @@
       "badge": "40% 할인",
       "title": "제스프리 썬 골드키위",
       "price_label": "8,900원",
+=======
+      "taca_item_id": 2311809677,
+      "badge": "57% 할인",
+      "title": "초고농축 피죤 체리블라썸 섬유유연제",
+      "price_label": "14,990원",
+      "original_price": "34,900원",
+      "discount_rate": 57,
+      "image_url": "https://shopping.toss.im/live/temp/2026-06-26/d43d0b7e-e844-494a-8235-234771c48112.jpeg",
+      "link_url": "https://toss.im/_m/Ff7IFi1b"
+    },
+    {
+      "id": 4,
+      "taca_item_id": 423191503,
+      "badge": "79% 할인",
+      "title": "리셀 샤워기 100",
+      "price_label": "4,410원",
+      "original_price": "21,900원",
+      "discount_rate": 79,
+      "image_url": "https://shopping.toss.im/live/temp/2026-01-27/cdf9ce44-e161-4544-89d3-badba0eb1707.png",
+      "link_url": "https://toss.im/_m/NzzpwMGi"
+    },
+    {
+      "id": 5,
+      "taca_item_id": 8477329,
+      "badge": "30% 할인",
+      "title": "달구벌 돼지 생막창 세트",
+      "price_label": "13,900원",
+      "original_price": "19,900원",
+      "discount_rate": 30,
+      "image_url": "https://shopping.toss.im/live/taca/ai/Y2RhZjBj/ZHdRQ0pDc0FINGhQRnd5S1FPejYyT2FNQU53Yy9nQmMrYnpKL2J0MDUyaz0.png",
+      "link_url": "https://toss.im/_m/TvaB5dwn"
+    },
+    {
+      "id": 6,
+      "taca_item_id": 297277743,
+      "badge": "47% 할인",
+      "title": "촉촉한 고구마",
+      "price_label": "10,900원",
+      "original_price": "20,900원",
+      "discount_rate": 47,
+      "image_url": "https://shopping.toss.im/live/temp/2025-11-04/3c6bfaee-b83b-4f30-a213-501ffde208b9.jpeg",
+      "link_url": "https://toss.im/_m/LaaAcLKt"
+    },
+    {
+      "id": 7,
+      "taca_item_id": 2010382953,
+      "badge": "53% 할인",
+      "title": "푸드앳홈 명태회무침",
+      "price_label": "15,900원",
+      "original_price": "33,900원",
+      "discount_rate": 53,
+      "image_url": "https://shopping.toss.im/live/product/57609/6d62b623-d7be-4494-a51c-679007c8d4a5.jpg",
+      "link_url": "https://toss.im/_m/BOEF2RRv"
+    },
+    {
+      "id": 8,
+      "taca_item_id": 1635986563,
+      "badge": "59% 할인",
+      "title": "대용량 우거지 감자탕",
+      "price_label": "15,890원",
+      "original_price": "38,900원",
+      "discount_rate": 59,
+      "image_url": "https://shopping.toss.im/live/taca/ai/YTYyY2Uz/QVBEb25jd2JIRW5ObXp5enczTWxFaTloTVR4enRqTWs4ZVExMDV4YTBvdGg.png",
+      "link_url": "https://toss.im/_m/BWKOsLmC"
+    },
+    {
+      "id": 9,
+      "taca_item_id": 2640741931,
+      "badge": "45% 할인",
+      "title": "정성담은 오색송편",
+      "price_label": "10,800원",
+      "original_price": "19,900원",
+      "discount_rate": 45,
+      "image_url": "https://shopping.toss.im/1bc/live/product/842248749/1bc16181-c3ce-438c-8fb3-bbf45bb6e1eb.jpg",
+      "link_url": "https://toss.im/_m/duewILM4"
+    },
+    {
+      "id": 10,
+      "taca_item_id": 2261736857,
+      "badge": "40% 할인",
+      "title": "바른 돼지국밥",
+      "price_label": "15,900원",
+      "original_price": "26,900원",
+      "discount_rate": 40,
+      "image_url": "https://shopping.toss.im/live/temp/2026-06-15/fc748c01-e1e5-4ced-899e-85bb69ecf463.jpeg",
+      "link_url": "https://toss.im/_m/lIzpNro8"
+    }
+  ],
+  "coupang_bests": [
+    {
+      "id": 1,
+      "taca_item_id": 271983315,
+      "badge": "1위",
+      "title": "산과들에 원데이 발란스 그린라벨",
+      "price_label": "7,630원",
+      "original_price": "16,000원",
+      "discount_rate": 52,
+      "image_url": "https://shopping.toss.im/live/taca/ai/MmNlNjFi/QUszS3g4YldOeXgvK2x4K0ZsOFlzbm1CSEsxclpHUlhvVld4TXBXNkJQVk8.png",
+      "link_url": "https://toss.im/_m/RSXI0Ddi"
+    },
+    {
+      "id": 2,
+      "taca_item_id": 446375191,
+      "badge": "2위",
+      "title": "맛꾼 구운란",
+      "price_label": "7,400원",
+      "original_price": "19,900원",
+      "discount_rate": 62,
+      "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
+      "link_url": "https://toss.im/_m/Ndic61Ub"
+    },
+    {
+      "id": 3,
+      "taca_item_id": 146304027,
+      "badge": "3위",
+      "title": "수뜰리에 클린 퍼퓸 포밍 핸드 워시",
+      "price_label": "2,490원",
+      "original_price": "39,600원",
+      "discount_rate": 93,
+      "image_url": "https://shopping.toss.im/live/temp/2025-07-23/d282d6f9-2583-4c2a-84c2-6927db02a36a.jpeg",
+      "link_url": "https://toss.im/_m/3l4KJKd8"
+    },
+    {
+      "id": 4,
+      "taca_item_id": 2278446229,
+      "badge": "4위",
+      "title": "을지로 연탄불고기식 돼지불고기",
+      "price_label": "7,990원",
+      "original_price": "16,000원",
+      "discount_rate": 50,
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-27/6fb1bb32-205c-4951-a2d8-18f8c132d76f.jpeg",
+      "link_url": "https://toss.im/_m/R3T5n4tj"
+    },
+    {
+      "id": 5,
+      "taca_item_id": 161372869,
+      "badge": "5위",
+      "title": "알참참 구운계란 대란",
+      "price_label": "6,990원",
+      "original_price": "18,600원",
+      "discount_rate": 62,
+      "image_url": "https://shopping.toss.im/live/taca/ai/NGMwNTI2/QU9FcExVR2Y2OHZyYlZYV3BYeXhyUlE5Si90a2tWU20wNFZVcjFxVlVWYXQ.png",
+      "link_url": "https://toss.im/_m/Z52hhvIk"
+    },
+    {
+      "id": 6,
+      "taca_item_id": 135260245,
+      "badge": "6위",
+      "title": "롯데칠성음료 펩시 제로슈거 라임",
+      "price_label": "9,990원",
+      "original_price": "17,900원",
+      "discount_rate": 44,
+      "image_url": "https://shopping.toss.im/live/taca/ai/YTI5M2Zm/QU9LVVlwd3p2NzlCdld1TVk5enZudUZXcTFFcnN4Q3JuS3ZVUUw2dlZKOWg.png",
+      "link_url": "https://toss.im/_m/LxoV4eIp"
+    },
+    {
+      "id": 7,
+      "taca_item_id": 162207275,
+      "badge": "7위",
+      "title": "광양 돼지 왕구이",
+      "price_label": "8,000원",
+      "original_price": "22,900원",
+      "discount_rate": 65,
+      "image_url": "https://shopping.toss.im/live/taca/ai/MzBlYzQ0/WC9VT3ZSem9RVFNjRy9pcHg1bzhlWkdOV0dLTFZJUHRobkowUlgwNDF0WT0.png",
+      "link_url": "https://toss.im/_m/HUxpSEXq"
+    },
+    {
+      "id": 8,
+      "taca_item_id": 119672207,
+      "badge": "8위",
+      "title": "더건강플러스 엑스트라버진 올리브오일",
+      "price_label": "8,900원",
+      "original_price": "39,800원",
+      "discount_rate": 77,
+      "image_url": "https://shopping.toss.im/live/temp/2026-06-05/28f63f1a-246e-4e36-82ad-12f0fbb50755.jpeg",
+      "link_url": "https://toss.im/_m/NLDhH5ds"
+    },
+    {
+      "id": 9,
+      "taca_item_id": 423535267,
+      "badge": "9위",
+      "title": "꿀이구마 호박 찹쌀 약과",
+      "price_label": "4,990원",
+      "original_price": "13,900원",
+      "discount_rate": 64,
+      "image_url": "https://shopping.toss.im/live/taca/ai/MWUxYTU0/QUxTbXp3NTArZHpoNGVPZlBUU3o1NW5TN1RqMnM5elljZU9ZNmNGbzREY08.png",
+      "link_url": "https://toss.im/_m/Zb9506an"
+    },
+    {
+      "id": 10,
+      "taca_item_id": 2650897313,
+      "badge": "10위",
+      "title": "수뜰리에 쉰내제거 딥클린 세탁세제",
+      "price_label": "4,620원",
+      "original_price": "39,600원",
+      "discount_rate": 88,
+      "image_url": "https://shopping.toss.im/live/temp/2026-09-09/fa233394-2b3e-411b-950f-ee1236fecce2.png",
+      "link_url": "https://toss.im/_m/5UjBI9Hu"
+    }
+  ],
+  "essentials": [
+    {
+      "id": 1,
+      "badge": "쟁여두기",
+      "title": "코디 3겹 데코 순수 천연펄프 롤화장지 30롤",
+      "price_label": "1만 1천원대",
+      "original_price": "18,900원",
+      "image_url": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample7"
+    },
+    {
+      "id": 2,
+      "badge": "주부추천",
+      "title": "크리넥스 안심 3겹 키친타월 120매 8롤",
+      "price_label": "6천원대",
+      "original_price": "10,500원",
+      "image_url": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample10"
+    },
+    {
+      "id": 3,
+      "badge": "대용량특가",
+      "title": "퍼실 딥클린 플러스 액상 세탁세제 2.7L 2개",
+      "price_label": "1만 9천원대",
+      "original_price": "29,900원",
+      "image_url": "https://images.unsplash.com/photo-1585670210693-e7fdd16b142e?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample8"
+    },
+    {
+      "id": 4,
+      "badge": "인기생필품",
+      "title": "베베숲 시그니처 엠보싱 캡형 물티슈 70매 10팩",
+      "price_label": "1만 4천원대",
+      "original_price": "21,000원",
+      "image_url": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample4"
+    },
+    {
+      "id": 5,
+      "badge": "생수1위",
+      "title": "동원 샘물 2L 12병 (무료배송)",
+      "price_label": "7천원대",
+      "original_price": "11,800원",
+      "image_url": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample3"
+    },
+    {
+      "id": 6,
+      "badge": "욕실필수",
+      "title": "페리오 토탈 7 오리지널 치약 120g 8개입",
+      "price_label": "8천원대",
+      "original_price": "14,000원",
+      "image_url": "https://images.unsplash.com/photo-1559563458-527698bf5295?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample2"
+    },
+    {
+      "id": 7,
+      "badge": "알뜰위생",
+      "title": "크린랩 스탠딩 이지슬라이드 슬라이더 지퍼백 60매",
+      "price_label": "5천원대",
+      "original_price": "9,800원",
+      "image_url": "https://images.unsplash.com/photo-1607344645866-009c320c5ab8?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample5"
+    },
+    {
+      "id": 8,
+      "badge": "친환경주방",
+      "title": "슈가버블 1종 베이킹소다 주방세제 940ml 2개",
+      "price_label": "7천원대",
+      "original_price": "12,900원",
+      "image_url": "https://images.unsplash.com/photo-1584473457406-6240486418e9?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample6"
+    },
+    {
+      "id": 9,
+      "badge": "쟁여두기",
+      "title": "온더바디 더 내추럴 바디워시 화이트머스크 1L 2개",
+      "price_label": "1만 1천원대",
+      "original_price": "19,000원",
+      "image_url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample7"
+    },
+    {
+      "id": 10,
+      "badge": "가성비갑",
+      "title": "헤드앤숄더 쿨 멘솔 비듬 샴푸 850ml",
+      "price_label": "9천원대",
+      "original_price": "16,500원",
+      "image_url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample9"
+    }
+  ],
+  "uncle_picks": [
+    {
+      "id": 1,
+      "badge": "삼촌원픽",
+      "title": "사리원 전통 소불고기 4팩",
+      "price_label": "1만 3천원대",
+      "original_price": "24,000원",
+      "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample1"
+    },
+    {
+      "id": 2,
+      "badge": "밥도둑인정",
+      "title": "구첩반찬 무말랭이무침 1kg",
+      "price_label": "4천원대",
+      "original_price": "9,900원",
+      "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://toss.im/_m/DFnW2YCe"
+    },
+    {
+      "id": 3,
+      "badge": "피부특효",
+      "title": "리스앤리드 비건 엑소좀 앰플 30ml",
+      "price_label": "1만 1천원대",
+      "original_price": "29,000원",
+      "image_url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://toss.im/_m/DFnW2YCe"
+    },
+    {
+      "id": 4,
+      "badge": "고소함끝판",
+      "title": "랑카스 100% 무첨가 땅콩버터 2개",
+      "price_label": "9천원대",
+      "original_price": "18,000원",
+      "image_url": "https://images.unsplash.com/photo-1568471173242-461f0a730452?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://toss.im/_m/DFnW2YCe"
+    },
+    {
+      "id": 5,
+      "badge": "삼촌간식",
+      "title": "김삼두 장인 두부야채 어묵바 5봉",
+      "price_label": "6천원대",
+>>>>>>> e46c18aff46af8bbfc870bcdbe8d43001b7129b0
       "original_price": "14,900원",
       "discount_rate": 40,
       "image_url": "https://shopping.toss.im/live/temp/2026-04-24/e98af57f-712c-4b77-8353-ed42ee1545fb.jpeg",
