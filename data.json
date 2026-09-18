@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 22:41",
+  "updated_at": "2026-09-18 22:53",
   "toss_deals": [
     {
       "id": 1,
@@ -391,19 +391,8 @@
     },
     {
       "id": 6,
-      "taca_item_id": 174868927,
-      "badge": "6위",
-      "title": "롯데칠성음료 펩시 제로슈거 라임",
-      "price_label": "15,389원",
-      "original_price": "17,900원",
-      "discount_rate": 14,
-      "image_url": "https://shopping.toss.im/live/taca/ai/YTI5M2Zm/QU9LVVlwd3p2NzlCdld1TVk5enZudUZXcTFFcnN4Q3JuS3ZVUUw2dlZKOWg.png",
-      "link_url": "https://toss.im/_m/LPwYp9w8"
-    },
-    {
-      "id": 7,
       "taca_item_id": 146304027,
-      "badge": "7위",
+      "badge": "6위",
       "title": "수뜰리에 클린 퍼퓸 포밍 핸드 워시",
       "price_label": "2,490원",
       "original_price": "39,600원",
@@ -412,26 +401,37 @@
       "link_url": "https://toss.im/_m/3l4KJKd8"
     },
     {
-      "id": 8,
-      "taca_item_id": 2278446229,
-      "badge": "8위",
-      "title": "을지로 연탄불고기식 돼지불고기",
-      "price_label": "7,990원",
-      "original_price": "16,000원",
-      "discount_rate": 50,
-      "image_url": "https://shopping.toss.im/live/temp/2026-08-27/6fb1bb32-205c-4951-a2d8-18f8c132d76f.jpeg",
-      "link_url": "https://toss.im/_m/R3T5n4tj"
+      "id": 7,
+      "taca_item_id": 135260245,
+      "badge": "7위",
+      "title": "롯데칠성음료 펩시 제로슈거 라임",
+      "price_label": "9,990원",
+      "original_price": "17,900원",
+      "discount_rate": 44,
+      "image_url": "https://shopping.toss.im/live/taca/ai/YTI5M2Zm/QU9LVVlwd3p2NzlCdld1TVk5enZudUZXcTFFcnN4Q3JuS3ZVUUw2dlZKOWg.png",
+      "link_url": "https://toss.im/_m/LxoV4eIp"
     },
     {
-      "id": 9,
+      "id": 8,
       "taca_item_id": 12833301,
-      "badge": "9위",
+      "badge": "8위",
       "title": "에브리워터 무라벨",
       "price_label": "4,400원",
       "original_price": "19,800원",
       "discount_rate": 77,
       "image_url": "https://shopping.toss.im/live/temp/2026-02-17/32d41410-98f1-42d9-a442-9e8820fad904.jpeg",
       "link_url": "https://toss.im/_m/XYEmPjqt"
+    },
+    {
+      "id": 9,
+      "taca_item_id": 2278446229,
+      "badge": "9위",
+      "title": "을지로 연탄불고기식 돼지불고기",
+      "price_label": "7,990원",
+      "original_price": "16,000원",
+      "discount_rate": 50,
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-27/6fb1bb32-205c-4951-a2d8-18f8c132d76f.jpeg",
+      "link_url": "https://toss.im/_m/R3T5n4tj"
     },
     {
       "id": 10,
