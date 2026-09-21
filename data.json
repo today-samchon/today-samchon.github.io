@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21 21:00",
+  "updated_at": "2026-09-21 21:07",
   "toss_deals": [
     {
       "id": 1,
@@ -425,6 +425,24 @@
   ],
   "essentials": [],
   "uncle_picks": [
+    {
+      "id": "pick_20260921_003",
+      "platform": "coupang",
+      "title": "케이미트 이베리코 목살 갈비살 항정살 돼지고기 600g 3종 세트 (각 200g)",
+      "clean_title": "케이미트 이베리코 목살 갈비살 항정살 돼지고기 600g 3종 세트 (각 200g)",
+      "user_review": "친구가 생일선물로 사줘서 카카오 선물하기로 받아서 먹어봤는데 가족들도 다 맛있다고 함",
+      "category": "육류",
+      "original_price": "35,900원",
+      "discount_price": 25650,
+      "displayPrice": 25650,
+      "sale_price": 25650,
+      "discount_rate": 29,
+      "price_label": "25,650원",
+      "image_url": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/27b5/abb107e525b3836d3376ce6b7f32c693c729328e80af5c2e6f681658c137.jpg",
+      "link_url": "https://link.coupang.com/a/hd8qMbDNPo",
+      "affiliate_url": "https://link.coupang.com/a/hd8qMbDNPo",
+      "created_at": "2026-09-21"
+    },
     {
       "id": "pick_20260921_002",
       "platform": "toss",
