@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20 22:46",
+  "updated_at": "2026-09-21 21:00",
   "toss_deals": [
     {
       "id": 1,
@@ -424,5 +424,42 @@
     }
   ],
   "essentials": [],
-  "uncle_picks": []
+  "uncle_picks": [
+    {
+      "id": "pick_20260921_002",
+      "platform": "toss",
+      "title": "제주 삼다수 2L 12병 (가정배달 무료배송)",
+      "clean_title": "제주 삼다수 2L 12병 (가정배달 무료배송)",
+      "user_review": "물 맛 깔끔하고 토스 공동구매로 사면 마트보다 싼 데다 문 앞까지 바로 배달해줘서 항상 쟁여둡니다.",
+      "category": "생수/음료",
+      "original_price": "15,600원",
+      "discount_price": 10800,
+      "displayPrice": 10800,
+      "sale_price": 10800,
+      "discount_rate": 31,
+      "price_label": "10,800원",
+      "image_url": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=500&auto=format&fit=crop&q=80",
+      "link_url": "https://toss.im/_m/sample_samdasoo",
+      "affiliate_url": "https://toss.im/_m/sample_samdasoo",
+      "created_at": "2026-09-21"
+    },
+    {
+      "id": "pick_20260921_001",
+      "platform": "coupang",
+      "title": "곰곰 단백질바 50g 24개입",
+      "clean_title": "곰곰 단백질바 50g 24개입",
+      "user_review": "아침마다 하나씩 먹는데 시중 프로틴바 특유의 비린내 전혀 없고 꾸덕해서 가성비 최고임.",
+      "category": "식품/단백질",
+      "original_price": "28,000원",
+      "discount_price": 18900,
+      "displayPrice": 18900,
+      "sale_price": 18900,
+      "discount_rate": 32,
+      "price_label": "18,900원",
+      "image_url": "https://images.unsplash.com/photo-1622484212850-cab596d65910?w=500&auto=format&fit=crop&q=80",
+      "link_url": "https://link.coupang.com/a/sample_protein_bar",
+      "affiliate_url": "https://link.coupang.com/a/sample_protein_bar",
+      "created_at": "2026-09-21"
+    }
+  ]
 }

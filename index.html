@@ -554,7 +554,11 @@
     </section>
 
     <!-- FOOTER INFO -->
+    <!-- FOOTER INFO -->
     <footer class="mt-auto px-5 py-6 bg-stone-100/90 border-t border-stone-200 text-center text-stone-500 space-y-3">
+      <p class="text-[11.5px] text-stone-600 font-medium leading-relaxed max-w-sm mx-auto bg-stone-200/60 p-2.5 rounded-xl border border-stone-300/60">
+        ※ 본 페이지의 링크를 통해 구매 시 쿠팡 파트너스 및 제휴 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.
+      </p>
       <div class="flex items-center justify-center gap-2 cursor-pointer" onclick="openHomeHub()">
         <img src="./assets/uncle_profile.png" alt="삼촌 아바타" class="w-6 h-6 rounded-full"
           onerror="this.style.display='none'">
@@ -1038,62 +1042,151 @@
     // 하위 호환 매핑
     const renderEssentialsCard = renderTossBestCard;
 
-    // Card Renderer: Uncle Picks
+    // Card Renderer: Samchon's Pick (토스 블루 vs 쿠팡 레드 테마)
     function renderUnclePickCard(item) {
-      const fallbackImg = `https://placehold.co/400x400/FFFDF7/D97706?text=${encodeURIComponent(item.id + '번')}`;
+      const isCoupang = (item.platform === 'coupang') || 
+                        (String(item.affiliate_url || item.link_url || '')).toLowerCase().includes('coupang');
+      
+      const linkUrl = item.affiliate_url || item.link_url || '#';
+      const fallbackImg = `https://placehold.co/400x400/FFFDF7/${isCoupang ? 'E60012' : '0064FF'}?text=${encodeURIComponent('삼촌픽')}`;
+      
+      // 가격 및 할인율 포맷팅
+      const rawOrig = item.original_price;
+      let origPriceNum = 0;
+      if (typeof rawOrig === 'number') origPriceNum = rawOrig;
+      else if (typeof rawOrig === 'string') origPriceNum = parseInt(rawOrig.replace(/[^0-9]/g, ''), 10) || 0;
+
+      const rawDisc = item.discount_price || item.displayPrice || item.sale_price;
+      let discPriceNum = 0;
+      if (typeof rawDisc === 'number') discPriceNum = rawDisc;
+      else if (typeof rawDisc === 'string') discPriceNum = parseInt(rawDisc.replace(/[^0-9]/g, ''), 10) || 0;
+
+      let discountRate = item.discount_rate || 0;
+      if (!discountRate && origPriceNum > discPriceNum && discPriceNum > 0) {
+        discountRate = Math.round(((origPriceNum - discPriceNum) / origPriceNum) * 100);
+      }
+
+      // 테마 컬러 토큰 정의 (쿠팡 레드 vs 토스 블루)
+      const theme = isCoupang ? {
+        cardBorder: 'border-red-200/90 hover:border-[#E60012] hover:shadow-[0_10px_30px_rgba(230,0,18,0.12)]',
+        badgeBg: 'bg-[#E60012] text-white',
+        badgeText: '쿠팡 와우 / 로켓',
+        badgeIcon: '🚀',
+        priceColor: 'text-[#EF4444]',
+        reviewBox: 'bg-red-50/60 border-red-100/90 text-stone-800',
+        reviewQuote: 'text-red-500',
+        categoryTag: 'bg-red-50 text-red-700 border-red-200/70',
+        btnClass: 'bg-[#E60012] hover:bg-[#C01A11] active:bg-[#9E140C] text-white shadow-sm shadow-red-500/20',
+        btnText: '쿠팡 최저가 확인하기 ↗'
+      } : {
+        cardBorder: 'border-blue-200/90 hover:border-[#0064FF] hover:shadow-[0_10px_30px_rgba(0,100,255,0.12)]',
+        badgeBg: 'bg-[#0064FF] text-white',
+        badgeText: '토스 공동구매',
+        badgeIcon: '⚡',
+        priceColor: 'text-[#3B82F6]',
+        reviewBox: 'bg-blue-50/60 border-blue-100/90 text-stone-800',
+        reviewQuote: 'text-blue-500',
+        categoryTag: 'bg-blue-50 text-blue-700 border-blue-200/70',
+        btnClass: 'bg-[#0064FF] hover:bg-[#1B64DA] active:bg-[#004ECC] text-white shadow-sm shadow-blue-500/20',
+        btnText: '토스 특가 확인하기 ↗'
+      };
+
+      const userReview = item.user_review || item.review || '삼촌이 직접 써보고 검증한 찐 추천템입니다!';
+      const categoryLabel = item.category || '삼촌픽';
+
       return `
-        <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
-          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
-            <img 
-              src="${item.image_url}" 
-              alt="${escapeHtml(item.title)}" 
-              loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              onerror="this.onerror=null; this.src='${fallbackImg}';"
-            >
-            <div class="absolute top-1.5 left-1.5 bg-[#D97706] text-white text-[11px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
-              <span>${item.id}번</span>
-            </div>
-            ${item.badge ? `
-              <div class="absolute bottom-1.5 left-1.5 bg-amber-600 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-md shadow-sm">
-                ${escapeHtml(item.badge)}
+        <article class="bg-white rounded-2xl border ${theme.cardBorder} p-4 shadow-sm transition-all duration-300 relative overflow-hidden group flex flex-col justify-between">
+          <div>
+            <!-- 상단 배지: 플랫폼 알약 배지 + 삼촌 인증 찐후기 아이콘 라벨 -->
+            <div class="flex items-center justify-between gap-1.5 mb-2.5 flex-wrap">
+              <div class="flex items-center gap-1.5">
+                <span class="${theme.badgeBg} text-[11px] font-black px-2.5 py-1 rounded-full shadow-xs tracking-tight inline-flex items-center gap-1">
+                  <span>${theme.badgeIcon}</span>
+                  <span>${theme.badgeText}</span>
+                </span>
+                <span class="bg-amber-100/90 text-amber-800 text-[10.5px] font-extrabold px-2 py-0.5 rounded-full inline-flex items-center gap-1 border border-amber-200/80">
+                  <span>👨‍🌾</span>
+                  <span>삼촌 인증 찐후기</span>
+                </span>
               </div>
-            ` : ''}
-          </div>
-
-          <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
-            <div>
-              <div class="flex items-center gap-1.5 mb-1">
-                <span class="text-[11px] font-bold text-[#D97706] bg-amber-50 px-1.5 py-0.5 rounded">삼촌 강력추천</span>
-                <span class="text-[11px] text-stone-400">후기검증</span>
-              </div>
-              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
-                ${escapeHtml(item.title)}
-              </h3>
+              <span class="text-[11px] font-semibold ${theme.categoryTag} px-2 py-0.5 rounded-md border text-xs">
+                ${escapeHtml(categoryLabel)}
+              </span>
             </div>
 
-            <div class="mt-2 pt-1 border-t border-stone-100 flex items-end justify-between gap-2">
-              <div>
-                ${item.original_price ? `
-                  <span class="block text-[11px] text-stone-400 line-through leading-none">
-                    ${escapeHtml(item.original_price)}
-                  </span>
-                ` : ''}
-                <div class="text-[17px] font-black text-[#D97706] tracking-tight leading-tight mt-0.5">
-                  ${escapeHtml(item.price_label || '특가 확인')}
+            <!-- 실사용자 코멘트 하이라이트 박스 (말풍선 스타일) -->
+            <div class="${theme.reviewBox} border rounded-xl p-3 mb-3 relative">
+              <div class="flex items-start gap-2">
+                <span class="${theme.reviewQuote} text-base font-black leading-none shrink-0 select-none">“</span>
+                <p class="text-[12.5px] font-bold leading-relaxed tracking-tight break-keep text-stone-800">
+                  ${escapeHtml(userReview)}
+                </p>
+                <span class="${theme.reviewQuote} text-base font-black leading-none shrink-0 self-end select-none">”</span>
+              </div>
+            </div>
+
+            <!-- 썸네일 & 상품 정보 (가로 배치) -->
+            <div class="flex gap-3.5 items-start">
+              <!-- 썸네일 (Hover 시 1.03 확대) -->
+              <a 
+                href="${escapeHtml(linkUrl)}" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="relative w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/70 block"
+              >
+                <img 
+                  src="${item.image_url}" 
+                  alt="${escapeHtml(item.title)}" 
+                  loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  onerror="this.onerror=null; this.src='${fallbackImg}';"
+                >
+              </a>
+
+              <!-- 상품명 & 가격 정보 -->
+              <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
+                <a 
+                  href="${escapeHtml(linkUrl)}" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="block group-hover:opacity-90 transition-opacity"
+                >
+                  <h3 class="text-[14px] sm:text-[15px] font-black text-stone-900 leading-snug line-clamp-2 tracking-tight">
+                    ${escapeHtml(item.title)}
+                  </h3>
+                </a>
+
+                <div class="mt-2.5">
+                  ${origPriceNum > discPriceNum ? `
+                    <span class="block text-[11px] text-stone-400 line-through leading-none font-medium mb-0.5">
+                      ${origPriceNum.toLocaleString()}원
+                    </span>
+                  ` : ''}
+                  <div class="flex items-baseline gap-1.5 flex-wrap">
+                    ${discountRate > 0 ? `
+                      <span class="text-[15px] font-black text-rose-600 tracking-tight">
+                        ${discountRate}%
+                      </span>
+                    ` : ''}
+                    <span class="text-[18px] sm:text-[19px] font-black ${theme.priceColor} tracking-tight">
+                      ${discPriceNum > 0 ? discPriceNum.toLocaleString() + '원' : (item.price_label || '특가 확인')}
+                    </span>
+                  </div>
                 </div>
               </div>
-
-              <a 
-                href="${escapeHtml(item.link_url)}" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="inline-flex items-center gap-1 px-3 py-2 bg-[#D97706] hover:bg-[#B45309] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
-              >
-                <span>삼촌특가</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-              </a>
             </div>
+          </div>
+
+          <!-- 카드 하단 CTA 버튼 (새 탭 이동) -->
+          <div class="mt-3.5 pt-2.5 border-t border-stone-100">
+            <a 
+              href="${escapeHtml(linkUrl)}" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full py-2.5 px-4 ${theme.btnClass} rounded-xl font-black text-[13px] tracking-tight inline-flex items-center justify-center gap-1.5 transition-all active:scale-[0.98]"
+            >
+              <span>${theme.btnText}</span>
+            </a>
           </div>
         </article>
       `;
