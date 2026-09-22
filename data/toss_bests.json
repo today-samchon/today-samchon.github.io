@@ -1,19 +1,52 @@
 [
   {
     "id": 1,
-    "taca_item_id": 1645332715,
+    "taca_item_id": 1536550523,
     "badge": "1위",
-    "title": "호정가 우리쌀약과",
-    "price_label": "12,900원",
-    "original_price": "16,000원",
-    "discount_rate": 19,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YzYwZjc1/SzBySmFmczhOVWsybVpOa2ZheGt0VnVrNVNUSXh0VFQ1MVF3MmpPMFJXbz0.png",
-    "link_url": "https://toss.im/_m/dX7mbjFD"
+    "title": "시치미 쓱 데일리 물티슈 캡형",
+    "price_label": "11,900원",
+    "original_price": "15,900원",
+    "discount_rate": 25,
+    "image_url": "https://shopping.toss.im/live/temp/2026-04-24/c7c3c65f-9b78-4306-87fa-7efa41be18db.jpeg",
+    "link_url": "https://toss.im/_m/dlF6wXQ9"
   },
   {
     "id": 2,
-    "taca_item_id": 2534121637,
+    "taca_item_id": 830532473,
     "badge": "2위",
+    "title": "캘빈클라인 스트레치 코튼 드로즈 UXWB",
+    "price_label": "24,900원",
+    "original_price": "69,900원",
+    "discount_rate": 64,
+    "image_url": "https://shopping.toss.im/live/taca/ai/MjlkMzY0/QU5wZ284Y1pzZkowQ1NNZnNjUGlBYy9zOGlUWmg4M1B5d1hsMjJuWWJPd20.png",
+    "link_url": "https://toss.im/_m/3A6gRIJu"
+  },
+  {
+    "id": 3,
+    "taca_item_id": 1062468513,
+    "badge": "3위",
+    "title": "서울식품 뻥이요 골드 오리지널",
+    "price_label": "12,225원",
+    "original_price": "21,000원",
+    "discount_rate": 41,
+    "image_url": "https://shopping.toss.im/live/taca/ai/MWRkYzc5/QUowT21jMWpVMlp4bU9TZHppME9ZekhDOFp4c0dmRWxqcThPMm5GUzhTMk8.png",
+    "link_url": "https://toss.im/_m/n8swPfry"
+  },
+  {
+    "id": 4,
+    "taca_item_id": 241796467,
+    "badge": "4위",
+    "title": "괄사 마사지",
+    "price_label": "4,900원",
+    "original_price": "14,800원",
+    "discount_rate": 66,
+    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
+    "link_url": "https://toss.im/_m/7eb2ktTq"
+  },
+  {
+    "id": 5,
+    "taca_item_id": 2534121637,
+    "badge": "5위",
     "title": "원김치 쪽파김치",
     "price_label": "9,900원",
     "original_price": "14,900원",
@@ -22,9 +55,20 @@
     "link_url": "https://toss.im/_m/nqNSesV4"
   },
   {
-    "id": 3,
+    "id": 6,
+    "taca_item_id": 2655681007,
+    "badge": "6위",
+    "title": "청송 햇 홍로 사과",
+    "price_label": "12,900원",
+    "original_price": "69,900원",
+    "discount_rate": 81,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-14/9628fc8b-ec27-44f1-a41d-19377629fd82.png",
+    "link_url": "https://toss.im/_m/BJ2oHvPD"
+  },
+  {
+    "id": 7,
     "taca_item_id": 2460475873,
-    "badge": "3위",
+    "badge": "7위",
     "title": "푸드센터 소갈비살",
     "price_label": "29,900원",
     "original_price": "100,000원",
@@ -33,53 +77,20 @@
     "link_url": "https://toss.im/_m/33ca2bV9"
   },
   {
-    "id": 4,
-    "taca_item_id": 2636698731,
-    "badge": "4위",
-    "title": "하우스 샤인머스켓",
-    "price_label": "9,900원",
-    "original_price": "15,900원",
-    "discount_rate": 37,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-27/b4274a50-6d56-4340-9983-a8a443d2d063.jpeg",
-    "link_url": "https://toss.im/_m/x5oNzaeb"
-  },
-  {
-    "id": 5,
-    "taca_item_id": 160871287,
-    "badge": "5위",
-    "title": "동원샘물 생수",
-    "price_label": "3,480원",
-    "original_price": "6,000원",
-    "discount_rate": 42,
-    "image_url": "https://shopping.toss.im/live/taca/ai/ZGY3NDk5/SEtXT016T2NlTVRqWE5jcm5ITmlsRXFyT05SempOVTdxMVJTcjV4d3JGQT0.png",
-    "link_url": "https://toss.im/_m/r8M1OAdg"
-  },
-  {
-    "id": 6,
-    "taca_item_id": 2265183871,
-    "badge": "6위",
-    "title": "딘시 비건 마일드 선크림",
-    "price_label": "3,400원",
-    "original_price": "32,500원",
-    "discount_rate": 97,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-15/07bc2270-a6bd-4f1d-958b-ccfe8a9788e2.jpeg",
-    "link_url": "https://toss.im/_m/r5wtxbYj"
-  },
-  {
-    "id": 7,
-    "taca_item_id": 99224191,
-    "badge": "7위",
-    "title": "호정가 찹쌀약과 세트",
-    "price_label": "8,990원",
-    "original_price": "16,000원",
-    "discount_rate": 43,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/YzQ2YjA3/QUpwUDIzeGgzT3g4dGJ6QmJhVzBiZUgydFoySGJiQjZ4NlZEZ3A1NlVWVnk.png",
-    "link_url": "https://toss.im/_m/BmGIiBfw"
-  },
-  {
     "id": 8,
-    "taca_item_id": 2653083185,
+    "taca_item_id": 1513747303,
     "badge": "8위",
+    "title": "알제이 스틸 스키니 마스카라",
+    "price_label": "10,900원",
+    "original_price": "17,900원",
+    "discount_rate": 39,
+    "image_url": "https://shopping.toss.im/live/taca/ai/Y2U1YjA0/QU1teTB6aXliREprQlp2TXgzaEZ2SnZ6RHZra2ZQTW1HYk9HeWVGZ0dUK1M.png",
+    "link_url": "https://toss.im/_m/PMhMz4h3"
+  },
+  {
+    "id": 9,
+    "taca_item_id": 2653083185,
+    "badge": "9위",
     "title": "초코무초 청키앤츄이",
     "price_label": "3,900원",
     "original_price": "7,000원",
@@ -88,25 +99,14 @@
     "link_url": "https://toss.im/_m/HIQEcaGo"
   },
   {
-    "id": 9,
-    "taca_item_id": 153902721,
-    "badge": "9위",
-    "title": "맛장군 오늘담근 생김치 겉절이",
-    "price_label": "10,900원",
-    "original_price": "16,900원",
-    "discount_rate": 35,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YjM4MDY0/ZW15MThmWGpjczZ0SGNTSG53d2UvaDYwK0lmNzNIaG5ZVkFOZVZWK291QT0.png",
-    "link_url": "https://toss.im/_m/D42sjsqs"
-  },
-  {
     "id": 10,
-    "taca_item_id": 2656641435,
+    "taca_item_id": 2137802307,
     "badge": "10위",
-    "title": "햇 나주배",
-    "price_label": "14,600원",
-    "original_price": "41,040원",
-    "discount_rate": 64,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-20/c66a8c47-239d-49ba-aa06-9fe559ae3ff0.png",
-    "link_url": "https://toss.im/_m/LnGrNPWt"
+    "title": "잘마른 몸통 오징어",
+    "price_label": "9,900원",
+    "original_price": "15,000원",
+    "discount_rate": 34,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-19/22d32278-3310-44ee-b57d-e46d015eb2e0.jpeg",
+    "link_url": "https://toss.im/_m/FhQkUM0c"
   }
 ]
