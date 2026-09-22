@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "badge": "판매 1위",
+    "title": "사리원 소불고기 4팩",
+    "price_label": "1만 3천원대",
+    "original_price": "24,000원",
+    "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample1"
+  },
+  {
+    "id": 2,
+    "badge": "베스트 2위",
+    "title": "곰곰 국내산 1등급 우유 1L 2개",
+    "price_label": "3천원대",
+    "original_price": "5,200원",
+    "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample2"
+  },
+  {
+    "id": 3,
+    "badge": "베스트 3위",
+    "title": "동원 샘물 2L 12병 (무료배송)",
+    "price_label": "7천원대",
+    "original_price": "11,800원",
+    "image_url": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample3"
+  },
+  {
+    "id": 4,
+    "badge": "인기 4위",
+    "title": "햇반 백미밥 210g 24개 번들",
+    "price_label": "1만 8천원대",
+    "original_price": "26,000원",
+    "image_url": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample4"
+  },
+  {
+    "id": 5,
+    "badge": "인기 5위",
+    "title": "스팸 클래식 200g 10캔 세트",
+    "price_label": "1만 9천원대",
+    "original_price": "32,000원",
+    "image_url": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample5"
+  },
+  {
+    "id": 6,
+    "badge": "인기 6위",
+    "title": "비비고 왕교자 만두 1.05kg 2봉",
+    "price_label": "1만 4천원대",
+    "original_price": "21,000원",
+    "image_url": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample6"
+  },
+  {
+    "id": 7,
+    "badge": "인기 7위",
+    "title": "코디 3겹 데코 순수 천연펄프 30롤",
+    "price_label": "1만 1천원대",
+    "original_price": "18,900원",
+    "image_url": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample7"
+  },
+  {
+    "id": 8,
+    "badge": "인기 8위",
+    "title": "다우니 섬유유연제 베리베리 1L 3개",
+    "price_label": "1만 3천원대",
+    "original_price": "22,000원",
+    "image_url": "https://images.unsplash.com/photo-1585670210693-e7fdd16b142e?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample8"
+  },
+  {
+    "id": 9,
+    "badge": "인기 9위",
+    "title": "네스카페 수프리모 커피믹스 180T",
+    "price_label": "1만 7천원대",
+    "original_price": "25,800원",
+    "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample9"
+  },
+  {
+    "id": 10,
+    "badge": "인기 10위",
+    "title": "크리넥스 안심 키친타월 120매 8롤",
+    "price_label": "6천원대",
+    "original_price": "10,500원",
+    "image_url": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600&auto=format&fit=crop&q=80",
+    "link_url": "https://link.coupang.com/a/sample10"
+  }
+]

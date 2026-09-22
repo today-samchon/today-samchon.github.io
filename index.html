@@ -657,40 +657,101 @@
     const toastEl = document.getElementById('toast');
     const toastMessageEl = document.getElementById('toast-message');
 
-    // Fetch and Load Data
+    // Fetch and Load Data (카테고리별 JSON 파일 분리 및 독립 병렬 로드)
     async function loadProductData() {
       loadingStateEl.classList.remove('hidden');
       errorStateEl.classList.add('hidden');
       emptySearchStateEl.classList.add('hidden');
       productListEl.innerHTML = '';
 
-      try {
-        const res = await fetch('./data.json?t=' + Date.now());
-        if (!res.ok) {
-          throw new Error('데이터 파일을 불러올 수 없습니다 (' + res.status + ')');
-        }
-        appData = await res.json();
+      const cacheBust = '?t=' + Date.now();
 
-        // Update header timestamp
-        if (appData.updated_at) {
+      // 안전 JSON 파서
+      const fetchJsonSafe = async (url) => {
+        try {
+          const res = await fetch(url);
+          if (!res.ok) return null;
+          return await res.json();
+        } catch (e) {
+          console.warn('파일 로드 실패 (' + url + '):', e);
+          return null;
+        }
+      };
+
+      // 배열 추출 헬퍼 (배열 직접 반환 또는 { items: [...] } 구조 모두 지원)
+      const extractList = (data, fallbackList = []) => {
+        if (!data) return fallbackList;
+        if (Array.isArray(data)) return data;
+        if (Array.isArray(data.items)) return data.items;
+        if (Array.isArray(data.deals)) return data.deals;
+        if (Array.isArray(data.bests)) return data.bests;
+        if (Array.isArray(data.data)) return data.data;
+        return fallbackList;
+      };
+
+      try {
+        // 4개 카테고리 개별 JSON 파일 및 통합 data.json 병렬 페치
+        const [
+          tossDealsData,
+          coupangBestsData,
+          tossBestsData,
+          samchonPicksData,
+          legacyData
+        ] = await Promise.all([
+          fetchJsonSafe('./data/toss_deals.json' + cacheBust),
+          fetchJsonSafe('./data/coupang_bests.json' + cacheBust),
+          fetchJsonSafe('./data/toss_bests.json' + cacheBust),
+          fetchJsonSafe('./data/samchon_picks.json' + cacheBust),
+          fetchJsonSafe('./data.json' + cacheBust)
+        ]);
+
+        const legacy = legacyData || {};
+
+        // 각 카테고리별 독립 데이터 적용 (개별 파일 우선 ➔ 없으면 legacy fallback)
+        appData.toss_deals = extractList(tossDealsData, legacy.toss_deals || []);
+        appData.coupang_bests = extractList(coupangBestsData, legacy.coupang_bests || []);
+        appData.toss_bests = extractList(tossBestsData, legacy.toss_bests || []);
+        appData.uncle_picks = extractList(samchonPicksData, legacy.uncle_picks || []);
+
+        // 갱신 시각 결정 (개별 파일 객체 내 updated_at 또는 legacy.updated_at)
+        const possibleTimestamps = [
+          tossDealsData?.updated_at,
+          tossBestsData?.updated_at,
+          coupangBestsData?.updated_at,
+          legacy.updated_at
+        ].filter(Boolean);
+
+        if (possibleTimestamps.length > 0) {
+          appData.updated_at = possibleTimestamps[0];
           headerUpdatedAtEl.textContent = appData.updated_at;
         } else {
           headerUpdatedAtEl.textContent = '방금 전';
         }
 
-        // Update Hub counts
-        if (hubCountToss) hubCountToss.textContent = (appData.toss_deals || []).length + '개 특가';
-        if (hubCountCoupang) hubCountCoupang.textContent = 'TOP ' + (appData.coupang_bests || []).length;
+        // 전체 카테고리가 모두 비어있을 때만 에러 화면 노출
+        const totalItemsCount = 
+          appData.toss_deals.length + 
+          appData.coupang_bests.length + 
+          appData.toss_bests.length + 
+          appData.uncle_picks.length;
+
+        if (totalItemsCount === 0) {
+          throw new Error('모든 카테고리 데이터를 불러오지 못했습니다.');
+        }
+
+        // Hub count badges 업데이트
+        if (hubCountToss) hubCountToss.textContent = appData.toss_deals.length + '개 특가';
+        if (hubCountCoupang) hubCountCoupang.textContent = 'TOP ' + appData.coupang_bests.length;
         const tossBestItems = appData.toss_bests || [];
         if (hubCountTossBest) hubCountTossBest.textContent = tossBestItems.length > 0 ? 'TOP ' + tossBestItems.length : '베스트 10선';
-        if (hubCountUncle) hubCountUncle.textContent = (appData.uncle_picks || []).length + '개 추천템';
+        if (hubCountUncle) hubCountUncle.textContent = appData.uncle_picks.length + '개 추천템';
 
         loadingStateEl.classList.add('hidden');
 
-        // Check hash to direct route if present
+        // URL 해시 기반 카테고리 뷰 라우팅
         handleHashRouting();
       } catch (err) {
-        console.error(err);
+        console.error('데이터 로드 최종 실패:', err);
         loadingStateEl.classList.add('hidden');
         errorStateEl.classList.remove('hidden');
       }
