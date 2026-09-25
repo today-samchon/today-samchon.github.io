@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>🍱 토스 하루특가 식품 브리핑 | 카카오톡 원터치 공유</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0b111e;
+      --card-bg: rgba(22, 32, 53, 0.85);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --kakao-yellow: #FEE500;
+      --kakao-label: #191919;
+      --toss-blue: #0064FF;
+      --toss-blue-hover: #0050d0;
+      --accent-green: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 40px;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* 헤더 */
+    .header {
+      text-align: center;
+      padding: 12px 0 6px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 8px;
+      letter-spacing: -0.2px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* 액션 버튼 그룹 (상단 고정 배치) */
+    .action-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      height: 52px;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    /* 카카오톡 공유 버튼 */
+    .btn-kakao {
+      background-color: var(--kakao-yellow);
+      color: var(--kakao-label);
+    }
+
+    .btn-kakao:hover {
+      background-color: #fada0a;
+    }
+
+    /* 클립보드 복사 버튼 */
+    .btn-copy {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+    }
+
+    .btn-copy:hover {
+      background-color: var(--toss-blue-hover);
+    }
+
+    /* 카카오톡 앱 바로 열기 버튼 */
+    .btn-secondary {
+      background-color: rgba(255, 255, 255, 0.08);
+      color: #e2e8f0;
+      border: 1px solid var(--card-border);
+      height: 46px;
+      font-size: 14px;
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.14);
+    }
+
+    /* 텍스트 미리보기 카드 */
+    .preview-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .preview-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .char-count {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .text-content {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      word-break: break-all;
+      background: rgba(11, 17, 30, 0.6);
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      max-height: 380px;
+      overflow-y: auto;
+      user-select: all;
+    }
+
+    /* 토스트 알림 */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: rgba(16, 185, 129, 0.95);
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* 푸터 */
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">오늘의 특가 삼촌 큐레이션</span>
+      <h1 class="title">🍱 토스 하루특가 식품 브리핑</h1>
+      <p class="subtitle">원터치로 스마트폰 카카오톡에 바로 공유하세요</p>
+    </div>
+
+    <!-- 액션 버튼 -->
+    <div class="action-panel">
+      <!-- 1. 스마트폰 시스템 네이티브 공유 (카카오톡 바로 선택 가능) -->
+      <button id="btnShare" class="btn btn-kakao" onclick="shareToKakao()">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 3C6.477 3 2 6.477 2 10.767c0 2.76 1.87 5.184 4.697 6.495l-1.196 4.387c-.105.385.334.69.658.472l5.195-3.46c.21.018.423.028.646.028 5.523 0 10-3.477 10-7.767C22 6.477 17.523 3 12 3z"/>
+        </svg>
+        📲 카카오톡으로 바로 공유
+      </button>
+
+      <!-- 2. 클립보드 원터치 복사 -->
+      <button id="btnCopy" class="btn btn-copy" onclick="copyBriefing()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        📋 브리핑 본문 원터치 복사
+      </button>
+
+      <!-- 3. 카카오톡 앱 바로 열기 -->
+      <a href="kakaotalk://" class="btn btn-secondary">
+        💬 카카오톡 앱 바로 열기 (kakaotalk://)
+      </a>
+    </div>
+
+    <!-- 미리보기 카드 -->
+    <div class="preview-card">
+      <div class="preview-header">
+        <span class="preview-title">
+          <span>📝</span> 공유 메시지 미리보기
+        </span>
+        <span id="charCount" class="char-count">0자</span>
+      </div>
+      <div id="briefingContent" class="text-content">메시지를 불러오는 중입니다...</div>
+    </div>
+
+    <div class="footer">
+      💡 본 페이지는 텔레그램에서 카카오톡으로의 간편한 전달을 돕는 브릿지 도구입니다.
+    </div>
+  </div>
+
+  <div id="toast" class="toast">
+    <span>✅</span>
+    <span id="toastMsg">복사되었습니다! 카톡방에 붙여넣으세요.</span>
+  </div>
+
+  <script>
+    let briefingText = "";
+
+    // URL 파라미터 또는 해시에서 브리핑 본문 텍스트 추출
+    function loadBriefingText() {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        let text = urlParams.get('text');
+
+        // 해시 파라미터 (#text=...) 확인 (긴 텍스트 대응)
+        if (!text && window.location.hash) {
+          const hashParams = new URLSearchParams(window.location.hash.substring(1));
+          text = hashParams.get('text');
+        }
+
+        // Base64 인코딩 지원 (?b64=...)
+        const b64 = urlParams.get('b64');
+        if (b64) {
+          text = decodeURIComponent(escape(atob(b64)));
+        }
+
+        if (text) {
+          briefingText = text.trim();
+        } else {
+          // 파라미터가 없을 때 기본 안내 샘플 텍스트
+          briefingText = `[오늘의 특가 삼촌] 🍱 토스 하루특가 식품 브리핑\n\n오늘 토스에서 마트보다 저렴하게 풀린 먹거리만 골라왔습니다.\n수량 소진 시 조기 마감될 수 있습니다.\n\n※ 파라미터가 지정되지 않았습니다. 텔레그램 봇을 통해 생성된 링크를 이용해주세요.`;
+        }
+
+        document.getElementById('briefingContent').innerText = briefingText;
+        document.getElementById('charCount').innerText = `${briefingText.length}자`;
+      } catch (err) {
+        console.error("메시지 로딩 실패:", err);
+      }
+    }
+
+    // 토스트 팝업 띄우기
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    // 클립보드 복사 함수
+    async function copyBriefing() {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(briefingText);
+        } else {
+          // 레거시 폴백
+          const textArea = document.createElement("textarea");
+          textArea.value = briefingText;
+          textArea.style.position = "fixed";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+        }
+        showToast("✅ 복사 완료! 카톡방에 바로 붙여넣으세요.");
+      } catch (err) {
+        showToast("⚠️ 복사 실패: 본문 텍스트를 길게 눌러 복사해주세요.");
+      }
+    }
+
+    // 모바일 네이티브 공유 / 카카오톡 전달
+    async function shareToKakao() {
+      // 1. Web Share API (모바일 크롬, 사파리, 삼성인터넷 완벽 지원)
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: "🍱 오늘의 특가 삼촌 식품 브리핑",
+            text: briefingText
+          });
+          return;
+        } catch (err) {
+          if (err.name !== 'AbortError') {
+            console.log("Web Share 오류:", err);
+          }
+        }
+      }
+
+      // 2. 모바일 브라우저 미지원 또는 PC 환경일 경우 자동 복사 후 카카오톡 실행
+      await copyBriefing();
+      setTimeout(() => {
+        window.location.href = "kakaotalk://";
+      }, 600);
+    }
+
+    // 페이지 진입 시 데이터 로드
+    window.addEventListener('DOMContentLoaded', () => {
+      loadBriefingText();
+    });
+  </script>
+</body>
+</html>
