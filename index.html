@@ -409,6 +409,49 @@
 
       </div>
 
+      <!-- ======================================================== -->
+      <!-- [NEW] 🎬 쇼츠 속 상품 (1~10번 가로 슬라이더)             -->
+      <!-- ======================================================== -->
+      <section id="shorts-slider-section" class="bg-gradient-to-b from-stone-50 via-white to-stone-50/70 border border-stone-200/90 rounded-2xl p-3.5 shadow-sm space-y-3">
+        <!-- 섹션 타이틀 및 전체보기 링크 -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-rose-600 text-white text-[11px] font-black shadow-sm animate-pulse">
+              ▶
+            </span>
+            <div>
+              <h3 class="text-[15px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
+                <span>쇼츠 속 상품</span>
+                <span class="text-[10px] font-black text-rose-600 bg-rose-50 border border-rose-200/60 px-1.5 py-0.5 rounded-full">1~10번</span>
+              </h3>
+            </div>
+          </div>
+          <button onclick="openCategory('toss')" class="text-[12px] font-bold text-stone-500 hover:text-[#3182F6] flex items-center gap-0.5 active:scale-95 transition">
+            <span>목록 전체보기</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 안내 문구 -->
+        <p class="text-[11.5px] text-stone-500 font-medium -mt-1 leading-snug">
+          영상에서 보신 <strong>[번호]</strong>를 누르거나 옆으로 슥 밀어 링크를 바로 찾으세요!
+        </p>
+
+        <!-- 번호 퀵 점프 버튼 바 (1번~10번 알약 칩) -->
+        <div id="shorts-quick-chips" class="flex gap-1.5 overflow-x-auto no-scrollbar py-0.5 select-none">
+          <!-- JS에서 동적 렌더링 -->
+        </div>
+
+        <!-- 가로 슬라이더 캐러셀 트랙 -->
+        <div class="relative -mx-1 px-1">
+          <div id="shorts-slider-track" class="flex gap-2.5 overflow-x-auto no-scrollbar snap-x snap-mandatory py-1 px-0.5 scroll-smooth">
+            <!-- JS에서 동적 렌더링 -->
+          </div>
+        </div>
+      </section>
+
       <!-- Informative Bottom Banner -->
       <div
         class="bg-stone-100/90 border border-stone-200/80 rounded-2xl p-3.5 flex items-center gap-3 text-stone-600 mt-2">
@@ -612,6 +655,7 @@
     // State management
     let appData = {
       updated_at: '',
+      shorts_items: [],
       toss_deals: [],
       coupang_bests: [],
       toss_bests: [],
@@ -690,14 +734,16 @@
       };
 
       try {
-        // 4개 카테고리 개별 JSON 파일 및 통합 data.json 병렬 페치
+        // 개별 JSON 파일 및 통합 data.json 병렬 페치
         const [
+          shortsItemsData,
           tossDealsData,
           coupangBestsData,
           tossBestsData,
           samchonPicksData,
           legacyData
         ] = await Promise.all([
+          fetchJsonSafe('./data/shorts_items.json' + cacheBust),
           fetchJsonSafe('./data/toss_deals.json' + cacheBust),
           fetchJsonSafe('./data/coupang_bests.json' + cacheBust),
           fetchJsonSafe('./data/toss_bests.json' + cacheBust),
@@ -708,6 +754,7 @@
         const legacy = legacyData || {};
 
         // 각 카테고리별 독립 데이터 적용 (개별 파일 우선 ➔ 없으면 legacy fallback)
+        appData.shorts_items = extractList(shortsItemsData, legacy.shorts_items || []);
         appData.toss_deals = extractList(tossDealsData, legacy.toss_deals || []);
         appData.coupang_bests = extractList(coupangBestsData, legacy.coupang_bests || []);
         appData.toss_bests = extractList(tossBestsData, legacy.toss_bests || []);
@@ -745,6 +792,9 @@
         const tossBestItems = appData.toss_bests || [];
         if (hubCountTossBest) hubCountTossBest.textContent = tossBestItems.length > 0 ? 'TOP ' + tossBestItems.length : '베스트 10선';
         if (hubCountUncle) hubCountUncle.textContent = appData.uncle_picks.length + '개 추천템';
+
+        // [NEW] 쇼츠 가로 슬라이더(캐러셀) 렌더링
+        renderShortsSlider();
 
         loadingStateEl.classList.add('hidden');
 
@@ -889,6 +939,137 @@
       });
 
       productListEl.innerHTML = html;
+    }
+
+    // Render Shorts Carousel Slider (Home Hub)
+    function renderShortsSlider() {
+      const track = document.getElementById('shorts-slider-track');
+      const chipsContainer = document.getElementById('shorts-quick-chips');
+      // 쇼츠 전용 상품 목록(shorts_items) 우선 사용 ➔ 없으면 toss_deals 자동 fallback
+      const items = (appData.shorts_items && appData.shorts_items.length > 0)
+        ? appData.shorts_items
+        : (appData.toss_deals || []);
+
+      if (!track || items.length === 0) return;
+
+      // 1. 번호 퀵 점프 알약 칩 렌더링
+      let chipsHtml = `
+        <button onclick="scrollToShortsCard('all')" id="chip-shorts-all"
+          class="shorts-quick-btn py-1 px-3 rounded-full text-[11px] font-black whitespace-nowrap transition-all active:scale-95 shrink-0 bg-stone-900 text-white shadow-xs">
+          전체 보기
+        </button>
+      `;
+
+      items.forEach(item => {
+        chipsHtml += `
+          <button onclick="scrollToShortsCard(${item.id})" id="chip-shorts-${item.id}"
+            class="shorts-quick-btn py-1 px-2.5 rounded-full text-[11px] font-bold whitespace-nowrap transition-all active:scale-95 shrink-0 bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-200/60">
+            ${item.id}번
+          </button>
+        `;
+      });
+      if (chipsContainer) chipsContainer.innerHTML = chipsHtml;
+
+      // 2. 가로 슬라이더 카드 렌더링
+      let cardsHtml = '';
+      items.forEach(item => {
+        const fallbackImg = `https://placehold.co/400x500/FFFDF7/1E3A5F?text=${encodeURIComponent(item.id + '번')}`;
+        const discountRate = item.discount_rate || 0;
+
+        cardsHtml += `
+          <article id="shorts-card-${item.id}" 
+            class="shorts-card-item w-[138px] sm:w-[148px] shrink-0 snap-start bg-white rounded-2xl border border-stone-200/80 shadow-xs hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between group">
+            
+            <!-- 쇼츠 세로 비율 썸네일 컨테이너 -->
+            <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" 
+              class="relative aspect-[4/4.8] w-full bg-stone-100 overflow-hidden block">
+              
+              <img 
+                src="${item.image_url}" 
+                alt="${escapeHtml(item.title)}" 
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                onerror="this.onerror=null; this.src='${fallbackImg}';"
+              >
+
+              <!-- 좌측 상단: 눈에 확 띄는 [번호] 배지 -->
+              <div class="absolute top-2 left-2 bg-gradient-to-r from-rose-500 to-amber-500 text-white text-[11.5px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
+                <span>${item.id}번</span>
+              </div>
+
+              <!-- 우측 상단: 할인율 배지 -->
+              ${discountRate > 0 ? `
+                <div class="absolute top-2 right-2 bg-stone-900/80 backdrop-blur-xs text-amber-300 text-[10px] font-black px-1.5 py-0.5 rounded-md shadow-xs">
+                  ${discountRate}%↓
+                </div>
+              ` : ''}
+
+              <!-- 썸네일 하단 가격 그라데이션 오버레이 -->
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-stone-950/85 via-stone-950/40 to-transparent p-2 pt-4 flex flex-col justify-end">
+                <div class="text-[13px] font-black text-white tracking-tight leading-none drop-shadow-sm">
+                  ${escapeHtml(item.price_label || '가격 확인')}
+                </div>
+              </div>
+            </a>
+
+            <!-- 카드 하단 정보 및 링크 버튼 -->
+            <div class="p-2.5 flex flex-col justify-between flex-1 bg-white">
+              <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" class="block">
+                <h4 class="text-[12px] font-bold text-stone-800 line-clamp-1 leading-snug group-hover:text-[#3182F6] transition-colors" title="${escapeHtml(item.title)}">
+                  ${escapeHtml(item.title)}
+                </h4>
+              </a>
+
+              <a 
+                href="${escapeHtml(item.link_url)}" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="mt-2 w-full py-1.5 px-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white text-[11px] font-extrabold rounded-xl shadow-xs flex items-center justify-center gap-1 active:scale-95 transition-all"
+              >
+                <span>상품 확인</span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+
+          </article>
+        `;
+      });
+
+      track.innerHTML = cardsHtml;
+    }
+
+    // Scroll To Specific Shorts Card & Highlight
+    function scrollToShortsCard(targetId) {
+      const track = document.getElementById('shorts-slider-track');
+      if (!track) return;
+
+      // 칩 활성화 스타일 업데이트
+      document.querySelectorAll('.shorts-quick-btn').forEach(btn => {
+        btn.className = "shorts-quick-btn py-1 px-2.5 rounded-full text-[11px] font-bold whitespace-nowrap transition-all active:scale-95 shrink-0 bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-200/60";
+      });
+
+      if (targetId === 'all') {
+        const chipAll = document.getElementById('chip-shorts-all');
+        if (chipAll) chipAll.className = "shorts-quick-btn py-1 px-3 rounded-full text-[11px] font-black whitespace-nowrap transition-all active:scale-95 shrink-0 bg-stone-900 text-white shadow-xs";
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+        return;
+      }
+
+      const activeChip = document.getElementById('chip-shorts-' + targetId);
+      if (activeChip) {
+        activeChip.className = "shorts-quick-btn py-1 px-2.5 rounded-full text-[11px] font-black whitespace-nowrap transition-all active:scale-95 shrink-0 bg-rose-600 text-white shadow-xs ring-2 ring-rose-200";
+      }
+
+      const card = document.getElementById('shorts-card-' + targetId);
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        
+        // 부드러운 강조 링 애니메이션
+        card.classList.add('ring-2', 'ring-rose-500', 'scale-[1.02]');
+        setTimeout(() => {
+          card.classList.remove('ring-2', 'ring-rose-500', 'scale-[1.02]');
+        }, 1200);
+      }
     }
 
     // Card Renderer: Toss
