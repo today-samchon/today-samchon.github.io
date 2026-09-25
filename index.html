@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
   <title>특가 캐주는 삼촌 | 매일 00시 갱신 오늘의 알뜰 장바구니</title>
 
   <!-- SEO & Social Meta Tags -->
@@ -410,19 +411,19 @@
       </div>
 
       <!-- ======================================================== -->
-      <!-- [NEW] 🎬 쇼츠 속 상품 (1~10번 가로 슬라이더)             -->
+      <!-- [NEW] 🎬 영상 속 상품 (가로 슬라이더)                    -->
       <!-- ======================================================== -->
-      <section id="shorts-slider-section" class="bg-gradient-to-b from-stone-50 via-white to-stone-50/70 border border-stone-200/90 rounded-2xl p-3.5 shadow-sm space-y-3">
+      <section id="shorts-slider-section" class="bg-gradient-to-b from-stone-50 via-white to-stone-50/70 border border-stone-200/90 rounded-2xl p-3.5 shadow-sm space-y-2.5">
         <!-- 섹션 타이틀 및 전체보기 링크 -->
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2">
-            <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-rose-600 text-white text-[11px] font-black shadow-sm animate-pulse">
+            <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white text-[10px] font-black shadow-xs">
               ▶
             </span>
             <div>
               <h3 class="text-[15px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
-                <span>쇼츠 속 상품</span>
-                <span class="text-[10px] font-black text-rose-600 bg-rose-50 border border-rose-200/60 px-1.5 py-0.5 rounded-full">1~10번</span>
+                <span>영상 속 상품</span>
+                <span class="text-[10px] font-black text-rose-600 bg-rose-50 border border-rose-200/60 px-1.5 py-0.5 rounded-full">추천</span>
               </h3>
             </div>
           </div>
@@ -435,17 +436,12 @@
         </div>
 
         <!-- 안내 문구 -->
-        <p class="text-[11.5px] text-stone-500 font-medium -mt-1 leading-snug">
-          영상에서 보신 <strong>[번호]</strong>를 누르거나 옆으로 슥 밀어 링크를 바로 찾으세요!
+        <p class="text-[11.5px] text-stone-500 font-medium leading-snug">
+          영상 속 상품을 옆으로 슥 넘겨 바로 확인해 보세요!
         </p>
 
-        <!-- 번호 퀵 점프 버튼 바 (1번~10번 알약 칩) -->
-        <div id="shorts-quick-chips" class="flex gap-1.5 overflow-x-auto no-scrollbar py-0.5 select-none">
-          <!-- JS에서 동적 렌더링 -->
-        </div>
-
         <!-- 가로 슬라이더 캐러셀 트랙 -->
-        <div class="relative -mx-1 px-1">
+        <div class="relative -mx-1 px-1 pt-1">
           <div id="shorts-slider-track" class="flex gap-2.5 overflow-x-auto no-scrollbar snap-x snap-mandatory py-1 px-0.5 scroll-smooth">
             <!-- JS에서 동적 렌더링 -->
           </div>
@@ -942,60 +938,58 @@
     }
 
     // Render Shorts Carousel Slider (Home Hub)
+    // Render Shorts/Reels Carousel Slider (Home Hub)
     function renderShortsSlider() {
       const track = document.getElementById('shorts-slider-track');
-      const chipsContainer = document.getElementById('shorts-quick-chips');
-      // 쇼츠 전용 상품 목록(shorts_items) 우선 사용 ➔ 없으면 toss_deals 자동 fallback
+      // 릴스/쇼츠 전용 상품 목록(shorts_items) 우선 사용 ➔ 없으면 toss_deals 자동 fallback
       const items = (appData.shorts_items && appData.shorts_items.length > 0)
         ? appData.shorts_items
         : (appData.toss_deals || []);
 
       if (!track || items.length === 0) return;
 
-      // 1. 번호 퀵 점프 알약 칩 렌더링
-      let chipsHtml = `
-        <button onclick="scrollToShortsCard('all')" id="chip-shorts-all"
-          class="shorts-quick-btn py-1 px-3 rounded-full text-[11px] font-black whitespace-nowrap transition-all active:scale-95 shrink-0 bg-stone-900 text-white shadow-xs">
-          전체 보기
-        </button>
-      `;
-
-      items.forEach(item => {
-        chipsHtml += `
-          <button onclick="scrollToShortsCard(${item.id})" id="chip-shorts-${item.id}"
-            class="shorts-quick-btn py-1 px-2.5 rounded-full text-[11px] font-bold whitespace-nowrap transition-all active:scale-95 shrink-0 bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-200/60">
-            ${item.id}번
-          </button>
-        `;
-      });
-      if (chipsContainer) chipsContainer.innerHTML = chipsHtml;
-
-      // 2. 가로 슬라이더 카드 렌더링
+      // 가로 슬라이더 카드 렌더링
       let cardsHtml = '';
-      items.forEach(item => {
-        const fallbackImg = `https://placehold.co/400x500/FFFDF7/1E3A5F?text=${encodeURIComponent(item.id + '번')}`;
+      const fallbackSvg = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23F5F5F4'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23A8A29E'%3E%EC%83%81%ED%92%88 %EC%9D%B4%EB%AF%B8%EC%A7%80%3C/text%3E%3C/svg%3E";
+
+      items.forEach((item, index) => {
         const discountRate = item.discount_rate || 0;
+        const itemId = item.id || (index + 1);
+
+        // 네이버 프록시 등 인코딩된 URL 안전 정제
+        let safeImageUrl = item.image_url || '';
+        if (safeImageUrl.includes('dthumb-phinf.pstatic.net') && safeImageUrl.includes('src=')) {
+          const match = safeImageUrl.match(/[?&]src=([^&]+)/);
+          if (match) {
+            try {
+              safeImageUrl = decodeURIComponent(match[1]).replace(/^["']|["']$/g, '');
+            } catch (e) {}
+          }
+        }
 
         cardsHtml += `
-          <article id="shorts-card-${item.id}" 
+          <article id="shorts-card-${itemId}" 
             class="shorts-card-item w-[138px] sm:w-[148px] shrink-0 snap-start bg-white rounded-2xl border border-stone-200/80 shadow-xs hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between group">
             
-            <!-- 쇼츠 세로 비율 썸네일 컨테이너 -->
+            <!-- 세로 비율 썸네일 컨테이너 -->
             <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" 
               class="relative aspect-[4/4.8] w-full bg-stone-100 overflow-hidden block">
               
               <img 
-                src="${item.image_url}" 
+                src="${escapeHtml(safeImageUrl)}" 
                 alt="${escapeHtml(item.title)}" 
                 loading="lazy"
+                referrerpolicy="no-referrer"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                onerror="this.onerror=null; this.src='${fallbackImg}';"
+                onerror="this.onerror=null; this.src='${fallbackSvg}';"
               >
 
-              <!-- 좌측 상단: 눈에 확 띄는 [번호] 배지 -->
-              <div class="absolute top-2 left-2 bg-gradient-to-r from-rose-500 to-amber-500 text-white text-[11.5px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
-                <span>${item.id}번</span>
-              </div>
+              <!-- 좌측 상단 배지 (옵션: badge 필드가 있을 때만 노출) -->
+              ${item.badge ? `
+                <div class="absolute top-2 left-2 bg-gradient-to-r from-rose-500 to-amber-500 text-white text-[11px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
+                  <span>${escapeHtml(item.badge)}</span>
+                </div>
+              ` : ''}
 
               <!-- 우측 상단: 할인율 배지 -->
               ${discountRate > 0 ? `
@@ -1038,33 +1032,11 @@
       track.innerHTML = cardsHtml;
     }
 
-    // Scroll To Specific Shorts Card & Highlight
+    // Scroll To Specific Shorts/Reels Card & Highlight
     function scrollToShortsCard(targetId) {
-      const track = document.getElementById('shorts-slider-track');
-      if (!track) return;
-
-      // 칩 활성화 스타일 업데이트
-      document.querySelectorAll('.shorts-quick-btn').forEach(btn => {
-        btn.className = "shorts-quick-btn py-1 px-2.5 rounded-full text-[11px] font-bold whitespace-nowrap transition-all active:scale-95 shrink-0 bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-200/60";
-      });
-
-      if (targetId === 'all') {
-        const chipAll = document.getElementById('chip-shorts-all');
-        if (chipAll) chipAll.className = "shorts-quick-btn py-1 px-3 rounded-full text-[11px] font-black whitespace-nowrap transition-all active:scale-95 shrink-0 bg-stone-900 text-white shadow-xs";
-        track.scrollTo({ left: 0, behavior: 'smooth' });
-        return;
-      }
-
-      const activeChip = document.getElementById('chip-shorts-' + targetId);
-      if (activeChip) {
-        activeChip.className = "shorts-quick-btn py-1 px-2.5 rounded-full text-[11px] font-black whitespace-nowrap transition-all active:scale-95 shrink-0 bg-rose-600 text-white shadow-xs ring-2 ring-rose-200";
-      }
-
       const card = document.getElementById('shorts-card-' + targetId);
       if (card) {
         card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-        
-        // 부드러운 강조 링 애니메이션
         card.classList.add('ring-2', 'ring-rose-500', 'scale-[1.02]');
         setTimeout(() => {
           card.classList.remove('ring-2', 'ring-rose-500', 'scale-[1.02]');
