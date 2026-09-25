@@ -282,29 +282,62 @@
   <script>
     let briefingText = "";
 
-    // URL 파라미터 또는 해시에서 브리핑 본문 텍스트 추출
-    function loadBriefingText() {
+    // URL 파라미터 또는 서버(food_briefing.json)에서 최신 브리핑 텍스트 자동 로드
+    async function loadBriefingText() {
       try {
         const urlParams = new URLSearchParams(window.location.search);
         let text = urlParams.get('text');
 
-        // 해시 파라미터 (#text=...) 확인 (긴 텍스트 대응)
+        // 1. 해시 파라미터 (#text=...) 확인 (긴 텍스트 대응)
         if (!text && window.location.hash) {
           const hashParams = new URLSearchParams(window.location.hash.substring(1));
           text = hashParams.get('text');
         }
 
-        // Base64 인코딩 지원 (?b64=...)
+        // 2. Base64 인코딩 지원 (?b64=...)
         const b64 = urlParams.get('b64');
         if (b64) {
           text = decodeURIComponent(escape(atob(b64)));
         }
 
+        // 3. URL 파라미터가 없거나 비어 있을 때: 최신 food_briefing.json 자동 로드
+        if (!text) {
+          document.getElementById('briefingContent').innerText = "📡 오늘의 최신 토스 식품 특가를 불러오는 중입니다...";
+          
+          const jsonEndpoints = [
+            './data/food_briefing.json',
+            'data/food_briefing.json',
+            './food_briefing.json',
+            'https://today-samchon.github.io/data/food_briefing.json',
+            'https://today-samchon.github.io/food_briefing.json'
+          ];
+
+          for (const ep of jsonEndpoints) {
+            try {
+              const resp = await fetch(ep, { cache: 'no-cache' });
+              if (resp.ok) {
+                const data = await resp.json();
+                if (data && data.briefing_text) {
+                  text = data.briefing_text;
+                  const updatedTime = data.updated_at || "자정";
+                  const count = data.count || (data.items ? data.items.length : 14);
+                  const badgeElem = document.querySelector('.badge');
+                  if (badgeElem) {
+                    badgeElem.innerText = `🍱 ${updatedTime} 갱신 완료 (${count}개 엄선)`;
+                  }
+                  break;
+                }
+              }
+            } catch (fetchErr) {
+              // 다음 엔드포인트 시도
+            }
+          }
+        }
+
         if (text) {
           briefingText = text.trim();
         } else {
-          // 파라미터가 없을 때 기본 안내 샘플 텍스트
-          briefingText = `[오늘의 특가 삼촌] 🍱 토스 하루특가 식품 브리핑\n\n오늘 토스에서 마트보다 저렴하게 풀린 먹거리만 골라왔습니다.\n수량 소진 시 조기 마감될 수 있습니다.\n\n※ 파라미터가 지정되지 않았습니다. 텔레그램 봇을 통해 생성된 링크를 이용해주세요.`;
+          briefingText = `[오늘의 특가 삼촌] 🍱 토스 하루특가 식품 브리핑\n\n오늘 토스에서 마트보다 저렴하게 풀린 먹거리만 골라왔습니다.\n수량 소진 시 조기 마감될 수 있습니다.\n\n※ 오늘 등록된 식품 특가 데이터를 조회할 수 없습니다. 잠시 후 다시 시도해 주세요.`;
         }
 
         document.getElementById('briefingContent').innerText = briefingText;
