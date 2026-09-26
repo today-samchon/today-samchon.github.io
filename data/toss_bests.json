@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "taca_item_id": 146304027,
+    "taca_item_id": 278980557,
     "badge": "1위",
-    "title": "수뜰리에 클린 퍼퓸 포밍 핸드 워시",
-    "price_label": "7,900원",
-    "original_price": "39,600원",
-    "discount_rate": 80,
-    "image_url": "https://shopping.toss.im/live/temp/2025-07-23/d282d6f9-2583-4c2a-84c2-6927db02a36a.jpeg",
-    "link_url": "https://toss.im/_m/3l4KJKd8"
+    "title": "그린올린 경기미",
+    "price_label": "16,000원",
+    "original_price": "",
+    "discount_rate": 0,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-10/55851334-c30c-461c-a789-adc2b4b05dc3.png",
+    "link_url": "https://toss.shopping/_m/Ls9zc6Se"
   },
   {
     "id": 2,
@@ -23,8 +23,19 @@
   },
   {
     "id": 3,
-    "taca_item_id": 2534121637,
+    "taca_item_id": 133534567,
     "badge": "3위",
+    "title": "대상 루테인 플러스",
+    "price_label": "16,500원",
+    "original_price": "120,000원",
+    "discount_rate": 86,
+    "image_url": "https://shopping.toss.im/live/taca/ai/NDNmNWNk/UG5HOGN1elorUG1aTStzeEUzT2E4ZEM1TUhraHNXTytKOUNuOXRwSm5BND0.png",
+    "link_url": "https://toss.shopping/_m/pqxJbMto"
+  },
+  {
+    "id": 4,
+    "taca_item_id": 2534121637,
+    "badge": "4위",
     "title": "원김치 쪽파김치",
     "price_label": "9,900원",
     "original_price": "14,900원",
@@ -33,53 +44,9 @@
     "link_url": "https://toss.im/_m/nqNSesV4"
   },
   {
-    "id": 4,
-    "taca_item_id": 366071583,
-    "badge": "4위",
-    "title": "맥스 앤 맥스 전자레인지 라면 용기",
-    "price_label": "8,900원",
-    "original_price": "18,900원",
-    "discount_rate": 52,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-06/4d9c7749-b71a-4815-9622-50747aeb997a.jpeg",
-    "link_url": "https://toss.im/_m/1Ivra9Ro"
-  },
-  {
     "id": 5,
-    "taca_item_id": 2390245599,
-    "badge": "5위",
-    "title": "팽도리 패션밴드",
-    "price_label": "3,900원",
-    "original_price": "15,000원",
-    "discount_rate": 74,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/ZDRmNjIz/QU5QVXRnY0llOXBERkRmRGpQdEFISHZ6b3lNUHBONWtnU2dkbkhoQng2Vk8.png",
-    "link_url": "https://toss.shopping/_m/zo6VdQFn"
-  },
-  {
-    "id": 6,
-    "taca_item_id": 2655681007,
-    "badge": "6위",
-    "title": "청송 햇 홍로 사과",
-    "price_label": "12,900원",
-    "original_price": "69,900원",
-    "discount_rate": 81,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-14/9628fc8b-ec27-44f1-a41d-19377629fd82.png",
-    "link_url": "https://toss.im/_m/BJ2oHvPD"
-  },
-  {
-    "id": 7,
-    "taca_item_id": 2578484649,
-    "badge": "7위",
-    "title": "해남 꿀고구마 베니하루카",
-    "price_label": "7,900원",
-    "original_price": "22,600원",
-    "discount_rate": 65,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-14/840e2a89-b75d-405f-a357-072045130238.jpeg",
-    "link_url": "https://toss.shopping/_m/ZvLFMLFy"
-  },
-  {
-    "id": 8,
     "taca_item_id": 1513747303,
-    "badge": "8위",
+    "badge": "5위",
     "title": "알제이 스틸 스키니 마스카라",
     "price_label": "10,900원",
     "original_price": "17,900원",
@@ -88,25 +55,58 @@
     "link_url": "https://toss.im/_m/PMhMz4h3"
   },
   {
+    "id": 6,
+    "taca_item_id": 1173228149,
+    "badge": "6위",
+    "title": "연세두유 고단백 검은콩&고칼슘",
+    "price_label": "21,800원",
+    "original_price": "39,800원",
+    "discount_rate": 45,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-18/eff90bcc-94ad-4447-8ed9-e726c6dd473a.jpeg",
+    "link_url": "https://toss.shopping/_m/LUJlTdty"
+  },
+  {
+    "id": 7,
+    "taca_item_id": 2655681007,
+    "badge": "7위",
+    "title": "청송 햇 홍로 사과",
+    "price_label": "12,900원",
+    "original_price": "69,900원",
+    "discount_rate": 81,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-14/9628fc8b-ec27-44f1-a41d-19377629fd82.png",
+    "link_url": "https://toss.im/_m/BJ2oHvPD"
+  },
+  {
+    "id": 8,
+    "taca_item_id": 2637048121,
+    "badge": "8위",
+    "title": "가정용 샤인머스켓",
+    "price_label": "11,900원",
+    "original_price": "35,000원",
+    "discount_rate": 66,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-28/4cb03eb8-1df4-45fc-81f0-b3631954e525.jpeg",
+    "link_url": "https://toss.shopping/_m/JWHebxn7"
+  },
+  {
     "id": 9,
-    "taca_item_id": 2650495825,
+    "taca_item_id": 2335791299,
     "badge": "9위",
-    "title": "콕스타 아델라 IH 인덕션 겸용 티타늄 코팅 주물 깊은후라이팬",
-    "price_label": "42,800원",
-    "original_price": "59,900원",
-    "discount_rate": 28,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-07/cdfdec9d-621b-483d-8ba1-bda1785b105f.jpeg",
-    "link_url": "https://toss.shopping/_m/n5diqM76"
+    "title": "맘스럽 플로럴 액체세제",
+    "price_label": "8,900원",
+    "original_price": "15,900원",
+    "discount_rate": 44,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-26/14462407-64c6-4bd0-928f-ab234f01c071.jpeg",
+    "link_url": "https://toss.shopping/_m/LohIXnK9"
   },
   {
     "id": 10,
-    "taca_item_id": 2281613317,
+    "taca_item_id": 2460475873,
     "badge": "10위",
-    "title": "폰박스 무선 핸디 침구 청소기",
-    "price_label": "19,790원",
-    "original_price": "90,000원",
-    "discount_rate": 78,
-    "image_url": "https://shopping.toss.im/ml-vision/smart-crop/596cc6ef-9b64-4557-b5bb-8cb94ebc19d0.jpg",
-    "link_url": "https://toss.shopping/_m/BEjK19H9"
+    "title": "푸드센터 소갈비살",
+    "price_label": "29,900원",
+    "original_price": "100,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
+    "link_url": "https://toss.im/_m/33ca2bV9"
   }
 ]
