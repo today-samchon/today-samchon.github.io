@@ -1,19 +1,8 @@
 [
   {
     "id": 1,
-    "taca_item_id": 278980557,
-    "badge": "1위",
-    "title": "그린올린 경기미",
-    "price_label": "16,000원",
-    "original_price": "",
-    "discount_rate": 0,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-10/55851334-c30c-461c-a789-adc2b4b05dc3.png",
-    "link_url": "https://toss.shopping/_m/Ls9zc6Se"
-  },
-  {
-    "id": 2,
     "taca_item_id": 2659903585,
-    "badge": "2위",
+    "badge": "1위",
     "title": "제주 서귀포 감귤",
     "price_label": "14,500원",
     "original_price": "33,000원",
@@ -22,15 +11,26 @@
     "link_url": "https://toss.shopping/_m/3c8Gu6W9"
   },
   {
+    "id": 2,
+    "taca_item_id": 2091447473,
+    "badge": "2위",
+    "title": "코오롱제약 올인원 하루한알 멀티비타민",
+    "price_label": "32,500원",
+    "original_price": "42,000원",
+    "discount_rate": 22,
+    "image_url": "https://shopping.toss.im/live/taca/ai/YTc3ZjBi/QU9KTXNtd1dJRWt5elRZczl6amF0Sk56N3BOTjNvck1Mbmx0S1oveHRGSGc.png",
+    "link_url": "https://toss.shopping/_m/B8xbF8xd"
+  },
+  {
     "id": 3,
-    "taca_item_id": 133534567,
+    "taca_item_id": 123758699,
     "badge": "3위",
-    "title": "대상 루테인 플러스",
-    "price_label": "16,500원",
-    "original_price": "120,000원",
-    "discount_rate": 86,
-    "image_url": "https://shopping.toss.im/live/taca/ai/NDNmNWNk/UG5HOGN1elorUG1aTStzeEUzT2E4ZEM1TUhraHNXTytKOUNuOXRwSm5BND0.png",
-    "link_url": "https://toss.shopping/_m/pqxJbMto"
+    "title": "심플 화이트 보관함",
+    "price_label": "11,500원",
+    "original_price": "23,500원",
+    "discount_rate": 51,
+    "image_url": "https://shopping.toss.im/live/taca/ai/ODYzMzc3/WTlaQTlZT2ZORnRZYS9QaXNFRHgzY0tOQXdsbmNqd2tIV1hBbWcyV0t6MD0.png",
+    "link_url": "https://toss.im/_m/PCbnKEIp"
   },
   {
     "id": 4,
@@ -56,57 +56,57 @@
   },
   {
     "id": 6,
-    "taca_item_id": 1173228149,
+    "taca_item_id": 2644497553,
     "badge": "6위",
-    "title": "연세두유 고단백 검은콩&고칼슘",
-    "price_label": "21,800원",
-    "original_price": "39,800원",
-    "discount_rate": 45,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-18/eff90bcc-94ad-4447-8ed9-e726c6dd473a.jpeg",
-    "link_url": "https://toss.shopping/_m/LUJlTdty"
+    "title": "스킨푸드 캐롯 카로틴 카밍 워터 패드",
+    "price_label": "9,800원",
+    "original_price": "26,000원",
+    "discount_rate": 62,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-03/cdf140d6-bbe0-4b9c-b2af-698c5f1988d5.jpeg",
+    "link_url": "https://toss.shopping/_m/9RWXN9hm"
   },
   {
     "id": 7,
-    "taca_item_id": 2655681007,
+    "taca_item_id": 861976337,
     "badge": "7위",
-    "title": "청송 햇 홍로 사과",
-    "price_label": "12,900원",
-    "original_price": "69,900원",
-    "discount_rate": 81,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-14/9628fc8b-ec27-44f1-a41d-19377629fd82.png",
-    "link_url": "https://toss.im/_m/BJ2oHvPD"
+    "title": "리버티 입는오버나이트",
+    "price_label": "10,900원",
+    "original_price": "24,500원",
+    "discount_rate": 55,
+    "image_url": "https://shopping.toss.im/live/taca/ai/NjAwNTZl/QU94d083bldsdjFhNVU3dVpoM2VyWDVJdFBkZTkybjVuYnNMbjN2WkNYYWw.png",
+    "link_url": "https://toss.shopping/_m/575a6gJo"
   },
   {
     "id": 8,
-    "taca_item_id": 2637048121,
+    "taca_item_id": 2652592435,
     "badge": "8위",
-    "title": "가정용 샤인머스켓",
-    "price_label": "11,900원",
-    "original_price": "35,000원",
-    "discount_rate": 66,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-28/4cb03eb8-1df4-45fc-81f0-b3631954e525.jpeg",
-    "link_url": "https://toss.shopping/_m/JWHebxn7"
+    "title": "봉이네 햇 해남 베니하루카 고구마",
+    "price_label": "7,740원",
+    "original_price": "18,500원",
+    "discount_rate": 58,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-10/842d8f81-ae14-4709-973b-6f861582a21a.jpeg",
+    "link_url": "https://toss.shopping/_m/FkzUBPwx"
   },
   {
     "id": 9,
-    "taca_item_id": 2335791299,
+    "taca_item_id": 2644506203,
     "badge": "9위",
-    "title": "맘스럽 플로럴 액체세제",
-    "price_label": "8,900원",
-    "original_price": "15,900원",
-    "discount_rate": 44,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-26/14462407-64c6-4bd0-928f-ab234f01c071.jpeg",
-    "link_url": "https://toss.shopping/_m/LohIXnK9"
+    "title": "슈베스 위드코튼 유기농 순면커버 생리대",
+    "price_label": "9,900원",
+    "original_price": "23,900원",
+    "discount_rate": 58,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-03/b6a11456-398a-436d-ae00-dce62e0e0ba3.jpeg",
+    "link_url": "https://toss.shopping/_m/1qqQOLIy"
   },
   {
     "id": 10,
-    "taca_item_id": 2460475873,
+    "taca_item_id": 2281613317,
     "badge": "10위",
-    "title": "푸드센터 소갈비살",
-    "price_label": "29,900원",
-    "original_price": "100,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
-    "link_url": "https://toss.im/_m/33ca2bV9"
+    "title": "폰박스 무선 핸디 침구 청소기",
+    "price_label": "19,790원",
+    "original_price": "90,000원",
+    "discount_rate": 78,
+    "image_url": "https://shopping.toss.im/ml-vision/smart-crop/596cc6ef-9b64-4557-b5bb-8cb94ebc19d0.jpg",
+    "link_url": "https://toss.shopping/_m/BEjK19H9"
   }
 ]
