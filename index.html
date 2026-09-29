@@ -193,12 +193,12 @@
         <div class="animate-marquee flex items-center gap-8 whitespace-nowrap font-medium tracking-tight">
           <span class="flex items-center gap-1.5 text-stone-300">
             <span class="text-amber-400 font-bold">※</span>
-            <span>본 페이지는 토스 쉐어링크 및 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.</span>
+            <span>본 페이지는 토스 쉐어링크, 쿠팡 파트너스, 네이버 브랜드 커넥트 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.</span>
           </span>
           <span class="text-stone-600 font-bold text-xs">•</span>
           <span class="flex items-center gap-1.5 text-stone-300">
             <span class="text-amber-400 font-bold">※</span>
-            <span>본 페이지는 토스 쉐어링크 및 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.</span>
+            <span>본 페이지는 토스 쉐어링크, 쿠팡 파트너스, 네이버 브랜드 커넥트 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.</span>
           </span>
           <span class="text-stone-600 font-bold text-xs">•</span>
         </div>
@@ -217,217 +217,73 @@
       </div>
     </aside>
 
-    <!-- HEADER: INSTAGRAM PROFILE SECTION -->
-    <header class="pt-5 pb-3 px-5 bg-gradient-to-b from-amber-50/60 to-[#FFFDF7] border-b border-stone-200/50">
-      <div class="flex items-start gap-3.5">
-        <!-- Story Avatar Ring -->
-        <div class="relative shrink-0 cursor-pointer" onclick="openHomeHub()">
-          <div class="p-[2.5px] rounded-full story-ring-gradient shadow-sm">
-            <div class="p-[2px] bg-[#FFFDF7] rounded-full">
-              <img src="./assets/uncle_profile.png" alt="특가캐주는삼촌 프로필"
-                class="w-[68px] h-[68px] rounded-full object-cover bg-amber-100"
-                onerror="this.onerror=null; this.src='https://api.dicebear.com/7.x/bottts/svg?seed=samchon&backgroundColor=ffdfbf';">
+    <!-- HEADER: SLIM PROFILE SECTION -->
+    <header class="py-3 px-4 bg-gradient-to-b from-amber-50/70 via-[#FFFDF7] to-[#FFFDF7] border-b border-stone-200/60">
+      <div class="flex items-center justify-between gap-3">
+        <!-- Story Avatar Ring & Brand Title -->
+        <div class="flex items-center gap-2.5 cursor-pointer" onclick="openHomeHub()">
+          <div class="relative shrink-0">
+            <div class="p-[2px] rounded-full story-ring-gradient shadow-xs">
+              <div class="p-[1.5px] bg-[#FFFDF7] rounded-full">
+                <img src="./assets/uncle_profile.png" alt="특가캐주는삼촌 프로필"
+                  class="w-11 h-11 rounded-full object-cover bg-amber-100"
+                  onerror="this.onerror=null; this.src='https://api.dicebear.com/7.x/bottts/svg?seed=samchon&backgroundColor=ffdfbf';">
+              </div>
+            </div>
+            <!-- Live Status Dot -->
+            <span class="absolute bottom-0 right-0 flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border-2 border-white"></span>
+            </span>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-1">
+              <h1 class="text-[16px] font-black text-stone-900 tracking-tight flex items-center gap-1">
+                특가 캐주는 삼촌
+                <svg class="w-4 h-4 text-[#3182F6] fill-current shrink-0" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.2 14.2l-3.5-3.5 1.4-1.4 2.1 2.1 5.9-5.9 1.4 1.4-7.3 7.3z" />
+                </svg>
+              </h1>
+            </div>
+            <div class="flex items-center gap-1.5 text-[11px] text-stone-500 font-medium">
+              <span>오늘 영상 속 특가 ⚡</span>
+              <span class="text-stone-300">•</span>
+              <span id="header-updated-at" class="text-stone-600 font-semibold">00시 갱신</span>
             </div>
           </div>
-          <!-- Live Status Dot -->
-          <span class="absolute bottom-1 right-1 flex h-3.5 w-3.5">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-white"></span>
-          </span>
-        </div>
-
-        <!-- Profile Bio & Details -->
-        <div class="flex-1 min-w-0">
-          <!-- Channel Name & Verified Badge -->
-          <div class="flex items-center gap-1.5 flex-wrap">
-            <h1 class="text-[17px] font-extrabold text-stone-900 tracking-tight flex items-center gap-1 cursor-pointer"
-              onclick="openHomeHub()">
-              특가 캐주는 삼촌
-              <!-- Verified Badge -->
-              <svg class="w-[18px] h-[18px] text-[#3182F6] fill-current shrink-0" viewBox="0 0 24 24">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.2 14.2l-3.5-3.5 1.4-1.4 2.1 2.1 5.9-5.9 1.4 1.4-7.3 7.3z" />
-              </svg>
-            </h1>
-            <span class="text-[13px] font-semibold text-stone-500">@today-samchon</span>
-          </div>
-
-          <!-- One Line Bio -->
-          <p class="text-[13px] text-stone-700 font-medium mt-1 leading-snug">
-            매일 00시 갱신! 삼촌이 건져온 오늘 하루특가 🧺
-          </p>
-
-          <!-- Live Timestamp -->
-          <div class="flex items-center gap-1.5 text-[11px] text-stone-500 mt-2 font-medium">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>최근 업데이트:</span>
-            <strong id="header-updated-at" class="text-stone-700 font-semibold">데이터 불러오는 중...</strong>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mini Search & Filter Bar (Always accessible) -->
-      <div class="mt-3 relative">
-        <div class="relative flex items-center">
-          <svg class="w-4 h-4 text-stone-400 absolute left-3 pointer-events-none" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-          <input type="text" id="search-input" placeholder="쇼츠 번호(예: 1번) 또는 상품명 검색..."
-            class="w-full pl-9 pr-8 py-2 bg-stone-100/90 border border-stone-200/90 rounded-xl text-[13px] placeholder-stone-400 text-stone-800 focus:outline-none focus:ring-2 focus:ring-stone-400/40 focus:bg-white transition">
-          <button id="btn-clear-search" class="hidden absolute right-2.5 text-stone-400 hover:text-stone-600 p-1">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
         </div>
       </div>
     </header>
 
     <!-- ======================================================== -->
-    <!-- [VIEW 1: HOME 4-CARD HUB SECTION] (초기 진입 메인 화면)   -->
+    <!-- [VIEW 1: HOME HUB VIEW] (초기 진입 메인 화면)              -->
     <!-- ======================================================== -->
-    <section id="home-hub-view" class="p-4 space-y-4 flex-1">
-
-      <!-- Section Title -->
-      <div class="flex items-center justify-between pt-1 px-1">
-        <div>
-          <h2 class="text-[16px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
-            <span>🛒</span>
-            <span>삼촌의 알뜰 장바구니</span>
-          </h2>
-          <p class="text-[12px] text-stone-500 font-medium mt-0.5">원하시는 특가 테마를 골라보세요!</p>
-        </div>
-        <span
-          class="text-[11px] font-bold text-stone-600 bg-stone-100 border border-stone-200 px-2.5 py-1 rounded-full">
-          4개 카테고리
-        </span>
-      </div>
-
-      <!-- 2x2 Interactive Cards Grid -->
-      <div class="grid grid-cols-2 gap-3">
-
-        <!-- CARD 1: 토스 하루특가 -->
-        <article onclick="openCategory('toss')"
-          class="bg-gradient-to-b from-[#EBF4FF] via-white to-white border-2 border-[#3182F6]/40 hover:border-[#3182F6] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
-          <div>
-            <div class="flex items-center justify-between gap-1">
-              <span class="bg-[#3182F6] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
-                쇼츠 1~10번
-              </span>
-              <span class="text-[10px] text-blue-600 font-black">자정마감</span>
-            </div>
-            <div class="mt-3">
-              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🔥</div>
-              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">토스 하루특가</h3>
-              <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
-                쇼츠 영상 속 바로 그 상품! 오늘만 이 가격
-              </p>
-            </div>
-          </div>
-          <div
-            class="mt-4 pt-2.5 border-t border-blue-100 flex items-center justify-between text-[12px] font-black text-[#3182F6]">
-            <span id="hub-count-toss">10개 특가</span>
-            <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
-          </div>
-        </article>
-
-        <!-- CARD 2: 쿠팡 베스트 -->
-        <article onclick="openCategory('coupang')"
-          class="bg-gradient-to-b from-[#FEECEB] via-white to-white border-2 border-[#E1251B]/40 hover:border-[#E1251B] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
-          <div>
-            <div class="flex items-center justify-between gap-1">
-              <span class="bg-[#E1251B] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
-                실시간 랭킹
-              </span>
-              <span class="text-[10px] text-red-600 font-black">로켓배송</span>
-            </div>
-            <div class="mt-3">
-              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🚀</div>
-              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">쿠팡 베스트</h3>
-              <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
-                지금 가장 잘 나가는 랭킹 TOP 10 모음
-              </p>
-            </div>
-          </div>
-          <div
-            class="mt-4 pt-2.5 border-t border-red-100 flex items-center justify-between text-[12px] font-black text-[#E1251B]">
-            <span id="hub-count-coupang">TOP 10</span>
-            <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
-          </div>
-        </article>
-
-        <!-- CARD 3: 토스 베스트 상품 -->
-        <article onclick="openCategory('toss_bests')"
-          class="bg-gradient-to-b from-[#EEF4FF] via-white to-white border-2 border-[#0055D6]/40 hover:border-[#0055D6] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
-          <div>
-            <div class="flex items-center justify-between gap-1">
-              <span class="bg-[#0055D6] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
-                실시간 랭킹
-              </span>
-              <span class="text-[10px] text-blue-700 font-black">인기 베스트</span>
-            </div>
-            <div class="mt-3">
-              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🏆</div>
-              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">토스 베스트</h3>
-              <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
-                토스 쇼핑에서 지금 가장 잘 나가는 랭킹 TOP 10
-              </p>
-            </div>
-          </div>
-          <div
-            class="mt-4 pt-2.5 border-t border-blue-100 flex items-center justify-between text-[12px] font-black text-[#0055D6]">
-            <span id="hub-count-toss-best">TOP 10</span>
-            <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
-          </div>
-        </article>
-
-        <!-- CARD 4: 삼촌픽 추천 -->
-        <article onclick="openCategory('uncle_picks')"
-          class="bg-gradient-to-b from-[#FFFBEB] via-white to-white border-2 border-[#D97706]/40 hover:border-[#D97706] rounded-2xl p-3.5 shadow-sm hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
-          <div>
-            <div class="flex items-center justify-between gap-1">
-              <span class="bg-[#D97706] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow-xs">
-                삼촌 직접검증
-              </span>
-              <span class="text-[10px] text-amber-600 font-black">강력추천</span>
-            </div>
-            <div class="mt-3">
-              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🧺</div>
-              <h3 class="text-[16px] font-black text-stone-900 tracking-tight">삼촌픽 추천</h3>
-              <p class="text-[11.5px] text-stone-500 font-medium leading-snug mt-1 line-clamp-2">
-                직접 먹어보고 발품 판 찐 인생 꿀특가템
-              </p>
-            </div>
-          </div>
-          <div
-            class="mt-4 pt-2.5 border-t border-amber-100 flex items-center justify-between text-[12px] font-black text-[#D97706]">
-            <span id="hub-count-uncle">추천 10선</span>
-            <span class="group-hover:translate-x-1 transition-transform">보기 →</span>
-          </div>
-        </article>
-
-      </div>
+    <section id="home-hub-view" class="p-3.5 space-y-4 flex-1">
 
       <!-- ======================================================== -->
-      <!-- [NEW] 🎬 영상 속 상품 (가로 슬라이더)                    -->
+      <!-- ⭐️ 1순위: [🎬 오늘 영상 속 상품] (최상단 메인 배치)          -->
       <!-- ======================================================== -->
-      <section id="shorts-slider-section" class="bg-gradient-to-b from-stone-50 via-white to-stone-50/70 border border-stone-200/90 rounded-2xl p-3.5 shadow-sm space-y-2.5">
+      <section id="shorts-slider-section"
+        class="bg-gradient-to-b from-stone-50 via-white to-stone-50/70 border border-stone-200/90 rounded-2xl p-3.5 shadow-sm space-y-2.5">
         <!-- 섹션 타이틀 및 전체보기 링크 -->
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2">
-            <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white text-[10px] font-black shadow-xs">
+            <span
+              class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white text-[10px] font-black shadow-xs">
               ▶
             </span>
             <div>
-              <h3 class="text-[15px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
-                <span>영상 속 상품</span>
-                <span class="text-[10px] font-black text-rose-600 bg-rose-50 border border-rose-200/60 px-1.5 py-0.5 rounded-full">추천</span>
-              </h3>
+              <h2 class="text-[15px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
+                <span>오늘 영상 속 상품</span>
+                <span
+                  class="text-[10px] font-black text-rose-600 bg-rose-50 border border-rose-200/60 px-1.5 py-0.5 rounded-full">자정 마감</span>
+              </h2>
             </div>
           </div>
-          <button onclick="openCategory('toss')" class="text-[12px] font-bold text-stone-500 hover:text-[#3182F6] flex items-center gap-0.5 active:scale-95 transition">
+          <button onclick="openCategory('toss')"
+            class="text-[12px] font-bold text-stone-500 hover:text-[#3182F6] flex items-center gap-0.5 active:scale-95 transition">
             <span>목록 전체보기</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
@@ -437,24 +293,143 @@
 
         <!-- 안내 문구 -->
         <p class="text-[11.5px] text-stone-500 font-medium leading-snug">
-          영상 속 상품을 옆으로 슥 넘겨 바로 확인해 보세요!
+          영상에서 본 번호 상품을 옆으로 넘겨 바로 확인하세요!
         </p>
 
         <!-- 가로 슬라이더 캐러셀 트랙 -->
         <div class="relative -mx-1 px-1 pt-1">
-          <div id="shorts-slider-track" class="flex gap-2.5 overflow-x-auto no-scrollbar snap-x snap-mandatory py-1 px-0.5 scroll-smooth">
+          <div id="shorts-slider-track"
+            class="flex gap-2.5 overflow-x-auto no-scrollbar snap-x snap-mandatory py-1 px-0.5 scroll-smooth">
             <!-- JS에서 동적 렌더링 -->
           </div>
         </div>
       </section>
 
+      <!-- ======================================================== -->
+      <!-- ⭐️ 2순위: [🛒 삼촌의 추천 특가 테마] (카테고리 네비게이션)   -->
+      <!-- ======================================================== -->
+      <div class="space-y-2 pt-1">
+        <div class="flex items-center justify-between px-1">
+          <h3 class="text-[14px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
+            <span>🛒</span>
+            <span>삼촌의 추천 특가 테마</span>
+          </h3>
+          <span class="text-[11px] font-semibold text-stone-500">카테고리별 모아보기</span>
+        </div>
+
+        <!-- 2x2 Interactive Cards Grid -->
+        <div class="grid grid-cols-2 gap-2.5">
+
+          <!-- CARD 1: 토스 하루특가 -->
+          <article onclick="openCategory('toss')"
+            class="bg-gradient-to-b from-[#EBF4FF] via-white to-white border border-[#3182F6]/30 hover:border-[#3182F6] rounded-xl p-2.5 shadow-xs hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+            <div>
+              <div class="flex items-center justify-between gap-1">
+                <span class="bg-[#3182F6] text-white text-[9.5px] font-black px-1.5 py-0.5 rounded shadow-xs">
+                  쇼츠 1~10번
+                </span>
+                <span class="text-[9.5px] text-blue-600 font-bold">자정마감</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-2xl mb-0.5 group-hover:scale-110 transition-transform">🔥</div>
+                <h3 class="text-[14px] font-black text-stone-900 tracking-tight">토스 하루특가</h3>
+                <p class="text-[11px] text-stone-500 font-medium leading-snug mt-0.5 line-clamp-1">
+                  쇼츠 영상 속 바로 그 상품!
+                </p>
+              </div>
+            </div>
+            <div
+              class="mt-2.5 pt-2 border-t border-blue-100/80 flex items-center justify-between text-[11px] font-black text-[#3182F6]">
+              <span id="hub-count-toss">10개 특가</span>
+              <span class="group-hover:translate-x-0.5 transition-transform text-[10px]">보기 →</span>
+            </div>
+          </article>
+
+          <!-- CARD 2: 쿠팡 베스트 -->
+          <article onclick="openCategory('coupang')"
+            class="bg-gradient-to-b from-[#FEECEB] via-white to-white border border-[#E1251B]/30 hover:border-[#E1251B] rounded-xl p-2.5 shadow-xs hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+            <div>
+              <div class="flex items-center justify-between gap-1">
+                <span class="bg-[#E1251B] text-white text-[9.5px] font-black px-1.5 py-0.5 rounded shadow-xs">
+                  실시간 랭킹
+                </span>
+                <span class="text-[9.5px] text-red-600 font-bold">로켓배송</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-2xl mb-0.5 group-hover:scale-110 transition-transform">🚀</div>
+                <h3 class="text-[14px] font-black text-stone-900 tracking-tight">쿠팡 베스트</h3>
+                <p class="text-[11px] text-stone-500 font-medium leading-snug mt-0.5 line-clamp-1">
+                  지금 가장 잘 나가는 TOP 10
+                </p>
+              </div>
+            </div>
+            <div
+              class="mt-2.5 pt-2 border-t border-red-100/80 flex items-center justify-between text-[11px] font-black text-[#E1251B]">
+              <span id="hub-count-coupang">TOP 10</span>
+              <span class="group-hover:translate-x-0.5 transition-transform text-[10px]">보기 →</span>
+            </div>
+          </article>
+
+          <!-- CARD 3: 토스 베스트 상품 -->
+          <article onclick="openCategory('toss_bests')"
+            class="bg-gradient-to-b from-[#EEF4FF] via-white to-white border border-[#0055D6]/30 hover:border-[#0055D6] rounded-xl p-2.5 shadow-xs hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+            <div>
+              <div class="flex items-center justify-between gap-1">
+                <span class="bg-[#0055D6] text-white text-[9.5px] font-black px-1.5 py-0.5 rounded shadow-xs">
+                  실시간 랭킹
+                </span>
+                <span class="text-[9.5px] text-blue-700 font-bold">인기 베스트</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-2xl mb-0.5 group-hover:scale-110 transition-transform">🏆</div>
+                <h3 class="text-[14px] font-black text-stone-900 tracking-tight">토스 베스트</h3>
+                <p class="text-[11px] text-stone-500 font-medium leading-snug mt-0.5 line-clamp-1">
+                  토스 쇼핑 실시간 랭킹 TOP 10
+                </p>
+              </div>
+            </div>
+            <div
+              class="mt-2.5 pt-2 border-t border-blue-100/80 flex items-center justify-between text-[11px] font-black text-[#0055D6]">
+              <span id="hub-count-toss-best">TOP 10</span>
+              <span class="group-hover:translate-x-0.5 transition-transform text-[10px]">보기 →</span>
+            </div>
+          </article>
+
+          <!-- CARD 4: 삼촌픽 추천 -->
+          <article onclick="openCategory('uncle_picks')"
+            class="bg-gradient-to-b from-[#FFFBEB] via-white to-white border border-[#D97706]/30 hover:border-[#D97706] rounded-xl p-2.5 shadow-xs hover:shadow-md active:scale-[0.98] transition-all flex flex-col justify-between cursor-pointer group">
+            <div>
+              <div class="flex items-center justify-between gap-1">
+                <span class="bg-[#D97706] text-white text-[9.5px] font-black px-1.5 py-0.5 rounded shadow-xs">
+                  삼촌 직접검증
+                </span>
+                <span class="text-[9.5px] text-amber-600 font-bold">강력추천</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-2xl mb-0.5 group-hover:scale-110 transition-transform">🧺</div>
+                <h3 class="text-[14px] font-black text-stone-900 tracking-tight">삼촌픽 추천</h3>
+                <p class="text-[11px] text-stone-500 font-medium leading-snug mt-0.5 line-clamp-1">
+                  직접 먹어보고 고른 꿀특가템
+                </p>
+              </div>
+            </div>
+            <div
+              class="mt-2.5 pt-2 border-t border-amber-100/80 flex items-center justify-between text-[11px] font-black text-[#D97706]">
+              <span id="hub-count-uncle">추천 10선</span>
+              <span class="group-hover:translate-x-0.5 transition-transform text-[10px]">보기 →</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
       <!-- Informative Bottom Banner -->
       <div
-        class="bg-stone-100/90 border border-stone-200/80 rounded-2xl p-3.5 flex items-center gap-3 text-stone-600 mt-2">
+        class="bg-stone-100/90 border border-stone-200/80 rounded-2xl p-3.5 flex items-center gap-3 text-stone-600 mt-1">
         <span class="text-2xl shrink-0">💡</span>
         <div class="text-[11.5px] leading-relaxed">
           <strong class="text-stone-800 font-bold block">매일 00시 10분 자동 업데이트!</strong>
-          삼촌이 매일 가장 실속 있고 검증된 최저가 혜택을 선별해 전해드립니다.
+          삼촌이 직접 발품 팔아 건져온 검증된 최저가만 모아 전해드립니다.
         </div>
       </div>
 
@@ -595,7 +570,8 @@
     <!-- FOOTER INFO -->
     <!-- FOOTER INFO -->
     <footer class="mt-auto px-5 py-6 bg-stone-100/90 border-t border-stone-200 text-center text-stone-500 space-y-3">
-      <p class="text-[11.5px] text-stone-600 font-medium leading-relaxed max-w-sm mx-auto bg-stone-200/60 p-2.5 rounded-xl border border-stone-300/60">
+      <p
+        class="text-[11.5px] text-stone-600 font-medium leading-relaxed max-w-sm mx-auto bg-stone-200/60 p-2.5 rounded-xl border border-stone-300/60">
         ※ 본 페이지의 링크를 통해 구매 시 쿠팡 파트너스 및 제휴 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.
       </p>
       <div class="flex items-center justify-center gap-2 cursor-pointer" onclick="openHomeHub()">
@@ -766,16 +742,16 @@
 
         if (possibleTimestamps.length > 0) {
           appData.updated_at = possibleTimestamps[0];
-          headerUpdatedAtEl.textContent = appData.updated_at;
+          if (headerUpdatedAtEl) headerUpdatedAtEl.textContent = appData.updated_at;
         } else {
-          headerUpdatedAtEl.textContent = '방금 전';
+          if (headerUpdatedAtEl) headerUpdatedAtEl.textContent = '방금 전';
         }
 
         // 전체 카테고리가 모두 비어있을 때만 에러 화면 노출
-        const totalItemsCount = 
-          appData.toss_deals.length + 
-          appData.coupang_bests.length + 
-          appData.toss_bests.length + 
+        const totalItemsCount =
+          appData.toss_deals.length +
+          appData.coupang_bests.length +
+          appData.toss_bests.length +
           appData.uncle_picks.length;
 
         if (totalItemsCount === 0) {
@@ -938,15 +914,28 @@
     }
 
     // Render Shorts Carousel Slider (Home Hub)
-    // Render Shorts/Reels Carousel Slider (Home Hub)
     function renderShortsSlider() {
       const track = document.getElementById('shorts-slider-track');
-      // 릴스/쇼츠 전용 상품 목록(shorts_items) 우선 사용 ➔ 없으면 toss_deals 자동 fallback
-      const items = (appData.shorts_items && appData.shorts_items.length > 0)
-        ? appData.shorts_items
-        : (appData.toss_deals || []);
+      if (!track) return;
 
-      if (!track || items.length === 0) return;
+      // 릴스/쇼츠 상품(shorts_items)과 토스 데일리 특가를 스마트하게 결합하여 1~10번 라인업 구성
+      let items = [];
+      if (appData.shorts_items && appData.shorts_items.length > 0) {
+        items = [...appData.shorts_items];
+      }
+      if (appData.toss_deals && appData.toss_deals.length > 0) {
+        const existingIds = new Set(items.map(i => i.id));
+        appData.toss_deals.forEach(td => {
+          if (!existingIds.has(td.id) && items.length < 10) {
+            items.push(td);
+          }
+        });
+      }
+      if (items.length === 0) {
+        items = appData.toss_deals || [];
+      }
+
+      if (items.length === 0) return;
 
       // 가로 슬라이더 카드 렌더링
       let cardsHtml = '';
@@ -963,17 +952,17 @@
           if (match) {
             try {
               safeImageUrl = decodeURIComponent(match[1]).replace(/^["']|["']$/g, '');
-            } catch (e) {}
+            } catch (e) { }
           }
         }
 
         cardsHtml += `
           <article id="shorts-card-${itemId}" 
-            class="shorts-card-item w-[138px] sm:w-[148px] shrink-0 snap-start bg-white rounded-2xl border border-stone-200/80 shadow-xs hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between group">
+            class="shorts-card-item w-[148px] sm:w-[156px] shrink-0 snap-start bg-white rounded-2xl border border-stone-200/90 shadow-xs hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between group">
             
-            <!-- 세로 비율 썸네일 컨테이너 -->
+            <!-- 정사각 비율 썸네일 컨테이너 -->
             <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" 
-              class="relative aspect-[4/4.8] w-full bg-stone-100 overflow-hidden block">
+              class="relative aspect-square w-full bg-stone-100 overflow-hidden block">
               
               <img 
                 src="${escapeHtml(safeImageUrl)}" 
@@ -984,43 +973,48 @@
                 onerror="this.onerror=null; this.src='${fallbackSvg}';"
               >
 
-              <!-- 좌측 상단 배지 (옵션: badge 필드가 있을 때만 노출) -->
-              ${item.badge ? `
-                <div class="absolute top-2 left-2 bg-gradient-to-r from-rose-500 to-amber-500 text-white text-[11px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
-                  <span>${escapeHtml(item.badge)}</span>
-                </div>
-              ` : ''}
+              <!-- 좌측 상단: 큼직한 영상 번호 뱃지 (2안: 영상 멘트와 1:1 매칭) -->
+              <div class="absolute top-2 left-2 bg-stone-900/90 backdrop-blur-xs text-white text-[12px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5">
+                <span class="text-amber-400 font-black">#</span>
+                <span>${itemId}</span>
+              </div>
 
               <!-- 우측 상단: 할인율 배지 -->
               ${discountRate > 0 ? `
-                <div class="absolute top-2 right-2 bg-stone-900/80 backdrop-blur-xs text-amber-300 text-[10px] font-black px-1.5 py-0.5 rounded-md shadow-xs">
+                <div class="absolute top-2 right-2 bg-rose-600 text-white text-[10.5px] font-black px-1.5 py-0.5 rounded-md shadow-xs">
                   ${discountRate}%↓
                 </div>
               ` : ''}
-
-              <!-- 썸네일 하단 가격 그라데이션 오버레이 -->
-              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-stone-950/85 via-stone-950/40 to-transparent p-2 pt-4 flex flex-col justify-end">
-                <div class="text-[13px] font-black text-white tracking-tight leading-none drop-shadow-sm">
-                  ${escapeHtml(item.price_label || '가격 확인')}
-                </div>
-              </div>
             </a>
 
             <!-- 카드 하단 정보 및 링크 버튼 -->
             <div class="p-2.5 flex flex-col justify-between flex-1 bg-white">
               <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" class="block">
-                <h4 class="text-[12px] font-bold text-stone-800 line-clamp-1 leading-snug group-hover:text-[#3182F6] transition-colors" title="${escapeHtml(item.title)}">
+                <h4 class="text-[12.5px] font-bold text-stone-900 line-clamp-2 leading-snug group-hover:text-[#3182F6] transition-colors" title="${escapeHtml(item.title)}">
                   ${escapeHtml(item.title)}
                 </h4>
               </a>
 
+              <!-- 가격 정보 (2안 & 3안: 가격을 가장 크고 명확하게) -->
+              <div class="mt-2 pt-1 border-t border-stone-100">
+                ${item.original_price ? `
+                  <div class="text-[10.5px] text-stone-400 line-through leading-none">
+                    ${escapeHtml(item.original_price)}
+                  </div>
+                ` : ''}
+                <div class="text-[15.5px] font-black text-rose-600 tracking-tight leading-tight mt-0.5">
+                  ${escapeHtml(item.price_label || '가격 확인')}
+                </div>
+              </div>
+
+              <!-- 버튼 (2안: 번호를 다시 각인시켜 이탈 방지) -->
               <a 
                 href="${escapeHtml(item.link_url)}" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="mt-2 w-full py-1.5 px-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white text-[11px] font-extrabold rounded-xl shadow-xs flex items-center justify-center gap-1 active:scale-95 transition-all"
+                class="mt-2 w-full py-1.5 px-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white text-[11.5px] font-black rounded-xl shadow-xs flex items-center justify-center gap-1 active:scale-95 transition-all"
               >
-                <span>상품 확인</span>
+                <span>${itemId}번 보기</span>
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
               </a>
             </div>
@@ -1032,15 +1026,54 @@
       track.innerHTML = cardsHtml;
     }
 
+    // Quick Number Filter Handler (1번 ~ 10번)
+    function selectQuickNumber(num) {
+      // 칩 스타일 갱신
+      const chips = document.querySelectorAll('.quick-num-chip');
+      chips.forEach(chip => {
+        const chipVal = chip.getAttribute('data-num');
+        if (String(chipVal) === String(num)) {
+          chip.className = 'quick-num-chip px-2.5 py-1 rounded-lg text-[11px] font-black bg-stone-900 text-white shrink-0 active:scale-95 transition shadow-xs';
+        } else {
+          chip.className = 'quick-num-chip px-2.5 py-1 rounded-lg text-[11px] font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 shrink-0 active:scale-95 transition';
+        }
+      });
+
+      if (num === 'all') {
+        clearSearch();
+        if (currentView === 'hub') {
+          const track = document.getElementById('shorts-slider-track');
+          if (track) track.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+        return;
+      }
+
+      if (currentView === 'hub') {
+        scrollToShortsCard(num);
+      } else {
+        searchInput.value = num + '번';
+        searchQuery = num + '번';
+        btnClearSearch.classList.remove('hidden');
+        renderList();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
     // Scroll To Specific Shorts/Reels Card & Highlight
     function scrollToShortsCard(targetId) {
       const card = document.getElementById('shorts-card-' + targetId);
       if (card) {
         card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-        card.classList.add('ring-2', 'ring-rose-500', 'scale-[1.02]');
+        card.classList.add('ring-4', 'ring-[#3182F6]', 'scale-[1.03]');
         setTimeout(() => {
-          card.classList.remove('ring-2', 'ring-rose-500', 'scale-[1.02]');
-        }, 1200);
+          card.classList.remove('ring-4', 'ring-[#3182F6]', 'scale-[1.03]');
+        }, 1500);
+      } else {
+        openCategory('toss');
+        searchInput.value = targetId + '번';
+        searchQuery = targetId + '번';
+        btnClearSearch.classList.remove('hidden');
+        renderList();
       }
     }
 
@@ -1048,7 +1081,7 @@
     function renderTossCard(item) {
       const fallbackImg = `https://placehold.co/400x400/FFFDF7/1E3A5F?text=${encodeURIComponent(item.id + '번')}`;
       return `
-        <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
+        <article id="toss-card-${item.id}" class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
           <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
             <img 
               src="${item.image_url}" 
@@ -1085,7 +1118,7 @@
                     ${escapeHtml(item.original_price)}
                   </span>
                 ` : ''}
-                <div class="text-[17px] font-black text-[#3182F6] tracking-tight leading-tight mt-0.5">
+                <div class="text-[18px] font-black text-[#3182F6] tracking-tight leading-tight mt-0.5">
                   ${escapeHtml(item.price_label || '특가 확인')}
                 </div>
               </div>
@@ -1096,7 +1129,7 @@
                 rel="noopener noreferrer" 
                 class="inline-flex items-center gap-1 px-3 py-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
               >
-                <span>특가 확인</span>
+                <span>${item.id}번 보기</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
               </a>
             </div>
@@ -1258,12 +1291,12 @@
 
     // Card Renderer: Samchon's Pick (토스 블루 vs 쿠팡 레드 테마)
     function renderUnclePickCard(item) {
-      const isCoupang = (item.platform === 'coupang') || 
-                        (String(item.affiliate_url || item.link_url || '')).toLowerCase().includes('coupang');
-      
+      const isCoupang = (item.platform === 'coupang') ||
+        (String(item.affiliate_url || item.link_url || '')).toLowerCase().includes('coupang');
+
       const linkUrl = item.affiliate_url || item.link_url || '#';
       const fallbackImg = `https://placehold.co/400x400/FFFDF7/${isCoupang ? 'E60012' : '0064FF'}?text=${encodeURIComponent('삼촌픽')}`;
-      
+
       // 가격 및 할인율 포맷팅
       const rawOrig = item.original_price;
       let origPriceNum = 0;
@@ -1432,34 +1465,38 @@
     });
 
     // Search input handler
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = e.target.value;
-      if (searchQuery.trim()) {
-        btnClearSearch.classList.remove('hidden');
-        // If currently in hub, open currentCategory or toss
-        if (currentView === 'hub') {
-          openCategory(currentCategory || 'toss');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        if (searchQuery.trim()) {
+          if (btnClearSearch) btnClearSearch.classList.remove('hidden');
+          // If currently in hub, open currentCategory or toss
+          if (currentView === 'hub') {
+            openCategory(currentCategory || 'toss');
+          }
+        } else {
+          if (btnClearSearch) btnClearSearch.classList.add('hidden');
         }
-      } else {
-        btnClearSearch.classList.add('hidden');
-      }
-      if (currentView === 'category') {
-        renderList();
-      }
-    });
+        if (currentView === 'category') {
+          renderList();
+        }
+      });
+    }
 
-    btnClearSearch.addEventListener('click', () => {
-      clearSearch();
-    });
+    if (btnClearSearch) {
+      btnClearSearch.addEventListener('click', () => {
+        clearSearch();
+      });
+    }
 
     function clearSearch() {
-      searchInput.value = '';
+      if (searchInput) searchInput.value = '';
       searchQuery = '';
-      btnClearSearch.classList.add('hidden');
+      if (btnClearSearch) btnClearSearch.classList.add('hidden');
       if (currentView === 'category') {
         renderList();
       }
-      searchInput.focus();
+      if (searchInput) searchInput.focus();
     }
 
     // Toast function
@@ -1474,12 +1511,14 @@
     }
 
     // Share action
-    document.getElementById('btn-share-top').addEventListener('click', async () => {
-      const shareData = {
-        title: '특가 캐주는 삼촌 | 매일 00시 갱신 오늘의 알뜰 장바구니',
-        text: '유튜브 쇼츠 속 화제의 알뜰 특가 모음! 토스 하루특가 / 쿠팡 베스트 / 토스 베스트 / 삼촌픽',
-        url: window.location.href
-      };
+    const btnShareTop = document.getElementById('btn-share-top');
+    if (btnShareTop) {
+      btnShareTop.addEventListener('click', async () => {
+        const shareData = {
+          title: '특가 캐주는 삼촌 | 매일 00시 갱신 오늘의 알뜰 장바구니',
+          text: '유튜브 쇼츠 속 화제의 알뜰 특가 모음! 토스 하루특가 / 쿠팡 베스트 / 토스 베스트 / 삼촌픽',
+          url: window.location.href
+        };
 
       if (navigator.share) {
         try {
@@ -1493,6 +1532,7 @@
         copyToClipboard(window.location.href);
       }
     });
+  }
 
     function copyToClipboard(text) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
