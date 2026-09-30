@@ -48,6 +48,11 @@
               light: '#FEECEB',
               navy: '#112F5A',
             },
+            naver: {
+              DEFAULT: '#03C75A',
+              dark: '#02B150',
+              light: '#E8F9F0',
+            },
             emeraldBrand: {
               DEFAULT: '#059669',
               dark: '#047857',
@@ -232,7 +237,8 @@
             </div>
             <!-- Live Status Dot -->
             <span class="absolute bottom-0 right-0 flex h-3 w-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border-2 border-white"></span>
             </span>
           </div>
@@ -277,8 +283,6 @@
             <div>
               <h2 class="text-[15px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
                 <span>오늘 영상 속 상품</span>
-                <span
-                  class="text-[10px] font-black text-rose-600 bg-rose-50 border border-rose-200/60 px-1.5 py-0.5 rounded-full">자정 마감</span>
               </h2>
             </div>
           </div>
@@ -428,8 +432,8 @@
         class="bg-stone-100/90 border border-stone-200/80 rounded-2xl p-3.5 flex items-center gap-3 text-stone-600 mt-1">
         <span class="text-2xl shrink-0">💡</span>
         <div class="text-[11.5px] leading-relaxed">
-          <strong class="text-stone-800 font-bold block">매일 00시 10분 자동 업데이트!</strong>
-          삼촌이 직접 발품 팔아 건져온 검증된 최저가만 모아 전해드립니다.
+          <strong class="text-stone-800 font-bold block">매일 자정 자동 업데이트!</strong>
+          토스 하루 특가를 전해드립니다.
         </div>
       </div>
 
@@ -570,17 +574,13 @@
     <!-- FOOTER INFO -->
     <!-- FOOTER INFO -->
     <footer class="mt-auto px-5 py-6 bg-stone-100/90 border-t border-stone-200 text-center text-stone-500 space-y-3">
-      <p
-        class="text-[11.5px] text-stone-600 font-medium leading-relaxed max-w-sm mx-auto bg-stone-200/60 p-2.5 rounded-xl border border-stone-300/60">
-        ※ 본 페이지의 링크를 통해 구매 시 쿠팡 파트너스 및 제휴 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.
-      </p>
       <div class="flex items-center justify-center gap-2 cursor-pointer" onclick="openHomeHub()">
         <img src="./assets/uncle_profile.png" alt="삼촌 아바타" class="w-6 h-6 rounded-full"
           onerror="this.style.display='none'">
         <span class="text-[13px] font-extrabold text-stone-700 tracking-tight">특가 캐주는 삼촌</span>
       </div>
       <p class="text-[11px] text-stone-500 leading-relaxed max-w-xs mx-auto">
-        유튜브 쇼츠 <span class="font-bold text-stone-700">@today-samchon</span> 채널에서 매일 자정, 당일 엄선된 특가 상품을 공유드려요.
+        유튜브 쇼츠 <span class="font-bold text-stone-700">@today-samchon</span> 채널에서 특가 상품을 공유드려요.
       </p>
       <div class="pt-1 text-[10px] text-stone-400">
         © 2026 today-samchon. All rights reserved.
@@ -913,6 +913,67 @@
       productListEl.innerHTML = html;
     }
 
+    // 링크 및 플랫폼별 테마 감지 (토스=파랑, 쿠팡=빨강, 네이버=초록)
+    function getLinkPlatformTheme(linkUrl, platformHint = '') {
+      const url = String(linkUrl || '').toLowerCase();
+      const hint = String(platformHint || '').toLowerCase();
+
+      // 네이버 링크 (초록 테마)
+      if (url.includes('naver.me') || url.includes('naver.com') || url.includes('smartstore.naver') || hint === 'naver') {
+        return {
+          id: 'naver',
+          name: '네이버',
+          icon: '🟢',
+          cardBorder: 'border-2 border-emerald-300 hover:border-[#03C75A] hover:shadow-[0_4px_16px_rgba(3,199,90,0.15)]',
+          listCardBorder: 'border border-emerald-200/90 hover:border-[#03C75A] shadow-xs hover:shadow-md hover:shadow-emerald-500/10',
+          badgeBg: 'bg-[#03C75A] text-white',
+          tagBg: 'bg-emerald-50 text-[#03C75A] border border-emerald-200/80',
+          tagText: '네이버 특가',
+          btnBg: 'bg-[#03C75A] hover:bg-[#02B150] active:bg-[#028F41] text-white shadow-xs shadow-emerald-500/20',
+          textColor: 'text-[#03C75A]',
+          hoverTextColor: 'group-hover:text-[#03C75A]',
+          accentColor: '#03C75A',
+          imgBorder: 'border-emerald-100'
+        };
+      }
+
+      // 쿠팡 링크 (붉은 테마)
+      if (url.includes('coupang.com') || hint === 'coupang') {
+        return {
+          id: 'coupang',
+          name: '쿠팡',
+          icon: '🚀',
+          cardBorder: 'border-2 border-red-300 hover:border-[#E1251B] hover:shadow-[0_4px_16px_rgba(225,37,27,0.15)]',
+          listCardBorder: 'border border-red-200/90 hover:border-[#E1251B] shadow-xs hover:shadow-md hover:shadow-red-500/10',
+          badgeBg: 'bg-[#E1251B] text-white',
+          tagBg: 'bg-red-50 text-[#E1251B] border border-red-200/80',
+          tagText: '쿠팡 특가',
+          btnBg: 'bg-[#E1251B] hover:bg-[#C01A11] active:bg-[#9E140C] text-white shadow-xs shadow-red-500/20',
+          textColor: 'text-[#E1251B]',
+          hoverTextColor: 'group-hover:text-[#E1251B]',
+          accentColor: '#E1251B',
+          imgBorder: 'border-red-100'
+        };
+      }
+
+      // 토스 링크 (파란 테마 - 기본값)
+      return {
+        id: 'toss',
+        name: '토스',
+        icon: '⚡',
+        cardBorder: 'border-2 border-blue-200 hover:border-[#3182F6] hover:shadow-[0_4px_16px_rgba(49,130,246,0.15)]',
+        listCardBorder: 'border border-blue-200/90 hover:border-[#3182F6] shadow-xs hover:shadow-md hover:shadow-blue-500/10',
+        badgeBg: 'bg-[#3182F6] text-white',
+        tagBg: 'bg-blue-50 text-[#3182F6] border border-blue-200/80',
+        tagText: '토스 특가',
+        btnBg: 'bg-[#3182F6] hover:bg-[#1B64DA] active:bg-[#1553B7] text-white shadow-xs shadow-blue-500/20',
+        textColor: 'text-[#3182F6]',
+        hoverTextColor: 'group-hover:text-[#3182F6]',
+        accentColor: '#3182F6',
+        imgBorder: 'border-blue-100'
+      };
+    }
+
     // Render Shorts Carousel Slider (Home Hub)
     function renderShortsSlider() {
       const track = document.getElementById('shorts-slider-track');
@@ -944,6 +1005,7 @@
       items.forEach((item, index) => {
         const discountRate = item.discount_rate || 0;
         const itemId = item.id || (index + 1);
+        const pTheme = getLinkPlatformTheme(item.link_url, item.platform || item.source);
 
         // 네이버 프록시 등 인코딩된 URL 안전 정제
         let safeImageUrl = item.image_url || '';
@@ -958,7 +1020,7 @@
 
         cardsHtml += `
           <article id="shorts-card-${itemId}" 
-            class="shorts-card-item w-[148px] sm:w-[156px] shrink-0 snap-start bg-white rounded-2xl border border-stone-200/90 shadow-xs hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between group">
+            class="shorts-card-item w-[148px] sm:w-[156px] shrink-0 snap-start bg-white rounded-2xl ${pTheme.cardBorder} transition-all duration-200 overflow-hidden flex flex-col justify-between group">
             
             <!-- 정사각 비율 썸네일 컨테이너 -->
             <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" 
@@ -973,46 +1035,51 @@
                 onerror="this.onerror=null; this.src='${fallbackSvg}';"
               >
 
-              <!-- 좌측 상단: 큼직한 영상 번호 뱃지 (2안: 영상 멘트와 1:1 매칭) -->
+              <!-- 좌측 상단: 큼직한 영상 번호 뱃지 -->
               <div class="absolute top-2 left-2 bg-stone-900/90 backdrop-blur-xs text-white text-[12px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5">
                 <span class="text-amber-400 font-black">#</span>
                 <span>${itemId}</span>
               </div>
 
-              <!-- 우측 상단: 할인율 배지 -->
-              ${discountRate > 0 ? `
-                <div class="absolute top-2 right-2 bg-rose-600 text-white text-[10.5px] font-black px-1.5 py-0.5 rounded-md shadow-xs">
-                  ${discountRate}%↓
+              <!-- 우측 상단: 할인율 배지 및 플랫폼 테마 뱃지 -->
+              <div class="absolute top-2 right-2 flex flex-col items-end gap-1">
+                ${discountRate > 0 ? `
+                  <div class="bg-rose-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded-md shadow-xs">
+                    ${discountRate}%↓
+                  </div>
+                ` : ''}
+                <div class="${pTheme.badgeBg} text-[9.5px] font-black px-1.5 py-0.5 rounded shadow-xs flex items-center gap-0.5">
+                  <span>${pTheme.name}</span>
                 </div>
-              ` : ''}
+              </div>
             </a>
 
             <!-- 카드 하단 정보 및 링크 버튼 -->
             <div class="p-2.5 flex flex-col justify-between flex-1 bg-white">
               <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" class="block">
-                <h4 class="text-[12.5px] font-bold text-stone-900 line-clamp-2 leading-snug group-hover:text-[#3182F6] transition-colors" title="${escapeHtml(item.title)}">
+                <h4 class="text-[12.5px] font-bold text-stone-900 line-clamp-2 leading-snug ${pTheme.hoverTextColor} transition-colors" title="${escapeHtml(item.title)}">
                   ${escapeHtml(item.title)}
                 </h4>
               </a>
 
-              <!-- 가격 정보 (2안 & 3안: 가격을 가장 크고 명확하게) -->
+              <!-- 가격 정보 -->
               <div class="mt-2 pt-1 border-t border-stone-100">
                 ${item.original_price ? `
                   <div class="text-[10.5px] text-stone-400 line-through leading-none">
                     ${escapeHtml(item.original_price)}
                   </div>
                 ` : ''}
-                <div class="text-[15.5px] font-black text-rose-600 tracking-tight leading-tight mt-0.5">
+                <div class="text-[15.5px] font-black ${pTheme.textColor} tracking-tight leading-tight mt-0.5">
                   ${escapeHtml(item.price_label || '가격 확인')}
                 </div>
               </div>
 
-              <!-- 버튼 (2안: 번호를 다시 각인시켜 이탈 방지) -->
+              <!-- 테마별 맞춤 링크 버튼 -->
               <a 
                 href="${escapeHtml(item.link_url)}" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="mt-2 w-full py-1.5 px-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white text-[11.5px] font-black rounded-xl shadow-xs flex items-center justify-center gap-1 active:scale-95 transition-all"
+                class="mt-2 w-full py-1.5 px-2 ${pTheme.btnBg} text-[11.5px] font-black rounded-xl shadow-xs flex items-center justify-center gap-1 active:scale-95 transition-all"
               >
                 <span>${itemId}번 보기</span>
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
@@ -1077,12 +1144,12 @@
       }
     }
 
-    // Card Renderer: Toss
+    // Card Renderer: Toss (파란 테마)
     function renderTossCard(item) {
       const fallbackImg = `https://placehold.co/400x400/FFFDF7/1E3A5F?text=${encodeURIComponent(item.id + '번')}`;
       return `
-        <article id="toss-card-${item.id}" class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
-          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
+        <article id="toss-card-${item.id}" class="bg-white rounded-2xl border border-blue-200/90 hover:border-[#3182F6] p-3.5 shadow-sm hover:shadow-md hover:shadow-blue-500/10 transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
+          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-blue-100">
             <img 
               src="${item.image_url}" 
               alt="${escapeHtml(item.title)}" 
@@ -1103,10 +1170,10 @@
           <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
             <div>
               <div class="flex items-center gap-1.5 mb-1">
-                <span class="text-[11px] font-bold text-[#3182F6] bg-blue-50 px-1.5 py-0.5 rounded">토스 하루특가</span>
+                <span class="text-[11px] font-bold text-[#3182F6] bg-blue-50 border border-blue-200/60 px-1.5 py-0.5 rounded">토스 하루특가</span>
                 <span class="text-[11px] text-stone-400">자정 마감</span>
               </div>
-              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
+              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight group-hover:text-[#3182F6] transition-colors">
                 ${escapeHtml(item.title)}
               </h3>
             </div>
@@ -1127,7 +1194,7 @@
                 href="${escapeHtml(item.link_url)}" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="inline-flex items-center gap-1 px-3 py-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
+                class="inline-flex items-center gap-1 px-3 py-2 bg-[#3182F6] hover:bg-[#1B64DA] active:bg-[#1553B7] text-white text-[12px] font-extrabold rounded-xl shadow-xs hover:shadow active:scale-95 transition-all shrink-0"
               >
                 <span>${item.id}번 보기</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
@@ -1138,7 +1205,7 @@
       `;
     }
 
-    // Card Renderer: Coupang
+    // Card Renderer: Coupang (붉은 테마)
     function renderCoupangCard(item) {
       const fallbackImg = `https://placehold.co/400x400/FFFDF7/E1251B?text=${encodeURIComponent(item.id + '위')}`;
       let rankColor = 'bg-[#112F5A] text-white font-bold';
@@ -1155,8 +1222,8 @@
       }
 
       return `
-        <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
-          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
+        <article class="bg-white rounded-2xl border border-red-200/90 hover:border-[#E1251B] p-3.5 shadow-sm hover:shadow-md hover:shadow-red-500/10 transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
+          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-red-100">
             <img 
               src="${item.image_url}" 
               alt="${escapeHtml(item.title)}" 
@@ -1176,10 +1243,10 @@
           <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
             <div>
               <div class="flex items-center gap-1.5 mb-1">
-                <span class="text-[11px] font-bold text-[#E1251B] bg-red-50 px-1.5 py-0.5 rounded">쿠팡 랭킹</span>
+                <span class="text-[11px] font-bold text-[#E1251B] bg-red-50 border border-red-200/60 px-1.5 py-0.5 rounded">쿠팡 랭킹</span>
                 <span class="text-[11px] text-stone-400">무료배송 혜택</span>
               </div>
-              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
+              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight group-hover:text-[#E1251B] transition-colors">
                 ${escapeHtml(item.title)}
               </h3>
             </div>
@@ -1200,7 +1267,7 @@
                 href="${escapeHtml(item.link_url)}" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="inline-flex items-center gap-1 px-3 py-2 bg-[#E1251B] hover:bg-[#C01A11] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
+                class="inline-flex items-center gap-1 px-3 py-2 bg-[#E1251B] hover:bg-[#C01A11] active:bg-[#9E140C] text-white text-[12px] font-extrabold rounded-xl shadow-xs hover:shadow active:scale-95 transition-all shrink-0"
               >
                 <span>최저가</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
@@ -1211,7 +1278,7 @@
       `;
     }
 
-    // Card Renderer: Toss Best
+    // Card Renderer: Toss Best (파란 테마)
     function renderTossBestCard(item) {
       const fallbackImg = `https://placehold.co/400x400/EEF4FF/0055D6?text=${encodeURIComponent(item.id + '위')}`;
       let rankBadge = 'bg-[#0055D6] text-white font-bold';
@@ -1228,8 +1295,8 @@
       }
 
       return `
-        <article class="bg-white rounded-2xl border border-stone-200/80 p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
-          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/60">
+        <article class="bg-white rounded-2xl border border-blue-200/90 hover:border-[#0055D6] p-3.5 shadow-sm hover:shadow-md hover:shadow-blue-500/10 transition-all duration-200 flex gap-3.5 relative overflow-hidden group">
+          <div class="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-blue-100">
             <img 
               src="${item.image_url}" 
               alt="${escapeHtml(item.title)}" 
@@ -1251,10 +1318,10 @@
           <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
             <div>
               <div class="flex items-center gap-1.5 mb-1">
-                <span class="text-[11px] font-bold text-[#0055D6] bg-blue-50 px-1.5 py-0.5 rounded">토스 베스트</span>
+                <span class="text-[11px] font-bold text-[#0055D6] bg-blue-50 border border-blue-200/60 px-1.5 py-0.5 rounded">토스 베스트</span>
                 <span class="text-[11px] text-stone-400">인기 랭킹</span>
               </div>
-              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight">
+              <h3 class="text-[14px] font-bold text-stone-900 leading-snug line-clamp-2 tracking-tight group-hover:text-[#0055D6] transition-colors">
                 ${escapeHtml(item.title)}
               </h3>
             </div>
@@ -1275,7 +1342,7 @@
                 href="${escapeHtml(item.link_url)}" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="inline-flex items-center gap-1 px-3 py-2 bg-[#0055D6] hover:bg-[#003FB3] text-white text-[12px] font-extrabold rounded-xl shadow-sm hover:shadow active:scale-95 transition-all shrink-0"
+                class="inline-flex items-center gap-1 px-3 py-2 bg-[#0055D6] hover:bg-[#003FB3] text-white text-[12px] font-extrabold rounded-xl shadow-xs hover:shadow active:scale-95 transition-all shrink-0"
               >
                 <span>베스트 확인</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
@@ -1289,13 +1356,15 @@
     // 하위 호환 매핑
     const renderEssentialsCard = renderTossBestCard;
 
-    // Card Renderer: Samchon's Pick (토스 블루 vs 쿠팡 레드 테마)
+    // Card Renderer: Samchon's Pick (토스 블루 vs 쿠팡 레드 vs 네이버 그린 테마)
     function renderUnclePickCard(item) {
-      const isCoupang = (item.platform === 'coupang') ||
-        (String(item.affiliate_url || item.link_url || '')).toLowerCase().includes('coupang');
-
       const linkUrl = item.affiliate_url || item.link_url || '#';
-      const fallbackImg = `https://placehold.co/400x400/FFFDF7/${isCoupang ? 'E60012' : '0064FF'}?text=${encodeURIComponent('삼촌픽')}`;
+      const pTheme = getLinkPlatformTheme(linkUrl, item.platform);
+      const isCoupang = pTheme.id === 'coupang';
+      const isNaver = pTheme.id === 'naver';
+
+      const fallbackColor = isCoupang ? 'E1251B' : (isNaver ? '03C75A' : '3182F6');
+      const fallbackImg = `https://placehold.co/400x400/FFFDF7/${fallbackColor}?text=${encodeURIComponent('삼촌픽')}`;
 
       // 가격 및 할인율 포맷팅
       const rawOrig = item.original_price;
@@ -1313,30 +1382,48 @@
         discountRate = Math.round(((origPriceNum - discPriceNum) / origPriceNum) * 100);
       }
 
-      // 테마 컬러 토큰 정의 (쿠팡 레드 vs 토스 블루)
-      const theme = isCoupang ? {
-        cardBorder: 'border-red-200/90 hover:border-[#E60012] hover:shadow-[0_10px_30px_rgba(230,0,18,0.12)]',
-        badgeBg: 'bg-[#E60012] text-white',
-        badgeText: '쿠팡 와우 / 로켓',
-        badgeIcon: '🚀',
-        priceColor: 'text-[#EF4444]',
-        reviewBox: 'bg-red-50/60 border-red-100/90 text-stone-800',
-        reviewQuote: 'text-red-500',
-        categoryTag: 'bg-red-50 text-red-700 border-red-200/70',
-        btnClass: 'bg-[#E60012] hover:bg-[#C01A11] active:bg-[#9E140C] text-white shadow-sm shadow-red-500/20',
-        btnText: '쿠팡 최저가 확인하기 ↗'
-      } : {
-        cardBorder: 'border-blue-200/90 hover:border-[#0064FF] hover:shadow-[0_10px_30px_rgba(0,100,255,0.12)]',
-        badgeBg: 'bg-[#0064FF] text-white',
-        badgeText: '토스 공동구매',
-        badgeIcon: '⚡',
-        priceColor: 'text-[#3B82F6]',
-        reviewBox: 'bg-blue-50/60 border-blue-100/90 text-stone-800',
-        reviewQuote: 'text-blue-500',
-        categoryTag: 'bg-blue-50 text-blue-700 border-blue-200/70',
-        btnClass: 'bg-[#0064FF] hover:bg-[#1B64DA] active:bg-[#004ECC] text-white shadow-sm shadow-blue-500/20',
-        btnText: '토스 특가 확인하기 ↗'
-      };
+      // 테마 컬러 토큰 정의 (쿠팡 레드 vs 네이버 그린 vs 토스 블루)
+      let theme;
+      if (isCoupang) {
+        theme = {
+          cardBorder: 'border-2 border-red-200/90 hover:border-[#E1251B] hover:shadow-[0_10px_30px_rgba(225,37,27,0.12)]',
+          badgeBg: 'bg-[#E1251B] text-white',
+          badgeText: '쿠팡 와우 / 로켓',
+          badgeIcon: '🚀',
+          priceColor: 'text-[#E1251B]',
+          reviewBox: 'bg-red-50/60 border-red-100/90 text-stone-800',
+          reviewQuote: 'text-red-500',
+          categoryTag: 'bg-red-50 text-red-700 border-red-200/70',
+          btnClass: 'bg-[#E1251B] hover:bg-[#C01A11] active:bg-[#9E140C] text-white shadow-sm shadow-red-500/20',
+          btnText: '쿠팡 최저가 확인하기 ↗'
+        };
+      } else if (isNaver) {
+        theme = {
+          cardBorder: 'border-2 border-emerald-300 hover:border-[#03C75A] hover:shadow-[0_10px_30px_rgba(3,199,90,0.15)]',
+          badgeBg: 'bg-[#03C75A] text-white',
+          badgeText: '네이버 쇼핑',
+          badgeIcon: '🟢',
+          priceColor: 'text-[#03C75A]',
+          reviewBox: 'bg-emerald-50/60 border-emerald-100/90 text-stone-800',
+          reviewQuote: 'text-emerald-500',
+          categoryTag: 'bg-emerald-50 text-emerald-700 border-emerald-200/70',
+          btnClass: 'bg-[#03C75A] hover:bg-[#02B150] active:bg-[#028F41] text-white shadow-sm shadow-emerald-500/20',
+          btnText: '네이버 최저가 확인하기 ↗'
+        };
+      } else {
+        theme = {
+          cardBorder: 'border-2 border-blue-200/90 hover:border-[#3182F6] hover:shadow-[0_10px_30px_rgba(49,130,246,0.12)]',
+          badgeBg: 'bg-[#3182F6] text-white',
+          badgeText: '토스 공동구매 / 특가',
+          badgeIcon: '⚡',
+          priceColor: 'text-[#3182F6]',
+          reviewBox: 'bg-blue-50/60 border-blue-100/90 text-stone-800',
+          reviewQuote: 'text-blue-500',
+          categoryTag: 'bg-blue-50 text-blue-700 border-blue-200/70',
+          btnClass: 'bg-[#3182F6] hover:bg-[#1B64DA] active:bg-[#1553B7] text-white shadow-sm shadow-blue-500/20',
+          btnText: '토스 특가 확인하기 ↗'
+        };
+      }
 
       const userReview = item.user_review || item.review || '삼촌이 직접 써보고 검증한 찐 추천템입니다!';
       const categoryLabel = item.category || '삼촌픽';
@@ -1520,19 +1607,19 @@
           url: window.location.href
         };
 
-      if (navigator.share) {
-        try {
-          await navigator.share(shareData);
-        } catch (err) {
-          if (err.name !== 'AbortError') {
-            copyToClipboard(window.location.href);
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+          } catch (err) {
+            if (err.name !== 'AbortError') {
+              copyToClipboard(window.location.href);
+            }
           }
+        } else {
+          copyToClipboard(window.location.href);
         }
-      } else {
-        copyToClipboard(window.location.href);
-      }
-    });
-  }
+      });
+    }
 
     function copyToClipboard(text) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
