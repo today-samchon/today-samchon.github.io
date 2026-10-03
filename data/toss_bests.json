@@ -1,30 +1,41 @@
 [
   {
     "id": 1,
-    "taca_item_id": 1645332715,
+    "taca_item_id": 2642478229,
     "badge": "1위",
-    "title": "호정가 우리쌀약과",
-    "price_label": "12,900원",
-    "original_price": "16,000원",
-    "discount_rate": 19,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YzYwZjc1/SzBySmFmczhOVWsybVpOa2ZheGt0VnVrNVNUSXh0VFQ1MVF3MmpPMFJXbz0.png",
-    "link_url": "https://toss.shopping/_m/dX7mbjFD"
+    "title": "한예지 가든 플라워 3겹 천연펄프 화장지",
+    "price_label": "25,900원",
+    "original_price": "35,000원",
+    "discount_rate": 26,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-01/7067f243-570f-43a5-b315-001e1950e2fd.jpeg",
+    "link_url": "https://toss.shopping/_m/RQkalIlC"
   },
   {
     "id": 2,
-    "taca_item_id": 90382271,
+    "taca_item_id": 84057409,
     "badge": "2위",
-    "title": "스파클 생수",
-    "price_label": "13,480원",
-    "original_price": "20,000원",
-    "discount_rate": 32,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-18/268e4c6a-1595-43e9-9c1b-f101e5774429.jpeg",
-    "link_url": "https://toss.shopping/_m/1bEjjXaC"
+    "title": "메디핏 잇몸치약",
+    "price_label": "38,800원",
+    "original_price": "80,000원",
+    "discount_rate": 51,
+    "image_url": "https://shopping.toss.im/live/taca/ai/MmRmNDQ1/WncxenJaalhRTTUwalppWGVaQjcwdHloQ1ZKaGVQekcxNkVEV294ei9LUT0.png",
+    "link_url": "https://toss.shopping/_m/TLouMw71"
   },
   {
     "id": 3,
-    "taca_item_id": 2659903585,
+    "taca_item_id": 2665103135,
     "badge": "3위",
+    "title": "제주 극조생 감귤",
+    "price_label": "13,500원",
+    "original_price": "48,900원",
+    "discount_rate": 72,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-28/d318917f-a777-460e-b69d-0f81c6a9f4af.png",
+    "link_url": "https://toss.shopping/_m/n7b3GMLe"
+  },
+  {
+    "id": 4,
+    "taca_item_id": 2659903585,
+    "badge": "4위",
     "title": "제주 서귀포 감귤",
     "price_label": "13,900원",
     "original_price": "33,000원",
@@ -33,9 +44,42 @@
     "link_url": "https://toss.shopping/_m/3c8Gu6W9"
   },
   {
-    "id": 4,
+    "id": 5,
+    "taca_item_id": 2390245599,
+    "badge": "5위",
+    "title": "팽도리 패션밴드",
+    "price_label": "2,900원",
+    "original_price": "15,000원",
+    "discount_rate": 80,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/ZDRmNjIz/QU5QVXRnY0llOXBERkRmRGpQdEFISHZ6b3lNUHBONWtnU2dkbkhoQng2Vk8.png",
+    "link_url": "https://toss.shopping/_m/zo6VdQFn"
+  },
+  {
+    "id": 6,
+    "taca_item_id": 2265183871,
+    "badge": "6위",
+    "title": "딘시 비건 마일드 선크림",
+    "price_label": "3,400원",
+    "original_price": "32,500원",
+    "discount_rate": 97,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-15/07bc2270-a6bd-4f1d-958b-ccfe8a9788e2.jpeg",
+    "link_url": "https://toss.shopping/_m/r5wtxbYj"
+  },
+  {
+    "id": 7,
+    "taca_item_id": 2667820309,
+    "badge": "7위",
+    "title": "햇밤",
+    "price_label": "21,400원",
+    "original_price": "53,500원",
+    "discount_rate": 60,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-30/b2b4f328-d7fd-44fd-832b-5caeb2eb1064.png",
+    "link_url": "https://toss.shopping/_m/rsDh7Omx"
+  },
+  {
+    "id": 8,
     "taca_item_id": 241796467,
-    "badge": "4위",
+    "badge": "8위",
     "title": "괄사 마사지",
     "price_label": "5,450원",
     "original_price": "14,800원",
@@ -44,69 +88,25 @@
     "link_url": "https://toss.shopping/_m/7eb2ktTq"
   },
   {
-    "id": 5,
-    "taca_item_id": 2589981913,
-    "badge": "5위",
-    "title": "산과들에 윤서의달밤",
-    "price_label": "11,990원",
-    "original_price": "25,900원",
-    "discount_rate": 53,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-07/d3842a8f-f17f-4c65-abcf-1abbd9080a7a.jpeg",
-    "link_url": "https://toss.shopping/_m/nx6AXoTb"
-  },
-  {
-    "id": 6,
-    "taca_item_id": 2636711625,
-    "badge": "6위",
-    "title": "푸드어홀릭 네이처 스킨 마스크팩",
-    "price_label": "13,800원",
-    "original_price": "69,000원",
-    "discount_rate": 80,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-17/d8062acd-1aeb-4d9c-b966-7a738e67b13a.jpeg",
-    "link_url": "https://toss.shopping/_m/fG5PtXsi"
-  },
-  {
-    "id": 7,
-    "taca_item_id": 2653075507,
-    "badge": "7위",
-    "title": "수뜰리에 고농축 주방세제",
-    "price_label": "12,900원",
-    "original_price": "39,600원",
-    "discount_rate": 67,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-13/c5515028-dee6-4397-98ee-41240dbd3a83.png",
-    "link_url": "https://toss.shopping/_m/zvs0FCTa"
-  },
-  {
-    "id": 8,
-    "taca_item_id": 1046007247,
-    "badge": "8위",
-    "title": "한우 사골 도가니탕",
-    "price_label": "18,900원",
-    "original_price": "19,000원",
-    "discount_rate": 0,
-    "image_url": "https://shopping.toss.im/live/taca/ai/Mzk0NDM5/YjREN3FJTVc0VFdTRnFVemU4N1dZdWNNV3YwZU5BUHRhTk5yZ0FWS0lRND0.png",
-    "link_url": "https://toss.shopping/_m/VZoCoEUq"
-  },
-  {
     "id": 9,
-    "taca_item_id": 2534121637,
+    "taca_item_id": 2664813429,
     "badge": "9위",
-    "title": "원김치 쪽파김치",
-    "price_label": "9,900원",
-    "original_price": "14,900원",
-    "discount_rate": 33,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDkxZDUx/QU52Z21LSFI4ZUg3QkoxLzhPZGVRMTF5ZEJvNkdnTnJSZTNWSjhpRGZ0VWk.png",
-    "link_url": "https://toss.shopping/_m/nqNSesV4"
+    "title": "과일파는청년 알밤 햇밤",
+    "price_label": "10,500원",
+    "original_price": "61,800원",
+    "discount_rate": 83,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-28/633f2509-f6b3-4cd2-99a6-4b19747a6e67.png",
+    "link_url": "https://toss.shopping/_m/tEtdaTY4"
   },
   {
     "id": 10,
-    "taca_item_id": 2265183871,
+    "taca_item_id": 2123448925,
     "badge": "10위",
-    "title": "딘시 비건 마일드 선크림",
-    "price_label": "3,400원",
-    "original_price": "32,500원",
-    "discount_rate": 97,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-15/07bc2270-a6bd-4f1d-958b-ccfe8a9788e2.jpeg",
-    "link_url": "https://toss.shopping/_m/r5wtxbYj"
+    "title": "드림이음 눈건강 프리미엄 루테인 골드 베타카로틴",
+    "price_label": "15,900원",
+    "original_price": "60,000원",
+    "discount_rate": 73,
+    "image_url": "https://shopping.toss.im/live/temp/2026-07-13/e2b51d3a-1ba1-4d48-9b44-70ed831967ab.jpeg",
+    "link_url": "https://toss.shopping/_m/ZxUhjQC9"
   }
 ]
