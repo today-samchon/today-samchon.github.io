@@ -298,6 +298,13 @@
     <!-- ======================================================== -->
     <section id="home-hub-view" class="p-3 space-y-3 flex-1">
 
+      <section class="bg-white border border-stone-200 rounded-2xl p-3 space-y-2" aria-labelledby="today-products-heading">
+        <h2 id="today-products-heading" class="text-base font-black text-stone-900">오늘의 토스 하루특가</h2>
+        <p id="today-products-status" class="text-xs text-stone-500" role="status"></p>
+        <div id="today-products-track" class="grid grid-cols-2 gap-3"></div>
+        <button id="today-products-more" type="button" onclick="showAllHomeProducts('today-products-track', 'today-products-more')" class="hidden w-full min-h-[44px] rounded-xl border border-stone-200 text-sm font-bold" aria-controls="today-products-track" aria-expanded="false">하루특가 더 보기</button>
+      </section>
+
       <!-- ======================================================== -->
       <!-- ⭐️ 1순위: [🎬 오늘 영상 속 상품] (최상단 메인 배치)          -->
       <!-- ======================================================== -->
@@ -312,7 +319,7 @@
             </span>
             <div>
               <h2 class="text-[14.5px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
-                <span>영상 상품과 특가 모음</span>
+                <span>영상에서 소개한 상품</span>
               </h2>
             </div>
           </div>
@@ -327,7 +334,7 @@
 
         <!-- 안내 문구 -->
         <p class="text-[11px] text-stone-500 font-medium leading-snug">
-          사진으로 찾고, 가격 확인 후 바로 구매처로 이동하세요.
+          영상 소개 당시 가격입니다. 현재 가격·재고는 구매처에서 확인하세요.
         </p>
 
         <!-- 메인에서 사진과 상품명으로 바로 고르는 상품 목록 -->
@@ -340,6 +347,13 @@
         <button id="home-products-more" type="button" onclick="showAllHomeProducts()"
           class="hidden w-full min-h-[44px] rounded-xl border border-stone-200 bg-white text-sm font-bold text-stone-700 hover:bg-stone-50"
           aria-controls="shorts-slider-track" aria-expanded="false">상품 더 보기</button>
+      </section>
+
+      <section class="bg-white border border-stone-200 rounded-2xl p-3 space-y-2" aria-labelledby="best-products-heading">
+        <h2 id="best-products-heading" class="text-base font-black text-stone-900">토스 베스트</h2>
+        <p class="text-xs text-stone-500">오늘의 하루특가와 별도로 집계된 인기 상품입니다.</p>
+        <div id="best-products-track" class="grid grid-cols-2 gap-3"></div>
+        <button id="best-products-more" type="button" onclick="showAllHomeProducts('best-products-track', 'best-products-more')" class="hidden w-full min-h-[44px] rounded-xl border border-stone-200 text-sm font-bold" aria-controls="best-products-track" aria-expanded="false">베스트 더 보기</button>
       </section>
 
       <!-- ======================================================== -->
@@ -640,6 +654,17 @@
     const toastMessageEl = document.getElementById('toast-message');
 
     // Fetch and Load Data (카테고리별 JSON 파일 분리 및 독립 병렬 로드)
+    function seoulDay(value) {
+      const date = new Date(value);
+      return Number.isFinite(date.getTime()) ? new Date(date.getTime() + 9 * 3600000).toISOString().slice(0, 10) : '';
+    }
+
+    function isCurrentCollection(status, at = Date.now()) {
+      const checked = Date.parse(status?.last_success_at || '');
+      return status?.state === 'updated' && Number.isFinite(checked) && checked <= at && seoulDay(checked) === seoulDay(at);
+    }
+
+    let renderedDay = seoulDay(Date.now());
     async function loadProductData() {
       loadingStateEl.classList.remove('hidden');
       errorStateEl.classList.add('hidden');
@@ -698,15 +723,22 @@
         appData.toss_bests = extractList(tossBestsData, legacy.toss_bests || []);
         appData.uncle_picks = extractList(samchonPicksData, legacy.uncle_picks || []);
 
-        // A partial refresh must not make retained products look newly checked.
+        // Only a successful collection from the current KST day may appear as current.
         const syncStates = legacy.sync_status || {};
+        const checkedNow = Date.now();
         const retained = [['toss_deals','하루특가'],['toss_bests','베스트']]
-          .filter(([key]) => ['preserved_empty','preserved_error'].includes(syncStates[key]?.state))
+          .filter(([key]) => !isCurrentCollection(syncStates[key], checkedNow))
           .map(([,label]) => label);
+        if (!isCurrentCollection(syncStates.toss_deals, checkedNow)) appData.toss_deals = [];
+        if (!isCurrentCollection(syncStates.toss_bests, checkedNow)) appData.toss_bests = [];
+        renderedDay = seoulDay(checkedNow);
+        document.getElementById('today-products-status').textContent = appData.toss_deals.length
+          ? '오늘 확인한 하루특가입니다. 구매처에서 최종 가격과 재고를 확인하세요.'
+          : '하루특가 갱신 대기 중입니다. 오늘 확인되지 않은 이전 상품은 표시하지 않습니다.';
         const syncNotice = document.getElementById('sync-status-notice');
         if (syncNotice) {
           syncNotice.hidden = retained.length === 0;
-          syncNotice.textContent = retained.length ? retained.join('·') + ' 갱신 대기: 이전 목록을 표시하고 있습니다. 구매처에서 현재 가격과 재고를 확인해 주세요.' : '';
+          syncNotice.textContent = retained.length ? retained.join('·') + ' 갱신 대기: 오늘 확인되지 않은 이전 목록은 숨겼습니다.' : '';
         }
         // 갱신 시각 결정 (개별 파일 객체 내 updated_at 또는 legacy.updated_at)
         const possibleTimestamps = [
@@ -767,7 +799,7 @@
         // 전체 카테고리가 모두 비어있을 때만 에러 화면 노출
         const totalItemsCount = appData.food_items.length + appData.uncle_picks.length;
 
-        if (totalItemsCount === 0) {
+        if (totalItemsCount === 0 && !legacyData && !shortsItemsData && !tossDealsData && !tossBestsData) {
           throw new Error('모든 카테고리 데이터를 불러오지 못했습니다.');
         }
 
@@ -967,25 +999,27 @@
       };
     }
 
-    function showAllHomeProducts() {
-      document.querySelectorAll('#shorts-slider-track .home-product-extra').forEach(card => card.classList.remove('hidden'));
-      const more = document.getElementById('home-products-more');
+    function showAllHomeProducts(trackId = 'shorts-slider-track', buttonId = 'home-products-more') {
+      document.querySelectorAll('#' + trackId + ' .home-product-extra').forEach(card => card.classList.remove('hidden'));
+      const more = document.getElementById(buttonId);
       more.classList.add('hidden');
       more.setAttribute('aria-expanded', 'true');
     }
 
-    // Video products first, followed by deals; ordinal IDs are not product identity.
+    // Keep video history, today's deals and best sellers in distinct sections.
     function renderShortsSlider() {
-      const track = document.getElementById('shorts-slider-track');
+      renderHomeGroup('shorts-slider-track', 'home-products-more', appData.shorts_items, true);
+      renderHomeGroup('today-products-track', 'today-products-more', appData.toss_deals, false);
+      renderHomeGroup('best-products-track', 'best-products-more', appData.toss_bests, false);
+    }
+
+    function renderHomeGroup(trackId, buttonId, products, fromVideo) {
+      const track = document.getElementById(trackId);
       if (!track) return;
 
       const items = [];
       const seen = new Set();
-      const sources = [
-        [appData.shorts_items || [], true],
-        [appData.toss_deals || [], false],
-        [appData.toss_bests || [], false]
-      ];
+      const sources = [[products || [], fromVideo]];
       sources.forEach(([products, fromVideo]) => products.forEach(item => {
         const keys = [item.taca_item_id ? 'toss:' + item.taca_item_id : '',
           purchaseHref(item.link_url) !== '#' ? 'url:' + item.link_url : ''].filter(Boolean);
@@ -994,7 +1028,7 @@
         keys.forEach(key => seen.add(key));
         items.push({ ...item, fromVideo });
       }));
-      const more = document.getElementById('home-products-more');
+      const more = document.getElementById(buttonId);
       more.classList.toggle('hidden', items.length <= 4);
       more.setAttribute('aria-expanded', 'false');
       more.textContent = `상품 ${Math.max(0, items.length - 4)}개 더 보기`;
@@ -1008,7 +1042,7 @@
 
       items.forEach((item, index) => {
         const discountRate = item.discount_rate || 0;
-        const itemId = index + 1;
+        const itemId = trackId === 'shorts-slider-track' ? index + 1 : trackId + '-' + (index + 1);
         const pTheme = getLinkPlatformTheme(item.link_url, item.platform || item.source);
 
         // 네이버 프록시 등 인코딩된 URL 안전 정제
@@ -1776,6 +1810,21 @@
     document.addEventListener('DOMContentLoaded', () => {
       loadProductData();
     });
+    // A tab left open overnight must not keep yesterday's deals under today's heading.
+    function checkDayRollover() {
+      if (renderedDay !== seoulDay(Date.now())) {
+        renderedDay = seoulDay(Date.now());
+        appData.toss_deals = [];
+        appData.toss_bests = [];
+        appData.food_items = [];
+        renderShortsSlider();
+        renderList();
+        document.getElementById('today-products-status').textContent = '새 하루특가를 확인하고 있습니다.';
+        loadProductData();
+      }
+    }
+    setInterval(checkDayRollover, 30000);
+    document.addEventListener('visibilitychange', checkDayRollover);
   </script>
 </body>
 
