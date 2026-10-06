@@ -11,7 +11,7 @@
   <!-- SEO & Social Meta Tags -->
   <meta name="description" content="매일 자정 갱신! 유튜브 쇼츠 영상 속 그 상품! 삼촌이 발품 팔아 건져온 토스 하루특가 & 쿠팡 베스트 알뜰 장바구니 링크 모음">
   <meta property="og:title" content="특가 캐주는 삼촌 | 매일 자정 갱신 오늘의 알뜰 장바구니">
-  <meta property="og:description" content="유튜브 영상 속 [1번~10번] 상품 즉시 확인하기! 토스 하루특가 / 쿠팡 베스트 / 토스 베스트 / 삼촌픽">
+  <meta property="og:description" content="영상에서 본 상품을 사진으로 바로 찾으세요. 상품명과 가격을 확인하고 구매처로 이동할 수 있습니다.">
   <meta property="og:image" content="./assets/uncle_profile.png">
   <meta property="og:type" content="website">
 
@@ -282,7 +282,7 @@
               </h1>
             </div>
             <div class="flex items-center gap-1.5 text-[10.5px] text-stone-500 font-medium">
-              <span>오늘 영상 속 특가 ⚡</span>
+              <span>영상에서 본 그 상품, 여기 있어요</span>
               <span class="text-stone-300">•</span>
               <span id="header-updated-at" class="text-stone-600 font-semibold">자정 갱신</span>
             </div>
@@ -291,10 +291,6 @@
       </div>
     </header>
 
-    <aside style="padding:12px 18px;background:#fff8db;text-align:center" aria-label="고정 상품 코드 검색">
-      <a href="./products/" style="color:#163d32;font-weight:700">영상의 고정 상품 코드로 찾기 →</a>
-      <span style="font-size:12px;color:#57534e">기존 1~10번은 현재 목록 번호입니다.</span>
-    </aside>
     <p id="sync-status-notice" role="status" hidden style="margin:0;padding:12px 18px;background:#fff7ed;color:#9a3412;font-size:13px"></p>
 
     <!-- ======================================================== -->
@@ -316,7 +312,7 @@
             </span>
             <div>
               <h2 class="text-[14.5px] font-black text-stone-900 tracking-tight flex items-center gap-1.5">
-                <span>오늘 영상 속 상품</span>
+                <span>영상 상품과 특가 모음</span>
               </h2>
             </div>
           </div>
@@ -331,16 +327,19 @@
 
         <!-- 안내 문구 -->
         <p class="text-[11px] text-stone-500 font-medium leading-snug">
-          영상에서 본 번호 상품을 옆으로 넘겨 바로 확인하세요!
+          사진으로 찾고, 가격 확인 후 바로 구매처로 이동하세요.
         </p>
 
-        <!-- 가로 슬라이더 캐러셀 트랙 -->
+        <!-- 메인에서 사진과 상품명으로 바로 고르는 상품 목록 -->
         <div class="relative -mx-1 px-1 pt-0.5">
           <div id="shorts-slider-track"
-            class="flex gap-2.5 overflow-x-auto no-scrollbar snap-x snap-mandatory py-1 px-0.5 scroll-smooth">
+            class="grid grid-cols-2 gap-3 py-1 px-0.5">
             <!-- JS에서 동적 렌더링 -->
           </div>
         </div>
+        <button id="home-products-more" type="button" onclick="showAllHomeProducts()"
+          class="hidden w-full min-h-[44px] rounded-xl border border-stone-200 bg-white text-sm font-bold text-stone-700 hover:bg-stone-50"
+          aria-controls="shorts-slider-track" aria-expanded="false">상품 더 보기</button>
       </section>
 
       <!-- ======================================================== -->
@@ -968,37 +967,48 @@
       };
     }
 
-    // Render Shorts Carousel Slider (Home Hub)
+    function showAllHomeProducts() {
+      document.querySelectorAll('#shorts-slider-track .home-product-extra').forEach(card => card.classList.remove('hidden'));
+      const more = document.getElementById('home-products-more');
+      more.classList.add('hidden');
+      more.setAttribute('aria-expanded', 'true');
+    }
+
+    // Video products first, followed by deals; ordinal IDs are not product identity.
     function renderShortsSlider() {
       const track = document.getElementById('shorts-slider-track');
       if (!track) return;
 
-      // 릴스/쇼츠 상품(shorts_items)과 토스 데일리 특가를 스마트하게 결합하여 1~10번 라인업 구성
-      let items = [];
-      if (appData.shorts_items && appData.shorts_items.length > 0) {
-        items = [...appData.shorts_items];
-      }
-      if (appData.toss_deals && appData.toss_deals.length > 0) {
-        const existingIds = new Set(items.map(i => i.id));
-        appData.toss_deals.forEach(td => {
-          if (!existingIds.has(td.id) && items.length < 10) {
-            items.push(td);
-          }
-        });
-      }
-      if (items.length === 0) {
-        items = appData.toss_deals || [];
+      const items = [];
+      const seen = new Set();
+      const sources = [
+        [appData.shorts_items || [], true],
+        [appData.toss_deals || [], false],
+        [appData.toss_bests || [], false]
+      ];
+      sources.forEach(([products, fromVideo]) => products.forEach(item => {
+        const keys = [item.taca_item_id ? 'toss:' + item.taca_item_id : '',
+          purchaseHref(item.link_url) !== '#' ? 'url:' + item.link_url : ''].filter(Boolean);
+        if (!keys.length) keys.push('title:' + item.title + ':' + (item.variant || ''));
+        if (keys.some(key => seen.has(key))) return;
+        keys.forEach(key => seen.add(key));
+        items.push({ ...item, fromVideo });
+      }));
+      const more = document.getElementById('home-products-more');
+      more.classList.toggle('hidden', items.length <= 4);
+      more.setAttribute('aria-expanded', 'false');
+      more.textContent = `상품 ${Math.max(0, items.length - 4)}개 더 보기`;
+      if (!items.length) {
+        track.innerHTML = '<p class="col-span-2 py-6 text-sm text-stone-500">표시할 상품을 준비하고 있습니다.</p>';
+        return;
       }
 
-      if (items.length === 0) return;
-
-      // 가로 슬라이더 카드 렌더링
       let cardsHtml = '';
       const fallbackSvg = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23F5F5F4'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23A8A29E'%3E%EC%83%81%ED%92%88 %EC%9D%B4%EB%AF%B8%EC%A7%80%3C/text%3E%3C/svg%3E";
 
       items.forEach((item, index) => {
         const discountRate = item.discount_rate || 0;
-        const itemId = item.id || (index + 1);
+        const itemId = index + 1;
         const pTheme = getLinkPlatformTheme(item.link_url, item.platform || item.source);
 
         // 네이버 프록시 등 인코딩된 URL 안전 정제
@@ -1013,16 +1023,11 @@
         }
 
         // 동적 CTA 버튼 문구 결정
-        let ctaText = item.cta_button_text;
-        if (!ctaText) {
-          if (pTheme.id === 'naver') ctaText = '네이버 특가 구매 >';
-          else if (pTheme.id === 'coupang') ctaText = '쿠팡 최저가 확인 >';
-          else ctaText = '토스 특가 구매하기 >';
-        }
+        const ctaText = `${pTheme.name}에서 보기 →`;
 
         cardsHtml += `
           <article id="shorts-card-${itemId}" 
-            class="shorts-card-item w-[144px] sm:w-[152px] shrink-0 snap-start bg-white rounded-2xl ${pTheme.cardBorder} transition-all duration-200 overflow-hidden flex flex-col justify-between group shadow-xs">
+            class="shorts-card-item ${index >= 4 ? 'home-product-extra hidden' : ''} min-w-0 bg-white rounded-2xl ${pTheme.cardBorder} transition-all duration-200 overflow-hidden flex flex-col justify-between group shadow-xs">
             
             <!-- 정사각 비율 썸네일 컨테이너 -->
             <a href="${escapeHtml(purchaseHref(item.link_url))}" target="_blank" rel="noopener noreferrer"
@@ -1034,14 +1039,10 @@
                 loading="lazy"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                onerror="this.onerror=null; this.src='${fallbackSvg}';"
+                onerror="this.onerror=null; this.src='${fallbackSvg.replace(/'/g, '%27')}';"
               >
 
-              <!-- 좌측 상단: 눈에 확 띄는 옐로우/골드 영상 번호 뱃지 -->
-              <div class="absolute top-1.5 left-1.5 bg-amber-400 text-stone-950 text-[11px] font-black px-2 py-0.5 rounded-lg shadow-md flex items-center gap-0.5 tracking-tight">
-                <span class="font-black">#</span>
-                <span>${itemId}</span>
-              </div>
+              ${item.fromVideo ? '<span class="absolute bottom-2 left-2 bg-stone-900/85 text-white text-[10px] font-bold px-2 py-1 rounded-md">영상에 나온 상품</span>' : ''}
 
               <!-- 우측 상단: 할인율 배지 및 플랫폼 테마 뱃지 -->
               <div class="absolute top-1.5 right-1.5 flex flex-col items-end gap-1">
@@ -1057,9 +1058,9 @@
             </a>
 
             <!-- 카드 하단 정보 및 링크 버튼 -->
-            <div class="p-2 flex flex-col justify-between flex-1 bg-white">
+            <div class="p-2.5 flex flex-col justify-between flex-1 bg-white">
               <a href="${escapeHtml(purchaseHref(item.link_url))}" target="_blank" rel="noopener noreferrer" class="block">
-                <h4 class="text-[12px] font-bold text-stone-900 line-clamp-2 leading-tight min-h-[2.4em] ${pTheme.hoverTextColor} transition-colors" title="${escapeHtml(item.title)}">
+                <h4 class="text-[13px] font-bold text-stone-900 line-clamp-2 leading-snug min-h-[2.75em] ${pTheme.hoverTextColor} transition-colors" title="${escapeHtml(item.title)}">
                   ${escapeHtml(item.title)}
                 </h4>
               </a>
@@ -1079,7 +1080,7 @@
                     ${escapeHtml(item.original_price)}
                   </div>
                 ` : ''}
-                <div class="text-[15px] font-black ${pTheme.textColor} tracking-tight leading-tight mt-0.5">
+                <div class="text-[18px] font-black ${pTheme.textColor} tracking-tight leading-tight mt-0.5">
                   ${escapeHtml(item.price_label || '가격 확인')}
                 </div>
               </div>
@@ -1089,7 +1090,7 @@
                 href="${escapeHtml(purchaseHref(item.link_url))}"
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="mt-1.5 w-full py-1.5 px-2 ${pTheme.btnBg} text-[11px] font-black rounded-xl shadow-xs flex items-center justify-center gap-1 active:scale-95 transition-all text-center tracking-tight"
+                class="mt-2 w-full min-h-[44px] px-2 ${pTheme.btnBg} text-[12px] font-bold rounded-xl shadow-xs flex items-center justify-center gap-1 active:scale-95 transition-all text-center tracking-tight"
               >
                 <span>${escapeHtml(ctaText)}</span>
               </a>
@@ -1139,6 +1140,7 @@
     function scrollToShortsCard(targetId) {
       const card = document.getElementById('shorts-card-' + targetId);
       if (card) {
+        if (card.classList.contains('hidden')) showAllHomeProducts();
         card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
         card.classList.add('ring-4', 'ring-[#3182F6]', 'scale-[1.03]');
         setTimeout(() => {
