@@ -175,10 +175,37 @@
       animation-play-state: paused;
     }
   </style>
+
+  <script>
+    function purchaseHref(value) {
+      try {
+        const u=new URL(value);
+        if(u.protocol!=='https:'||u.username||u.password||(u.port&&u.port!=='443'))return '#';
+        if(u.hostname==='link.coupang.com'||u.hostname==='naver.me'||u.hostname==='brandconnect.naver.com')return value;
+        if(['toss.im','toss.shopping'].includes(u.hostname)&&/^\/_m\/[A-Za-z0-9_-]{6,}\/?$/.test(u.pathname)) {
+          if(/hanwoo|soldout|dummy|sample|mock|gamgyul|olive|chicken|nuts|ramen|coffee|shampoo|water/i.test(u.pathname))return '#';
+          return value;
+        }
+      } catch (_) {} return '#';
+    }
+    document.addEventListener('DOMContentLoaded',()=>{
+      const mark=()=>document.querySelectorAll('a[href="#"]').forEach(a=>{
+        a.setAttribute('aria-disabled','true');
+        if(a.textContent.includes('구매')&&!a.dataset.blocked){a.dataset.blocked='1';a.textContent='링크 확인 필요 · 구매 보류';a.style.opacity='.6';}
+      });
+      new MutationObserver(mark).observe(document.body,{childList:true,subtree:true}); mark();
+    });
+    document.addEventListener('click',e=>{
+      const a=e.target.closest('a[href="#"]');
+      if(a){e.preventDefault();if(typeof showToast==='function')showToast('링크 확인 필요 · 구매 이동이 보류되었습니다.');}
+    });
+  </script>
+
 </head>
 
 <body
   class="bg-stone-200 text-stone-900 min-h-screen flex justify-center selection:bg-amber-100 selection:text-amber-900 antialiased font-sans">
+
 
   <!-- Main Mobile Container -->
   <div
@@ -263,6 +290,12 @@
         </div>
       </div>
     </header>
+
+    <aside style="padding:12px 18px;background:#fff8db;text-align:center" aria-label="고정 상품 코드 검색">
+      <a href="./products/" style="color:#163d32;font-weight:700">영상의 고정 상품 코드로 찾기 →</a>
+      <span style="font-size:12px;color:#57534e">기존 1~10번은 현재 목록 번호입니다.</span>
+    </aside>
+    <p id="sync-status-notice" role="status" hidden style="margin:0;padding:12px 18px;background:#fff7ed;color:#9a3412;font-size:13px"></p>
 
     <!-- ======================================================== -->
     <!-- [VIEW 1: HOME HUB VIEW] (초기 진입 메인 화면)              -->
@@ -666,6 +699,16 @@
         appData.toss_bests = extractList(tossBestsData, legacy.toss_bests || []);
         appData.uncle_picks = extractList(samchonPicksData, legacy.uncle_picks || []);
 
+        // A partial refresh must not make retained products look newly checked.
+        const syncStates = legacy.sync_status || {};
+        const retained = [['toss_deals','하루특가'],['toss_bests','베스트']]
+          .filter(([key]) => ['preserved_empty','preserved_error'].includes(syncStates[key]?.state))
+          .map(([,label]) => label);
+        const syncNotice = document.getElementById('sync-status-notice');
+        if (syncNotice) {
+          syncNotice.hidden = retained.length === 0;
+          syncNotice.textContent = retained.length ? retained.join('·') + ' 갱신 대기: 이전 목록을 표시하고 있습니다. 구매처에서 현재 가격과 재고를 확인해 주세요.' : '';
+        }
         // 갱신 시각 결정 (개별 파일 객체 내 updated_at 또는 legacy.updated_at)
         const possibleTimestamps = [
           tossDealsData?.updated_at,
@@ -676,9 +719,9 @@
 
         if (possibleTimestamps.length > 0) {
           appData.updated_at = possibleTimestamps[0];
-          if (headerUpdatedAtEl) headerUpdatedAtEl.textContent = appData.updated_at;
+          if (headerUpdatedAtEl) headerUpdatedAtEl.textContent = appData.updated_at + (retained.length ? ' · 일부 갱신' : '');
         } else {
-          if (headerUpdatedAtEl) headerUpdatedAtEl.textContent = '방금 전';
+          if (headerUpdatedAtEl) headerUpdatedAtEl.textContent = '갱신 시각 미확인';
         }
 
         // 삼촌픽이 아닌 모든 상품을 식품 카테고리로 통합
@@ -982,7 +1025,7 @@
             class="shorts-card-item w-[144px] sm:w-[152px] shrink-0 snap-start bg-white rounded-2xl ${pTheme.cardBorder} transition-all duration-200 overflow-hidden flex flex-col justify-between group shadow-xs">
             
             <!-- 정사각 비율 썸네일 컨테이너 -->
-            <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" 
+            <a href="${escapeHtml(purchaseHref(item.link_url))}" target="_blank" rel="noopener noreferrer"
               class="relative aspect-square w-full bg-stone-100 overflow-hidden block">
               
               <img 
@@ -1015,7 +1058,7 @@
 
             <!-- 카드 하단 정보 및 링크 버튼 -->
             <div class="p-2 flex flex-col justify-between flex-1 bg-white">
-              <a href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener noreferrer" class="block">
+              <a href="${escapeHtml(purchaseHref(item.link_url))}" target="_blank" rel="noopener noreferrer" class="block">
                 <h4 class="text-[12px] font-bold text-stone-900 line-clamp-2 leading-tight min-h-[2.4em] ${pTheme.hoverTextColor} transition-colors" title="${escapeHtml(item.title)}">
                   ${escapeHtml(item.title)}
                 </h4>
@@ -1043,7 +1086,7 @@
 
               <!-- 플랫폼 맞춤 액션 지향 CTA 버튼 -->
               <a 
-                href="${escapeHtml(item.link_url)}" 
+                href="${escapeHtml(purchaseHref(item.link_url))}"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="mt-1.5 w-full py-1.5 px-2 ${pTheme.btnBg} text-[11px] font-black rounded-xl shadow-xs flex items-center justify-center gap-1 active:scale-95 transition-all text-center tracking-tight"
@@ -1198,7 +1241,7 @@
 
               <!-- 플랫폼 테마 구매/보기 버튼 -->
               <a 
-                href="${escapeHtml(item.link_url)}" 
+                href="${escapeHtml(purchaseHref(item.link_url))}"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="inline-flex items-center gap-1 px-3 py-2 ${pTheme.btnBg} text-[11.5px] font-extrabold rounded-xl shadow-xs hover:shadow active:scale-95 transition-all shrink-0 text-center tracking-tight"
@@ -1258,7 +1301,7 @@
               </div>
 
               <a 
-                href="${escapeHtml(item.link_url)}" 
+                href="${escapeHtml(purchaseHref(item.link_url))}"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="inline-flex items-center gap-1 px-3 py-2 bg-[#3182F6] hover:bg-[#1B64DA] active:bg-[#1553B7] text-white text-[12px] font-extrabold rounded-xl shadow-xs hover:shadow active:scale-95 transition-all shrink-0"
@@ -1331,7 +1374,7 @@
               </div>
 
               <a 
-                href="${escapeHtml(item.link_url)}" 
+                href="${escapeHtml(purchaseHref(item.link_url))}"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="inline-flex items-center gap-1 px-3 py-2 bg-[#E1251B] hover:bg-[#C01A11] active:bg-[#9E140C] text-white text-[12px] font-extrabold rounded-xl shadow-xs hover:shadow active:scale-95 transition-all shrink-0"
@@ -1406,7 +1449,7 @@
               </div>
 
               <a 
-                href="${escapeHtml(item.link_url)}" 
+                href="${escapeHtml(purchaseHref(item.link_url))}"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="inline-flex items-center gap-1 px-3 py-2 bg-[#0055D6] hover:bg-[#003FB3] text-white text-[12px] font-extrabold rounded-xl shadow-xs hover:shadow active:scale-95 transition-all shrink-0"
@@ -1530,7 +1573,7 @@
             <div class="flex gap-3.5 items-start">
               <!-- 썸네일 (Hover 시 1.03 확대) -->
               <a 
-                href="${escapeHtml(linkUrl)}" 
+                href="${escapeHtml(purchaseHref(linkUrl))}"
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="relative w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-xl overflow-hidden bg-stone-100 border border-stone-200/70 block"
@@ -1547,7 +1590,7 @@
               <!-- 상품명 & 가격 정보 -->
               <div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
                 <a 
-                  href="${escapeHtml(linkUrl)}" 
+                  href="${escapeHtml(purchaseHref(linkUrl))}"
                   target="_blank" 
                   rel="noopener noreferrer"
                   class="block group-hover:opacity-90 transition-opacity"
@@ -1581,7 +1624,7 @@
           <!-- 카드 하단 CTA 버튼 (새 탭 이동) -->
           <div class="mt-3.5 pt-2.5 border-t border-stone-100">
             <a 
-              href="${escapeHtml(linkUrl)}" 
+              href="${escapeHtml(purchaseHref(linkUrl))}"
               target="_blank" 
               rel="noopener noreferrer" 
               class="w-full py-2.5 px-4 ${theme.btnClass} rounded-xl font-black text-[13px] tracking-tight inline-flex items-center justify-center gap-1.5 transition-all active:scale-[0.98]"
