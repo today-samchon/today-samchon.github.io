@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-10-06 22:40",
+  "updated_at": "2026-10-06 22:46",
   "toss_deals": [
+    {
+      "id": 6,
+      "taca_item_id": 310182741,
+      "badge": "🎬 50% 특가",
+      "title": "농협안심한우 1등급 불고기용",
+      "price_label": "19,800원",
+      "original_price": "39,800원",
+      "discount_rate": 50,
+      "image_url": "https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://toss.im/_m/hanwoo01",
+      "is_shorts_featured": true
+    },
+    {
+      "id": 9,
+      "taca_item_id": 340192847,
+      "badge": "🎬 48% 특가",
+      "title": "하림 촉촉 훈제 닭가슴살 오리지널",
+      "price_label": "12,900원",
+      "original_price": "25,000원",
+      "discount_rate": 48,
+      "image_url": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&auto=format&fit=crop&q=80",
+      "link_url": "https://toss.im/_m/chicken01",
+      "is_shorts_featured": true
+    },
     {
       "id": 1,
       "taca_item_id": 2636141603,
@@ -57,17 +81,6 @@
       "link_url": "https://toss.im/_m/3QGh6Kcn"
     },
     {
-      "id": 6,
-      "taca_item_id": 310182741,
-      "badge": "50% 할인",
-      "title": "농협안심한우 1등급 불고기용",
-      "price_label": "19,800원",
-      "original_price": "39,800원",
-      "discount_rate": 50,
-      "image_url": "https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/hanwoo01"
-    },
-    {
       "id": 7,
       "taca_item_id": 320194812,
       "badge": "53% 할인",
@@ -88,17 +101,6 @@
       "discount_rate": 50,
       "image_url": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&auto=format&fit=crop&q=80",
       "link_url": "https://toss.im/_m/olive01"
-    },
-    {
-      "id": 9,
-      "taca_item_id": 340192847,
-      "badge": "48% 할인",
-      "title": "하림 촉촉 훈제 닭가슴살 오리지널",
-      "price_label": "12,900원",
-      "original_price": "25,000원",
-      "discount_rate": 48,
-      "image_url": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&auto=format&fit=crop&q=80",
-      "link_url": "https://toss.im/_m/chicken01"
     },
     {
       "id": 10,
@@ -346,17 +348,17 @@
   "sync_status": {
     "toss_deals": {
       "state": "preserved_empty",
-      "checked_at": "2026-10-06T22:40:13.773522+09:00",
+      "checked_at": "2026-10-06T22:46:08.214808+09:00",
       "item_count": 0,
       "attempts": 1,
       "last_success_at": null
     },
     "toss_bests": {
       "state": "updated",
-      "checked_at": "2026-10-06T22:40:13.940722+09:00",
+      "checked_at": "2026-10-06T22:46:08.351189+09:00",
       "item_count": 10,
       "attempts": 1,
-      "last_success_at": "2026-10-06T22:40:13.940722+09:00"
+      "last_success_at": "2026-10-06T22:46:08.351189+09:00"
     }
   }
 }
