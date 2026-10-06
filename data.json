@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07 00:00",
+  "updated_at": "2026-10-07 00:04",
   "toss_deals": [
     {
       "id": 1,
@@ -555,18 +555,18 @@
   "sync_status": {
     "toss_deals": {
       "state": "updated",
-      "checked_at": "2026-10-07T00:00:10.461268+09:00",
+      "checked_at": "2026-10-07T00:04:09.410725+09:00",
       "item_count": 30,
       "raw_item_count": 30,
       "attempts": 1,
-      "last_success_at": "2026-10-07T00:00:10.461268+09:00"
+      "last_success_at": "2026-10-07T00:04:09.410725+09:00"
     },
     "toss_bests": {
       "state": "updated",
-      "checked_at": "2026-10-07T00:00:10.673415+09:00",
+      "checked_at": "2026-10-07T00:04:09.571268+09:00",
       "item_count": 10,
       "attempts": 1,
-      "last_success_at": "2026-10-07T00:00:10.673415+09:00"
+      "last_success_at": "2026-10-07T00:04:09.571268+09:00"
     }
   }
 }
