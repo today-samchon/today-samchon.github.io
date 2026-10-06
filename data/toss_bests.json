@@ -1,41 +1,8 @@
 [
   {
     "id": 1,
-    "taca_item_id": 2653093475,
-    "badge": "1위",
-    "title": "수뜰리에 퍼퓸 고체 탈취제",
-    "price_label": "6,930원",
-    "original_price": "59,800원",
-    "discount_rate": 88,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-23/9072bbae-8462-4cc2-ab82-8c9b161d4680.png",
-    "link_url": "https://toss.shopping/_m/zANGOhdC"
-  },
-  {
-    "id": 2,
-    "taca_item_id": 2184701663,
-    "badge": "2위",
-    "title": "포천이동 양념LA갈비",
-    "price_label": "6,990원",
-    "original_price": "15,900원",
-    "discount_rate": 56,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YWQ1YzA5/QU16RU01L0lZcC9STjBkV0M3QzZVekM0dzJJSjdIQXo3czRVNXN0b1h1M28.png",
-    "link_url": "https://toss.shopping/_m/NxBYYdsD"
-  },
-  {
-    "id": 3,
-    "taca_item_id": 2653091083,
-    "badge": "3위",
-    "title": "수뜰리에 퍼퓸 고체 탈취제",
-    "price_label": "6,930원",
-    "original_price": "59,800원",
-    "discount_rate": 88,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-23/38d1a52b-6f2e-461f-918f-e73b58a45889.png",
-    "link_url": "https://toss.shopping/_m/551CBzro"
-  },
-  {
-    "id": 4,
     "taca_item_id": 288570013,
-    "badge": "4위",
+    "badge": "1위",
     "title": "신선하랑 냉동 삼겹살",
     "price_label": "18,900원",
     "original_price": "38,900원",
@@ -44,69 +11,102 @@
     "link_url": "https://toss.shopping/_m/bSR6crWq"
   },
   {
+    "id": 2,
+    "taca_item_id": 87478999,
+    "badge": "2위",
+    "title": "펩시콜라 제로슈거 라임향 제로 카페인",
+    "price_label": "25,832원",
+    "original_price": "49,100원",
+    "discount_rate": 47,
+    "image_url": "https://shopping.toss.im/live/taca/ai/OWE1OTlj/QUpjNUdNTnBoT2Njam1jWTQzTVpjYy9NNUljNE05TVl4OHc4NXpneHd4akg.png",
+    "link_url": "https://toss.shopping/_m/7FjOtejr"
+  },
+  {
+    "id": 3,
+    "taca_item_id": 2664813429,
+    "badge": "3위",
+    "title": "과일파는청년 알밤 햇밤",
+    "price_label": "10,500원",
+    "original_price": "61,800원",
+    "discount_rate": 83,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-28/633f2509-f6b3-4cd2-99a6-4b19747a6e67.png",
+    "link_url": "https://toss.shopping/_m/tEtdaTY4"
+  },
+  {
+    "id": 4,
+    "taca_item_id": 2659903585,
+    "badge": "4위",
+    "title": "제주 서귀포 감귤",
+    "price_label": "13,900원",
+    "original_price": "33,000원",
+    "discount_rate": 57,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-20/a0e6554a-50c1-4ea9-8954-02f528e674e3.png",
+    "link_url": "https://toss.shopping/_m/3c8Gu6W9"
+  },
+  {
     "id": 5,
-    "taca_item_id": 296698859,
+    "taca_item_id": 140116969,
     "badge": "5위",
-    "title": "파이토메이드 고칼슘&비타민D 두유 21곡 미숫가루",
-    "price_label": "7,900원",
-    "original_price": "15,800원",
-    "discount_rate": 50,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-16/b1e9c145-5424-4198-9449-4beace9264e8.jpeg",
-    "link_url": "https://toss.shopping/_m/bBdgdvqt"
+    "title": "익스트림 듀얼 아르기닌 플러스",
+    "price_label": "14,100원",
+    "original_price": "30,000원",
+    "discount_rate": 53,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-23/05b26a20-46fe-4ba3-9324-c57e6372a7d7.jpeg",
+    "link_url": "https://toss.shopping/_m/9guUytKz"
   },
   {
     "id": 6,
-    "taca_item_id": 92152707,
+    "taca_item_id": 2664830599,
     "badge": "6위",
-    "title": "페페브루노 엑스트라버진 올리브 오일",
-    "price_label": "11,900원",
-    "original_price": "35,000원",
-    "discount_rate": 66,
-    "image_url": "https://shopping.toss.im/live/taca/ai/ZjllOWU2/QUpmRE85aG9IZVFubC9BYnlYQVA1TFR2K0p0TEVBTmt0T3ZzdTB1VlVIeTA.png",
-    "link_url": "https://toss.shopping/_m/jzJYUSjx"
+    "title": "제주 고당도 극조생감귤",
+    "price_label": "9,700원",
+    "original_price": "63,900원",
+    "discount_rate": 84,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-28/eb2bc244-5940-4976-884c-e20597b3d3b4.png",
+    "link_url": "https://toss.shopping/_m/R80eNMC"
   },
   {
     "id": 7,
-    "taca_item_id": 2566320999,
+    "taca_item_id": 241796467,
     "badge": "7위",
-    "title": "맥스앤맥스 이지밀 냉동밥&국 소분 밀폐용기 세트",
-    "price_label": "5,950원",
-    "original_price": "29,900원",
-    "discount_rate": 80,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-03/a8c0ca14-34eb-45c6-bede-da24aaf71a61.jpeg",
-    "link_url": "https://toss.shopping/_m/7KcCZDbv"
+    "title": "괄사 마사지 3종",
+    "price_label": "5,450원",
+    "original_price": "14,800원",
+    "discount_rate": 63,
+    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
+    "link_url": "https://toss.shopping/_m/7eb2ktTq"
   },
   {
     "id": 8,
-    "taca_item_id": 2338930751,
+    "taca_item_id": 2534121637,
     "badge": "8위",
-    "title": "이선별 밀크카스테라",
-    "price_label": "6,900원",
-    "original_price": "31,900원",
-    "discount_rate": 78,
-    "image_url": "https://shopping.toss.im/live/temp/2026-05-28/6c7ab71a-3621-4595-8650-ab95f3dc4796.jpeg",
-    "link_url": "https://toss.shopping/_m/dpWMyjJk"
+    "title": "원김치 쪽파김치",
+    "price_label": "9,900원",
+    "original_price": "14,900원",
+    "discount_rate": 33,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDkxZDUx/QU52Z21LSFI4ZUg3QkoxLzhPZGVRMTF5ZEJvNkdnTnJSZTNWSjhpRGZ0VWk.png",
+    "link_url": "https://toss.shopping/_m/nqNSesV4"
   },
   {
     "id": 9,
-    "taca_item_id": 2599642785,
+    "taca_item_id": 2265183871,
     "badge": "9위",
-    "title": "맥콜 제로슈거",
-    "price_label": "7,600원",
-    "original_price": "17,900원",
-    "discount_rate": 57,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-10/e86bf3ee-b559-4aff-bb2b-4ae73b937ba2.jpeg",
-    "link_url": "https://toss.shopping/_m/nCjEHnVv"
+    "title": "딘시 비건 마일드 선크림",
+    "price_label": "3,400원",
+    "original_price": "32,500원",
+    "discount_rate": 97,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-15/07bc2270-a6bd-4f1d-958b-ccfe8a9788e2.jpeg",
+    "link_url": "https://toss.shopping/_m/r5wtxbYj"
   },
   {
     "id": 10,
-    "taca_item_id": 2334877747,
+    "taca_item_id": 2087299601,
     "badge": "10위",
-    "title": "맘스럽 아토클래식 물티슈",
-    "price_label": "8,253원",
-    "original_price": "24,800원",
-    "discount_rate": 66,
-    "image_url": "https://shopping.toss.im/live/temp/2026-07-01/cbcba31d-9c3d-4336-b01c-da1112ebe230.jpeg",
-    "link_url": "https://toss.shopping/_m/vTzEszrx"
+    "title": "국내산 못난이 파프리카",
+    "price_label": "9,480원",
+    "original_price": "30,900원",
+    "discount_rate": 69,
+    "image_url": "https://shopping.toss.im/live/taca/ai/Mjg3MzI5/QU9KdnZ0Z0o3eFBKaC9FRHRnT2t5djlJZ3BJTExSemgwSTBmZ25neXltbHI.png",
+    "link_url": "https://toss.shopping/_m/Td3b3gIi"
   }
 ]
