@@ -1,34 +1,34 @@
 [
   {
     "id": 1,
-    "taca_item_id": 288570013,
+    "taca_item_id": 10142851,
     "badge": "1위",
-    "title": "신선하랑 냉동 삼겹살",
-    "price_label": "18,900원",
-    "original_price": "38,900원",
-    "discount_rate": 51,
-    "image_url": "https://shopping.toss.im/live/taca/ai/ZDE5Y2Ix/QU1XMTRxV0MrUUpGQlVGZFZ3djFQSnkzRUR4QzRZSnJid2x2S1ZycW5ZVT0.png",
-    "link_url": "https://toss.shopping/_m/bSR6crWq"
+    "title": "스파클 생수 무라벨",
+    "price_label": "6,890원",
+    "original_price": "12,000원",
+    "discount_rate": 42,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
+    "link_url": "https://toss.shopping/_m/VTey6Eps"
   },
   {
     "id": 2,
-    "taca_item_id": 87478999,
+    "taca_item_id": 54575799,
     "badge": "2위",
-    "title": "펩시콜라 제로슈거 라임향 제로 카페인",
-    "price_label": "25,832원",
-    "original_price": "49,100원",
-    "discount_rate": 47,
-    "image_url": "https://shopping.toss.im/live/taca/ai/OWE1OTlj/QUpjNUdNTnBoT2Njam1jWTQzTVpjYy9NNUljNE05TVl4OHc4NXpneHd4akg.png",
-    "link_url": "https://toss.shopping/_m/7FjOtejr"
+    "title": "스파클 생수",
+    "price_label": "5,470원",
+    "original_price": "10,000원",
+    "discount_rate": 45,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-18/268e4c6a-1595-43e9-9c1b-f101e5774429.jpeg",
+    "link_url": "https://toss.shopping/_m/lV73Afts"
   },
   {
     "id": 3,
     "taca_item_id": 2664813429,
     "badge": "3위",
     "title": "과일파는청년 알밤 햇밤",
-    "price_label": "10,500원",
+    "price_label": "10,900원",
     "original_price": "61,800원",
-    "discount_rate": 83,
+    "discount_rate": 82,
     "image_url": "https://shopping.toss.im/live/temp/2026-09-28/633f2509-f6b3-4cd2-99a6-4b19747a6e67.png",
     "link_url": "https://toss.shopping/_m/tEtdaTY4"
   },
@@ -45,14 +45,14 @@
   },
   {
     "id": 5,
-    "taca_item_id": 140116969,
+    "taca_item_id": 87478999,
     "badge": "5위",
-    "title": "익스트림 듀얼 아르기닌 플러스",
-    "price_label": "14,100원",
-    "original_price": "30,000원",
-    "discount_rate": 53,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-23/05b26a20-46fe-4ba3-9324-c57e6372a7d7.jpeg",
-    "link_url": "https://toss.shopping/_m/9guUytKz"
+    "title": "펩시콜라 제로슈거 라임향 제로 카페인",
+    "price_label": "25,832원",
+    "original_price": "49,100원",
+    "discount_rate": 47,
+    "image_url": "https://shopping.toss.im/live/taca/ai/OWE1OTlj/QUpjNUdNTnBoT2Njam1jWTQzTVpjYy9NNUljNE05TVl4OHc4NXpneHd4akg.png",
+    "link_url": "https://toss.shopping/_m/7FjOtejr"
   },
   {
     "id": 6,
@@ -67,30 +67,8 @@
   },
   {
     "id": 7,
-    "taca_item_id": 241796467,
-    "badge": "7위",
-    "title": "괄사 마사지 3종",
-    "price_label": "5,450원",
-    "original_price": "14,800원",
-    "discount_rate": 63,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
-    "link_url": "https://toss.shopping/_m/7eb2ktTq"
-  },
-  {
-    "id": 8,
-    "taca_item_id": 2534121637,
-    "badge": "8위",
-    "title": "원김치 쪽파김치",
-    "price_label": "9,900원",
-    "original_price": "14,900원",
-    "discount_rate": 33,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDkxZDUx/QU52Z21LSFI4ZUg3QkoxLzhPZGVRMTF5ZEJvNkdnTnJSZTNWSjhpRGZ0VWk.png",
-    "link_url": "https://toss.shopping/_m/nqNSesV4"
-  },
-  {
-    "id": 9,
     "taca_item_id": 2265183871,
-    "badge": "9위",
+    "badge": "7위",
     "title": "딘시 비건 마일드 선크림",
     "price_label": "3,400원",
     "original_price": "32,500원",
@@ -99,14 +77,36 @@
     "link_url": "https://toss.shopping/_m/r5wtxbYj"
   },
   {
+    "id": 8,
+    "taca_item_id": 2390245599,
+    "badge": "8위",
+    "title": "팽도리 패션밴드",
+    "price_label": "2,900원",
+    "original_price": "15,000원",
+    "discount_rate": 80,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/ZDRmNjIz/QU5QVXRnY0llOXBERkRmRGpQdEFISHZ6b3lNUHBONWtnU2dkbkhoQng2Vk8.png",
+    "link_url": "https://toss.shopping/_m/zo6VdQFn"
+  },
+  {
+    "id": 9,
+    "taca_item_id": 2534121637,
+    "badge": "9위",
+    "title": "원김치 쪽파김치",
+    "price_label": "9,900원",
+    "original_price": "14,900원",
+    "discount_rate": 33,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDkxZDUx/QU52Z21LSFI4ZUg3QkoxLzhPZGVRMTF5ZEJvNkdnTnJSZTNWSjhpRGZ0VWk.png",
+    "link_url": "https://toss.shopping/_m/nqNSesV4"
+  },
+  {
     "id": 10,
-    "taca_item_id": 2087299601,
+    "taca_item_id": 108768273,
     "badge": "10위",
-    "title": "국내산 못난이 파프리카",
-    "price_label": "9,480원",
-    "original_price": "30,900원",
-    "discount_rate": 69,
-    "image_url": "https://shopping.toss.im/live/taca/ai/Mjg3MzI5/QU9KdnZ0Z0o3eFBKaC9FRHRnT2t5djlJZ3BJTExSemgwSTBmZ25neXltbHI.png",
-    "link_url": "https://toss.shopping/_m/Td3b3gIi"
+    "title": "마포나루터 돼지목살왕구이",
+    "price_label": "9,990원",
+    "original_price": "29,900원",
+    "discount_rate": 66,
+    "image_url": "https://shopping.toss.im/live/taca/ai/ZDJkNTQz/WHIrYmkydUdhOFRjaEc0bGRBTm9FdExleGhkZFB4eG9OZGprMkdocVp6VT0.png",
+    "link_url": "https://toss.shopping/_m/XcMCbKcw"
   }
 ]
