@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08 00:20",
+  "updated_at": "2026-10-08 00:54",
   "toss_deals": [
     {
       "id": 1,
@@ -58,17 +58,6 @@
     },
     {
       "id": 6,
-      "taca_item_id": 2325253587,
-      "badge": "50% 할인",
-      "title": "농부의 정육점 한돈 뒷고기",
-      "price_label": "7,900원",
-      "original_price": "15,900원",
-      "discount_rate": 50,
-      "image_url": "https://shopping.toss.im/live/temp/2026-06-24/b785d96f-49c4-44e1-8e5f-da2020ca503f.png",
-      "link_url": "https://toss.shopping/_m/ZkRkc5ID"
-    },
-    {
-      "id": 7,
       "taca_item_id": 86973821,
       "badge": "74% 할인",
       "title": "풍년보감 고려홍삼정 밸런스타임",
@@ -79,7 +68,7 @@
       "link_url": "https://toss.shopping/_m/tizUqOt3"
     },
     {
-      "id": 8,
+      "id": 7,
       "taca_item_id": 200341595,
       "badge": "28% 할인",
       "title": "맘스터치 시그니처 순살치킨",
@@ -90,7 +79,7 @@
       "link_url": "https://toss.shopping/_m/D3oxbfJ4"
     },
     {
-      "id": 9,
+      "id": 8,
       "taca_item_id": 861976337,
       "badge": "63% 할인",
       "title": "리버티 입는오버나이트",
@@ -101,7 +90,7 @@
       "link_url": "https://toss.shopping/_m/575a6gJo"
     },
     {
-      "id": 10,
+      "id": 9,
       "taca_item_id": 1056552323,
       "badge": "76% 할인",
       "title": "위니즈 퓨전 프로쉴드 5중날 질레트 호환용 면도기날 세트",
@@ -112,7 +101,7 @@
       "link_url": "https://toss.shopping/_m/5FqhGBe7"
     },
     {
-      "id": 11,
+      "id": 10,
       "taca_item_id": 139066091,
       "badge": "49% 할인",
       "title": "하누리 1++ 한우 소한마리모둠",
@@ -123,7 +112,7 @@
       "link_url": "https://toss.shopping/_m/dN3Mg4bc"
     },
     {
-      "id": 12,
+      "id": 11,
       "taca_item_id": 156037321,
       "badge": "77% 할인",
       "title": "이장네푸드 진한 들기름",
@@ -134,7 +123,7 @@
       "link_url": "https://toss.shopping/_m/9FI7z7Yf"
     },
     {
-      "id": 13,
+      "id": 12,
       "taca_item_id": 185646307,
       "badge": "87% 할인",
       "title": "바이마르 솥뚜껑 세라믹 가마솥",
@@ -145,7 +134,7 @@
       "link_url": "https://toss.shopping/_m/XqJAFUIj"
     },
     {
-      "id": 14,
+      "id": 13,
       "taca_item_id": 134249549,
       "badge": "75% 할인",
       "title": "고기중독 매운 돼지갈비찜",
@@ -156,7 +145,7 @@
       "link_url": "https://toss.shopping/_m/NdWpCbF5"
     },
     {
-      "id": 15,
+      "id": 14,
       "taca_item_id": 2480942469,
       "badge": "50% 할인",
       "title": "김삼두장인 매콤두부야채어묵바",
@@ -167,7 +156,7 @@
       "link_url": "https://toss.shopping/_m/bS3ivkWl"
     },
     {
-      "id": 16,
+      "id": 15,
       "taca_item_id": 122431101,
       "badge": "89% 할인",
       "title": "대상 루테인 플러스",
@@ -178,7 +167,7 @@
       "link_url": "https://toss.shopping/_m/HjGHzCGp"
     },
     {
-      "id": 17,
+      "id": 16,
       "taca_item_id": 2641087463,
       "badge": "48% 할인",
       "title": "수입 우육 5종세트",
@@ -189,7 +178,7 @@
       "link_url": "https://toss.shopping/_m/VLSygets"
     },
     {
-      "id": 18,
+      "id": 17,
       "taca_item_id": 151384765,
       "badge": "64% 할인",
       "title": "전라도할매 배추겉절이",
@@ -200,7 +189,7 @@
       "link_url": "https://toss.shopping/_m/VEYON6fn"
     },
     {
-      "id": 19,
+      "id": 18,
       "taca_item_id": 7721809,
       "badge": "75% 할인",
       "title": "신통방통 크림",
@@ -211,7 +200,7 @@
       "link_url": "https://toss.shopping/_m/VdBPRIcw"
     },
     {
-      "id": 20,
+      "id": 19,
       "taca_item_id": 2521451623,
       "badge": "50% 할인",
       "title": "오즈랜드 리얼 생감자스틱",
@@ -222,7 +211,7 @@
       "link_url": "https://toss.shopping/_m/NpxXmIXa"
     },
     {
-      "id": 21,
+      "id": 20,
       "taca_item_id": 141197171,
       "badge": "35% 할인",
       "title": "아빠표 구운계란",
@@ -233,7 +222,7 @@
       "link_url": "https://toss.shopping/_m/9JLO1vVA"
     },
     {
-      "id": 22,
+      "id": 21,
       "taca_item_id": 90986355,
       "badge": "22% 할인",
       "title": "월남관 고추튀김",
@@ -244,7 +233,7 @@
       "link_url": "https://toss.shopping/_m/dPdltSrC"
     },
     {
-      "id": 23,
+      "id": 22,
       "taca_item_id": 2487432469,
       "badge": "64% 할인",
       "title": "메르헨트 데오 프레쉬 실내 고체탈취제",
@@ -255,7 +244,7 @@
       "link_url": "https://toss.shopping/_m/rPGitvG4"
     },
     {
-      "id": 24,
+      "id": 23,
       "taca_item_id": 332707161,
       "badge": "77% 할인",
       "title": "로로보아 스타일톡 무선 헤어브러쉬",
@@ -266,7 +255,7 @@
       "link_url": "https://toss.shopping/_m/j0q538e7"
     },
     {
-      "id": 25,
+      "id": 24,
       "taca_item_id": 147679745,
       "badge": "41% 할인",
       "title": "복이오는날 오대 둥지 수수부꾸미",
@@ -277,7 +266,7 @@
       "link_url": "https://toss.shopping/_m/Dsc68UWb"
     },
     {
-      "id": 26,
+      "id": 25,
       "taca_item_id": 255473655,
       "badge": "79% 할인",
       "title": "BNL 알부민 60000",
@@ -288,7 +277,7 @@
       "link_url": "https://toss.shopping/_m/ZE6PyLre"
     },
     {
-      "id": 27,
+      "id": 26,
       "taca_item_id": 9634177,
       "badge": "58% 할인",
       "title": "기모 보온 니삭스",
@@ -299,7 +288,7 @@
       "link_url": "https://toss.shopping/_m/tyQvcKjn"
     },
     {
-      "id": 28,
+      "id": 27,
       "taca_item_id": 10486365,
       "badge": "52% 할인",
       "title": "소피아 하이웨스트 팬티",
@@ -310,7 +299,7 @@
       "link_url": "https://toss.shopping/_m/7E0S0Oti"
     },
     {
-      "id": 29,
+      "id": 28,
       "taca_item_id": 154527137,
       "badge": "57% 할인",
       "title": "운동화 세탁망",
@@ -321,7 +310,7 @@
       "link_url": "https://toss.shopping/_m/RuAQ4HqB"
     },
     {
-      "id": 30,
+      "id": 29,
       "taca_item_id": 2636468163,
       "badge": "60% 할인",
       "title": "일양약품 PDRN 톤업 선크림",
@@ -427,8 +416,63 @@
   "toss_bests": [
     {
       "id": 1,
-      "taca_item_id": 10142851,
+      "taca_item_id": 2653093475,
       "badge": "1위",
+      "title": "수뜰리에 퍼퓸 고체 탈취제",
+      "price_label": "6,930원",
+      "original_price": "59,800원",
+      "discount_rate": 88,
+      "image_url": "https://shopping.toss.im/live/temp/2026-09-23/9072bbae-8462-4cc2-ab82-8c9b161d4680.png",
+      "link_url": "https://toss.shopping/_m/zANGOhdC"
+    },
+    {
+      "id": 2,
+      "taca_item_id": 2184701663,
+      "badge": "2위",
+      "title": "포천이동 양념LA갈비",
+      "price_label": "6,990원",
+      "original_price": "15,900원",
+      "discount_rate": 56,
+      "image_url": "https://shopping.toss.im/live/taca/ai/YWQ1YzA5/QU16RU01L0lZcC9STjBkV0M3QzZVekM0dzJJSjdIQXo3czRVNXN0b1h1M28.png",
+      "link_url": "https://toss.shopping/_m/NxBYYdsD"
+    },
+    {
+      "id": 3,
+      "taca_item_id": 2653091083,
+      "badge": "3위",
+      "title": "수뜰리에 퍼퓸 고체 탈취제",
+      "price_label": "6,930원",
+      "original_price": "59,800원",
+      "discount_rate": 88,
+      "image_url": "https://shopping.toss.im/live/temp/2026-09-23/38d1a52b-6f2e-461f-918f-e73b58a45889.png",
+      "link_url": "https://toss.shopping/_m/551CBzro"
+    },
+    {
+      "id": 4,
+      "taca_item_id": 2621363823,
+      "badge": "4위",
+      "title": "맘스럽 시그니처코튼 물티슈",
+      "price_label": "4,990원",
+      "original_price": "14,900원",
+      "discount_rate": 66,
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-19/0a772c5e-a39c-483a-901f-cf08c10f1f4d.jpeg",
+      "link_url": "https://toss.shopping/_m/LIglRvPt"
+    },
+    {
+      "id": 5,
+      "taca_item_id": 2362157987,
+      "badge": "5위",
+      "title": "국내산 활 흰다리새우 횟감가능",
+      "price_label": "19,900원",
+      "original_price": "43,900원",
+      "discount_rate": 54,
+      "image_url": "https://shopping.toss.im/live/taca/ai/YWIzZmI4/UURuaG5DUzBlOUUreFkrVGxzeExadVcxTW1vL0dMT0dlUHRlaXdqSldXMD0.png",
+      "link_url": "https://toss.shopping/_m/D5lN73Uu"
+    },
+    {
+      "id": 6,
+      "taca_item_id": 10142851,
+      "badge": "6위",
       "title": "스파클 생수 무라벨",
       "price_label": "5,900원",
       "original_price": "12,000원",
@@ -437,103 +481,48 @@
       "link_url": "https://toss.shopping/_m/VTey6Eps"
     },
     {
-      "id": 2,
-      "taca_item_id": 54575799,
-      "badge": "2위",
-      "title": "스파클 생수",
-      "price_label": "5,470원",
-      "original_price": "10,000원",
-      "discount_rate": 45,
-      "image_url": "https://shopping.toss.im/live/temp/2026-03-18/268e4c6a-1595-43e9-9c1b-f101e5774429.jpeg",
-      "link_url": "https://toss.shopping/_m/lV73Afts"
-    },
-    {
-      "id": 3,
-      "taca_item_id": 2664813429,
-      "badge": "3위",
-      "title": "과일파는청년 알밤 햇밤",
-      "price_label": "10,900원",
-      "original_price": "61,800원",
-      "discount_rate": 82,
-      "image_url": "https://shopping.toss.im/live/temp/2026-09-28/633f2509-f6b3-4cd2-99a6-4b19747a6e67.png",
-      "link_url": "https://toss.shopping/_m/tEtdaTY4"
-    },
-    {
-      "id": 4,
-      "taca_item_id": 2659903585,
-      "badge": "4위",
-      "title": "제주 서귀포 감귤",
-      "price_label": "13,900원",
-      "original_price": "33,000원",
-      "discount_rate": 57,
-      "image_url": "https://shopping.toss.im/live/temp/2026-09-20/a0e6554a-50c1-4ea9-8954-02f528e674e3.png",
-      "link_url": "https://toss.shopping/_m/3c8Gu6W9"
-    },
-    {
-      "id": 5,
-      "taca_item_id": 87478999,
-      "badge": "5위",
-      "title": "펩시콜라 제로슈거 라임향 제로 카페인",
-      "price_label": "25,832원",
-      "original_price": "49,100원",
-      "discount_rate": 47,
-      "image_url": "https://shopping.toss.im/live/taca/ai/OWE1OTlj/QUpjNUdNTnBoT2Njam1jWTQzTVpjYy9NNUljNE05TVl4OHc4NXpneHd4akg.png",
-      "link_url": "https://toss.shopping/_m/7FjOtejr"
-    },
-    {
-      "id": 6,
-      "taca_item_id": 2664830599,
-      "badge": "6위",
-      "title": "제주 고당도 극조생감귤",
-      "price_label": "9,700원",
-      "original_price": "63,900원",
-      "discount_rate": 84,
-      "image_url": "https://shopping.toss.im/live/temp/2026-09-28/eb2bc244-5940-4976-884c-e20597b3d3b4.png",
-      "link_url": "https://toss.shopping/_m/R80eNMC"
-    },
-    {
       "id": 7,
-      "taca_item_id": 2265183871,
+      "taca_item_id": 2373435943,
       "badge": "7위",
-      "title": "딘시 비건 마일드 선크림",
-      "price_label": "3,400원",
-      "original_price": "32,500원",
-      "discount_rate": 97,
-      "image_url": "https://shopping.toss.im/live/temp/2026-06-15/07bc2270-a6bd-4f1d-958b-ccfe8a9788e2.jpeg",
-      "link_url": "https://toss.shopping/_m/r5wtxbYj"
+      "title": "대용량 삼겹살",
+      "price_label": "42,655원",
+      "original_price": "80,900원",
+      "discount_rate": 47,
+      "image_url": "https://shopping.toss.im/live/temp/2026-06-30/063d8c70-3d74-4a7b-bd3b-92ee6a67dfea.jpeg",
+      "link_url": "https://toss.shopping/_m/h8cY5Tnm"
     },
     {
       "id": 8,
-      "taca_item_id": 2390245599,
+      "taca_item_id": 2338930751,
       "badge": "8위",
-      "title": "팽도리 패션밴드",
-      "price_label": "2,900원",
-      "original_price": "15,000원",
-      "discount_rate": 80,
-      "image_url": "https://shopping.toss.im/live/taca/ai/v2/ZDRmNjIz/QU5QVXRnY0llOXBERkRmRGpQdEFISHZ6b3lNUHBONWtnU2dkbkhoQng2Vk8.png",
-      "link_url": "https://toss.shopping/_m/zo6VdQFn"
+      "title": "이선별 밀크카스테라",
+      "price_label": "6,900원",
+      "original_price": "31,900원",
+      "discount_rate": 78,
+      "image_url": "https://shopping.toss.im/live/temp/2026-05-28/6c7ab71a-3621-4595-8650-ab95f3dc4796.jpeg",
+      "link_url": "https://toss.shopping/_m/dpWMyjJk"
     },
     {
       "id": 9,
-      "taca_item_id": 2534121637,
+      "taca_item_id": 2566320999,
       "badge": "9위",
-      "title": "원김치 쪽파김치",
-      "price_label": "9,900원",
-      "original_price": "14,900원",
-      "discount_rate": 33,
-      "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDkxZDUx/QU52Z21LSFI4ZUg3QkoxLzhPZGVRMTF5ZEJvNkdnTnJSZTNWSjhpRGZ0VWk.png",
-      "link_url": "https://toss.shopping/_m/nqNSesV4"
+      "title": "맥스앤맥스 이지밀 냉동밥&국 소분 밀폐용기 세트",
+      "price_label": "5,950원",
+      "original_price": "29,900원",
+      "discount_rate": 80,
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-03/a8c0ca14-34eb-45c6-bede-da24aaf71a61.jpeg",
+      "link_url": "https://toss.shopping/_m/7KcCZDbv"
     },
     {
       "id": 10,
-      "taca_item_id": 108768273,
+      "taca_item_id": 807365761,
       "badge": "10위",
-      "title": "마포나루터 돼지목살왕구이",
-      "price_label": "9,990원",
+      "title": "팬톤 오픈형 블루투스 6.0 무선 이어폰",
+      "price_label": "4,830원",
       "original_price": "29,900원",
-      "discount_rate": 66,
-      "image_url": "https://shopping.toss.im/live/taca/ai/ZDJkNTQz/WHIrYmkydUdhOFRjaEc0bGRBTm9FdExleGhkZFB4eG9OZGprMkdocVp6VT0.png",
-      "link_url": "https://toss.shopping/_m/XcMCbKcw"
+      "discount_rate": 83,
+      "image_url": "https://shopping.toss.im/live/taca/ai/ZGRjYzU1/QUxzSHhpWEYrRFAwZEkzOHhwN2tqenVqVTdHWmNXTk1acytNYzRlc1VKMjQ.png",
+      "link_url": "https://toss.shopping/_m/l0E1WSJf"
     }
   ],
   "essentials": [],
@@ -555,18 +544,18 @@
   "sync_status": {
     "toss_deals": {
       "state": "updated",
-      "checked_at": "2026-10-08T00:20:49.292957+09:00",
-      "item_count": 30,
+      "checked_at": "2026-10-08T00:54:29.219752+09:00",
+      "item_count": 29,
       "raw_item_count": 30,
       "attempts": 1,
-      "last_success_at": "2026-10-08T00:20:49.292957+09:00"
+      "last_success_at": "2026-10-08T00:54:29.219752+09:00"
     },
     "toss_bests": {
       "state": "updated",
-      "checked_at": "2026-10-08T00:20:49.447640+09:00",
+      "checked_at": "2026-10-08T00:54:29.426923+09:00",
       "item_count": 10,
       "attempts": 1,
-      "last_success_at": "2026-10-08T00:20:49.447640+09:00"
+      "last_success_at": "2026-10-08T00:54:29.426923+09:00"
     }
   }
 }
