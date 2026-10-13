@@ -1072,7 +1072,7 @@
                 alt="${escapeHtml(item.title)}" 
                 loading="lazy"
                 referrerpolicy="no-referrer"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                class="w-full h-full ${item.image_fit === 'contain' ? 'object-contain bg-white' : 'object-cover group-hover:scale-105'} transition-transform duration-300"
                 onerror="this.onerror=null; this.src='${fallbackSvg.replace(/'/g, '%27')}';"
               >
 

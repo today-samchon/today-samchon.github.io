@@ -12,5 +12,18 @@
     "link_url": "https://naver.me/50BD3ZGJ",
     "category": "식품",
     "is_featured": true
+  },
+  {
+    "id": 2,
+    "title": "코카콜라 제로, 190ml, 30개",
+    "price_label": "가격 확인",
+    "original_price": null,
+    "discount_rate": null,
+    "platform": "coupang",
+    "image_url": "https://img4c.coupangcdn.com/image/affiliate/banner/62d7d2ea941180904121df2b2e7bf5e8@2x.jpg",
+    "image_fit": "contain",
+    "link_url": "https://link.coupang.com/a/hOAWQC9gnQ",
+    "category": "식품",
+    "is_featured": true
   }
 ]
