@@ -1,41 +1,52 @@
 [
   {
     "id": 1,
-    "taca_item_id": 12832685,
+    "taca_item_id": 973592141,
     "badge": "1위",
-    "title": "풀무원 샘물 생수",
-    "price_label": "14,465원",
-    "original_price": "24,000원",
-    "discount_rate": 39,
-    "image_url": "https://shopping.toss.im/live/taca/ai/MmNkNGI3/QUxNOEo4VEQ4VnUxT012OEUrZUxTODVUUHFaVTBPOEg3cXZVMnBmOVFLVjY.png",
-    "link_url": "https://toss.shopping/_m/ZPoge0f2"
+    "title": "누벨린 디펜턴 토탈 솔루션 앰플 세럼",
+    "price_label": "18,800원",
+    "original_price": "45,900원",
+    "discount_rate": 59,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/ODEyMzc3/QUsxR3IwVHdWQlg0VmF2MkF5UDA4elNKQzAyTFJQa1VpN2NHZ2ZTL0JINEw.png",
+    "link_url": "https://toss.shopping/_m/thGpesqi"
   },
   {
     "id": 2,
-    "taca_item_id": 86942843,
+    "taca_item_id": 2222393591,
     "badge": "2위",
-    "title": "배스킨라빈스 메롱 멜론 우유 190ml",
-    "price_label": "9,900원",
-    "original_price": "28,800원",
-    "discount_rate": 65,
-    "image_url": "https://shopping.toss.im/live/temp/2026-04-22/2fe8b7ac-efbd-4d0f-93ae-feaa6483d01d.png",
-    "link_url": "https://toss.shopping/_m/xO7BGEVj"
+    "title": "새마을농산 캐나다 병아리콩",
+    "price_label": "7,800원",
+    "original_price": "14,600원",
+    "discount_rate": 46,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-10/b4b739f2-b4c3-4f97-b825-41cb2a64f09e.jpeg",
+    "link_url": "https://toss.shopping/_m/FvYnp0Nz"
   },
   {
     "id": 3,
-    "taca_item_id": 31419195,
+    "taca_item_id": 2672325913,
     "badge": "3위",
-    "title": "애슐리 볶음밥 올인원 10종 세트",
-    "price_label": "17,990원",
-    "original_price": "45,900원",
-    "discount_rate": 60,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/YTUyZjk2/S1YyaXdQcEJwZTAxK29mcUM4ZjlZVWw1V0dGc29hRTVWRENEeDA1ZXUyWT0.png",
-    "link_url": "https://toss.shopping/_m/T8iGrfDa"
+    "title": "프로프룻 시나노골드",
+    "price_label": "9,900원",
+    "original_price": "54,900원",
+    "discount_rate": 81,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-06/74d4b59b-2bb4-4efb-aeb3-14ae3e570d38.jpeg",
+    "link_url": "https://toss.shopping/_m/fmmV9mz3"
   },
   {
     "id": 4,
-    "taca_item_id": 2621363823,
+    "taca_item_id": 1254407973,
     "badge": "4위",
+    "title": "아임닭 맛있는 닭가슴살 볶음밥",
+    "price_label": "22,867원",
+    "original_price": "70,000원",
+    "discount_rate": 67,
+    "image_url": "https://shopping.toss.im/live/taca/ai/MjE4ZDQ0/QVBJeDJQTmh5b1ROZ3pGTTQvYkFGdFJQSVhHRG14bllERGlINjRpWStoMDE.png",
+    "link_url": "https://toss.shopping/_m/lbfIJe3B"
+  },
+  {
+    "id": 5,
+    "taca_item_id": 2621363823,
+    "badge": "5위",
     "title": "맘스럽 시그니처코튼 물티슈",
     "price_label": "7,200원",
     "original_price": "14,900원",
@@ -44,9 +55,9 @@
     "link_url": "https://toss.shopping/_m/LIglRvPt"
   },
   {
-    "id": 5,
+    "id": 6,
     "taca_item_id": 2534121637,
-    "badge": "5위",
+    "badge": "6위",
     "title": "원김치 쪽파김치",
     "price_label": "9,900원",
     "original_price": "14,900원",
@@ -55,58 +66,47 @@
     "link_url": "https://toss.shopping/_m/nqNSesV4"
   },
   {
-    "id": 6,
-    "taca_item_id": 2664830599,
-    "badge": "6위",
-    "title": "제주 고당도 극조생감귤",
-    "price_label": "9,700원",
-    "original_price": "63,900원",
-    "discount_rate": 84,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-28/eb2bc244-5940-4976-884c-e20597b3d3b4.png",
-    "link_url": "https://toss.shopping/_m/R80eNMC"
-  },
-  {
     "id": 7,
-    "taca_item_id": 2659903585,
+    "taca_item_id": 86942843,
     "badge": "7위",
-    "title": "제주 서귀포 감귤",
-    "price_label": "13,900원",
-    "original_price": "33,000원",
-    "discount_rate": 57,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-20/a0e6554a-50c1-4ea9-8954-02f528e674e3.png",
-    "link_url": "https://toss.shopping/_m/3c8Gu6W9"
+    "title": "배스킨라빈스 메롱 멜론 우유 190ml",
+    "price_label": "9,900원",
+    "original_price": "28,800원",
+    "discount_rate": 65,
+    "image_url": "https://shopping.toss.im/live/temp/2026-04-22/2fe8b7ac-efbd-4d0f-93ae-feaa6483d01d.png",
+    "link_url": "https://toss.shopping/_m/xO7BGEVj"
   },
   {
     "id": 8,
-    "taca_item_id": 10142851,
+    "taca_item_id": 12833195,
     "badge": "8위",
-    "title": "스파클 생수 무라벨",
-    "price_label": "8,870원",
-    "original_price": "12,000원",
-    "discount_rate": 26,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
-    "link_url": "https://toss.shopping/_m/VTey6Eps"
+    "title": "에브리워터 무라벨 생수",
+    "price_label": "10,980원",
+    "original_price": "24,000원",
+    "discount_rate": 54,
+    "image_url": "https://shopping.toss.im/live/product/715843/3bd40551-1399-4a9e-8b12-af94ace41dd1.png",
+    "link_url": "https://toss.shopping/_m/FKjpkp5b"
   },
   {
     "id": 9,
-    "taca_item_id": 1055573137,
+    "taca_item_id": 2652574317,
     "badge": "9위",
-    "title": "코디 순수 3겹 데코",
-    "price_label": "10,480원",
-    "original_price": "15,980원",
-    "discount_rate": 34,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-05/0dec0cf9-671a-4645-93ef-b5ac0f62c7d9.jpeg",
-    "link_url": "https://toss.shopping/_m/hnA2pDsc"
+    "title": "씨없는 청도 반시",
+    "price_label": "10,700원",
+    "original_price": "21,400원",
+    "discount_rate": 50,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-09/eedd5246-1fd2-47e8-8af5-d77b5e45c17e.png",
+    "link_url": "https://toss.shopping/_m/rtNLNzoD"
   },
   {
     "id": 10,
-    "taca_item_id": 241796467,
+    "taca_item_id": 79975591,
     "badge": "10위",
-    "title": "괄사 마사지 3종",
-    "price_label": "5,450원",
-    "original_price": "14,800원",
-    "discount_rate": 63,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
-    "link_url": "https://toss.shopping/_m/7eb2ktTq"
+    "title": "파파네정육점 통삼겹살",
+    "price_label": "19,800원",
+    "original_price": "35,600원",
+    "discount_rate": 44,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-11/d9c79b0d-a6d7-4b23-925b-9293c399fde5.jpeg",
+    "link_url": "https://toss.shopping/_m/trCLVmiC"
   }
 ]
