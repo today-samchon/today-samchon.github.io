@@ -1,5 +1,30 @@
 [
   {
+    "id": "T167B93C0A699C32D",
+    "product_code": "T167B93C0A699C32D",
+    "platform": "toss",
+    "taca_item_id": "2601104609",
+    "product_id": "2601104609",
+    "title": "이롬 국내산 약콩 무가당 두유, 190ml, 32개",
+    "variant": "",
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-21/1c52a6e6-1912-4e60-bc01-653d9979baa2.png",
+    "image_fit": "contain",
+    "link_url": "https://toss.shopping/_m/fcrQ8Ph2",
+    "price_label": "14,900원",
+    "price_checked_at": "2026-10-16T00:00:16.291342+09:00",
+    "unit_price_text": "개당 약 466원",
+    "category": "식품",
+    "is_featured": true,
+    "managed_by": "daily_marketing_v2",
+    "featured_day": "2026-10-16",
+    "featured_state": "scheduled",
+    "featured_slot": "evening-video",
+    "channels": [
+      "instagram",
+      "youtube"
+    ]
+  },
+  {
     "id": 1,
     "title": "국산 흰다리새우 1kg 왕새우 생새우 활새우 회 제철",
     "price_label": "24,900원",

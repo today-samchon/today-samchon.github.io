@@ -1224,5 +1224,60 @@
       "skipped": [],
       "last_success_at": "2026-10-16T00:00:12.900515+09:00"
     }
-  }
+  },
+  "shorts_items": [
+    {
+      "id": "T167B93C0A699C32D",
+      "product_code": "T167B93C0A699C32D",
+      "platform": "toss",
+      "taca_item_id": "2601104609",
+      "product_id": "2601104609",
+      "title": "이롬 국내산 약콩 무가당 두유, 190ml, 32개",
+      "variant": "",
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-21/1c52a6e6-1912-4e60-bc01-653d9979baa2.png",
+      "image_fit": "contain",
+      "link_url": "https://toss.shopping/_m/fcrQ8Ph2",
+      "price_label": "14,900원",
+      "price_checked_at": "2026-10-16T00:00:16.291342+09:00",
+      "unit_price_text": "개당 약 466원",
+      "category": "식품",
+      "is_featured": true,
+      "managed_by": "daily_marketing_v2",
+      "featured_day": "2026-10-16",
+      "featured_state": "scheduled",
+      "featured_slot": "evening-video",
+      "channels": [
+        "instagram",
+        "youtube"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "국산 흰다리새우 1kg 왕새우 생새우 활새우 회 제철",
+      "price_label": "24,900원",
+      "original_price": "26,900원",
+      "discount_rate": 7,
+      "unit_price_text": "100g당 2,490원 | 산지 직송",
+      "cta_button_text": "네이버 특가 구매 >",
+      "platform": "naver",
+      "image_url": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fshop-phinf.pstatic.net%2F20260701_64%2F1782864354791qnw2b_JPEG%2F45352030671105042_1350970203.jpg%22&type=brandconnect_f500_500_product",
+      "link_url": "https://naver.me/50BD3ZGJ",
+      "category": "식품",
+      "is_featured": true
+    },
+    {
+      "id": 2,
+      "title": "코카콜라 제로, 190ml, 30개",
+      "price_label": "12,980원",
+      "original_price": "21,600원",
+      "discount_rate": 39,
+      "unit_price_text": "와우할인 · 100ml당 228원",
+      "platform": "coupang",
+      "image_url": "https://img4c.coupangcdn.com/image/affiliate/banner/62d7d2ea941180904121df2b2e7bf5e8@2x.jpg",
+      "image_fit": "contain",
+      "link_url": "https://link.coupang.com/a/hOAWQC9gnQ",
+      "category": "식품",
+      "is_featured": true
+    }
+  ]
 }
