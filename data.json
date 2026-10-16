@@ -1215,29 +1215,60 @@
   },
   "shorts_items": [
     {
-      "id": "T167B93C0A699C32D",
-      "product_code": "T167B93C0A699C32D",
-      "platform": "toss",
-      "taca_item_id": "2601104609",
-      "product_id": "2601104609",
-      "title": "이롬 국내산 약콩 무가당 두유, 190ml, 32개",
+      "id": "CE1A513EFE534000C",
+      "product_code": "CE1A513EFE534000C",
+      "platform": "coupang",
+      "taca_item_id": "9351523609",
+      "product_id": "9351523609",
+      "title": "햇반 윤기가득쌀밥, 210g, 18개",
       "variant": "",
-      "image_url": "https://shopping.toss.im/live/temp/2026-08-21/1c52a6e6-1912-4e60-bc01-653d9979baa2.png",
+      "image_url": "https://ads-partners.coupang.com/image1/Wcr-eBUoN06kweAZWd5wfzcPTZ__NZTywqy_5uukF404T3xwXcNbOiB3WQ3Hm5r0sRHkjw70QDZKfY-qXAf6N1XLqrgvn5OxZLZ9oYFPpU1CFZR2J6k8OruyYwAHJzw6gKctcMEC6yv8KF3drhAnPpJPDgmXOyGlDQ3_sv1L8PqHsROCxbFyIjZJ4XvYKfIbBJfAjomcDffZz0mUHwLE9wMlLBZaWsSMTwtZVAQ9cO51wJ9Aoiw9pUEi1qH762Cul2bBCEbPozJvR-30FYGfMoMdCM09Exb7qBQvYleX-o902PcpFUgYDqwNg3pHeQqch2XFNjmYLVWhBK5fdKcqFQQD0D11EE38R2DBC0YoIYRiHhv-RdtmwYP35e2uXZAN5frTVskG5_yBYNS0CnqoHXvJ4KNDWorV5Vgxziib_y6EEqTQR_bdnGrBzIjVCNVXZ8Ve1yXplCmpj9shZfYS9Qw73NEoC9cf5mCdB-Zf54Ws9UXZ9Fum1UHJK796ZgNAMBQfD2s2-1uXsBa_FqLBkUGpOtyJrvnecn0ZGb5n7vz6mPOO1aYBJrI8sM3jDZof4DChLcESnXS5",
       "image_fit": "contain",
-      "link_url": "https://toss.shopping/_m/fcrQ8Ph2",
-      "price_label": "14,900원",
-      "price_checked_at": "2026-10-16T00:00:16.291342+09:00",
-      "unit_price_text": "개당 약 466원",
+      "link_url": "https://link.coupang.com/re/AFFSDP?lptag=AF6687674&pageKey=9351523609&itemId=28527930971&vendorItemId=95597813174&traceid=V0-153-8decb8a7fe9c591a&clickBeacon=455d4070-c972-11f1-8551-415d2688e0bf%7E3&requestid=20261017000005215289278208&token=31850C%7CMIXED&pt=1&slot=5",
+      "price_label": "19,520원",
+      "price_checked_at": "2026-10-17T00:00:08.286690+09:00",
+      "unit_price_text": "개당 약 1,084원",
       "category": "식품",
       "is_featured": true,
       "managed_by": "daily_marketing_v2",
-      "featured_day": "2026-10-16",
+      "featured_day": "2026-10-17",
+      "featured_state": "scheduled",
+      "featured_slot": "morning-video",
+      "channels": [
+        "instagram",
+        "youtube"
+      ],
+      "item_id": "28527930971",
+      "vendor_item_id": "95597813174",
+      "shipping": "무료배송"
+    },
+    {
+      "id": "C548BE43824A3B52D",
+      "product_code": "C548BE43824A3B52D",
+      "platform": "coupang",
+      "taca_item_id": "8401714195",
+      "product_id": "8401714195",
+      "title": "레쓰비 마일드 캔커피, 200ml, 6개",
+      "variant": "",
+      "image_url": "https://ads-partners.coupang.com/image1/ZRyKPwgcev9WuDg1ZQlTVeO7ZmCawupJFxtKvH_1YbeRlEuUG16RfXDqd2pQWpXb3CcP_6kkQ1QJzjGi_SRcB4-EYCX9grC8dnpo6Y_bi9IX98z06wO9fBa-zVX1-aA1oZNORQxpU5OvXLtfe8hmfQDIIgzmnA4_RRQC9CeV5wNiHfaBrP_7y5qehdmzjb0rcXMtXXxv2I_htI0p8HLvA2S2A4DXdIch66x7zhw4UlIVJHAlS2MVUh3GZC-KV8KrVJFrmK-_FH3agJXHb-KyjCxPkNH3gkE9fw3jJADzsSDgr67Aqns6ybbmvZnuqNCXfdVZCqcmXlDKfcc4jewjm8hnKb5GMyy_YbTXxUPtQNvzWmPhBNqo6-QeQ4fzgwFnVWOKnc5sdVlZrb9woFtckcwDFjuBVdE3OIkDuayIK8hlC5vp-rgzmm2UZV2uQgsQC_lLd1A3vaFAvKhNRYgesBgyMK_nwy1tHG6zYcmFYKs-IjxzGZlao5YEPb1E6ygB6hT0eVbcsfICPtki0mJwiyMYjvCmgBDrO_JkQHpEN89fmsWx-82IujxYhXp6sfTRGn3LIqig65BMDQ==",
+      "image_fit": "contain",
+      "link_url": "https://link.coupang.com/re/AFFSDP?lptag=AF6687674&pageKey=8401714195&itemId=20696379232&vendorItemId=91379387593&traceid=V0-153-77666b01fdde3799&clickBeacon=457423d0-c972-11f1-93f7-02291f88b4f0%7E3&requestid=20261017000005318153084154&token=31850C%7CMIXED&pt=1&slot=2",
+      "price_label": "6,990원",
+      "price_checked_at": "2026-10-17T00:00:08.286690+09:00",
+      "unit_price_text": "개당 1,165원",
+      "category": "식품",
+      "is_featured": true,
+      "managed_by": "daily_marketing_v2",
+      "featured_day": "2026-10-17",
       "featured_state": "scheduled",
       "featured_slot": "evening-video",
       "channels": [
         "instagram",
         "youtube"
-      ]
+      ],
+      "item_id": "20696379232",
+      "vendor_item_id": "91379387593",
+      "shipping": "무료배송"
     },
     {
       "id": 1,
@@ -1266,6 +1297,31 @@
       "link_url": "https://link.coupang.com/a/hOAWQC9gnQ",
       "category": "식품",
       "is_featured": true
+    },
+    {
+      "id": "T167B93C0A699C32D",
+      "product_code": "T167B93C0A699C32D",
+      "platform": "toss",
+      "taca_item_id": "2601104609",
+      "product_id": "2601104609",
+      "title": "이롬 국내산 약콩 무가당 두유, 190ml, 32개",
+      "variant": "",
+      "image_url": "https://shopping.toss.im/live/temp/2026-08-21/1c52a6e6-1912-4e60-bc01-653d9979baa2.png",
+      "image_fit": "contain",
+      "link_url": "https://toss.shopping/_m/fcrQ8Ph2",
+      "price_label": "현재 가격 확인",
+      "price_checked_at": "2026-10-16T00:00:16.291342+09:00",
+      "unit_price_text": "",
+      "category": "식품",
+      "is_featured": true,
+      "managed_by": "daily_marketing_v2",
+      "featured_day": "2026-10-16",
+      "featured_state": "historical",
+      "featured_slot": "evening-video",
+      "channels": [
+        "instagram",
+        "youtube"
+      ]
     }
   ]
 }
