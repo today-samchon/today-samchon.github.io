@@ -1,8 +1,19 @@
 [
   {
     "id": 1,
-    "taca_item_id": 2659903585,
+    "taca_item_id": 1131805409,
     "badge": "1위",
+    "title": "스파클 생수",
+    "price_label": "7,900원",
+    "original_price": "12,000원",
+    "discount_rate": 34,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-16/1b86054d-ac8b-4f4d-85a9-3f73e7302b39.png",
+    "link_url": "https://toss.shopping/_m/npku3Hpy"
+  },
+  {
+    "id": 2,
+    "taca_item_id": 2659903585,
+    "badge": "2위",
     "title": "제주 서귀포 감귤",
     "price_label": "13,900원",
     "original_price": "33,000원",
@@ -11,9 +22,9 @@
     "link_url": "https://toss.shopping/_m/3c8Gu6W9"
   },
   {
-    "id": 2,
+    "id": 3,
     "taca_item_id": 1551322053,
-    "badge": "2위",
+    "badge": "3위",
     "title": "크리스탈 생수",
     "price_label": "7,350원",
     "original_price": "20,000원",
@@ -22,20 +33,20 @@
     "link_url": "https://toss.shopping/_m/dZRQNRh2"
   },
   {
-    "id": 3,
-    "taca_item_id": 135279271,
-    "badge": "3위",
-    "title": "햇반 윤기가득 쌀밥",
-    "price_label": "23,900원",
-    "original_price": "34,900원",
-    "discount_rate": 31,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/ZjBlNDQ3/V0dTOUhyWWNjMnhQbTQyMkdjWm1aZXh2R1pIeE1NTm5BN0U4bWV2QncyUT0.png",
-    "link_url": "https://toss.shopping/_m/9dBHEcKz"
+    "id": 4,
+    "taca_item_id": 13017669,
+    "badge": "4위",
+    "title": "베베앙 시그니처 물티슈 캡형",
+    "price_label": "9,900원",
+    "original_price": "22,300원",
+    "discount_rate": 55,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
+    "link_url": "https://toss.shopping/_m/9AejHgsh"
   },
   {
-    "id": 4,
+    "id": 5,
     "taca_item_id": 2534121637,
-    "badge": "4위",
+    "badge": "5위",
     "title": "원김치 쪽파김치",
     "price_label": "9,900원",
     "original_price": "14,900원",
@@ -44,37 +55,26 @@
     "link_url": "https://toss.shopping/_m/nqNSesV4"
   },
   {
-    "id": 5,
-    "taca_item_id": 86942843,
-    "badge": "5위",
-    "title": "배스킨라빈스 메롱 멜론 우유 190ml",
-    "price_label": "9,900원",
-    "original_price": "28,800원",
-    "discount_rate": 65,
-    "image_url": "https://shopping.toss.im/live/temp/2026-04-22/2fe8b7ac-efbd-4d0f-93ae-feaa6483d01d.png",
-    "link_url": "https://toss.shopping/_m/xO7BGEVj"
-  },
-  {
     "id": 6,
-    "taca_item_id": 2674677561,
+    "taca_item_id": 2652574317,
     "badge": "6위",
-    "title": "치이카와 자석 커플 키링 가방고리",
-    "price_label": "15,200원",
-    "original_price": "20,000원",
-    "discount_rate": 24,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-14/7d1ae092-6781-4d80-b9cb-f5eee62b9a1a.jpeg",
-    "link_url": "https://toss.shopping/_m/pqOGKLQ5"
+    "title": "씨없는 청도 반시",
+    "price_label": "9,800원",
+    "original_price": "21,400원",
+    "discount_rate": 54,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-09/eedd5246-1fd2-47e8-8af5-d77b5e45c17e.png",
+    "link_url": "https://toss.shopping/_m/rtNLNzoD"
   },
   {
     "id": 7,
-    "taca_item_id": 12833195,
+    "taca_item_id": 2642157521,
     "badge": "7위",
-    "title": "에브리워터 무라벨 생수",
-    "price_label": "10,980원",
-    "original_price": "24,000원",
-    "discount_rate": 54,
-    "image_url": "https://shopping.toss.im/live/product/715843/3bd40551-1399-4a9e-8b12-af94ace41dd1.png",
-    "link_url": "https://toss.shopping/_m/FKjpkp5b"
+    "title": "제주 극조생 감귤",
+    "price_label": "8,900원",
+    "original_price": "23,900원",
+    "discount_rate": 62,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-11/9e39b5c9-d743-4595-8fb4-2b8c9457f407.jpeg",
+    "link_url": "https://toss.shopping/_m/NFBgyALD"
   },
   {
     "id": 8,
@@ -89,24 +89,24 @@
   },
   {
     "id": 9,
-    "taca_item_id": 13017669,
+    "taca_item_id": 12833195,
     "badge": "9위",
-    "title": "베베앙 시그니처 물티슈 캡형",
-    "price_label": "9,900원",
-    "original_price": "22,300원",
-    "discount_rate": 55,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
-    "link_url": "https://toss.shopping/_m/9AejHgsh"
+    "title": "에브리워터 무라벨 생수",
+    "price_label": "10,980원",
+    "original_price": "24,000원",
+    "discount_rate": 54,
+    "image_url": "https://shopping.toss.im/live/product/715843/3bd40551-1399-4a9e-8b12-af94ace41dd1.png",
+    "link_url": "https://toss.shopping/_m/FKjpkp5b"
   },
   {
     "id": 10,
-    "taca_item_id": 418996905,
+    "taca_item_id": 525096829,
     "badge": "10위",
-    "title": "참도깨비 어묵장인 박경도 한끼어묵탕",
-    "price_label": "10,900원",
-    "original_price": "17,900원",
-    "discount_rate": 39,
-    "image_url": "https://shopping.toss.im/live/taca/ai/OWQ1NzI1/VGFNM1NiU0R5NmJXeXlzVFcweWNVcTA0YUZYMDhGaG9JMVBBdEwwSzRKVT0.png",
-    "link_url": "https://toss.shopping/_m/xO191brB"
+    "title": "제주 타이벡 감귤",
+    "price_label": "7,400원",
+    "original_price": "25,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/taca/ai/OGE0YmFk/Q0djTDdteCtoajB0QVorVGxmcDVlTHFSaExmbkI1OVFFemVJaVhNK2M4MD0.png",
+    "link_url": "https://toss.shopping/_m/PoSKtyUA"
   }
 ]
