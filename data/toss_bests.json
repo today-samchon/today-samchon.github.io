@@ -1,41 +1,19 @@
 [
   {
     "id": 1,
-    "taca_item_id": 2451254379,
+    "taca_item_id": 2667835443,
     "badge": "1위",
-    "title": "산들내음 산림방사 유정란",
-    "price_label": "22,900원",
-    "original_price": "56,900원",
-    "discount_rate": 59,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDc5ODhh/QVBBY01NMEE0YksydGdiYnB4TjlZSmJNWTRkTkU0S2VjSkJQV0dkQkxOZmw.png",
-    "link_url": "https://toss.shopping/_m/jYikwoKk"
+    "title": "프로프룻 경북 시나노골드",
+    "price_label": "10,800원",
+    "original_price": "54,900원",
+    "discount_rate": 80,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-07/b3fe0758-d59f-490c-9377-65425c337f4f.png",
+    "link_url": "https://toss.shopping/_m/BZU67AVe"
   },
   {
     "id": 2,
-    "taca_item_id": 1131805409,
-    "badge": "2위",
-    "title": "스파클 생수",
-    "price_label": "7,900원",
-    "original_price": "12,000원",
-    "discount_rate": 34,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-16/1b86054d-ac8b-4f4d-85a9-3f73e7302b39.png",
-    "link_url": "https://toss.shopping/_m/npku3Hpy"
-  },
-  {
-    "id": 3,
-    "taca_item_id": 13017669,
-    "badge": "3위",
-    "title": "베베앙 시그니처 물티슈 캡형",
-    "price_label": "9,900원",
-    "original_price": "22,300원",
-    "discount_rate": 55,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
-    "link_url": "https://toss.shopping/_m/9AejHgsh"
-  },
-  {
-    "id": 4,
     "taca_item_id": 2672325913,
-    "badge": "4위",
+    "badge": "2위",
     "title": "프로프룻 시나노골드",
     "price_label": "9,900원",
     "original_price": "54,900원",
@@ -44,42 +22,9 @@
     "link_url": "https://toss.shopping/_m/fmmV9mz3"
   },
   {
-    "id": 5,
-    "taca_item_id": 1551322053,
-    "badge": "5위",
-    "title": "크리스탈 생수",
-    "price_label": "7,350원",
-    "original_price": "20,000원",
-    "discount_rate": 63,
-    "image_url": "https://shopping.toss.im/live/taca/ai/ODNjOTA0/QUk4Wkp5Yk95NDJHWERrNFBIQjVuajZrL0orR1BQRmowelBsYngrUXJMajU.png",
-    "link_url": "https://toss.shopping/_m/dZRQNRh2"
-  },
-  {
-    "id": 6,
-    "taca_item_id": 2652574317,
-    "badge": "6위",
-    "title": "씨없는 청도 반시",
-    "price_label": "9,800원",
-    "original_price": "21,400원",
-    "discount_rate": 54,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-09/eedd5246-1fd2-47e8-8af5-d77b5e45c17e.png",
-    "link_url": "https://toss.shopping/_m/rtNLNzoD"
-  },
-  {
-    "id": 7,
-    "taca_item_id": 2621363823,
-    "badge": "7위",
-    "title": "맘스럽 시그니처코튼 물티슈",
-    "price_label": "7,200원",
-    "original_price": "14,900원",
-    "discount_rate": 51,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-19/0a772c5e-a39c-483a-901f-cf08c10f1f4d.jpeg",
-    "link_url": "https://toss.shopping/_m/LIglRvPt"
-  },
-  {
-    "id": 8,
+    "id": 3,
     "taca_item_id": 2534121637,
-    "badge": "8위",
+    "badge": "3위",
     "title": "원김치 쪽파김치",
     "price_label": "9,900원",
     "original_price": "14,900원",
@@ -88,9 +33,42 @@
     "link_url": "https://toss.shopping/_m/nqNSesV4"
   },
   {
-    "id": 9,
+    "id": 4,
+    "taca_item_id": 2668498567,
+    "badge": "4위",
+    "title": "프로프룻 국내산 파프리카",
+    "price_label": "8,900원",
+    "original_price": "44,900원",
+    "discount_rate": 80,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-01/fbe54321-2b7a-40d3-9111-6a8e65afb0ff.png",
+    "link_url": "https://toss.shopping/_m/tNFYRaRf"
+  },
+  {
+    "id": 5,
+    "taca_item_id": 2652574317,
+    "badge": "5위",
+    "title": "씨없는 청도 반시",
+    "price_label": "9,800원",
+    "original_price": "21,400원",
+    "discount_rate": 54,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-09/eedd5246-1fd2-47e8-8af5-d77b5e45c17e.png",
+    "link_url": "https://toss.shopping/_m/rtNLNzoD"
+  },
+  {
+    "id": 6,
+    "taca_item_id": 2667381251,
+    "badge": "6위",
+    "title": "청도반시 씨 없는 감",
+    "price_label": "8,500원",
+    "original_price": "24,600원",
+    "discount_rate": 65,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-29/2379d596-684c-45ca-ac42-ed2ba555f4bf.png",
+    "link_url": "https://toss.shopping/_m/BzicVz3h"
+  },
+  {
+    "id": 7,
     "taca_item_id": 2659903585,
-    "badge": "9위",
+    "badge": "7위",
     "title": "제주 서귀포 감귤",
     "price_label": "13,900원",
     "original_price": "33,000원",
@@ -99,14 +77,36 @@
     "link_url": "https://toss.shopping/_m/3c8Gu6W9"
   },
   {
+    "id": 8,
+    "taca_item_id": 241796467,
+    "badge": "8위",
+    "title": "괄사 마사지 3종",
+    "price_label": "5,450원",
+    "original_price": "14,800원",
+    "discount_rate": 63,
+    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
+    "link_url": "https://toss.shopping/_m/7eb2ktTq"
+  },
+  {
+    "id": 9,
+    "taca_item_id": 2460475873,
+    "badge": "9위",
+    "title": "푸드센터 소갈비살",
+    "price_label": "29,900원",
+    "original_price": "100,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
+    "link_url": "https://toss.shopping/_m/33ca2bV9"
+  },
+  {
     "id": 10,
-    "taca_item_id": 2667381251,
+    "taca_item_id": 2668495277,
     "badge": "10위",
-    "title": "청도반시 씨 없는 감",
-    "price_label": "8,500원",
-    "original_price": "24,600원",
-    "discount_rate": 65,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-29/2379d596-684c-45ca-ac42-ed2ba555f4bf.png",
-    "link_url": "https://toss.shopping/_m/BzicVz3h"
+    "title": "경북 감홍사과",
+    "price_label": "19,900원",
+    "original_price": "149,900원",
+    "discount_rate": 86,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-01/10c0221b-c75d-42ef-9c5e-7c27db7f9c73.png",
+    "link_url": "https://toss.shopping/_m/19kdgOmm"
   }
 ]
