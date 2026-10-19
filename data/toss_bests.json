@@ -1,30 +1,52 @@
 [
   {
     "id": 1,
-    "taca_item_id": 2667835443,
+    "taca_item_id": 651526161,
     "badge": "1위",
-    "title": "프로프룻 경북 시나노골드",
-    "price_label": "10,800원",
-    "original_price": "54,900원",
-    "discount_rate": 80,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-07/b3fe0758-d59f-490c-9377-65425c337f4f.png",
-    "link_url": "https://toss.shopping/_m/BZU67AVe"
+    "title": "스파클 생수",
+    "price_label": "13,900원",
+    "original_price": "24,000원",
+    "discount_rate": 42,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
+    "link_url": "https://toss.shopping/_m/Bz18QEdi"
   },
   {
     "id": 2,
-    "taca_item_id": 2672325913,
+    "taca_item_id": 43252057,
     "badge": "2위",
-    "title": "프로프룻 시나노골드",
-    "price_label": "9,900원",
-    "original_price": "54,900원",
-    "discount_rate": 81,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-06/74d4b59b-2bb4-4efb-aeb3-14ae3e570d38.jpeg",
-    "link_url": "https://toss.shopping/_m/fmmV9mz3"
+    "title": "스파클 생수",
+    "price_label": "13,900원",
+    "original_price": "25,000원",
+    "discount_rate": 44,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-18/268e4c6a-1595-43e9-9c1b-f101e5774429.jpeg",
+    "link_url": "https://toss.shopping/_m/XTBSOpMo"
   },
   {
     "id": 3,
-    "taca_item_id": 2534121637,
+    "taca_item_id": 166431743,
     "badge": "3위",
+    "title": "익스트림 단백질 20g 슬림쉐이크",
+    "price_label": "11,890원",
+    "original_price": "35,000원",
+    "discount_rate": 66,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-12/3a39b71e-9914-4874-8cb6-dcdf4d610943.png",
+    "link_url": "https://toss.shopping/_m/fO5Yefix"
+  },
+  {
+    "id": 4,
+    "taca_item_id": 2678864329,
+    "badge": "4위",
+    "title": "14Brix 초고당도 제주 감귤",
+    "price_label": "10,900원",
+    "original_price": "37,900원",
+    "discount_rate": 71,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-12/76afd3e0-ff97-4698-a7b2-8096cd1cc281.png",
+    "link_url": "https://toss.shopping/_m/dDphUkFu"
+  },
+  {
+    "id": 5,
+    "taca_item_id": 2534121637,
+    "badge": "5위",
     "title": "원김치 쪽파김치",
     "price_label": "9,900원",
     "original_price": "14,900원",
@@ -33,53 +55,42 @@
     "link_url": "https://toss.shopping/_m/nqNSesV4"
   },
   {
-    "id": 4,
-    "taca_item_id": 2668498567,
-    "badge": "4위",
-    "title": "프로프룻 국내산 파프리카",
-    "price_label": "8,900원",
-    "original_price": "44,900원",
-    "discount_rate": 80,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-01/fbe54321-2b7a-40d3-9111-6a8e65afb0ff.png",
-    "link_url": "https://toss.shopping/_m/tNFYRaRf"
+    "id": 6,
+    "taca_item_id": 1990871539,
+    "badge": "6위",
+    "title": "연세우유 세브란스 A2 프로틴",
+    "price_label": "33,800원",
+    "original_price": "42,900원",
+    "discount_rate": 21,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-12/7af8a6ad-b7f6-4ee8-9e56-5c9ad4245d87.jpeg",
+    "link_url": "https://toss.shopping/_m/9M1mF3Fz"
   },
   {
-    "id": 5,
+    "id": 7,
     "taca_item_id": 2652574317,
-    "badge": "5위",
+    "badge": "7위",
     "title": "씨없는 청도 반시",
-    "price_label": "9,800원",
+    "price_label": "9,500원",
     "original_price": "21,400원",
-    "discount_rate": 54,
+    "discount_rate": 55,
     "image_url": "https://shopping.toss.im/live/temp/2026-09-09/eedd5246-1fd2-47e8-8af5-d77b5e45c17e.png",
     "link_url": "https://toss.shopping/_m/rtNLNzoD"
   },
   {
-    "id": 6,
-    "taca_item_id": 2667381251,
-    "badge": "6위",
-    "title": "청도반시 씨 없는 감",
-    "price_label": "8,500원",
-    "original_price": "24,600원",
-    "discount_rate": 65,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-29/2379d596-684c-45ca-ac42-ed2ba555f4bf.png",
-    "link_url": "https://toss.shopping/_m/BzicVz3h"
-  },
-  {
-    "id": 7,
-    "taca_item_id": 2659903585,
-    "badge": "7위",
-    "title": "제주 서귀포 감귤",
-    "price_label": "13,900원",
-    "original_price": "33,000원",
-    "discount_rate": 57,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-20/a0e6554a-50c1-4ea9-8954-02f528e674e3.png",
-    "link_url": "https://toss.shopping/_m/3c8Gu6W9"
-  },
-  {
     "id": 8,
-    "taca_item_id": 241796467,
+    "taca_item_id": 2668495277,
     "badge": "8위",
+    "title": "경북 감홍사과",
+    "price_label": "19,900원",
+    "original_price": "149,900원",
+    "discount_rate": 86,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-01/10c0221b-c75d-42ef-9c5e-7c27db7f9c73.png",
+    "link_url": "https://toss.shopping/_m/19kdgOmm"
+  },
+  {
+    "id": 9,
+    "taca_item_id": 241796467,
+    "badge": "9위",
     "title": "괄사 마사지 3종",
     "price_label": "5,450원",
     "original_price": "14,800원",
@@ -88,25 +99,14 @@
     "link_url": "https://toss.shopping/_m/7eb2ktTq"
   },
   {
-    "id": 9,
+    "id": 10,
     "taca_item_id": 2460475873,
-    "badge": "9위",
+    "badge": "10위",
     "title": "푸드센터 소갈비살",
     "price_label": "29,900원",
     "original_price": "100,000원",
     "discount_rate": 70,
     "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
     "link_url": "https://toss.shopping/_m/33ca2bV9"
-  },
-  {
-    "id": 10,
-    "taca_item_id": 2668495277,
-    "badge": "10위",
-    "title": "경북 감홍사과",
-    "price_label": "19,900원",
-    "original_price": "149,900원",
-    "discount_rate": 86,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-01/10c0221b-c75d-42ef-9c5e-7c27db7f9c73.png",
-    "link_url": "https://toss.shopping/_m/19kdgOmm"
   }
 ]
