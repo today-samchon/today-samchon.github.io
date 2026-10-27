@@ -1,30 +1,19 @@
 [
   {
     "id": 1,
-    "taca_item_id": 82189401,
+    "taca_item_id": 1132463925,
     "badge": "1위",
-    "title": "후디스 소화 편한 우유 오리지널",
-    "price_label": "11,900원",
-    "original_price": "33,600원",
-    "discount_rate": 64,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-13/71e1811b-5f3d-40d9-81e7-06500a63a40a.jpeg",
-    "link_url": "https://toss.shopping/_m/1UW87Foi"
+    "title": "아미고 나쵸 그랩앤고 치즈콤보",
+    "price_label": "18,000원",
+    "original_price": "20,000원",
+    "discount_rate": 10,
+    "image_url": "https://shopping.toss.im/live/taca/ai/ZTQzNmZj/SGtiTDQ5ay9aeHhwR25BYzhHTVpMeWFjNXp6SGdackhldFRtTUV2VU1aZz0.png",
+    "link_url": "https://toss.shopping/_m/ZvGAtBzs"
   },
   {
     "id": 2,
-    "taca_item_id": 2401832945,
-    "badge": "2위",
-    "title": "널담 고단백 배꼽 베이글",
-    "price_label": "9,600원",
-    "original_price": "27,900원",
-    "discount_rate": 65,
-    "image_url": "https://shopping.toss.im/live/temp/2026-07-03/6b083d0c-c74f-467a-9ec8-a46fe748c635.png",
-    "link_url": "https://toss.shopping/_m/bDRlDmh8"
-  },
-  {
-    "id": 3,
     "taca_item_id": 108753687,
-    "badge": "3위",
+    "badge": "2위",
     "title": "스파클 생수",
     "price_label": "11,400원",
     "original_price": "20,000원",
@@ -33,42 +22,31 @@
     "link_url": "https://toss.shopping/_m/HjZh1Xcs"
   },
   {
+    "id": 3,
+    "taca_item_id": 82189401,
+    "badge": "3위",
+    "title": "후디스 소화 편한 우유 오리지널",
+    "price_label": "11,900원",
+    "original_price": "33,600원",
+    "discount_rate": 64,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-13/71e1811b-5f3d-40d9-81e7-06500a63a40a.jpeg",
+    "link_url": "https://toss.shopping/_m/1UW87Foi"
+  },
+  {
     "id": 4,
-    "taca_item_id": 2590594895,
+    "taca_item_id": 2401832945,
     "badge": "4위",
-    "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
-    "price_label": "8,790원",
-    "original_price": "15,900원",
-    "discount_rate": 44,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-07/be8b0c00-e279-4ee3-9860-66dfd269c3d1.jpeg",
-    "link_url": "https://toss.shopping/_m/DGQ6uuHz"
+    "title": "널담 고단백 배꼽 베이글",
+    "price_label": "9,600원",
+    "original_price": "27,900원",
+    "discount_rate": 65,
+    "image_url": "https://shopping.toss.im/live/temp/2026-07-03/6b083d0c-c74f-467a-9ec8-a46fe748c635.png",
+    "link_url": "https://toss.shopping/_m/bDRlDmh8"
   },
   {
     "id": 5,
-    "taca_item_id": 241796467,
-    "badge": "5위",
-    "title": "괄사 마사지 3종",
-    "price_label": "5,450원",
-    "original_price": "14,800원",
-    "discount_rate": 63,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
-    "link_url": "https://toss.shopping/_m/7eb2ktTq"
-  },
-  {
-    "id": 6,
-    "taca_item_id": 2534121637,
-    "badge": "6위",
-    "title": "원김치 쪽파김치",
-    "price_label": "9,900원",
-    "original_price": "14,900원",
-    "discount_rate": 33,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDkxZDUx/QU52Z21LSFI4ZUg3QkoxLzhPZGVRMTF5ZEJvNkdnTnJSZTNWSjhpRGZ0VWk.png",
-    "link_url": "https://toss.shopping/_m/nqNSesV4"
-  },
-  {
-    "id": 7,
     "taca_item_id": 167795731,
-    "badge": "7위",
+    "badge": "5위",
     "title": "스파클 생수 무라벨",
     "price_label": "16,900원",
     "original_price": "30,000원",
@@ -77,36 +55,58 @@
     "link_url": "https://toss.shopping/_m/hNWAqN6r"
   },
   {
+    "id": 6,
+    "taca_item_id": 2693147723,
+    "badge": "6위",
+    "title": "고당도 15Brix 제주 감귤",
+    "price_label": "8,900원",
+    "original_price": "29,900원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-21/964e12a2-d5ea-4045-91af-ff74b44b3138.png",
+    "link_url": "https://toss.shopping/_m/bWccTmcx"
+  },
+  {
+    "id": 7,
+    "taca_item_id": 2590594895,
+    "badge": "7위",
+    "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
+    "price_label": "8,790원",
+    "original_price": "15,900원",
+    "discount_rate": 44,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-07/be8b0c00-e279-4ee3-9860-66dfd269c3d1.jpeg",
+    "link_url": "https://toss.shopping/_m/DGQ6uuHz"
+  },
+  {
     "id": 8,
-    "taca_item_id": 154527137,
+    "taca_item_id": 1349815909,
     "badge": "8위",
-    "title": "운동화 세탁망",
-    "price_label": "11,900원",
-    "original_price": "13,500원",
-    "discount_rate": 11,
-    "image_url": "https://shopping.toss.im/live/temp/2025-08-05/0c32948a-5e0e-4d82-8e56-2a74ee2d3196.jpeg",
-    "link_url": "https://toss.shopping/_m/RuAQ4HqB"
+    "title": "남다른 농수산 여수 돌산 갓김치",
+    "price_label": "12,700원",
+    "original_price": "25,900원",
+    "discount_rate": 50,
+    "image_url": "https://shopping.toss.im/live/taca/ai/ZDA3ODgy/RXRQSlB2OVEzd2tEL3ZQNy9sZXlTZDJTcGtobDlqdzZMQUNGc3JQczI3UT0.png",
+    "link_url": "https://toss.shopping/_m/dk5miU6C"
   },
   {
     "id": 9,
-    "taca_item_id": 2460475873,
+    "taca_item_id": 2089518011,
     "badge": "9위",
-    "title": "푸드센터 소갈비살",
-    "price_label": "29,900원",
-    "original_price": "100,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
-    "link_url": "https://toss.shopping/_m/33ca2bV9"
+    "title": "멕시카나 닭강정",
+    "price_label": "17,900원",
+    "original_price": "30,000원",
+    "discount_rate": 40,
+    "image_url": "https://shopping.toss.im/live/temp/2025-11-03/400af32f-7a7e-41a3-a8c2-9ac69af3d272.png",
+    "link_url": "https://toss.shopping/_m/LaHjWqLk"
   },
   {
     "id": 10,
-    "taca_item_id": 1616643409,
+    "taca_item_id": 241796467,
     "badge": "10위",
-    "title": "골드럽 섬유유연제",
-    "price_label": "13,900원",
-    "original_price": "32,200원",
-    "discount_rate": 56,
-    "image_url": "https://shopping.toss.im/live/temp/2026-04-23/d6201ca5-818a-416f-9370-515f392cbb47.jpeg",
-    "link_url": "https://toss.shopping/_m/JvZWmVdx"
+    "title": "괄사 마사지 3종",
+    "price_label": "5,450원",
+    "original_price": "14,800원",
+    "discount_rate": 63,
+    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
+    "link_url": "https://toss.shopping/_m/7eb2ktTq"
   }
 ]
