@@ -1,30 +1,41 @@
 [
   {
     "id": 1,
-    "taca_item_id": 108753687,
+    "taca_item_id": 1163354095,
     "badge": "1위",
-    "title": "스파클 생수",
-    "price_label": "11,400원",
-    "original_price": "20,000원",
-    "discount_rate": 43,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-18/268e4c6a-1595-43e9-9c1b-f101e5774429.jpeg",
-    "link_url": "https://toss.shopping/_m/HjZh1Xcs"
+    "title": "풀무원 샘물 생수",
+    "price_label": "6,900원",
+    "original_price": "10,900원",
+    "discount_rate": 36,
+    "image_url": "https://shopping.toss.im/live/taca/ai/YTVkZmRk/QU9TY2h3MWFQSHljNWNOYWNWdlRaa2U5YjdXemhqd2N6RkMwNlRvajBGYkY.png",
+    "link_url": "https://toss.shopping/_m/hrDlHHzo"
   },
   {
     "id": 2,
-    "taca_item_id": 80369007,
+    "taca_item_id": 2693147723,
     "badge": "2위",
-    "title": "파파네정육점 통삼겹살",
-    "price_label": "19,810원",
-    "original_price": "38,900원",
-    "discount_rate": 49,
-    "image_url": "https://shopping.toss.im/live/temp/2025-02-11/7c310022-457f-454e-8a9e-3febca69d059.jpeg",
-    "link_url": "https://toss.shopping/_m/dU2dDwDk"
+    "title": "고당도 15Brix 제주 감귤",
+    "price_label": "9,400원",
+    "original_price": "29,900원",
+    "discount_rate": 68,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-21/964e12a2-d5ea-4045-91af-ff74b44b3138.png",
+    "link_url": "https://toss.shopping/_m/bWccTmcx"
   },
   {
     "id": 3,
-    "taca_item_id": 167795731,
+    "taca_item_id": 2650467065,
     "badge": "3위",
+    "title": "셰프컷 칼 가위 6종 세트",
+    "price_label": "11,200원",
+    "original_price": "48,900원",
+    "discount_rate": 77,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-07/02117771-f102-42d9-93a7-6b54361460e2.jpeg",
+    "link_url": ""
+  },
+  {
+    "id": 4,
+    "taca_item_id": 167795731,
+    "badge": "4위",
     "title": "스파클 생수 무라벨",
     "price_label": "16,900원",
     "original_price": "30,000원",
@@ -33,20 +44,20 @@
     "link_url": "https://toss.shopping/_m/hNWAqN6r"
   },
   {
-    "id": 4,
-    "taca_item_id": 2401832945,
-    "badge": "4위",
-    "title": "널담 고단백 배꼽 베이글",
-    "price_label": "9,600원",
-    "original_price": "27,900원",
-    "discount_rate": 65,
-    "image_url": "https://shopping.toss.im/live/temp/2026-07-03/6b083d0c-c74f-467a-9ec8-a46fe748c635.png",
-    "link_url": "https://toss.shopping/_m/bDRlDmh8"
+    "id": 5,
+    "taca_item_id": 108753687,
+    "badge": "5위",
+    "title": "스파클 생수",
+    "price_label": "11,400원",
+    "original_price": "20,000원",
+    "discount_rate": 43,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-18/268e4c6a-1595-43e9-9c1b-f101e5774429.jpeg",
+    "link_url": "https://toss.shopping/_m/HjZh1Xcs"
   },
   {
-    "id": 5,
+    "id": 6,
     "taca_item_id": 2590594895,
-    "badge": "5위",
+    "badge": "6위",
     "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
     "price_label": "8,790원",
     "original_price": "15,900원",
@@ -55,9 +66,9 @@
     "link_url": "https://toss.shopping/_m/DGQ6uuHz"
   },
   {
-    "id": 6,
+    "id": 7,
     "taca_item_id": 241796467,
-    "badge": "6위",
+    "badge": "7위",
     "title": "괄사 마사지 3종",
     "price_label": "5,450원",
     "original_price": "14,800원",
@@ -66,47 +77,36 @@
     "link_url": "https://toss.shopping/_m/7eb2ktTq"
   },
   {
-    "id": 7,
-    "taca_item_id": 7831063,
-    "badge": "7위",
-    "title": "포항 구룡포 반건조 오징어",
-    "price_label": "16,800원",
-    "original_price": "21,900원",
-    "discount_rate": 23,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YTYyOWI0/WWRtSEJyc0xkbWxMSnZKVHJ1UHJjVFN5cXh3OVd1dVB0TWRlbzB0UkJPdz0.png",
-    "link_url": "https://toss.shopping/_m/3dZXXcun"
-  },
-  {
     "id": 8,
-    "taca_item_id": 2658864887,
+    "taca_item_id": 2401832945,
     "badge": "8위",
-    "title": "제주 극조생 햇 감귤",
-    "price_label": "8,960원",
-    "original_price": "28,900원",
-    "discount_rate": 68,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-27/76ca8aa8-664b-4cb4-a79d-a8dfc0707879.jpeg",
-    "link_url": "https://toss.shopping/_m/TeeJYeKt"
+    "title": "널담 고단백 배꼽 베이글",
+    "price_label": "9,600원",
+    "original_price": "27,900원",
+    "discount_rate": 65,
+    "image_url": "https://shopping.toss.im/live/temp/2026-07-03/6b083d0c-c74f-467a-9ec8-a46fe748c635.png",
+    "link_url": "https://toss.shopping/_m/bDRlDmh8"
   },
   {
     "id": 9,
-    "taca_item_id": 2678864329,
-    "badge": "9위",
-    "title": "14Brix 초고당도 제주 감귤",
-    "price_label": "9,900원",
-    "original_price": "37,900원",
-    "discount_rate": 73,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-12/76afd3e0-ff97-4698-a7b2-8096cd1cc281.png",
-    "link_url": "https://toss.shopping/_m/dDphUkFu"
-  },
-  {
-    "id": 10,
     "taca_item_id": 90163069,
-    "badge": "10위",
+    "badge": "9위",
     "title": "풀무원 워터루틴 생수",
     "price_label": "7,450원",
     "original_price": "18,400원",
     "discount_rate": 59,
     "image_url": "https://shopping.toss.im/live/taca/ai/MjY1ZWQ0/Tk9QTnB2RERuTXdPTG1PWmt6NWt6VW1jbUdiSk9iTkdiSEhKSm5HTUhOaz0.png",
     "link_url": "https://toss.shopping/_m/Hx6pOdew"
+  },
+  {
+    "id": 10,
+    "taca_item_id": 446375191,
+    "badge": "10위",
+    "title": "맛꾼 구운란",
+    "price_label": "11,500원",
+    "original_price": "19,900원",
+    "discount_rate": 42,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
+    "link_url": ""
   }
 ]
