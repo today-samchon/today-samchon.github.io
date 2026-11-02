@@ -1,19 +1,96 @@
 [
   {
     "id": 1,
-    "taca_item_id": 2590594895,
+    "taca_item_id": 189854969,
     "badge": "1위",
+    "title": "웅진 하늘보리",
+    "price_label": "14,700원",
+    "original_price": "18,900원",
+    "discount_rate": 22,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/NDgxYTA5/QVBUa0c5MzA1TEdaeHZUbG5pdlRXbVRkTytVUHg2L25uM0xVZWFseTFONzI.png",
+    "link_url": ""
+  },
+  {
+    "id": 2,
+    "taca_item_id": 10142851,
+    "badge": "2위",
+    "title": "스파클 생수 무라벨",
+    "price_label": "6,890원",
+    "original_price": "12,000원",
+    "discount_rate": 42,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
+    "link_url": "https://toss.shopping/_m/VTey6Eps"
+  },
+  {
+    "id": 3,
+    "taca_item_id": 376404489,
+    "badge": "3위",
+    "title": "웅진식품 하늘보리 무라벨 에코",
+    "price_label": "15,900원",
+    "original_price": "19,900원",
+    "discount_rate": 20,
+    "image_url": "https://shopping.toss.im/live/temp/2025-12-01/875cb276-fcd4-4b01-9bf0-d1f8d95682f9.jpeg",
+    "link_url": ""
+  },
+  {
+    "id": 4,
+    "taca_item_id": 2590594895,
+    "badge": "4위",
     "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
-    "price_label": "8,900원",
+    "price_label": "8,700원",
     "original_price": "15,900원",
-    "discount_rate": 44,
+    "discount_rate": 45,
     "image_url": "https://shopping.toss.im/live/temp/2026-08-07/be8b0c00-e279-4ee3-9860-66dfd269c3d1.jpeg",
     "link_url": "https://toss.shopping/_m/DGQ6uuHz"
   },
   {
-    "id": 2,
+    "id": 5,
+    "taca_item_id": 2693147723,
+    "badge": "5위",
+    "title": "고당도 15Brix 제주 감귤",
+    "price_label": "9,400원",
+    "original_price": "29,900원",
+    "discount_rate": 68,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-21/964e12a2-d5ea-4045-91af-ff74b44b3138.png",
+    "link_url": "https://toss.shopping/_m/bWccTmcx"
+  },
+  {
+    "id": 6,
+    "taca_item_id": 2698239291,
+    "badge": "6위",
+    "title": "온담원 산지직송 햇 제주감귤",
+    "price_label": "12,900원",
+    "original_price": "64,500원",
+    "discount_rate": 80,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-01/b23a7e81-172e-468a-b812-b7594865e348.png",
+    "link_url": ""
+  },
+  {
+    "id": 7,
+    "taca_item_id": 525096829,
+    "badge": "7위",
+    "title": "제주 타이벡 감귤",
+    "price_label": "6,900원",
+    "original_price": "20,000원",
+    "discount_rate": 65,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/e9b57a5a-52df-4b42-954f-e9411e7586eb.png",
+    "link_url": "https://toss.shopping/_m/PoSKtyUA"
+  },
+  {
+    "id": 8,
+    "taca_item_id": 125722915,
+    "badge": "8위",
+    "title": "지아자 산양유 크리미 바디워시",
+    "price_label": "21,900원",
+    "original_price": "84,000원",
+    "discount_rate": 73,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-08/5b3b715d-99db-492b-bf61-a8602856cc34.jpeg",
+    "link_url": ""
+  },
+  {
+    "id": 9,
     "taca_item_id": 241796467,
-    "badge": "2위",
+    "badge": "9위",
     "title": "괄사 마사지 3종",
     "price_label": "5,450원",
     "original_price": "14,800원",
@@ -22,91 +99,14 @@
     "link_url": "https://toss.shopping/_m/7eb2ktTq"
   },
   {
-    "id": 3,
-    "taca_item_id": 2698239291,
-    "badge": "3위",
-    "title": "온담원 산지직송 햇 제주감귤",
-    "price_label": "12,900원",
-    "original_price": "64,500원",
-    "discount_rate": 80,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-20/81452d2b-d69a-4265-8373-659210ee1694.png",
-    "link_url": ""
-  },
-  {
-    "id": 4,
-    "taca_item_id": 2666659813,
-    "badge": "4위",
-    "title": "제주 감귤",
-    "price_label": "14,900원",
-    "original_price": "39,800원",
-    "discount_rate": 62,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-27/95cd550a-26da-49b7-9cfc-df0b597a2d33.png",
-    "link_url": ""
-  },
-  {
-    "id": 5,
-    "taca_item_id": 778830947,
-    "badge": "5위",
-    "title": "풀무원샘물 라벨랜덤",
-    "price_label": "5,109원",
-    "original_price": "9,000원",
-    "discount_rate": 43,
-    "image_url": "https://shopping.toss.im/live/taca/ai/ZTc1N2Jl/Wnl4NG00NXpDeTE1ek01bHJ6RnBUMnM1eFp6eHByU05zUEY2Y3BiQnRZMD0.png",
-    "link_url": ""
-  },
-  {
-    "id": 6,
-    "taca_item_id": 2677153369,
-    "badge": "6위",
-    "title": "대봉감",
-    "price_label": "11,900원",
-    "original_price": "34,900원",
-    "discount_rate": 65,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-10/0ab43fd9-b193-4925-8425-f649fe8b0f63.jpeg",
-    "link_url": ""
-  },
-  {
-    "id": 7,
-    "taca_item_id": 2693694443,
-    "badge": "7위",
-    "title": "경북 사과",
-    "price_label": "14,900원",
-    "original_price": "34,900원",
-    "discount_rate": 57,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-22/788a2c1e-1025-499b-b5cc-f364c9a9046b.png",
-    "link_url": ""
-  },
-  {
-    "id": 8,
-    "taca_item_id": 1619224857,
-    "badge": "8위",
-    "title": "집드리 질레트 호환 5중날 면도기 세트",
-    "price_label": "8,500원",
-    "original_price": "22,000원",
-    "discount_rate": 61,
-    "image_url": "https://shopping.toss.im/live/temp/2026-04-21/3f86fb5c-1515-48e4-a1e1-c80e1edca0eb.jpeg",
-    "link_url": ""
-  },
-  {
-    "id": 9,
-    "taca_item_id": 2534121637,
-    "badge": "9위",
-    "title": "원김치 쪽파김치",
-    "price_label": "9,900원",
-    "original_price": "14,900원",
-    "discount_rate": 33,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDkxZDUx/QU52Z21LSFI4ZUg3QkoxLzhPZGVRMTF5ZEJvNkdnTnJSZTNWSjhpRGZ0VWk.png",
-    "link_url": "https://toss.shopping/_m/nqNSesV4"
-  },
-  {
     "id": 10,
-    "taca_item_id": 11192115,
+    "taca_item_id": 2226153335,
     "badge": "10위",
-    "title": "깔끔 화장품 정리대",
-    "price_label": "5,450원",
-    "original_price": "13,500원",
-    "discount_rate": 59,
-    "image_url": "https://shopping.toss.im/live/product/471659/d2d55882-3762-4e43-b15d-45a48642b090.jpeg",
-    "link_url": "https://toss.shopping/_m/NH0pI3Wz"
+    "title": "프로프룻 껍질째 먹는 세척사과",
+    "price_label": "13,800원",
+    "original_price": "44,900원",
+    "discount_rate": 69,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
+    "link_url": ""
   }
 ]
