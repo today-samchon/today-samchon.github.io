@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "taca_item_id": 189854969,
+    "taca_item_id": 146054185,
     "badge": "1위",
-    "title": "웅진 하늘보리",
-    "price_label": "14,700원",
-    "original_price": "18,900원",
-    "discount_rate": 22,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/NDgxYTA5/QVBUa0c5MzA1TEdaeHZUbG5pdlRXbVRkTytVUHg2L25uM0xVZWFseTFONzI.png",
+    "title": "널담 고단백 저당 네모 바게트",
+    "price_label": "16,430원",
+    "original_price": "35,800원",
+    "discount_rate": 54,
+    "image_url": "https://shopping.toss.im/live/taca/ai/ODM2MDAy/WXhneWsxaHBNeU9lM0ZzWjgweHBocDdMcE54TE03YXhhN1lsaGsyZVduST0.png",
     "link_url": ""
   },
   {
@@ -23,14 +23,14 @@
   },
   {
     "id": 3,
-    "taca_item_id": 376404489,
+    "taca_item_id": 2653093475,
     "badge": "3위",
-    "title": "웅진식품 하늘보리 무라벨 에코",
-    "price_label": "15,900원",
-    "original_price": "19,900원",
-    "discount_rate": 20,
-    "image_url": "https://shopping.toss.im/live/temp/2025-12-01/875cb276-fcd4-4b01-9bf0-d1f8d95682f9.jpeg",
-    "link_url": ""
+    "title": "수뜰리에 퍼퓸 고체 탈취제",
+    "price_label": "9,900원",
+    "original_price": "59,800원",
+    "discount_rate": 83,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-23/9072bbae-8462-4cc2-ab82-8c9b161d4680.png",
+    "link_url": "https://toss.shopping/_m/zANGOhdC"
   },
   {
     "id": 4,
@@ -45,25 +45,25 @@
   },
   {
     "id": 5,
-    "taca_item_id": 2693147723,
+    "taca_item_id": 2696213083,
     "badge": "5위",
+    "title": "제주 효돈감귤",
+    "price_label": "10,800원",
+    "original_price": "38,900원",
+    "discount_rate": 72,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-01/1ed80098-0b1c-4279-bcf2-a63bc9a06bc0.png",
+    "link_url": ""
+  },
+  {
+    "id": 6,
+    "taca_item_id": 2693147723,
+    "badge": "6위",
     "title": "고당도 15Brix 제주 감귤",
     "price_label": "9,400원",
     "original_price": "29,900원",
     "discount_rate": 68,
     "image_url": "https://shopping.toss.im/live/temp/2026-10-21/964e12a2-d5ea-4045-91af-ff74b44b3138.png",
     "link_url": "https://toss.shopping/_m/bWccTmcx"
-  },
-  {
-    "id": 6,
-    "taca_item_id": 2698239291,
-    "badge": "6위",
-    "title": "온담원 산지직송 햇 제주감귤",
-    "price_label": "12,900원",
-    "original_price": "64,500원",
-    "discount_rate": 80,
-    "image_url": "https://shopping.toss.im/live/temp/2026-11-01/b23a7e81-172e-468a-b812-b7594865e348.png",
-    "link_url": ""
   },
   {
     "id": 7,
@@ -78,13 +78,13 @@
   },
   {
     "id": 8,
-    "taca_item_id": 125722915,
+    "taca_item_id": 2698239291,
     "badge": "8위",
-    "title": "지아자 산양유 크리미 바디워시",
-    "price_label": "21,900원",
-    "original_price": "84,000원",
-    "discount_rate": 73,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-08/5b3b715d-99db-492b-bf61-a8602856cc34.jpeg",
+    "title": "온담원 산지직송 햇 제주감귤",
+    "price_label": "12,900원",
+    "original_price": "64,500원",
+    "discount_rate": 80,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-01/b23a7e81-172e-468a-b812-b7594865e348.png",
     "link_url": ""
   },
   {
@@ -100,13 +100,13 @@
   },
   {
     "id": 10,
-    "taca_item_id": 2226153335,
+    "taca_item_id": 2460475873,
     "badge": "10위",
-    "title": "프로프룻 껍질째 먹는 세척사과",
-    "price_label": "13,800원",
-    "original_price": "44,900원",
-    "discount_rate": 69,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
-    "link_url": ""
+    "title": "푸드센터 소갈비살",
+    "price_label": "29,900원",
+    "original_price": "100,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
+    "link_url": "https://toss.shopping/_m/33ca2bV9"
   }
 ]
