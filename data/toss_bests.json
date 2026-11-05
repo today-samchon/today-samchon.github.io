@@ -23,14 +23,14 @@
   },
   {
     "id": 3,
-    "taca_item_id": 170560991,
+    "taca_item_id": 394437803,
     "badge": "3위",
-    "title": "할리스 시그니처 아메리카노 미니",
-    "price_label": "49,000원",
-    "original_price": "60,000원",
-    "discount_rate": 18,
-    "image_url": "https://shopping.toss.im/live/taca/ai/MTUzMDRl/QUtuL1VLL1Y2cS9XZXBVMzJ1L0YxSzJGZWtxbEZmdDFXUHFGci9hbFZGQ3A.png",
-    "link_url": "https://toss.shopping/_m/F3zIY8Go"
+    "title": "칸타타 콘트라베이스",
+    "price_label": "29,800원",
+    "original_price": "32,000원",
+    "discount_rate": 6,
+    "image_url": "https://shopping.toss.im/live/taca/ai/N2YwZDIw/QU1aek9NWTV4Qzhjemp6RjQ3SGpPaHdlSE9QajQ5Q2NLeHdyWTlUajFKeHI.png",
+    "link_url": "https://toss.shopping/_m/bWkBzrF3"
   },
   {
     "id": 4,
@@ -45,41 +45,8 @@
   },
   {
     "id": 5,
-    "taca_item_id": 2693147723,
-    "badge": "5위",
-    "title": "고당도 15Brix 제주 감귤",
-    "price_label": "9,400원",
-    "original_price": "29,900원",
-    "discount_rate": 68,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-21/964e12a2-d5ea-4045-91af-ff74b44b3138.png",
-    "link_url": "https://toss.shopping/_m/bWccTmcx"
-  },
-  {
-    "id": 6,
-    "taca_item_id": 176476583,
-    "badge": "6위",
-    "title": "설수련 진 한방 스킨케어 3종",
-    "price_label": "16,900원",
-    "original_price": "99,000원",
-    "discount_rate": 82,
-    "image_url": "https://shopping.toss.im/live/temp/2025-06-19/e5d20f9a-81c6-45fc-887f-33bf17e98ae8.jpeg",
-    "link_url": "https://toss.shopping/_m/zkHSp0br"
-  },
-  {
-    "id": 7,
-    "taca_item_id": 2696213083,
-    "badge": "7위",
-    "title": "제주 효돈감귤",
-    "price_label": "10,900원",
-    "original_price": "38,900원",
-    "discount_rate": 71,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-01/1ed80098-0b1c-4279-bcf2-a63bc9a06bc0.png",
-    "link_url": ""
-  },
-  {
-    "id": 8,
     "taca_item_id": 2460475873,
-    "badge": "8위",
+    "badge": "5위",
     "title": "푸드센터 소갈비살",
     "price_label": "29,900원",
     "original_price": "100,000원",
@@ -88,25 +55,58 @@
     "link_url": "https://toss.shopping/_m/33ca2bV9"
   },
   {
-    "id": 9,
-    "taca_item_id": 446375191,
-    "badge": "9위",
-    "title": "맛꾼 구운란",
-    "price_label": "10,900원",
-    "original_price": "19,900원",
-    "discount_rate": 45,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
-    "link_url": ""
+    "id": 6,
+    "taca_item_id": 161372869,
+    "badge": "6위",
+    "title": "알참참 구운계란 대란",
+    "price_label": "9,890원",
+    "original_price": "18,600원",
+    "discount_rate": 46,
+    "image_url": "https://shopping.toss.im/live/taca/ai/NGMwNTI2/QU9FcExVR2Y2OHZyYlZYV3BYeXhyUlE5Si90a2tWU20wNFZVcjFxVlVWYXQ.png",
+    "link_url": "https://toss.shopping/_m/Z52hhvIk"
   },
   {
-    "id": 10,
+    "id": 7,
+    "taca_item_id": 2696228021,
+    "badge": "7위",
+    "title": "효돈감귤",
+    "price_label": "10,900원",
+    "original_price": "38,900원",
+    "discount_rate": 71,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-30/051d747d-4e7e-48fa-b199-9bad473d4fa2.jpeg",
+    "link_url": "https://toss.shopping/_m/xj05Ua1c"
+  },
+  {
+    "id": 8,
+    "taca_item_id": 2693147723,
+    "badge": "8위",
+    "title": "고당도 15Brix 제주 감귤",
+    "price_label": "9,400원",
+    "original_price": "29,900원",
+    "discount_rate": 68,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-21/964e12a2-d5ea-4045-91af-ff74b44b3138.png",
+    "link_url": "https://toss.shopping/_m/bWccTmcx"
+  },
+  {
+    "id": 9,
     "taca_item_id": 241796467,
-    "badge": "10위",
+    "badge": "9위",
     "title": "괄사 마사지 3종",
     "price_label": "5,450원",
     "original_price": "14,800원",
     "discount_rate": 63,
     "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
     "link_url": "https://toss.shopping/_m/7eb2ktTq"
+  },
+  {
+    "id": 10,
+    "taca_item_id": 8046363,
+    "badge": "10위",
+    "title": "풀무원 생수",
+    "price_label": "5,179원",
+    "original_price": "8,900원",
+    "discount_rate": 41,
+    "image_url": "https://shopping.toss.im/live/taca/ai/M2U3YTg4/Wnl4NG00NXpDeTE1ek01bHJ6RnBUMnM1eFp6eHByU05zUEY2Y3BiQnRZMD0.png",
+    "link_url": "https://toss.shopping/_m/7nKuu2Uj"
   }
 ]
