@@ -1,19 +1,8 @@
 [
   {
     "id": 1,
-    "taca_item_id": 10142851,
-    "badge": "1위",
-    "title": "스파클 생수 무라벨",
-    "price_label": "6,890원",
-    "original_price": "12,000원",
-    "discount_rate": 42,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
-    "link_url": "https://toss.shopping/_m/VTey6Eps"
-  },
-  {
-    "id": 2,
     "taca_item_id": 2653093475,
-    "badge": "2위",
+    "badge": "1위",
     "title": "수뜰리에 퍼퓸 고체 탈취제",
     "price_label": "9,900원",
     "original_price": "59,800원",
@@ -22,15 +11,26 @@
     "link_url": "https://toss.shopping/_m/zANGOhdC"
   },
   {
+    "id": 2,
+    "taca_item_id": 2696198131,
+    "badge": "2위",
+    "title": "제주 효돈 극조생 감귤",
+    "price_label": "10,900원",
+    "original_price": "38,900원",
+    "discount_rate": 71,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-26/2e9b3788-5c79-40c0-8601-e54c152bbe0a.jpeg",
+    "link_url": "https://toss.shopping/_m/TlqmnMbd"
+  },
+  {
     "id": 3,
-    "taca_item_id": 394437803,
+    "taca_item_id": 973592141,
     "badge": "3위",
-    "title": "칸타타 콘트라베이스",
-    "price_label": "29,800원",
-    "original_price": "32,000원",
-    "discount_rate": 6,
-    "image_url": "https://shopping.toss.im/live/taca/ai/N2YwZDIw/QU1aek9NWTV4Qzhjemp6RjQ3SGpPaHdlSE9QajQ5Q2NLeHdyWTlUajFKeHI.png",
-    "link_url": "https://toss.shopping/_m/bWkBzrF3"
+    "title": "누벨린 디펜턴 토탈 솔루션 앰플 세럼",
+    "price_label": "18,800원",
+    "original_price": "45,900원",
+    "discount_rate": 59,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/ODEyMzc3/QUsxR3IwVHdWQlg0VmF2MkF5UDA4elNKQzAyTFJQa1VpN2NHZ2ZTL0JINEw.png",
+    "link_url": "https://toss.shopping/_m/thGpesqi"
   },
   {
     "id": 4,
@@ -45,8 +45,30 @@
   },
   {
     "id": 5,
-    "taca_item_id": 2460475873,
+    "taca_item_id": 2240025855,
     "badge": "5위",
+    "title": "애슐리 볶음밥 3종",
+    "price_label": "10,990원",
+    "original_price": "18,900원",
+    "discount_rate": 41,
+    "image_url": "https://shopping.toss.im/live/taca/ai/Mjg1YzM3/QUs2TW9SLzFJQWpLdWx5ejRhMGxySnhVUGlrcjJsc3gxTTRxdUVHd21VOW0.png",
+    "link_url": "https://toss.shopping/_m/Ll978j7h"
+  },
+  {
+    "id": 6,
+    "taca_item_id": 125215767,
+    "badge": "6위",
+    "title": "지아자 산양유 나이트크림",
+    "price_label": "22,900원",
+    "original_price": "78,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/taca/ai/Y2ZjMmM2/T05SWnBNWTdONTVwV3JkeGxLL1BUbTB0ajhSalIzdzdXckMzNVZxdzQ2VT0.png",
+    "link_url": "https://toss.shopping/_m/bOlXNlqe"
+  },
+  {
+    "id": 7,
+    "taca_item_id": 2460475873,
+    "badge": "7위",
     "title": "푸드센터 소갈비살",
     "price_label": "29,900원",
     "original_price": "100,000원",
@@ -55,58 +77,36 @@
     "link_url": "https://toss.shopping/_m/33ca2bV9"
   },
   {
-    "id": 6,
-    "taca_item_id": 161372869,
-    "badge": "6위",
-    "title": "알참참 구운계란 대란",
-    "price_label": "9,890원",
-    "original_price": "18,600원",
-    "discount_rate": 46,
-    "image_url": "https://shopping.toss.im/live/taca/ai/NGMwNTI2/QU9FcExVR2Y2OHZyYlZYV3BYeXhyUlE5Si90a2tWU20wNFZVcjFxVlVWYXQ.png",
-    "link_url": "https://toss.shopping/_m/Z52hhvIk"
-  },
-  {
-    "id": 7,
-    "taca_item_id": 2696228021,
-    "badge": "7위",
-    "title": "효돈감귤",
-    "price_label": "10,900원",
-    "original_price": "38,900원",
-    "discount_rate": 71,
-    "image_url": "https://shopping.toss.im/live/temp/2026-09-30/051d747d-4e7e-48fa-b199-9bad473d4fa2.jpeg",
-    "link_url": "https://toss.shopping/_m/xj05Ua1c"
-  },
-  {
     "id": 8,
-    "taca_item_id": 2693147723,
+    "taca_item_id": 446375191,
     "badge": "8위",
-    "title": "고당도 15Brix 제주 감귤",
-    "price_label": "9,400원",
-    "original_price": "29,900원",
-    "discount_rate": 68,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-21/964e12a2-d5ea-4045-91af-ff74b44b3138.png",
-    "link_url": "https://toss.shopping/_m/bWccTmcx"
+    "title": "맛꾼 구운란",
+    "price_label": "10,900원",
+    "original_price": "19,900원",
+    "discount_rate": 45,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
+    "link_url": ""
   },
   {
     "id": 9,
-    "taca_item_id": 241796467,
+    "taca_item_id": 2609356619,
     "badge": "9위",
-    "title": "괄사 마사지 3종",
-    "price_label": "5,450원",
-    "original_price": "14,800원",
-    "discount_rate": 63,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
-    "link_url": "https://toss.shopping/_m/7eb2ktTq"
+    "title": "셰프애찬 청양 맵짤이",
+    "price_label": "11,400원",
+    "original_price": "30,000원",
+    "discount_rate": 62,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-25/2f72eb9e-beb9-440e-b752-44ee3fb0ea19.jpeg",
+    "link_url": "https://toss.shopping/_m/BhJ0y4qj"
   },
   {
     "id": 10,
-    "taca_item_id": 8046363,
+    "taca_item_id": 2678878999,
     "badge": "10위",
-    "title": "풀무원 생수",
-    "price_label": "5,179원",
-    "original_price": "8,900원",
-    "discount_rate": 41,
-    "image_url": "https://shopping.toss.im/live/taca/ai/M2U3YTg4/Wnl4NG00NXpDeTE1ek01bHJ6RnBUMnM1eFp6eHByU05zUEY2Y3BiQnRZMD0.png",
-    "link_url": "https://toss.shopping/_m/7nKuu2Uj"
+    "title": "제주 감귤",
+    "price_label": "6,500원",
+    "original_price": "20,500원",
+    "discount_rate": 68,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-14/6939f3d3-8b2b-4b08-8138-ba7fa1bec630.png",
+    "link_url": "https://toss.shopping/_m/D1XFyrMk"
   }
 ]
