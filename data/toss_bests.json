@@ -1,19 +1,52 @@
 [
   {
     "id": 1,
-    "taca_item_id": 2696198131,
+    "taca_item_id": 663346925,
     "badge": "1위",
+    "title": "3대째 달인 광천김",
+    "price_label": "24,890원",
+    "original_price": "28,900원",
+    "discount_rate": 13,
+    "image_url": "https://shopping.toss.im/live/taca/ai/NWU0Yzhh/QUp5dzVOemkxcTlqZXM3Yll6ZTBTMHRtTkhzN2xwUmpQS1BobExSRG9UVEU.png",
+    "link_url": "https://toss.shopping/_m/Xe6l2F42"
+  },
+  {
+    "id": 2,
+    "taca_item_id": 1955117365,
+    "badge": "2위",
+    "title": "농심 신라면",
+    "price_label": "17,900원",
+    "original_price": "20,000원",
+    "discount_rate": 10,
+    "image_url": "https://shopping.toss.im/live/temp/2026-05-12/82e640e6-50d9-4ae2-b634-462123476bc0.jpeg",
+    "link_url": "https://toss.shopping/_m/VfgLwxz4"
+  },
+  {
+    "id": 3,
+    "taca_item_id": 2401832945,
+    "badge": "3위",
+    "title": "널담 고단백 배꼽 베이글",
+    "price_label": "9,600원",
+    "original_price": "27,900원",
+    "discount_rate": 65,
+    "image_url": "https://shopping.toss.im/live/temp/2026-07-03/6b083d0c-c74f-467a-9ec8-a46fe748c635.png",
+    "link_url": "https://toss.shopping/_m/bDRlDmh8"
+  },
+  {
+    "id": 4,
+    "taca_item_id": 2696198131,
+    "badge": "4위",
     "title": "제주 효돈 극조생 감귤",
-    "price_label": "10,900원",
+    "price_label": "12,800원",
     "original_price": "38,900원",
-    "discount_rate": 71,
+    "discount_rate": 67,
     "image_url": "https://shopping.toss.im/live/temp/2026-10-26/2e9b3788-5c79-40c0-8601-e54c152bbe0a.jpeg",
     "link_url": "https://toss.shopping/_m/TlqmnMbd"
   },
   {
-    "id": 2,
+    "id": 5,
     "taca_item_id": 525096829,
-    "badge": "2위",
+    "badge": "5위",
     "title": "제주 타이벡 감귤",
     "price_label": "5,900원",
     "original_price": "20,000원",
@@ -22,20 +55,20 @@
     "link_url": "https://toss.shopping/_m/PoSKtyUA"
   },
   {
-    "id": 3,
-    "taca_item_id": 366071583,
-    "badge": "3위",
-    "title": "맥스 앤 맥스 전자레인지 라면 용기",
-    "price_label": "9,900원",
-    "original_price": "18,900원",
-    "discount_rate": 47,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-06/4d9c7749-b71a-4815-9622-50747aeb997a.jpeg",
-    "link_url": "https://toss.shopping/_m/1Ivra9Ro"
+    "id": 6,
+    "taca_item_id": 2640981637,
+    "badge": "6위",
+    "title": "한예지 클린터치 위생백",
+    "price_label": "5,850원",
+    "original_price": "24,000원",
+    "discount_rate": 75,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-31/4fb9678e-8fc9-43f3-86e7-4e67f89e57f7.jpeg",
+    "link_url": "https://toss.shopping/_m/fspBwySf"
   },
   {
-    "id": 4,
+    "id": 7,
     "taca_item_id": 2590594895,
-    "badge": "4위",
+    "badge": "7위",
     "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
     "price_label": "8,700원",
     "original_price": "15,900원",
@@ -44,69 +77,36 @@
     "link_url": "https://toss.shopping/_m/DGQ6uuHz"
   },
   {
-    "id": 5,
+    "id": 8,
+    "taca_item_id": 13017669,
+    "badge": "8위",
+    "title": "베베앙 시그니처 물티슈 캡형",
+    "price_label": "9,900원",
+    "original_price": "22,300원",
+    "discount_rate": 55,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
+    "link_url": "https://toss.shopping/_m/9AejHgsh"
+  },
+  {
+    "id": 9,
+    "taca_item_id": 1131805409,
+    "badge": "9위",
+    "title": "스파클 생수",
+    "price_label": "7,900원",
+    "original_price": "12,000원",
+    "discount_rate": 34,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-16/1b86054d-ac8b-4f4d-85a9-3f73e7302b39.png",
+    "link_url": "https://toss.shopping/_m/npku3Hpy"
+  },
+  {
+    "id": 10,
     "taca_item_id": 2460475873,
-    "badge": "5위",
+    "badge": "10위",
     "title": "푸드센터 소갈비살",
     "price_label": "29,900원",
     "original_price": "100,000원",
     "discount_rate": 70,
     "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
     "link_url": "https://toss.shopping/_m/33ca2bV9"
-  },
-  {
-    "id": 6,
-    "taca_item_id": 8046363,
-    "badge": "6위",
-    "title": "풀무원 생수",
-    "price_label": "5,179원",
-    "original_price": "8,900원",
-    "discount_rate": 41,
-    "image_url": "https://shopping.toss.im/live/taca/ai/M2U3YTg4/Wnl4NG00NXpDeTE1ek01bHJ6RnBUMnM1eFp6eHByU05zUEY2Y3BiQnRZMD0.png",
-    "link_url": "https://toss.shopping/_m/7nKuu2Uj"
-  },
-  {
-    "id": 7,
-    "taca_item_id": 241796467,
-    "badge": "7위",
-    "title": "괄사 마사지 3종",
-    "price_label": "5,450원",
-    "original_price": "14,800원",
-    "discount_rate": 63,
-    "image_url": "https://shopping.toss.im/live/taca/ai/YmI1NGJk/QUpobU9jOXRzYlNac25uSVpEbW03Wm1lVTF0TXkweFlNekR6VXNubkhLY00.png",
-    "link_url": "https://toss.shopping/_m/7eb2ktTq"
-  },
-  {
-    "id": 8,
-    "taca_item_id": 2534121637,
-    "badge": "8위",
-    "title": "원김치 쪽파김치",
-    "price_label": "9,900원",
-    "original_price": "14,900원",
-    "discount_rate": 33,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MDkxZDUx/QU52Z21LSFI4ZUg3QkoxLzhPZGVRMTF5ZEJvNkdnTnJSZTNWSjhpRGZ0VWk.png",
-    "link_url": "https://toss.shopping/_m/nqNSesV4"
-  },
-  {
-    "id": 9,
-    "taca_item_id": 188235635,
-    "badge": "9위",
-    "title": "오레오 화이트 크림",
-    "price_label": "5,200원",
-    "original_price": "9,000원",
-    "discount_rate": 42,
-    "image_url": "https://shopping.toss.im/live/temp/2025-09-09/7e80429c-ffe5-40b3-b662-536eb6c818a7.png",
-    "link_url": "https://toss.shopping/_m/pGpSvI4g"
-  },
-  {
-    "id": 10,
-    "taca_item_id": 2656439343,
-    "badge": "10위",
-    "title": "제주 햇감귤",
-    "price_label": "9,800원",
-    "original_price": "100,000원",
-    "discount_rate": 90,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-15/bd2ed193-c00b-4170-b501-ec21e6bc96c1.png",
-    "link_url": "https://toss.shopping/_m/tNFiW6Uk"
   }
 ]
