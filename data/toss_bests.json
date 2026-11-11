@@ -1,19 +1,8 @@
 [
   {
     "id": 1,
-    "taca_item_id": 2635824425,
-    "badge": "1위",
-    "title": "할리스 블랙아리아 아메리카노",
-    "price_label": "35,990원",
-    "original_price": "48,500원",
-    "discount_rate": 25,
-    "image_url": "https://shopping.toss.im/live/taca/ai/v2/OWMwNDcy/QVBIUDhhOFBFd096T0h5K1hNZURRNnM0Zkx3MDlZSExTVkorTmJhdEVNNTU.png",
-    "link_url": "https://toss.shopping/_m/xtxTRPHk"
-  },
-  {
-    "id": 2,
     "taca_item_id": 525096829,
-    "badge": "2위",
+    "badge": "1위",
     "title": "제주 타이벡 감귤",
     "price_label": "5,900원",
     "original_price": "20,000원",
@@ -22,15 +11,26 @@
     "link_url": "https://toss.shopping/_m/PoSKtyUA"
   },
   {
+    "id": 2,
+    "taca_item_id": 13017669,
+    "badge": "2위",
+    "title": "베베앙 시그니처 물티슈 캡형",
+    "price_label": "9,900원",
+    "original_price": "22,300원",
+    "discount_rate": 55,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
+    "link_url": "https://toss.shopping/_m/9AejHgsh"
+  },
+  {
     "id": 3,
-    "taca_item_id": 84057409,
+    "taca_item_id": 1131805409,
     "badge": "3위",
-    "title": "메디핏 잇몸치약",
-    "price_label": "38,800원",
-    "original_price": "80,000원",
-    "discount_rate": 51,
-    "image_url": "https://shopping.toss.im/live/taca/ai/MmRmNDQ1/WncxenJaalhRTTUwalppWGVaQjcwdHloQ1ZKaGVQekcxNkVEV294ei9LUT0.png",
-    "link_url": "https://toss.shopping/_m/TLouMw71"
+    "title": "스파클 생수",
+    "price_label": "7,900원",
+    "original_price": "12,000원",
+    "discount_rate": 34,
+    "image_url": "https://shopping.toss.im/live/temp/2026-03-16/1b86054d-ac8b-4f4d-85a9-3f73e7302b39.png",
+    "link_url": "https://toss.shopping/_m/npku3Hpy"
   },
   {
     "id": 4,
@@ -45,19 +45,8 @@
   },
   {
     "id": 5,
-    "taca_item_id": 1131805409,
-    "badge": "5위",
-    "title": "스파클 생수",
-    "price_label": "7,900원",
-    "original_price": "12,000원",
-    "discount_rate": 34,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-16/1b86054d-ac8b-4f4d-85a9-3f73e7302b39.png",
-    "link_url": "https://toss.shopping/_m/npku3Hpy"
-  },
-  {
-    "id": 6,
     "taca_item_id": 2590594895,
-    "badge": "6위",
+    "badge": "5위",
     "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
     "price_label": "8,700원",
     "original_price": "15,900원",
@@ -66,31 +55,20 @@
     "link_url": "https://toss.shopping/_m/DGQ6uuHz"
   },
   {
+    "id": 6,
+    "taca_item_id": 62650377,
+    "badge": "6위",
+    "title": "겨울 스트라이프 포인트 파일 중목 양말",
+    "price_label": "9,800원",
+    "original_price": "30,000원",
+    "discount_rate": 67,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-19/f34fabdc-060e-42ed-8fef-a9f48b09968f.jpeg",
+    "link_url": "https://toss.shopping/_m/TiYj6mJt"
+  },
+  {
     "id": 7,
-    "taca_item_id": 2696198131,
-    "badge": "7위",
-    "title": "제주 효돈 극조생 감귤",
-    "price_label": "11,900원",
-    "original_price": "38,900원",
-    "discount_rate": 69,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-26/2e9b3788-5c79-40c0-8601-e54c152bbe0a.jpeg",
-    "link_url": "https://toss.shopping/_m/TlqmnMbd"
-  },
-  {
-    "id": 8,
-    "taca_item_id": 13017669,
-    "badge": "8위",
-    "title": "베베앙 시그니처 물티슈 캡형",
-    "price_label": "9,900원",
-    "original_price": "22,300원",
-    "discount_rate": 55,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
-    "link_url": "https://toss.shopping/_m/9AejHgsh"
-  },
-  {
-    "id": 9,
     "taca_item_id": 446375191,
-    "badge": "9위",
+    "badge": "7위",
     "title": "맛꾼 구운란",
     "price_label": "10,900원",
     "original_price": "19,900원",
@@ -99,14 +77,36 @@
     "link_url": ""
   },
   {
+    "id": 8,
+    "taca_item_id": 2460475873,
+    "badge": "8위",
+    "title": "푸드센터 소갈비살",
+    "price_label": "29,900원",
+    "original_price": "100,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
+    "link_url": "https://toss.shopping/_m/33ca2bV9"
+  },
+  {
+    "id": 9,
+    "taca_item_id": 1116826043,
+    "badge": "9위",
+    "title": "애슐리 통새우 볶음밥",
+    "price_label": "19,600원",
+    "original_price": "22,920원",
+    "discount_rate": 16,
+    "image_url": "https://shopping.toss.im/live/taca/ai/NmNlZjM5/V0ZvL0xPRU9oMnlyRFFiMHNHRm10TGpOWXN4L0NNaWIzT3d6R202clpRWT0.png",
+    "link_url": "https://toss.shopping/_m/p5tHXuJz"
+  },
+  {
     "id": 10,
-    "taca_item_id": 62650377,
+    "taca_item_id": 8046363,
     "badge": "10위",
-    "title": "겨울 스트라이프 포인트 파일 중목 양말",
-    "price_label": "9,800원",
-    "original_price": "30,000원",
-    "discount_rate": 67,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-19/f34fabdc-060e-42ed-8fef-a9f48b09968f.jpeg",
-    "link_url": "https://toss.shopping/_m/TiYj6mJt"
+    "title": "풀무원 생수",
+    "price_label": "5,170원",
+    "original_price": "8,900원",
+    "discount_rate": 41,
+    "image_url": "https://shopping.toss.im/live/taca/ai/M2U3YTg4/Wnl4NG00NXpDeTE1ek01bHJ6RnBUMnM1eFp6eHByU05zUEY2Y3BiQnRZMD0.png",
+    "link_url": "https://toss.shopping/_m/7nKuu2Uj"
   }
 ]
