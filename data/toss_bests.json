@@ -12,19 +12,8 @@
   },
   {
     "id": 2,
-    "taca_item_id": 13017669,
-    "badge": "2위",
-    "title": "베베앙 시그니처 물티슈 캡형",
-    "price_label": "9,900원",
-    "original_price": "22,300원",
-    "discount_rate": 55,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
-    "link_url": "https://toss.shopping/_m/9AejHgsh"
-  },
-  {
-    "id": 3,
     "taca_item_id": 1131805409,
-    "badge": "3위",
+    "badge": "2위",
     "title": "스파클 생수",
     "price_label": "7,900원",
     "original_price": "12,000원",
@@ -33,9 +22,31 @@
     "link_url": "https://toss.shopping/_m/npku3Hpy"
   },
   {
+    "id": 3,
+    "taca_item_id": 13017669,
+    "badge": "3위",
+    "title": "베베앙 시그니처 물티슈 캡형",
+    "price_label": "9,900원",
+    "original_price": "22,300원",
+    "discount_rate": 55,
+    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
+    "link_url": "https://toss.shopping/_m/9AejHgsh"
+  },
+  {
     "id": 4,
-    "taca_item_id": 2401832945,
+    "taca_item_id": 2714205019,
     "badge": "4위",
+    "title": "산지직송 제주 감귤",
+    "price_label": "8,700원",
+    "original_price": "28,000원",
+    "discount_rate": 68,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-18/62a26f73-c269-48ba-90c2-dc2952c201ed.jpeg",
+    "link_url": "https://toss.shopping/_m/n32xhfVp"
+  },
+  {
+    "id": 5,
+    "taca_item_id": 2401832945,
+    "badge": "5위",
     "title": "널담 고단백 배꼽 베이글",
     "price_label": "9,600원",
     "original_price": "27,900원",
@@ -44,26 +55,15 @@
     "link_url": "https://toss.shopping/_m/bDRlDmh8"
   },
   {
-    "id": 5,
-    "taca_item_id": 2590594895,
-    "badge": "5위",
-    "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
-    "price_label": "8,700원",
-    "original_price": "15,900원",
-    "discount_rate": 45,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-07/be8b0c00-e279-4ee3-9860-66dfd269c3d1.jpeg",
-    "link_url": "https://toss.shopping/_m/DGQ6uuHz"
-  },
-  {
     "id": 6,
-    "taca_item_id": 62650377,
+    "taca_item_id": 2460475873,
     "badge": "6위",
-    "title": "겨울 스트라이프 포인트 파일 중목 양말",
-    "price_label": "9,800원",
-    "original_price": "30,000원",
-    "discount_rate": 67,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-19/f34fabdc-060e-42ed-8fef-a9f48b09968f.jpeg",
-    "link_url": "https://toss.shopping/_m/TiYj6mJt"
+    "title": "푸드센터 소갈비살",
+    "price_label": "29,900원",
+    "original_price": "100,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
+    "link_url": "https://toss.shopping/_m/33ca2bV9"
   },
   {
     "id": 7,
@@ -78,25 +78,25 @@
   },
   {
     "id": 8,
-    "taca_item_id": 2460475873,
+    "taca_item_id": 2590594895,
     "badge": "8위",
-    "title": "푸드센터 소갈비살",
-    "price_label": "29,900원",
-    "original_price": "100,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
-    "link_url": "https://toss.shopping/_m/33ca2bV9"
+    "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
+    "price_label": "8,700원",
+    "original_price": "15,900원",
+    "discount_rate": 45,
+    "image_url": "https://shopping.toss.im/live/temp/2026-08-07/be8b0c00-e279-4ee3-9860-66dfd269c3d1.jpeg",
+    "link_url": "https://toss.shopping/_m/DGQ6uuHz"
   },
   {
     "id": 9,
-    "taca_item_id": 1116826043,
+    "taca_item_id": 62650377,
     "badge": "9위",
-    "title": "애슐리 통새우 볶음밥",
-    "price_label": "19,600원",
-    "original_price": "22,920원",
-    "discount_rate": 16,
-    "image_url": "https://shopping.toss.im/live/taca/ai/NmNlZjM5/V0ZvL0xPRU9oMnlyRFFiMHNHRm10TGpOWXN4L0NNaWIzT3d6R202clpRWT0.png",
-    "link_url": "https://toss.shopping/_m/p5tHXuJz"
+    "title": "겨울 스트라이프 포인트 파일 중목 양말",
+    "price_label": "9,800원",
+    "original_price": "30,000원",
+    "discount_rate": 67,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-19/f34fabdc-060e-42ed-8fef-a9f48b09968f.jpeg",
+    "link_url": "https://toss.shopping/_m/TiYj6mJt"
   },
   {
     "id": 10,
