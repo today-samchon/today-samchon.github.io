@@ -1,52 +1,8 @@
 [
   {
     "id": 1,
-    "taca_item_id": 1779864713,
-    "badge": "1위",
-    "title": "할리스 시그니처 아메리카노",
-    "price_label": "31,480원",
-    "original_price": "43,600원",
-    "discount_rate": 27,
-    "image_url": "https://shopping.toss.im/live/taca/ai/MGZkYjE2/Sk1aZUQrbHcxUGpHUERqSHp3dTdoelphYXo0Y2ZzT1dQdFRsYWMya1VuST0.png",
-    "link_url": "https://toss.shopping/_m/1GmQHojs"
-  },
-  {
-    "id": 2,
-    "taca_item_id": 2722770765,
-    "badge": "2위",
-    "title": "국내산 제주 산지직송 15Brix 초고당도 제주감귤",
-    "price_label": "10,400원",
-    "original_price": "35,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2026-11-11/b1035cdd-2a2b-4baf-ac6e-6b2442b10216.png",
-    "link_url": "https://toss.shopping/_m/Tj3r9gOu"
-  },
-  {
-    "id": 3,
-    "taca_item_id": 2721978367,
-    "badge": "3위",
-    "title": "제주도산 극조생 햇귤",
-    "price_label": "13,200원",
-    "original_price": "45,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2026-11-10/13adb5de-39f5-45f1-87c3-97a1e0b0d3be.png",
-    "link_url": "https://toss.shopping/_m/pika89qy"
-  },
-  {
-    "id": 4,
-    "taca_item_id": 13017669,
-    "badge": "4위",
-    "title": "베베앙 시그니처 물티슈 캡형",
-    "price_label": "9,900원",
-    "original_price": "22,300원",
-    "discount_rate": 55,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
-    "link_url": "https://toss.shopping/_m/9AejHgsh"
-  },
-  {
-    "id": 5,
     "taca_item_id": 525096829,
-    "badge": "5위",
+    "badge": "1위",
     "title": "제주 타이벡 감귤",
     "price_label": "5,900원",
     "original_price": "20,000원",
@@ -55,58 +11,102 @@
     "link_url": "https://toss.shopping/_m/PoSKtyUA"
   },
   {
+    "id": 2,
+    "taca_item_id": 1537243385,
+    "badge": "2위",
+    "title": "아주농장 보드레 반숙란",
+    "price_label": "19,800원",
+    "original_price": "34,100원",
+    "discount_rate": 41,
+    "image_url": "https://shopping.toss.im/live/taca/ai/ZGY5YmI4/TEp1UzB6YVplZE9lWk0wbUVzdk1Pd21tTWh5UEpNbFo4YVN4akZvVVp6RT0.png",
+    "link_url": "https://toss.shopping/_m/hXbh1rE3"
+  },
+  {
+    "id": 3,
+    "taca_item_id": 2722770765,
+    "badge": "3위",
+    "title": "국내산 제주 산지직송 15Brix 초고당도 제주감귤",
+    "price_label": "10,400원",
+    "original_price": "35,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-11/b1035cdd-2a2b-4baf-ac6e-6b2442b10216.png",
+    "link_url": "https://toss.shopping/_m/Tj3r9gOu"
+  },
+  {
+    "id": 4,
+    "taca_item_id": 2714205019,
+    "badge": "4위",
+    "title": "산지직송 제주 감귤",
+    "price_label": "8,700원",
+    "original_price": "28,000원",
+    "discount_rate": 68,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-18/62a26f73-c269-48ba-90c2-dc2952c201ed.jpeg",
+    "link_url": "https://toss.shopping/_m/n32xhfVp"
+  },
+  {
+    "id": 5,
+    "taca_item_id": 2721978367,
+    "badge": "5위",
+    "title": "제주도산 극조생 햇귤",
+    "price_label": "13,200원",
+    "original_price": "45,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-10/13adb5de-39f5-45f1-87c3-97a1e0b0d3be.png",
+    "link_url": "https://toss.shopping/_m/pika89qy"
+  },
+  {
     "id": 6,
-    "taca_item_id": 1131805409,
+    "taca_item_id": 2652574317,
     "badge": "6위",
-    "title": "스파클 생수",
-    "price_label": "7,900원",
-    "original_price": "12,000원",
-    "discount_rate": 34,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-16/1b86054d-ac8b-4f4d-85a9-3f73e7302b39.png",
-    "link_url": "https://toss.shopping/_m/npku3Hpy"
+    "title": "씨없는 청도 반시",
+    "price_label": "6,500원",
+    "original_price": "21,400원",
+    "discount_rate": 69,
+    "image_url": "https://shopping.toss.im/live/temp/2026-09-09/eedd5246-1fd2-47e8-8af5-d77b5e45c17e.png",
+    "link_url": "https://toss.shopping/_m/rtNLNzoD"
   },
   {
     "id": 7,
-    "taca_item_id": 2335791299,
+    "taca_item_id": 2460475873,
     "badge": "7위",
-    "title": "맘스럽 플로럴 액체세제",
-    "price_label": "7,200원",
-    "original_price": "15,900원",
-    "discount_rate": 54,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-26/14462407-64c6-4bd0-928f-ab234f01c071.jpeg",
-    "link_url": "https://toss.shopping/_m/LohIXnK9"
+    "title": "푸드센터 소갈비살",
+    "price_label": "29,900원",
+    "original_price": "100,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
+    "link_url": "https://toss.shopping/_m/33ca2bV9"
   },
   {
     "id": 8,
-    "taca_item_id": 2717331871,
+    "taca_item_id": 446375191,
     "badge": "8위",
-    "title": "제주 타이벡 감귤",
-    "price_label": "11,000원",
-    "original_price": "35,000원",
-    "discount_rate": 68,
-    "image_url": "https://shopping.toss.im/live/temp/2026-11-06/af30aa23-04d2-47cd-a694-0aa5975fc83d.png",
-    "link_url": "https://toss.shopping/_m/XyfHOQm2"
+    "title": "맛꾼 구운란",
+    "price_label": "10,900원",
+    "original_price": "19,900원",
+    "discount_rate": 45,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
+    "link_url": ""
   },
   {
     "id": 9,
-    "taca_item_id": 62644459,
+    "taca_item_id": 2726771297,
     "badge": "9위",
-    "title": "겨울 스트라이프 포인트 파일 중목 양말",
-    "price_label": "12,900원",
-    "original_price": "20,000원",
-    "discount_rate": 35,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-19/f34fabdc-060e-42ed-8fef-a9f48b09968f.jpeg",
-    "link_url": "https://toss.shopping/_m/PYcrAhC3"
+    "title": "제주산지직송 햇감귤",
+    "price_label": "9,900원",
+    "original_price": "25,000원",
+    "discount_rate": 60,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-13/c59f248c-3f23-48c5-88cc-bd96b3d95a7f.png",
+    "link_url": "https://toss.shopping/_m/BOmMDrU6"
   },
   {
     "id": 10,
-    "taca_item_id": 2590594895,
+    "taca_item_id": 2724074773,
     "badge": "10위",
-    "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
-    "price_label": "8,580원",
-    "original_price": "15,900원",
-    "discount_rate": 46,
-    "image_url": "https://shopping.toss.im/live/temp/2026-08-07/be8b0c00-e279-4ee3-9860-66dfd269c3d1.jpeg",
-    "link_url": "https://toss.shopping/_m/DGQ6uuHz"
+    "title": "마음팜 청송 햇 부사 사과",
+    "price_label": "28,170원",
+    "original_price": "49,900원",
+    "discount_rate": 43,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-12/40b6d2e4-2898-417f-be74-52cbe97c789c.png",
+    "link_url": "https://toss.shopping/_m/Hd0MSMud"
   }
 ]
