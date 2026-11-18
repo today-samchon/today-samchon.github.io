@@ -1,19 +1,41 @@
 [
   {
     "id": 1,
-    "taca_item_id": 446375191,
+    "taca_item_id": 159826761,
     "badge": "1위",
+    "title": "숨 시그니처 물티슈",
+    "price_label": "13,690원",
+    "original_price": "24,000원",
+    "discount_rate": 42,
+    "image_url": "https://shopping.toss.im/live/taca/ai/ZGFhZTVh/QVB1QlhwdlZ0VmpuUzd3YTV2ODBheFpBcGJsR3EzUXladmY4cTFxb1FkYTU.png",
+    "link_url": "https://toss.shopping/_m/94LGoqh1"
+  },
+  {
+    "id": 2,
+    "taca_item_id": 446375191,
+    "badge": "2위",
     "title": "맛꾼 구운란",
-    "price_label": "9,800원",
+    "price_label": "10,000원",
     "original_price": "19,900원",
-    "discount_rate": 50,
+    "discount_rate": 49,
     "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
     "link_url": ""
   },
   {
-    "id": 2,
+    "id": 3,
+    "taca_item_id": 106789429,
+    "badge": "3위",
+    "title": "CJ제일제당 햇반",
+    "price_label": "43,800원",
+    "original_price": "68,400원",
+    "discount_rate": 35,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/ZjNiYTcy/QU9lcE8ya2VXYnowck5qaVcwOHAwZWt4YVkyejZ5eE9qWEcwcDFLdVVqZ3Q.png",
+    "link_url": "https://toss.shopping/_m/rH55OII6"
+  },
+  {
+    "id": 4,
     "taca_item_id": 651526161,
-    "badge": "2위",
+    "badge": "4위",
     "title": "스파클 생수",
     "price_label": "13,900원",
     "original_price": "24,000원",
@@ -22,9 +44,9 @@
     "link_url": "https://toss.shopping/_m/Bz18QEdi"
   },
   {
-    "id": 3,
+    "id": 5,
     "taca_item_id": 43252057,
-    "badge": "3위",
+    "badge": "5위",
     "title": "스파클 생수",
     "price_label": "13,900원",
     "original_price": "25,000원",
@@ -33,20 +55,9 @@
     "link_url": "https://toss.shopping/_m/XTBSOpMo"
   },
   {
-    "id": 4,
-    "taca_item_id": 525096829,
-    "badge": "4위",
-    "title": "제주 타이벡 감귤",
-    "price_label": "5,900원",
-    "original_price": "20,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/e9b57a5a-52df-4b42-954f-e9411e7586eb.png",
-    "link_url": "https://toss.shopping/_m/PoSKtyUA"
-  },
-  {
-    "id": 5,
+    "id": 6,
     "taca_item_id": 2590594895,
-    "badge": "5위",
+    "badge": "6위",
     "title": "블루나 본 물티슈 퓨어 캡형 저자극 대용량",
     "price_label": "8,580원",
     "original_price": "15,900원",
@@ -55,10 +66,10 @@
     "link_url": "https://toss.shopping/_m/DGQ6uuHz"
   },
   {
-    "id": 6,
+    "id": 7,
     "taca_item_id": 2714205019,
-    "badge": "6위",
-    "title": "산지직송 제주 감귤",
+    "badge": "7위",
+    "title": "제주 감귤",
     "price_label": "8,900원",
     "original_price": "28,000원",
     "discount_rate": 68,
@@ -66,47 +77,36 @@
     "link_url": "https://toss.shopping/_m/n32xhfVp"
   },
   {
-    "id": 7,
-    "taca_item_id": 1377734929,
-    "badge": "7위",
-    "title": "농심 안성탕면",
-    "price_label": "12,177원",
-    "original_price": "15,070원",
-    "discount_rate": 19,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-01/36952a3e-393c-4115-9a75-b7af8c6d82dc.jpeg",
-    "link_url": "https://toss.shopping/_m/19ZCS4Oa"
-  },
-  {
     "id": 8,
-    "taca_item_id": 2701355367,
+    "taca_item_id": 2717331869,
     "badge": "8위",
-    "title": "프로프룻 햇 부사사과",
-    "price_label": "11,900원",
-    "original_price": "79,900원",
-    "discount_rate": 85,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-27/7d371d2d-be93-4ec4-b802-87c03a98c5eb.jpeg",
-    "link_url": "https://toss.shopping/_m/7L8u7xNd"
+    "title": "제주 타이벡 감귤",
+    "price_label": "7,900원",
+    "original_price": "20,000원",
+    "discount_rate": 60,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-06/af30aa23-04d2-47cd-a694-0aa5975fc83d.png",
+    "link_url": "https://toss.shopping/_m/JnxzII48"
   },
   {
     "id": 9,
-    "taca_item_id": 105889189,
+    "taca_item_id": 525096829,
     "badge": "9위",
-    "title": "플로비즈 시그니처 야생화꿀",
-    "price_label": "28,900원",
-    "original_price": "38,700원",
-    "discount_rate": 25,
-    "image_url": "https://shopping.toss.im/live/taca/ai/ZjgyMTM3/QUxUbnNPRmJjazhQbk16eThHY2pUczhZWExNNTUrUEswQW9mTlEvMTRPNUY.png",
-    "link_url": "https://toss.shopping/_m/xXjPG45f"
+    "title": "제주 타이벡 감귤",
+    "price_label": "5,900원",
+    "original_price": "20,000원",
+    "discount_rate": 70,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/e9b57a5a-52df-4b42-954f-e9411e7586eb.png",
+    "link_url": "https://toss.shopping/_m/PoSKtyUA"
   },
   {
     "id": 10,
-    "taca_item_id": 2460475873,
+    "taca_item_id": 2722304327,
     "badge": "10위",
-    "title": "푸드센터 소갈비살",
-    "price_label": "29,900원",
-    "original_price": "100,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
-    "link_url": "https://toss.shopping/_m/33ca2bV9"
+    "title": "부사사과",
+    "price_label": "15,900원",
+    "original_price": "41,800원",
+    "discount_rate": 61,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-11/c98755e4-105b-42b6-82bf-0a623f85a719.png",
+    "link_url": "https://toss.shopping/_m/f0L9q4je"
   }
 ]
