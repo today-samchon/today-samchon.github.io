@@ -23,19 +23,8 @@
   },
   {
     "id": 3,
-    "taca_item_id": 446375191,
-    "badge": "3위",
-    "title": "맛꾼 구운란",
-    "price_label": "10,000원",
-    "original_price": "19,900원",
-    "discount_rate": 49,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
-    "link_url": ""
-  },
-  {
-    "id": 4,
     "taca_item_id": 525096829,
-    "badge": "4위",
+    "badge": "3위",
     "title": "제주 타이벡 감귤",
     "price_label": "5,900원",
     "original_price": "20,000원",
@@ -44,15 +33,26 @@
     "link_url": "https://toss.shopping/_m/PoSKtyUA"
   },
   {
-    "id": 5,
+    "id": 4,
     "taca_item_id": 651526161,
-    "badge": "5위",
+    "badge": "4위",
     "title": "스파클 생수",
     "price_label": "13,900원",
     "original_price": "24,000원",
     "discount_rate": 42,
     "image_url": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
     "link_url": "https://toss.shopping/_m/Bz18QEdi"
+  },
+  {
+    "id": 5,
+    "taca_item_id": 446375191,
+    "badge": "5위",
+    "title": "맛꾼 구운란",
+    "price_label": "10,000원",
+    "original_price": "19,900원",
+    "discount_rate": 49,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
+    "link_url": ""
   },
   {
     "id": 6,
@@ -67,19 +67,8 @@
   },
   {
     "id": 7,
-    "taca_item_id": 1112440899,
-    "badge": "7위",
-    "title": "숨 시그니처 물티슈",
-    "price_label": "8,490원",
-    "original_price": "14,900원",
-    "discount_rate": 43,
-    "image_url": "https://shopping.toss.im/live/taca/ai/ZGFhZTVh/QVB1QlhwdlZ0VmpuUzd3YTV2ODBheFpBcGJsR3EzUXladmY4cTFxb1FkYTU.png",
-    "link_url": "https://toss.shopping/_m/PWR4wefx"
-  },
-  {
-    "id": 8,
     "taca_item_id": 2714205019,
-    "badge": "8위",
+    "badge": "7위",
     "title": "제주 감귤",
     "price_label": "9,500원",
     "original_price": "28,000원",
@@ -88,25 +77,36 @@
     "link_url": "https://toss.shopping/_m/n32xhfVp"
   },
   {
+    "id": 8,
+    "taca_item_id": 1112440899,
+    "badge": "8위",
+    "title": "숨 시그니처 물티슈",
+    "price_label": "8,490원",
+    "original_price": "14,900원",
+    "discount_rate": 43,
+    "image_url": "https://shopping.toss.im/live/taca/ai/ZGFhZTVh/QVB1QlhwdlZ0VmpuUzd3YTV2ODBheFpBcGJsR3EzUXladmY4cTFxb1FkYTU.png",
+    "link_url": "https://toss.shopping/_m/PWR4wefx"
+  },
+  {
     "id": 9,
-    "taca_item_id": 2460475873,
+    "taca_item_id": 2701355367,
     "badge": "9위",
-    "title": "푸드센터 소갈비살",
-    "price_label": "29,900원",
-    "original_price": "100,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2025-07-21/93a16065-9d8e-4a9a-83c8-c07c8cca1f2d.png",
-    "link_url": "https://toss.shopping/_m/33ca2bV9"
+    "title": "프로프룻 햇 부사사과",
+    "price_label": "11,900원",
+    "original_price": "79,900원",
+    "discount_rate": 85,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-27/7d371d2d-be93-4ec4-b802-87c03a98c5eb.jpeg",
+    "link_url": "https://toss.shopping/_m/7L8u7xNd"
   },
   {
     "id": 10,
-    "taca_item_id": 1377734929,
+    "taca_item_id": 82189401,
     "badge": "10위",
-    "title": "농심 안성탕면",
-    "price_label": "12,177원",
-    "original_price": "15,070원",
-    "discount_rate": 19,
-    "image_url": "https://shopping.toss.im/live/temp/2026-06-01/36952a3e-393c-4115-9a75-b7af8c6d82dc.jpeg",
-    "link_url": "https://toss.shopping/_m/19ZCS4Oa"
+    "title": "후디스 소화 편한 우유 오리지널",
+    "price_label": "12,000원",
+    "original_price": "33,600원",
+    "discount_rate": 64,
+    "image_url": "https://shopping.toss.im/live/temp/2026-10-13/71e1811b-5f3d-40d9-81e7-06500a63a40a.jpeg",
+    "link_url": "https://toss.shopping/_m/1UW87Foi"
   }
 ]
