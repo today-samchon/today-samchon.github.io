@@ -1,8 +1,19 @@
 [
   {
     "id": 1,
-    "taca_item_id": 2725837549,
+    "taca_item_id": 1554211077,
     "badge": "1위",
+    "title": "오뚜기 진라면 순한맛",
+    "price_label": "26,800원",
+    "original_price": "31,600원",
+    "discount_rate": 15,
+    "image_url": "https://shopping.toss.im/live/taca/ai/NDU0Yjgz/SnROblo3Wk91MndwZm01SlZ1bVprazJCbTVPc2hMK1JKdFR3YlRhUmJHND0.png",
+    "link_url": "https://toss.shopping/_m/LCvp1hd9"
+  },
+  {
+    "id": 2,
+    "taca_item_id": 2725837549,
+    "badge": "2위",
     "title": "서귀포 조생 감귤",
     "price_label": "11,800원",
     "original_price": "40,000원",
@@ -11,48 +22,37 @@
     "link_url": "https://toss.shopping/_m/NWbyVDey"
   },
   {
-    "id": 2,
-    "taca_item_id": 43252057,
-    "badge": "2위",
-    "title": "스파클 생수",
-    "price_label": "13,900원",
-    "original_price": "25,000원",
-    "discount_rate": 44,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-18/268e4c6a-1595-43e9-9c1b-f101e5774429.jpeg",
-    "link_url": "https://toss.shopping/_m/XTBSOpMo"
-  },
-  {
     "id": 3,
-    "taca_item_id": 525096829,
+    "taca_item_id": 202408373,
     "badge": "3위",
-    "title": "제주 타이벡 감귤",
-    "price_label": "5,900원",
-    "original_price": "20,000원",
-    "discount_rate": 70,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/e9b57a5a-52df-4b42-954f-e9411e7586eb.png",
-    "link_url": "https://toss.shopping/_m/PoSKtyUA"
+    "title": "앙쥬 마유코팅 핸드크림",
+    "price_label": "21,900원",
+    "original_price": "200,000원",
+    "discount_rate": 89,
+    "image_url": "https://shopping.toss.im/live/temp/2025-09-17/cca2d753-7945-4e7f-9c38-06970b4ec62b.jpeg",
+    "link_url": "https://toss.shopping/_m/je1LLZce"
   },
   {
     "id": 4,
-    "taca_item_id": 651526161,
+    "taca_item_id": 1130882705,
     "badge": "4위",
-    "title": "스파클 생수",
-    "price_label": "13,900원",
-    "original_price": "24,000원",
-    "discount_rate": 42,
-    "image_url": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
-    "link_url": "https://toss.shopping/_m/Bz18QEdi"
+    "title": "코피코 커피 캔디",
+    "price_label": "22,500원",
+    "original_price": "24,900원",
+    "discount_rate": 10,
+    "image_url": "https://shopping.toss.im/live/taca/ai/MDRlMmI0/TWt2ZXlhMjBzWWl4eExITXpiazVNWE5QT1laek84WnpuTVk1alJ4T09Zdz0.png",
+    "link_url": "https://toss.shopping/_m/ZGkxA0Li"
   },
   {
     "id": 5,
-    "taca_item_id": 446375191,
+    "taca_item_id": 2035790595,
     "badge": "5위",
-    "title": "맛꾼 구운란",
-    "price_label": "10,000원",
-    "original_price": "19,900원",
-    "discount_rate": 49,
-    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
-    "link_url": ""
+    "title": "뽀로로 아연면역음료",
+    "price_label": "7,900원",
+    "original_price": "12,000원",
+    "discount_rate": 34,
+    "image_url": "https://shopping.toss.im/live/taca/ai/v2/MzY5YmY0/ZTVlMXBzOGphTVp0cDlZeU9rMWs2Yll3TWxsTXpZNDV0bkRieWRsc0pMWT0.png",
+    "link_url": "https://toss.shopping/_m/jMQXxbao"
   },
   {
     "id": 6,
@@ -70,22 +70,22 @@
     "taca_item_id": 2714205019,
     "badge": "7위",
     "title": "제주 감귤",
-    "price_label": "9,500원",
+    "price_label": "9,800원",
     "original_price": "28,000원",
-    "discount_rate": 66,
+    "discount_rate": 65,
     "image_url": "https://shopping.toss.im/live/temp/2026-10-18/62a26f73-c269-48ba-90c2-dc2952c201ed.jpeg",
     "link_url": "https://toss.shopping/_m/n32xhfVp"
   },
   {
     "id": 8,
-    "taca_item_id": 1112440899,
+    "taca_item_id": 525096829,
     "badge": "8위",
-    "title": "숨 시그니처 물티슈",
-    "price_label": "8,490원",
-    "original_price": "14,900원",
-    "discount_rate": 43,
-    "image_url": "https://shopping.toss.im/live/taca/ai/ZGFhZTVh/QVB1QlhwdlZ0VmpuUzd3YTV2ODBheFpBcGJsR3EzUXladmY4cTFxb1FkYTU.png",
-    "link_url": "https://toss.shopping/_m/PWR4wefx"
+    "title": "제주 타이벡 감귤",
+    "price_label": "6,500원",
+    "original_price": "20,000원",
+    "discount_rate": 67,
+    "image_url": "https://shopping.toss.im/live/temp/2026-01-27/e9b57a5a-52df-4b42-954f-e9411e7586eb.png",
+    "link_url": "https://toss.shopping/_m/PoSKtyUA"
   },
   {
     "id": 9,
@@ -100,13 +100,13 @@
   },
   {
     "id": 10,
-    "taca_item_id": 82189401,
+    "taca_item_id": 2721978367,
     "badge": "10위",
-    "title": "후디스 소화 편한 우유 오리지널",
-    "price_label": "12,000원",
-    "original_price": "33,600원",
-    "discount_rate": 64,
-    "image_url": "https://shopping.toss.im/live/temp/2026-10-13/71e1811b-5f3d-40d9-81e7-06500a63a40a.jpeg",
-    "link_url": "https://toss.shopping/_m/1UW87Foi"
+    "title": "제주도산 극조생 햇귤",
+    "price_label": "9,990원",
+    "original_price": "45,000원",
+    "discount_rate": 77,
+    "image_url": "https://shopping.toss.im/live/temp/2026-11-10/13adb5de-39f5-45f1-87c3-97a1e0b0d3be.png",
+    "link_url": "https://toss.shopping/_m/pika89qy"
   }
 ]
